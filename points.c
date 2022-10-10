@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 int main (void){
-    int mine = 2;
-    int points = get_int("How many points did you lose?\n");
+    int mine = 27;
+    int points = get_int("How old are you?\n");
     if (points < mine){
-        printf("You lose fewer points than me\n");
+        printf("You are younger than me\n");
         }
     else if (points > mine){
-        printf("You lose more points than me\n");
+        printf("You are older than me\n");
     }
     else {
-        printf("You lose the same points as me\n");
+        printf("You are as old as me\n");
     }
     }
