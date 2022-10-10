@@ -4,9 +4,9 @@
     int x = get_int("x: ");
 
     if(x / 2 == 0){
-        printf("number is even")
+        printf("number is even");
     }
     else {
-        printf("number is odd)
+        printf("number is odd);
     }
 }
