@@ -5,7 +5,12 @@ int main (void){
 
     int points = get_int("How many points did you lose?\n");
     if (points < 2){
-        printf("You lose )
+        printf("You lose fewer points than me\n");
         }
+    else if (points > 2){
+        printf("You lose more points than me\n");
     }
-}
+    else {
+        printf("You lose the same points as me\n");
+    }
+    }
