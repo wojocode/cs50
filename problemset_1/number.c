@@ -3,10 +3,10 @@
 int main(void)
 {
     int x = get_int("x: ");
-    if(x / 2 == 0){
-        printf("number is even");
+    if(x % 2 == 0){
+        printf("number is even\n");
     }
     else {
-        printf("number is odd");
+        printf("number is odd\n");
     }
 }
