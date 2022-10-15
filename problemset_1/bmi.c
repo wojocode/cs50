@@ -7,7 +7,7 @@ int main(void)
 {
     float height = get_float("How tall are you ? ");
     int weight = get_int("How much do you weight ? ");
-    float BMI = bmi(height,weight);
+    float BMI = bmi(weight,height);
     printf("Your BMI is: %.2f\n", BMI);
 }
 
