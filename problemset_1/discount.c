@@ -5,9 +5,9 @@ void discount(float regular);
 
 int main(void)
 {
-    discount(void);
+    discount(float regular);
 }
-    void discount(float regular)
+    void discount(regular)
     {
     float regular = get_float("Regular Price: ");
     float sale = regular * .85;
