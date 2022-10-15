@@ -5,7 +5,7 @@ void discount(float regular);
 
 int main(void)
 {
-    discount(regular);
+    discount(void);
 }
     void discount(float regular)
     {
