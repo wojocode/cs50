@@ -10,12 +10,12 @@ do
 }
 while (n < 1);
 
-for (int col = 0; col < n; col++)
+for (int row = 0; row < n; row++)
 {
-    for (int row = 0; row < n; row++)
+    for (int col = 0; col < n; col++)
     {
         printf("*");
     }
     printf("\n");
-}unzip mario-less.zip
+}
 }
