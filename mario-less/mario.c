@@ -13,12 +13,12 @@ int main(void)
 
     for(int row = 0; row < n; row++)
     {
+        //this loop runs equal to actual row number
         for(int i = 0; i <= row; i++)
         {
             printf("#");
-
         }
-
+        
         printf("\n");
     }
 }
