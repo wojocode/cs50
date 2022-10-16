@@ -13,12 +13,12 @@ int main(void)
 
     for(int row = 0; row < n; row++)
     {
-        for(int col = 0; col < n-1; col++)
+        for(int col = 0; col < n; col++)
         {
             printf("#");
 
         }
-        
+
         printf("\n");
     }
 }
