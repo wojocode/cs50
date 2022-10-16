@@ -17,5 +17,5 @@ for (int col = 0; col < n; col++)
         printf("*");
     }
     printf("\n");
-}
+}unzip mario-less.zip
 }
