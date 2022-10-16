@@ -14,7 +14,7 @@ for (int col = 0; col < n; col++)
 {
     for (int row = 0; row < n; row++)
     {
-        printf("@");
+        printf("*");
     }
     printf("\n");
 }
