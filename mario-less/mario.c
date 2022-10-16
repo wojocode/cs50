@@ -13,7 +13,7 @@ int main(void)
 
     for(int row = 0; row < n; row++)
     {
-        for(int col = row; col > n;)
+        for(int col = row; col < n;)
         {
             printf("#");
 
