@@ -25,10 +25,10 @@ int main(void)
         //odstęp
         printf("  ");
         //początek 2 pętli
-        for(int row = 0; row < n; row++)
+        for(int r = 0; r < n; r++)
     {
 
-        for(int i = 0; i <= row; i++)
+        for(int i = 0; i <= r; i++)
         {
             printf("#");
         }
