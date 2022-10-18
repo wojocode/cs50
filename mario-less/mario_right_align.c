@@ -15,6 +15,7 @@ int main(void)
         for(int i = 0; i <=row; i++)
         {
             printf("#");
+            
         }
          printf("\n");
     }
