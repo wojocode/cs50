@@ -27,6 +27,10 @@ int main(void)
         //początek 2 pętli
         for(int r = 0; r < n; r++)
     {
+         for(int s = 1; s < (n - r); s++)
+        {
+            printf(" ");
+        }
 
         for(int i = 0; i <= r; i++)
         {
