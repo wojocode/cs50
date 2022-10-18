@@ -13,8 +13,9 @@ int main(void)
     for (int row = 0; row < n; row++)
     {
         for(int space = 0; space <= (8 - row); space++)
-        printf(" ");
-
+        {
+            printf(" ");
+        }
         for(int i = 0; i <=row; i++)
         {
             printf("#");
