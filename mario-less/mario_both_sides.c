@@ -23,17 +23,16 @@ int main(void)
         }
             printf("  ");
             //koniec rysunku 1 piętli z przerwą 
-             for(int row = 0; row < n; row++)
+             for(int r = 0; r < n; r++)
     {
         //this loop runs equal to actual row number
-        for(int i = 0; i <= row; i++)
+        for(int i = 0; i <= r; i++)
         {
             printf("#");
         }
-        printf("\n");
     }
 
     }
-
+    printf("\n");
 
 }
