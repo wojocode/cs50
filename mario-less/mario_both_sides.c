@@ -22,7 +22,18 @@ int main(void)
             printf("#");
         }
             printf("  ");
+            //koniec rysunku 1 piętli z przerwą 
+             for(int row = 0; row < n; row++)
+    {
+        //this loop runs equal to actual row number
+        for(int i = 0; i <= row; i++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
-            
+
+    }
+
 
 }
