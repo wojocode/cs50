@@ -21,28 +21,7 @@ int main(void)
         {
             printf("#");
         }
-        // koniec 1 pętli z wyrwnaniem do prawej
-        //odstęp
-        printf("  ");
-        //początek 2 pętli
-        for(int r = 0; r < n; r++)
-    {
-         for(int s = 1; s < (n - r); s++)
-        {
-            printf(" ");
-        }
-
-        for(int i = 0; i <= r; i++)
-        {
-            printf("#");
-        }
-
-    }
-
-        // koniec 2 pętli z wyrwnaniem do lewej
-
-
          printf("\n");
     }
-
+        printf("  ");
 }
