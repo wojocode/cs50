@@ -12,7 +12,8 @@ int main(void)
 
     for (int row = 0; row < n; row++)
     {
-        for(int space = 2; space <= (8 - row); space++)
+        // pętla do robienia odstępow 
+        for(int space = 1; space < (8 - row); space++)
         {
             printf(" ");
         }
