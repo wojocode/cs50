@@ -10,5 +10,12 @@ int main(void)
     }
     while(n < 1 || n > 8);
 
-    
+    for (int row = 0; row < n; row++)
+    {
+        for()
+        {
+            printf("#");
+        }
+    }
+    printf("\n");
 }
