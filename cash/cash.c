@@ -37,18 +37,18 @@ int main(void)
 
 int get_cents(void)
 {
-    
-    do {
-    int n = get_int("cents to owed ?");
-    }
-    while ( n > 0);
 
+     do {
+    int  = get_int("cents to owed ?");
+    }
+    while ( int > 0);
+    return int;
 }
 
 int calculate_quarters(int cents)
 {
     // TODO
-    return 0;p
+    return 0;
 }
 
 int calculate_dimes(int cents)
