@@ -39,9 +39,9 @@ int get_cents(void)
 {
 
      do {
-    int  = get_int("cents to owed ?");
+    int coins = get_int("cents to owed ?");
     }
-    while ( int > 0);
+    while ( coins > 0);
     return int;
 }
 
