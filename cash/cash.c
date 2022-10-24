@@ -38,7 +38,7 @@ int main(void)
 int get_cents(void)
 {
     do {
-     return get_int("cents to owed?");
+    return get_int("cents to owed?");
     }
     while ( return > 0);
 
