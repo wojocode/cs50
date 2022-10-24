@@ -10,10 +10,13 @@ int calculate_pennies(int cents);
 int main(void)
 {
     // Ask how many cents the customer is owed
-    do{
+
     int cents = get_cents();
+    do {
+        get_cents();
     }
     while(cents > 0);
+
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
