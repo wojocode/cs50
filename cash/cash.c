@@ -37,10 +37,11 @@ int main(void)
 
 int get_cents(void)
 {
+    int n;
     do {
-    int cents = get_int("cents to owed ?");
+    int n = get_int("cents to owed ?");
     }
-    while ( cents > 0);
+    while ( n > 0);
 
 }
 
