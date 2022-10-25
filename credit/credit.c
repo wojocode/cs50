@@ -10,7 +10,7 @@ int main(void)
 // prompt for input
     long card_number;
     int sum;
-    int split_digit;
+
     do
     {
      card_number = get_long("enter card number: ");
@@ -21,21 +21,13 @@ int main(void)
     {
         sum = calculate_checksum_first(card_number,i);
 
-        if(sum >= 10){
-        for (i = 10; i < split_digit; i = i * 10){
-            split_digit = calculate(sum);
-           sum = sum + split_digit;
-           printf("%i",split_digit);
         }
-        }
-        else {
-        sum = sum + sum;
-        }
+
     }
     printf("%i", sum);
 
 
-}
+
 
 //checksum function
     int calculate_checksum_first(long card_number,long i)
