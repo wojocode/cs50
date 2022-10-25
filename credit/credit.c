@@ -20,6 +20,7 @@ int main(void)
         sum = calculate_checksum_first(card_number,i);
 
     }
+    printf("%i", sum);
 
 
 }
