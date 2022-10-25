@@ -33,7 +33,7 @@ int main(void)
         int multiplied_digit = (card_number % (10 * i)) / i;
         multiplied_digit = multiplied_digit * 2;
         }
-        while(multiplied_digit > 10)
+        while(multiplied_digit > 10);
         return multiplied_digit;
 }
 
