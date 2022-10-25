@@ -19,7 +19,7 @@ int main(void)
     {
         int sum = calculate_checksum_first(card_number,i);
     }
-    
+    printf("%i",sum);
 
 }
 
@@ -31,6 +31,7 @@ int main(void)
         multiplied_digit = multiplied_digit * 2;
         return multiplied_digit;
 }
+
 
 
 
