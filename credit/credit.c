@@ -21,8 +21,8 @@ int main(void)
     int calculate_checksum(long card_number)
 {
 
-        int multiplied_digit = card_number % 100;
-
+        int multiplied_digit = (card_number % 100) / 10;
+        multiplied_digit = multiplied_digit * 2;
         return  multiplied_digit;
 }
 
