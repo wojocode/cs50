@@ -13,13 +13,14 @@ int main(void)
     }
     while(card_number <= 0);
 
+    for ( )
 
 }
 
 //checksum function
     int calculate_checksum(long card_number)
 {
-        const long I = 10;
+        
         int multiplied_digit = (card_number % (10*I)) / I;
         multiplied_digit = multiplied_digit * 2;
         return multiplied_digit;
