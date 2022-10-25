@@ -29,11 +29,7 @@ int main(void)
 {
 
         int multiplied_digit = (card_number % (10 * i)) / i;
-        if(multiplied_digit < 5){
         multiplied_digit = multiplied_digit * 2;
-        }
-        else
-        multiplied_digit = (multiplied_digit * 2)/10;
         return multiplied_digit;
 }
 
