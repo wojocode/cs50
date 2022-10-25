@@ -1,4 +1,4 @@
-@@ -1,26 +1,26 @@
+
 #include <cs50.h>
 #include <stdio.h>
 int main(void)
@@ -7,6 +7,7 @@ int main(void)
     int calculate_checksum(long card_number,long i);
 // prompt for input
     long card_number;
+    int sum;
     do
     {
      card_number = get_long("enter card number: ");
@@ -14,11 +15,12 @@ int main(void)
     while (card_number < 0);
     for (long i = 10; i < card_number; i = i * 100)
     {
-        int sum = calculate_checksum(card_number,i);
+         sum = calculate_checksum(card_number,i);
 
     }
 
-        printf("%i",sum);
+   
+
     }
 
 
