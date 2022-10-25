@@ -19,10 +19,11 @@ int main(void)
     {
         sum = calculate_checksum_first(card_number,i);
         if(sum >= 10){
-            
-        }
 
+        }
+        else {
         sum = sum + sum;
+        }
     }
     printf("%i", sum);
 
@@ -38,7 +39,7 @@ int main(void)
         return multiplied_digit;
 }
 
-
+int cal
 
 
 
