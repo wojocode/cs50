@@ -22,7 +22,7 @@ int main(void)
 {
 
         int multiplied_digit = card_number % 100;
-        
+
         return  multiplied_digit;
 }
 
