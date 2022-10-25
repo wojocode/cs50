@@ -20,8 +20,9 @@ int main(void)
 {
     while()
     {
-        long 
-        int multiplied_digits = card_number % 100;
+        long
+        int multiplied_digit = card_number % 100;
+        multiplied_digit = multiplied_digit * 2;
     }
 }
 
