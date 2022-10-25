@@ -2,14 +2,20 @@
 #include <stdio.h>
 
 int main(void)
-// prompt for input
-    long card_number = get_long("type card number)
-
-
-
-
-
-
 {
+//prototypes
+    
+
+// prompt for input
+    long card_number;
+    do{
+     card_number = get_long("enter card number: ");
+    }
+    while(card_number <= 0);
+
+}
+
+
+
 
 
