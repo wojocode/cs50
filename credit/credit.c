@@ -19,8 +19,10 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
         sum = calculate_checksum_first(card_number,i);
+
         if(sum >= 10){
-            calculate(sum);
+           int split_digit = calculate(sum);
+           sum = sum + split_digit;
         }
         else {
         sum = sum + sum;
@@ -42,7 +44,7 @@ int main(void)
 
 int calculate(int sum)
 {
-    int all = (sum % 10  / 10);
+    int all = (sum % 10);
     return all;
 }
 
