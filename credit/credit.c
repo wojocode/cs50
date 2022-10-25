@@ -8,6 +8,7 @@ int main(void)
 
 // prompt for input
     long card_number;
+    long i =10;
     do{
      card_number = get_long("enter card number: ");
     }
@@ -18,10 +19,10 @@ int main(void)
 }
 
 //checksum function
-    int calculate_checksum(long card_number)
+    int calculate_checksum(long card_number,long i)
 {
-        
-        int multiplied_digit = (card_number % (10*I)) / I;
+
+        int multiplied_digit = (card_number % (10 * i)) / i;
         multiplied_digit = multiplied_digit * 2;
         return multiplied_digit;
 }
