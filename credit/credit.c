@@ -26,11 +26,13 @@ int main(void)
              printf("%i\n",sum);
          }
             else {
+                sum = sum * 2;
                int number = sum / 10;
                int rest = sum % 10;
                all = rest + number;
+               printf("%i", all);
             }
-            printf("%i", all);
+
     }
 
 
