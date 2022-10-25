@@ -23,6 +23,7 @@ int main(void)
         if(sum >= 10){
            int split_digit = calculate(sum);
            sum = sum + split_digit;
+           printf("%i",split_digit);
         }
         else {
         sum = sum + sum;
