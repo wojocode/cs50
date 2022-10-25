@@ -32,8 +32,9 @@ int main(void)
                all = rest + number;
 
             }
-        long every = all + sum;
-        printf("%li", every);
+            long every = all + sum;
+            printf("%li",every);
+
     }
 
     }
