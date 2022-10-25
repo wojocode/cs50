@@ -42,7 +42,7 @@ int main(void)
 
 int calculate(int sum)
 {
-    int all = (sum % (10 * i)) / i;
+    int all = (sum % 10  / 10);
     return all;
 }
 
