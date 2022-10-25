@@ -9,15 +9,16 @@ int main(void)
 // prompt for input
     long card_number;
 
-    do{
+    do
+    {
      card_number = get_long("enter card number: ");
     }
-    while(card_number < 0);
+    while (card_number < 0);
 
     for (long i = 10; i < card_number; i = i * 100)
     {
         int sum = calculate_checksum(card_number,i);
-        
+
     }
 
 }
