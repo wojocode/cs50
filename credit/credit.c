@@ -4,7 +4,7 @@
 int main(void)
 {
 //prototypes
-    
+    int calculate_checksum(long card_number);
 
 // prompt for input
     long card_number;
@@ -13,6 +13,12 @@ int main(void)
     }
     while(card_number <= 0);
 
+}
+
+//checksum function
+    int calculate_checksum(long card_number)
+{
+    
 }
 
 
