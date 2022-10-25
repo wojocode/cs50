@@ -19,6 +19,9 @@ int main(void)
     int calculate_checksum(long card_number)
 {
     for(i = )
+    {
+        card_number % 
+    }
 }
 
 
