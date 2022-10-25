@@ -20,7 +20,7 @@ int main(void)
 {
     for(i = )
     {
-        card_number % 
+        int multiplied_digits = card_number % 100;
     }
 }
 
