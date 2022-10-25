@@ -18,7 +18,7 @@ int main(void)
 //checksum function
     int calculate_checksum(long card_number)
 {
-    
+    for(i = )
 }
 
 
