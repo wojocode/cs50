@@ -20,9 +20,9 @@ int main(void)
     {
         sum = calculate_checksum_first(card_number,i);
     }
-    }
-    printf("%i", sum);
 
+
+}
 
 //checksum function
     int calculate_checksum_first(long card_number,long i)
