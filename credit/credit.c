@@ -19,7 +19,7 @@ int main(void)
     {
         sum = calculate_checksum_first(card_number,i);
         if(sum >= 10){
-            calculate_checksum_first(sum,i);
+            
         }
         sum = sum + sum;
     }
