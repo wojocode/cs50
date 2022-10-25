@@ -19,15 +19,16 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
         sum = calculate_checksum_first(card_number,i);
+         printf("%i",sum);
     }
-    printf("%i",sum);
+
 }
 
 //checksum function
     int calculate_checksum_first(long card_number,long i)
 {
 
-        int multiplied_digit = (card_number % (10 * i)) / (i * 10);
+        int multiplied_digit = card_number % (10 * i) / 10;
         multiplied_digit = multiplied_digit * 2;
         return multiplied_digit;
 }
