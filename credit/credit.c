@@ -4,7 +4,7 @@
 int main(void)
 {
 //prototypes
-    int calculate_checksum(long card_number,long i);
+    int calculate_checksum_first(long card_number,long i);
 
 // prompt for input
     long card_number;
@@ -17,14 +17,14 @@ int main(void)
 
     for (long i = 10; i < card_number; i = i * 100)
     {
-        int sum = calculate_checksum(card_number,i);
+        int sum = calculate_checksum_first(card_number,i);
     }
     
 
 }
 
 //checksum function
-    int calculate_checksum(long card_number,long i)
+    int calculate_checksum_first(long card_number,long i)
 {
 
         int multiplied_digit = (card_number % (10 * i)) / i;
