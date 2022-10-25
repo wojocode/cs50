@@ -33,7 +33,7 @@ int main(void)
         multiplied_digit = multiplied_digit * 2;
         }
         else
-        multiplied_digit = (multiplied_digit * 2);
+        multiplied_digit = (multiplied_digit * 2)/10;
         return multiplied_digit;
 }
 
