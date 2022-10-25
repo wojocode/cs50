@@ -18,7 +18,9 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
         sum = calculate_checksum_first(card_number,i);
-        if(sum)
+        if(sum >= 10){
+            calculate_checksum_first(sum,i);
+        }
         sum = sum + sum;
     }
     printf("%i", sum);
