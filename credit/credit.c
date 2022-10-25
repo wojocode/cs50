@@ -5,6 +5,7 @@ int main(void)
 {
 //prototypes
     int calculate_checksum_first(long card_number,long i);
+    int calculate(int sum);
 
 // prompt for input
     long card_number;
@@ -19,7 +20,7 @@ int main(void)
     {
         sum = calculate_checksum_first(card_number,i);
         if(sum >= 10){
-
+            calculate(sum);
         }
         else {
         sum = sum + sum;
@@ -39,8 +40,11 @@ int main(void)
         return multiplied_digit;
 }
 
-int cal
-
+int calculate(int sum)
+{
+    int all = (sum % (10 * i)) / i;
+    return all;
+}
 
 
 
