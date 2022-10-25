@@ -13,13 +13,15 @@ int main(void)
      card_number = get_long("enter card number: ");
     }
     while (card_number < 0);
+
+    
     for (long i = 10; i < card_number; i = i * 100)
     {
          sum = calculate_checksum(card_number,i);
 
     }
 
-   
+
 
     }
 
