@@ -14,7 +14,7 @@ int main(void)
     }
     while(card_number <= 0);
 
-    for (long i = 10; i < card_number; i = i *10)
+    for (long i = 10; i < card_number; i = i * 100)
     {
         int sum = calculate_checksum(card_number,i);
         printf("%i\n",sum);
