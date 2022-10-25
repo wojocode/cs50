@@ -23,17 +23,13 @@ int main(void)
          if ( sum < 5)
           {
              sum = sum * 2;
-
          }
             else {
                sum = sum * 2;
                int number = sum / 10;
                int rest = sum % 10;
                all = rest + number;
-
             }
-            long every = all + sum;
-            printf("%li",every);
 
     }
 
