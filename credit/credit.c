@@ -5,7 +5,6 @@ int main(void)
 {
 //prototypes
     int calculate_checksum_first(long card_number,long i);
-    int calculate(int sum);
 
 // prompt for input
     long card_number;
