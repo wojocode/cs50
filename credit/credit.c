@@ -18,7 +18,15 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
          sum = calculate_checksum(card_number,i);
-         printf("%i\n",sum);
+
+         if ( sum < 5)
+          {
+            sum = sum * 2;
+             printf("%i\n",sum);
+         }
+            else {
+                
+            }
     }
 
 
@@ -36,5 +44,5 @@ int main(void)
         return multiplied_digit;
 }
 
-    int 
+
 
