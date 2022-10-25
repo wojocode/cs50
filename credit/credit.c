@@ -18,6 +18,9 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
         sum = calculate_checksum_first(card_number,i);
+        if(sum >= 10){
+            
+        }
 
         sum = sum + sum;
     }
