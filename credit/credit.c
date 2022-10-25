@@ -12,7 +12,7 @@ int main(void)
     do{
      card_number = get_long("enter card number: ");
     }
-    while(card_number <= 0);
+    while(card_number < 0);
 
     for (long i = 10; i < card_number; i = i * 100)
     {
