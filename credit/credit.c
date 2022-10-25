@@ -17,7 +17,7 @@ int main(void)
     for (long i = 10; i < card_number; i = i * 100)
     {
         int sum = calculate_checksum(card_number,i);
-        printf("%i",sum);
+        
     }
 
 }
