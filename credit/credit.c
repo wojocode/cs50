@@ -22,11 +22,11 @@ int main(void)
 
          if ( sum < 5)
           {
-            sum = sum * 2;
+             sum = sum * 2;
              printf("%i\n",sum);
          }
             else {
-                sum = sum * 2;
+               sum = sum * 2;
                int number = sum / 10;
                int rest = sum % 10;
                all = rest + number;
