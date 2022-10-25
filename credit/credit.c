@@ -33,7 +33,7 @@ int main(void)
 
             }
         long every = all + sum;
-        printf("%l", every);
+        printf("%li", every);
     }
 
     }
