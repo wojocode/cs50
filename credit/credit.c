@@ -8,6 +8,7 @@ int main(void)
 // prompt for input
     long card_number;
     int sum;
+    int all;
     do
     {
      card_number = get_long("enter card number: ");
@@ -25,8 +26,11 @@ int main(void)
              printf("%i\n",sum);
          }
             else {
-                
+               int number = sum / 10;
+               int rest = sum % 10;
+               all = rest + number;
             }
+            printf("%i", all);
     }
 
 
