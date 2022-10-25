@@ -10,6 +10,7 @@ int main(void)
 // prompt for input
     long card_number;
     int sum;
+    int split_digit;
     do
     {
      card_number = get_long("enter card number: ");
@@ -22,7 +23,7 @@ int main(void)
 
         if(sum >= 10){
         for (i = 10; i < split_digit; i = i * 10){
-           int split_digit = calculate(sum);
+            split_digit = calculate(sum);
            sum = sum + split_digit;
            printf("%i",split_digit);
         }
