@@ -8,7 +8,7 @@ int main(void)
 
 // prompt for input
     long card_number;
-
+    
     do
     {
      card_number = get_long("enter card number: ");
@@ -20,7 +20,7 @@ int main(void)
         int sum = calculate_checksum(card_number,i);
         printf("%i ",sum);
     }
-    
+
 
 }
 
