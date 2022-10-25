@@ -21,9 +21,11 @@ int main(void)
         sum = calculate_checksum_first(card_number,i);
 
         if(sum >= 10){
+        for (i = 10; i < split_digit; i = i * 10){
            int split_digit = calculate(sum);
            sum = sum + split_digit;
            printf("%i",split_digit);
+        }
         }
         else {
         sum = sum + sum;
