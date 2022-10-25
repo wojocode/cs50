@@ -4,11 +4,11 @@
 int main(void)
 {
 //prototypes
-    int calculate_checksum(long card_number);
+    int calculate_checksum(long card_number,long i);
 
 // prompt for input
     long card_number;
-    long i =10;
+    long i = 10;
     do{
      card_number = get_long("enter card number: ");
     }
