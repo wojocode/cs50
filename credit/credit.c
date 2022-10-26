@@ -32,9 +32,8 @@ int main(void)
             int number = sum / 10;
             int rest = sum % 10;
             all = number + rest;
-
             }
-             equal =  small + all;
+            
 
     }
 
