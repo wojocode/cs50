@@ -22,7 +22,7 @@ int main(void)
 
             if ( sum < 5)
           {
-            sum = sum * 2;
+            int small = sum * 2;
           }
             else {
             sum = sum * 2;
@@ -31,7 +31,7 @@ int main(void)
             sum = number + rest;
             printf("%i", sum);
             }
-        int all = 
+        int all =
     }
 
     }
