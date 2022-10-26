@@ -11,17 +11,16 @@ int main(void)
     int all;
     int small;
     int equal;
-    long i;
     do
     {
      card_number = get_long("enter card number: ");
     }
     while (card_number < 0);
 
-    sum = calculate_checksum(card_number,i);
-    for (i = 10; i < card_number; i = i * 100)
-    {
 
+    for (long i = 10; i < card_number; i = i * 100)
+    {
+         sum = calculate_checksum(card_number,i);
 
             if ( sum < 5)
           {
