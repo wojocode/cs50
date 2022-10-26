@@ -9,6 +9,8 @@ int main(void)
     long card_number;
     int sum;
     int all;
+    int small;
+    int equal;
     do
     {
      card_number = get_long("enter card number: ");
@@ -22,7 +24,7 @@ int main(void)
 
             if ( sum < 5)
           {
-            int small = sum * 2;
+            small = sum * 2;
 
           }
             else {
@@ -32,9 +34,9 @@ int main(void)
             all = number + rest;
 
             }
-            int equal = equal + small;
+             equal = equal + small + all;
     }
-
+        printf("%i", equal);
     }
 
 
