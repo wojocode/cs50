@@ -35,9 +35,9 @@ int main(void)
             //int rest = sum % 10;
             //all = number + rest;
             //}
-           while(all == sum){
+           while(){
                 all = all + sum;
-               
+
            }
 
     }
