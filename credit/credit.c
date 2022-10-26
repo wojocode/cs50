@@ -20,17 +20,16 @@ int main(void)
     {
          sum = calculate_checksum(card_number,i);
 
-         if ( sum < 5)
+            if ( sum < 5)
           {
-             sum = sum * 2;
+            sum = sum * 2;
           }
             else {
-               sum = sum * 2;
-               int number = sum / 10;
-               int rest = sum % 10;
-                printf("%i", number);
-                printf("%i", rest);
-            
+            sum = sum * 2;
+            int number = sum / 10;
+            int rest = sum % 10;
+            sum = number + rest;
+            printf("%i", sum);
             }
 
     }
