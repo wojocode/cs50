@@ -46,6 +46,7 @@ int main(void)
 {
          for (long i = 10; i < card_number; i = i * 100){
         int multiplied_digit = (card_number % (10 * i)) / i;
+     
          }
         //multiplied_digit = multiplied_digit * 2;
         return check;
