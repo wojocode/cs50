@@ -36,13 +36,13 @@ int main(void)
             //all = number + rest;
             //}
            while(sum = sum){
-                 all = all + sum;
+                all = all + sum;
                 sum++;
            }
-            printf("%i", all);
+
     }
 
-
+        printf("%i", all);
 }
 
 
