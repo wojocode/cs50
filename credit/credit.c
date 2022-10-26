@@ -22,22 +22,23 @@ int main(void)
     {
          sum = calculate_checksum(card_number,i);
 
-            if ( sum < 5)
+            //if ( sum < 5)
           {
-            small = sum * 2;
+            //small = sum * 2;
 
           }
-            else {
-            sum = sum * 2;
-            int number = sum / 10;
-            int rest = sum % 10;
-            all = number + rest;
-
+            //else {
+            //sum = sum * 2;
+            //int number = sum / 10;
+            //int rest = sum % 10;
+            //all = number + rest;
+            printf("%i", sum);
             }
-             equal =  small + all;
+             //equal =  small + all;
+
     }
-        printf("%i", equal);
-    }
+
+
 
 
 
