@@ -29,7 +29,7 @@ int main(void)
             sum = sum * 2;
             int number = sum / 10;
             int rest = sum % 10;
-            int all = number + rest;
+            all = number + rest;
 
             }
             int equal = equal + small;
