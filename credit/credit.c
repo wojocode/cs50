@@ -11,16 +11,17 @@ int main(void)
     int all;
     int small;
     int equal;
+    long i;
     do
     {
      card_number = get_long("enter card number: ");
     }
     while (card_number < 0);
 
-
-    for (long i = 10; i < card_number; i = i * 100)
+    sum = calculate_checksum(card_number,i);
+    for (i = 10; i < card_number; i = i * 100)
     {
-         sum = calculate_checksum(card_number,i);
+
 
             if ( sum < 5)
           {
@@ -44,11 +45,9 @@ int main(void)
 //checksum function
     int calculate_checksum(long card_number,long i)
 {
-        for (long i = 10; i < card_number; i = i * 100){
-        int sum = (card_number % (10 * i)) / i;
-        int all = sum;
-        return all;
-        }
+
+        return (card_number % (10 * i)) / i;
+
         //multiplied_digit = multiplied_digit * 2;
 
 }
