@@ -23,16 +23,16 @@ int main(void)
             if ( sum < 5)
           {
             int small = sum * 2;
-             printf("%i", small);
+
           }
             else {
             sum = sum * 2;
             int number = sum / 10;
             int rest = sum % 10;
-            sum = number + rest;
-            printf("%i", sum);
-            }
+            int all = number + rest;
 
+            }
+            int equal = equal + small;
     }
 
     }
