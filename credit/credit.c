@@ -34,7 +34,7 @@ int main(void)
             all = number + rest;
 
             }
-             equal = equal + small + all;
+             equal =  small + all;
     }
         printf("%i", equal);
     }
