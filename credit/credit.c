@@ -7,7 +7,6 @@ int main(void)
     int calculate_checksum(long card_number,long i);
 // prompt for input
     long card_number;
-    int sum;
     int all;
     int small;
     int equal;
@@ -17,10 +16,11 @@ int main(void)
     }
     while (card_number < 0);
 
+for{
 
     for (long i = 10; i < card_number; i = i * 100)
     {
-         sum = calculate_checksum(card_number,i);
+        int sum = calculate_checksum(card_number,i);
 
             //if ( sum < 5)
           {
@@ -38,6 +38,7 @@ int main(void)
 
     }
 
+}
 
 
 
