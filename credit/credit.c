@@ -16,37 +16,36 @@ int main(void)
     }
     while (card_number < 0);
 
-for{
+
 
     for (long i = 10; i < card_number; i = i * 100)
     {
         int sum = calculate_checksum(card_number,i);
 
-            //if ( sum < 5)
+            if ( sum < 5)
           {
-            //small = sum * 2;
+            small = sum * 2;
 
           }
-            //else {
-            //sum = sum * 2;
-            //int number = sum / 10;
-            //int rest = sum % 10;
-            //all = number + rest;
-            printf("%i", sum);
+            else {
+            sum = sum * 2;
+            int number = sum / 10;
+            int rest = sum % 10;
+            all = number + rest;
+
             }
-             //equal =  small + all;
+             equal =  small + all;
 
     }
 
-}
 
+}
 
 
 
 //checksum function
     int calculate_checksum(long card_number,long i)
 {
-
         return (card_number % (10 * i)) / i;
 
         //multiplied_digit = multiplied_digit * 2;
