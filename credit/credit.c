@@ -30,7 +30,7 @@ int main(void)
                int rest = sum % 10;
                 printf("%i", number);
                 printf("%i", rest);
-                
+            
             }
 
     }
