@@ -10,6 +10,7 @@ int main(void)
     int all;
     int small;
     int equal;
+    int x;
     do
     {
      card_number = get_long("enter card number: ");
@@ -34,7 +35,7 @@ int main(void)
             //int rest = sum % 10;
             //all = number + rest;
             //}
-           while(sum = sum){
+           while(sum ){
                  all = all + sum;
                 sum++;
            }
