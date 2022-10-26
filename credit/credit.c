@@ -44,6 +44,7 @@ int main(void)
 //checksum function
     int calculate_checksum(long card_number,long i)
 {
+         for (long i = 10; i < card_number; i = i * 100){
         int multiplied_digit = (card_number % (10 * i)) / i;
 
         //multiplied_digit = multiplied_digit * 2;
