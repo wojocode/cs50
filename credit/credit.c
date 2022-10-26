@@ -31,7 +31,7 @@ int main(void)
             sum = number + rest;
             printf("%i", sum);
             }
-
+        
     }
 
     }
