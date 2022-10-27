@@ -40,7 +40,7 @@ int main(void)
             }
 
             prev = zwrot(sum);
-
+            e = prev + sum;
     }
 
     printf("%i", e);
