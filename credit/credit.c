@@ -54,9 +54,9 @@ int main(void)
 
 }
 //int zwrot(int sum)
-{
-    return
-}
+//{
+    //return
+//}
 
 
 
