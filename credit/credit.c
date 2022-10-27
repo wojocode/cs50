@@ -14,6 +14,8 @@ int main(void)
   int checksum_2;
   int tens;
   int rest;
+  const long THIRTEEN =  1000000000000;
+  const long THOURTEEN = 10000000000000;
 
 // prompt for input
 
@@ -121,7 +123,9 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
-    if(card_number)
+    if(card_number >= THIRTEEN || card_number < THOURTEEN){
+      
+    }
 
 
 
