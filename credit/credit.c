@@ -115,10 +115,15 @@ checksum_2 =scred1 + scred2 + scred3 + scred4 + scred5 + scred6 + scred7 + scred
 
 checksum = checksum_1 + checksum_2;
 
-printf("%i" ,checksum);
 
 
 
+if ( checksum % 10 == 0){
+  printf("valid");
+}
+else {
+  printf("invalid");
+}
     //for (long i = 10; i < card_number; i = i * 100)
     //{
 
