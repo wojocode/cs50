@@ -120,7 +120,7 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
 
 checksum_2 =scred1 + scred2 + scred3 + scred4 + scred5 + scred6 + scred7 + scred8 ;
 
-printf("%i", checksum_1);
+printf("%i", checksum_2);
 
     //for (long i = 10; i < card_number; i = i * 100)
     //{
@@ -159,7 +159,7 @@ printf("%i", checksum_1);
 }
  int calculate_checksum_second(long card_number,long i)
 {
-        return (card_number / (10 * i));
+        return (card_number / i);
 
 }
 //int zwrot(int sum)
