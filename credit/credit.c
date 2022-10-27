@@ -16,6 +16,7 @@ int main(void)
     int e;
     int sum;
     int x;
+    int y;
     do
     {
      card_number = get_long("enter card number: ");
@@ -42,8 +43,8 @@ int main(void)
             }
 
             prev = zwrot(sum);
-            x = el(e,prev);
-            x = e + prev;
+
+            y = x + e + prev;
     }
         printf("%i",x);
 
