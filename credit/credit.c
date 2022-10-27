@@ -9,13 +9,15 @@ int main(void)
     int el(int e, int prev);
 // prompt for input
     long card_number;
-    int all;
-    int small;
-    int equal;
-    int prev;
-    int e;
-    int sum;
-    int x;
+    int cred1;
+     int cred2;
+      int cred3;
+       int cred4;
+        int cred5;
+         int cred6;
+          int cred7;
+           int cred8;
+
     do
     {
      card_number = get_long("enter card number: ");
