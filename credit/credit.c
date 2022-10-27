@@ -123,7 +123,7 @@ if ( checksum % 10 == 0){
 
 }
 else {
-  printf("invalid");
+  printf("INVALID");
 }
     //for (long i = 10; i < card_number; i = i * 100)
     //{
