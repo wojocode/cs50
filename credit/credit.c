@@ -17,7 +17,7 @@ int main(void)
          int cred6;
           int cred7;
            int cred8;
-          int all;
+            int all;
     do
     {
      card_number = get_long("enter card number: ");
@@ -25,14 +25,14 @@ int main(void)
     while (card_number < 0);
 
     int i = 10;
-    cred1 = calculate_checksum(card_number,i);
 
+    cred1 = calculate_checksum(card_number,i);
 
     cred2 = calculate_checksum(card_number,i*100);
 
     cred3 = calculate_checksum(card_number,i*10000);
 
-    
+
     all = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred 7 + cred8 ;
     printf("%i", all);
 
