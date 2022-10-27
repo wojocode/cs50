@@ -3,11 +3,10 @@
 #include <stdio.h>
 int main(void)
 {
-//prototypes
-    int calculate_checksum(long card_number,long i);
-    int calculate_checksum_second(long card_number,long i);
-
-// variables
+  //prototypes
+  int calculate_checksum(long card_number,long i);
+  int calculate_checksum_second(long card_number,long i);
+  //variables
   long card_number;
   int checksum;
   int checksum_1;
@@ -24,7 +23,6 @@ int main(void)
   const long AMERICAN_FIFTEEN_MAX = 349999999999999;
   const long AMERICAN_FIFTEEN_MIN_OR= 370000000000000;
   const long AMERICAN_FIFTEEN_MAX_OR= 379999999999999;
-
   //mastercard
   const long MSIXTEEN_LOW = 5100000000000000;
   const long MSIXTEEN_MAX = 5599999999999999;
@@ -36,7 +34,6 @@ int main(void)
      card_number = get_long("enter card number: ");
     }
     while (card_number < 0);
-
 
     //checksum 1
     int i = 10;
@@ -129,8 +126,6 @@ checksum_2 =scred1 + scred2 + scred3 + scred4 + scred5 + scred6 + scred7 + scred
 
 checksum = checksum_1 + checksum_2;
 
-
-
 // cheksum valid condiciton
 
 if ( checksum % 10 == 0){
@@ -152,56 +147,22 @@ if ( checksum % 10 == 0){
       printf("INVALID\n");
     }
 }
-else {
+    else {
   printf("INVALID\n");
 }
-    //for (long i = 10; i < card_number; i = i * 100)
-    //{
 
-            //e = sum;
-            //x = prev + prev;
-            //sum = calculate_checksum(card_number,i);
-
-            //if ( sum < 5)
-            //{
-            //sum = sum * 2;
-            //}
-            //else {
-            //sum = sum * 2;
-            //int number = sum / 10;
-            //int rest = sum % 10;
-            //all = number + rest;
-            //sum = all;
-            //}
-
-            //prev = zwrot(sum);
-
-           // x = e + prev;
-    //}
-      //  printf("%i",x);
-
-//}
 }
-
 
 //checksum function
     int calculate_checksum(long card_number,long i)
 {
         return ((card_number % (10 * i)) / i)*2;
-
 }
  int calculate_checksum_second(long card_number,long i)
 {
         return ((card_number % i) / (i/10));
-
 }
-//int zwrot(int sum)
-//{
-  // return sum ;
-//}
-//int el(e,prev){
-  //  return e + prev;
-//}
+
 
 
 
