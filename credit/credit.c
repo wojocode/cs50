@@ -17,17 +17,25 @@ int main(void)
          int cred6;
           int cred7;
            int cred8;
-
+          int all;
     do
     {
      card_number = get_long("enter card number: ");
     }
     while (card_number < 0);
 
+    int i = 10;
+    cred1 = calculate_checksum(card_number,i);
 
+    i = 10;
+    cred2 = calculate_checksum(card_number,i*100);
+
+
+    all = cred1 + cred2;
+    printf("%i", all);
 
     //for (long i = 10; i < card_number; i = i * 100)
-    {
+    //{
 
             //e = sum;
             //x = prev + prev;
@@ -52,7 +60,7 @@ int main(void)
       //  printf("%i",x);
 
 //}
-
+}
 
 
 //checksum function
@@ -60,7 +68,6 @@ int main(void)
 {
         return (card_number % (10 * i)) / i;
 
-        //multiplied_digit = multiplied_digit * 2;
 
 }
 //int zwrot(int sum)
