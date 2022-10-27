@@ -134,11 +134,15 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
+    //AMEX
     if((card_number >= AMERICAN_FIFTEEN_MIN && card_number <= AMERICAN_FIFTEEN_MAX) || (card_number >= AMERICAN_FIFTEEN_MIN_OR && card_number <= AMERICAN_FIFTEEN_MAX_OR)){
       printf("AMEX\n");
     }
-
-
+    //MASTERCARD
+    else if(card_number >= MSIXTEEN_LOW && card_number <= MSIXTEEN_MAX){
+      printf("MASTERCARD\n");
+    }
+  
     else{
       printf("INVALID\n");
     }
