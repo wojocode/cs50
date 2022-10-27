@@ -7,13 +7,15 @@ int main(void)
     int calculate_checksum(long card_number,long i);
     int calculate_checksum_second(long card_number,long i);
 
-// prompt for input
-            long card_number;
+// variables
+  long card_number;
+  int checksum;
+  int checksum_1;
+  int checksum_2;
+  int tens;
+  int rest;
 
-            int checksum_1;
-            int checksum_2;
-            int tens;
-            int rest;
+// prompt for input
 
     do
     {
@@ -111,8 +113,9 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
 
 checksum_2 =scred1 + scred2 + scred3 + scred4 + scred5 + scred6 + scred7 + scred8 ;
 
-printf("%i", checksum_1 + checksum_2);
+checksum = checksum_1 + checksum_2;
 
+printf("%i" ,checksum);
     //for (long i = 10; i < card_number; i = i * 100)
     //{
 
