@@ -16,8 +16,9 @@ int main(void)
   int rest;
   //visa
   const long THIRTEEN =  4000000000000;
-  const long THOURTEEN = 5000000000000;
-  const long SIXTEEN = 4999999999999999;
+  const long THOURTEEN= 4999999999999;
+  const long SIXTEEN_MIN = 4000000000000000;
+  const long SIXTEEN_MAX = 4999999999999999;
   //american express
   const long AMERICAN_FIFTEEN_MIN = 340000000000000;
   const long AMERICAN_FIFTEEN_MAX = 349999999999999;
@@ -143,7 +144,10 @@ if ( checksum % 10 == 0){
       printf("MASTERCARD\n");
     }
     //VISA
-    else if()
+    else if((card_number >= THIRTEEN && card_number <= THOURTEEN) || (card_number >= SIXTEEN_MIN && card_number <= SIXTEEN_MAX)){
+      printf("VISA\n");
+    }
+
     else{
       printf("INVALID\n");
     }
