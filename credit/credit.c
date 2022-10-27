@@ -18,6 +18,8 @@ int main(void)
           int cred7;
            int cred8;
             int checksum_1;
+            int tens;
+            int rest;
     do
     {
      card_number = get_long("enter card number: ");
@@ -27,6 +29,12 @@ int main(void)
     int i = 10;
 
     cred1 = calculate_checksum(card_number,i*1);
+    if (cred1 >=10)
+    {
+            tens = cred1 / 10;
+            rest = cred1 % 10;
+            cred1 = tens + rest;
+    }
 
     cred2 = calculate_checksum(card_number,i*100);
 
