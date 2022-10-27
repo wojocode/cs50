@@ -135,7 +135,7 @@ if ( checksum % 10 == 0){
       printf("VISA\n");
     }
     //MASTERCARD
-    if(card_number >= MSIXTEEN_LOW || card_number <= MSIXTEEN_MAX){
+    else if(card_number >= MSIXTEEN_LOW || card_number <= MSIXTEEN_MAX){
       printf("MASTERCARD\n");
     }
 
