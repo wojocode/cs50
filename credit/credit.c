@@ -24,24 +24,23 @@ int main(void)
         int sum = calculate_checksum(card_number,i);
 
 
-            //if ( sum < 5)
-          //{
-            //small = sum * 2;
+            if ( sum < 5)
+          {
+            sum = sum * 2;
 
-          //}
-            //else {
-            //sum = sum * 2;
-            //int number = sum / 10;
-            //int rest = sum % 10;
-            //all = number + rest;
-            //}
+          }
+            else {
+            sum = sum * 2;
+            int number = sum / 10;
+            int rest = sum % 10;
+            all = number + rest;
+            sum = all;
+            }
 
-
-
-
+        printf("%i", sum);
     }
 
-        printf("%i", all);
+
 }
 
 
@@ -54,7 +53,7 @@ int main(void)
         //multiplied_digit = multiplied_digit * 2;
 
 }
-int zwrot(int equal,)
+//int zwrot(int sum)
 {
     return
 }
