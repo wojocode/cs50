@@ -5,7 +5,7 @@ int main(void)
 {
 //prototypes
     int calculate_checksum(long card_number,long i);
-    int calculate_checksum_second(long card_number,long i)
+    int calculate_checksum_second(long card_number,long i);
 
 // prompt for input
     long card_number;
@@ -100,7 +100,10 @@ int main(void)
 
 
   //checksum 2
-  
+
+  cred1 = calculate_checksum_second(card_number,i);
+
+  printf("%i\n",cred1);
 
     //for (long i = 10; i < card_number; i = i * 100)
     //{
@@ -139,7 +142,7 @@ int main(void)
 }
  int calculate_checksum_second(long card_number,long i)
 {
-        return (card_number % (10 * i)) / i;
+        return (card_number % (10 * i));
 
 }
 //int zwrot(int sum)
