@@ -95,7 +95,9 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
 
   //checksum 2
 
-  int scred1 = calculate_checksum_second(card_number,i);
+  i = 0;
+
+  long scred1 = calculate_checksum_second(card_number,i);
 
   int scred2 = calculate_checksum_second(card_number,i*100);
 
