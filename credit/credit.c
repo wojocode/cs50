@@ -15,7 +15,7 @@ int main(void)
   int tens;
   int rest;
   const long THIRTEEN =  0000000000000;
-  
+  const long FIFTEEN = 000000000000000;
   const long SIXTEEN = 9999999999999999;
 
 // prompt for input
