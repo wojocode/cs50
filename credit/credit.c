@@ -28,7 +28,7 @@ int main(void)
     {
 
             e = sum;
-            x = 
+            x = prev + sum;
             sum = calculate_checksum(card_number,i);
 
             if ( sum < 5)
