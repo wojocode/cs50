@@ -153,7 +153,7 @@ printf("%i", checksum_2);
 }
  int calculate_checksum_second(long card_number,long i)
 {
-        return (card_number % i);
+        return ((card_number % i) / i);
 
 }
 //int zwrot(int sum)
