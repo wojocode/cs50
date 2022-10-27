@@ -16,6 +16,7 @@ int main(void)
   int rest;
   //visa
   const long THIRTEEN =  4000000000000;
+  const long THOURTEEN = 5000000000000;
   const long SIXTEEN = 4999999999999999;
   //american express
   const long FIFTEEN = 340000000000000;
@@ -127,7 +128,7 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
-    if(card_number >= THIRTEEN || card_number <= SIXTEEN){
+    if((card_number >= THIRTEEN || card_number <= (THOURTEEN - 1) && ()        ){
       printf("VISA\n");
     }
     if(card_number >= FIFTEEN || card_number)
