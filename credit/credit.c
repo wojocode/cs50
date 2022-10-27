@@ -20,7 +20,9 @@ int main(void)
   const long SIXTEEN = 4999999999999999;
   //american express
   const long FIFTEEN = 340000000000000;
-
+  //mastercard
+  const long MSIXTEEN_LOW = 5100000000000000;
+  const long MSIXTEEN_MAX = 5599999999999999;
 
 // prompt for input
 
@@ -128,12 +130,14 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
+    //VISA
     if((card_number >= THIRTEEN || card_number <= THOURTEEN - 1) && (card_number >= 4000000000000000 || card_number <= SIXTEEN)){
       printf("VISA\n");
     }
-
-
-
+    //MASTERCARD
+    if(card_number >= MSIXTEEN_LOW || card_number <= MSIXTEEN_MAX){
+      printf("MASTERCARD\n");
+    }
 
 
 
