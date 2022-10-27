@@ -42,6 +42,14 @@ int main(void)
 
     cred8 = (calculate_checksum(card_number,i*100000000000000)) *2;
 
+
+
+  if (cred1 < 10 && cred2 < 10 && cred3 < 10 && cred4 < 10 && cred5 < 10 && cred6 < 10 && cred7 < 10 && cred8 < 10)
+  {
+
+  }
+
+
     checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
     printf("%i", checksum_1);
 
