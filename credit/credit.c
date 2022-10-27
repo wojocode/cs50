@@ -5,6 +5,7 @@ int main(void)
 {
 //prototypes
     int calculate_checksum(long card_number,long i);
+    int zwrot(int sum, int prev);
 // prompt for input
     long card_number;
     int all;
@@ -25,10 +26,9 @@ int main(void)
 
 
             if ( sum < 5)
-          {
+            {
             sum = sum * 2;
-
-          }
+            }
             else {
             sum = sum * 2;
             int number = sum / 10;
@@ -37,7 +37,7 @@ int main(void)
             sum = all;
             }
 
-        printf("%i", sum);
+
     }
 
 
@@ -53,10 +53,10 @@ int main(void)
         //multiplied_digit = multiplied_digit * 2;
 
 }
-//int zwrot(int sum)
-//{
-    //return
-//}
+int zwrot(int sum, int prev)
+{
+   return sum + prev;
+}
 
 
 
