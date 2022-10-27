@@ -28,7 +28,7 @@ int main(void)
 
     int i = 10;
 
-    cred1 = calculate_checksum(card_number,i*1);
+    cred1 = calculate_checksum(card_number,i);
     if (cred1 >=10)
     {
             tens = cred1 / 10;
@@ -36,7 +36,7 @@ int main(void)
             cred1 = tens + rest;
     }
 
-    cred2 = calculate_checksum(card_number,i*100);
+    cred2 = calculate_checksum(card_number,2*i);
     if (cred2 >=10)
     {
             tens = cred2 / 10;
@@ -44,7 +44,7 @@ int main(void)
             cred2 = tens + rest;
     }
 
-    cred3 = calculate_checksum(card_number,i*10000);
+    cred3 = calculate_checksum(card_number,3*i);
     if (cred3 >=10)
     {
             tens = cred3 / 10;
@@ -52,7 +52,7 @@ int main(void)
             cred3 = tens + rest;
     }
 
-    cred4 = calculate_checksum(card_number,i*1000000);
+    cred4 = calculate_checksum(card_number,4*1);
     if (cred4 >=10)
     {
             tens = cred4 / 10;
@@ -60,7 +60,7 @@ int main(void)
             cred4 = tens + rest;
     }
 
-    cred5 = calculate_checksum(card_number,i*100000000);
+    cred5 = calculate_checksum(card_number,5*i);
     if (cred5 >=10)
     {
             tens = cred5 / 10;
@@ -68,7 +68,7 @@ int main(void)
             cred5 = tens + rest;
     }
 
-    cred6 = calculate_checksum(card_number,i*10000000000);
+    cred6 = calculate_checksum(card_number,6*i);
     if (cred6 >=10)
     {
             tens = cred6 / 10;
@@ -76,7 +76,7 @@ int main(void)
             cred6 = tens + rest;
     }
 
-    cred7 = calculate_checksum(card_number,i*1000000000000);
+    cred7 = calculate_checksum(card_number,7*i);
     if (cred7 >=10)
     {
             tens = cred7 / 10;
@@ -84,7 +84,7 @@ int main(void)
             cred7 = tens + rest;
     }
 
-    cred8 = calculate_checksum(card_number,i*100000000000000);
+    cred8 = calculate_checksum(card_number,8*i);
     if (cred8 >=10)
     {
             tens = cred8 / 10;
