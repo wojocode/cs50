@@ -11,7 +11,7 @@ int main(void)
     int all;
     int small;
     int equal;
-
+    int prev;
     do
     {
      card_number = get_long("enter card number: ");
@@ -22,6 +22,7 @@ int main(void)
 
     for (long i = 10; i < card_number; i = i * 100)
     {
+
         int sum = calculate_checksum(card_number,i);
 
 
@@ -37,7 +38,7 @@ int main(void)
             sum = all;
             }
 
-            int prev = zwrot(sum);
+            prev = zwrot(sum);
     }
 
 
