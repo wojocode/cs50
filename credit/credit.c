@@ -24,7 +24,7 @@ int main(void)
 
     for (long i = 10; i < card_number; i = i * 100)
     {
-        prev = prev + sum;
+
          sum = calculate_checksum(card_number,i);
 
 
@@ -41,9 +41,9 @@ int main(void)
             }
 
             prev = zwrot(sum);
-
+            
     }
-    printf("%i",prev);
+
 
 }
 
