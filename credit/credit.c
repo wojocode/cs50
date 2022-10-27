@@ -25,9 +25,9 @@ int main(void)
 
     for (long i = 10; i < card_number; i = i * 100)
     {
-
-            sum = calculate_checksum(card_number,i);
             e = sum;
+            sum = calculate_checksum(card_number,i);
+
             if ( sum < 5)
             {
             sum = sum * 2;
