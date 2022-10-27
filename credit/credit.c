@@ -21,6 +21,9 @@ int main(void)
   //american express
   const long AMERICAN_FIFTEEN_MIN = 340000000000000;
   const long AMERICAN_FIFTEEN_MAX = 349999999999999;
+  const long AMERICAN_FIFTEEN_MIN_OR= 370000000000000;
+  const long AMERICAN_FIFTEEN_MAX_OR= 379999999999999;
+
   //mastercard
   const long MSIXTEEN_LOW = 5100000000000000;
   const long MSIXTEEN_MAX = 5599999999999999;
@@ -131,12 +134,14 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
-    if(card_number >= AMERICAN_FIFTEEN_MIN || card_number <= AMERICAN_FIFTEEN_MAX){
+    if((card_number >= AMERICAN_FIFTEEN_MIN && card_number <= AMERICAN_FIFTEEN_MAX) || (card_number >= AMERICAN_FIFTEEN_MIN_OR && card_number <= AMERICAN_FIFTEEN_MAX_OR)){
       printf("AMEX\n");
     }
 
 
-
+    else{
+      printf("INVALID\n");
+    }
 }
 else {
   printf("INVALID\n");
