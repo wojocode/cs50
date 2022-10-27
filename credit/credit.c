@@ -148,8 +148,8 @@ if ( checksum % 10 == 0){
     }
 }
     else {
-  printf("INVALID\n");
-}
+    printf("INVALID\n");
+    }
 
 }
 
