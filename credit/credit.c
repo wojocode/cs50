@@ -37,7 +37,7 @@ int main(void)
             sum = all;
             }
 
-            int prev = 
+            int prev = int zwrot(int sum, int prev);
     }
 
 
