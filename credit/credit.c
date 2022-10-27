@@ -6,6 +6,7 @@ int main(void)
 //prototypes
     int calculate_checksum(long card_number,long i);
     int zwrot(int sum);
+    int el(int e, int prev);
 // prompt for input
     long card_number;
     int all;
@@ -41,7 +42,7 @@ int main(void)
             }
 
             prev = zwrot(sum);
-
+            x = el(e,prev);
             x = e + prev;
     }
         printf("%i",x);
@@ -61,6 +62,9 @@ int main(void)
 int zwrot(int sum)
 {
    return sum + sum;
+}
+int el(e,prev){
+    return e + prev;
 }
 
 
