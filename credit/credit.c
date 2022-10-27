@@ -121,7 +121,7 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
-    
+    if(card_number)
 
 
 
