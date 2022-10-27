@@ -41,9 +41,9 @@ int main(void)
             }
 
             prev = zwrot(sum);
-
+            x = e + prev;
     }
-
+    printf("%i",x);
 
 }
 
