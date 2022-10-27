@@ -130,14 +130,7 @@ checksum = checksum_1 + checksum_2;
 
 if ( checksum % 10 == 0){
 
-    //VISA
-    if((card_number >= THIRTEEN || card_number <= (THOURTEEN - 1)) || (card_number >= 4000000000000000 || card_number <= SIXTEEN)){
-      printf("VISA\n");
-    }
-    //MASTERCARD
-    if(card_number >= MSIXTEEN_LOW || card_number <= MSIXTEEN_MAX){
-      printf("MASTERCARD\n");
-    }
+
 
 
 
