@@ -27,11 +27,13 @@ int main(void)
     int i = 10;
     cred1 = calculate_checksum(card_number,i);
 
-    i = 10;
+
     cred2 = calculate_checksum(card_number,i*100);
 
+    cred3 = calculate_checksum(card_number,i*10000);
 
-    all = cred1 + cred2;
+    
+    all = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred 7 + cred8 ;
     printf("%i", all);
 
     //for (long i = 10; i < card_number; i = i * 100)
