@@ -117,9 +117,10 @@ checksum = checksum_1 + checksum_2;
 
 
 
+// cheksum valid condiciton
 
 if ( checksum % 10 == 0){
-  printf("valid");
+
 }
 else {
   printf("invalid");
