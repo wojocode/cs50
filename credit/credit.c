@@ -26,21 +26,21 @@ int main(void)
 
     int i = 10;
 
-    cred1 = (calculate_checksum(card_number,i)) *2;
+    cred1 = (calculate_checksum(card_number,i*1)) *2;
 
-    cred2 = (calculate_checksum(card_number,i)) *2;
+    cred2 = (calculate_checksum(card_number,i*100)) *2;
 
-    cred3 = (calculate_checksum(card_number,i)) *2;
+    cred3 = (calculate_checksum(card_number,i*10000)) *2;
 
-    cred4 = (calculate_checksum(card_number,i)) *2;
+    cred4 = (calculate_checksum(card_number,i*1000000)) *2;
 
-    cred5 = (calculate_checksum(card_number,i)) *2;
+    cred5 = (calculate_checksum(card_number,i*100000000)) *2;
 
-    cred6 = (calculate_checksum(card_number,i)) *2;
+    cred6 = (calculate_checksum(card_number,i*10000000000)) *2;
 
-    cred7 = (calculate_checksum(card_number,i)) *2;
+    cred7 = (calculate_checksum(card_number,i*1000000000000)) *2;
 
-    cred8 = (calculate_checksum(card_number,i)) *2;
+    cred8 = (calculate_checksum(card_number,i*100000000000000)) *2;
 
     all = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
     printf("%i", all);
