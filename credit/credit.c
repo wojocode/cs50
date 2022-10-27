@@ -13,6 +13,7 @@ int main(void)
     int equal;
     int prev;
     int e;
+    int sum;
     do
     {
      card_number = get_long("enter card number: ");
@@ -23,8 +24,8 @@ int main(void)
 
     for (long i = 10; i < card_number; i = i * 100)
     {
-
-        int sum = calculate_checksum(card_number,i);
+        prev = prev + sum;
+         sum = calculate_checksum(card_number,i);
 
 
             if ( sum < 5)
@@ -40,7 +41,7 @@ int main(void)
             }
 
             prev = zwrot(sum);
-            prev = prev + sum;
+
     }
     printf("%i",prev);
 
