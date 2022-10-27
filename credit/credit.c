@@ -5,7 +5,7 @@ int main(void)
 {
 //prototypes
     int calculate_checksum(long card_number,long i);
-    int zwrot(int sum, int prev);
+    int zwrot(int sum);
 // prompt for input
     long card_number;
     int all;
@@ -37,10 +37,10 @@ int main(void)
             sum = all;
             }
 
-            int prev = zwrot(sum, prev);
+            int prev = zwrot(sum);
     }
 
-            
+
 }
 
 
@@ -53,9 +53,9 @@ int main(void)
         //multiplied_digit = multiplied_digit * 2;
 
 }
-int zwrot(int sum, int prev)
+int zwrot(int sum)
 {
-   return sum + prev;
+   return sum;
 }
 
 
