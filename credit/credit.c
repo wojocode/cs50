@@ -44,7 +44,7 @@ int main(void)
 
             prev = zwrot(sum);
 
-            y = x + e + prev;
+            
     }
         printf("%i",x);
 
