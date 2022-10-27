@@ -10,7 +10,7 @@ int main(void)
     int all;
     int small;
     int equal;
-    
+
     do
     {
      card_number = get_long("enter card number: ");
@@ -35,10 +35,9 @@ int main(void)
             //int rest = sum % 10;
             //all = number + rest;
             //}
-           for(int x = y;){
-                all = all + sum;
 
-           }
+
+
 
     }
 
@@ -54,6 +53,10 @@ int main(void)
 
         //multiplied_digit = multiplied_digit * 2;
 
+}
+int zwrot(int equal,)
+{
+    return
 }
 
 
