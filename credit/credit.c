@@ -37,10 +37,10 @@ int main(void)
             sum = all;
             }
 
-            int prev = int zwrot(int sum, int prev);
+            int prev = zwrot(sum, prev);
     }
 
-
+            
 }
 
 
