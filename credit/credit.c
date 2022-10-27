@@ -125,7 +125,7 @@ checksum = checksum_1 + checksum_2;
 if ( checksum % 10 == 0){
 
     if(card_number >= THIRTEEN || card_number < SIXTEEN){
-      printf("visa\n");
+      printf("VISA\n");
     }
 
 
