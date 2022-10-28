@@ -147,14 +147,13 @@ if ( checksum % 10 == 0){
       printf("INVALID\n");
     }
 }
-    else {
+else {
     printf("INVALID\n");
-    }
-
 }
 
+}
 //checksum functions
-    int calculate_checksum(long card_number,long i)
+int calculate_checksum(long card_number,long i)
 {
         return ((card_number % (10 * i)) / i)*2;
 }
