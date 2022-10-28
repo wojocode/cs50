@@ -112,7 +112,7 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
   i = i * 100;
 
   int scred3 = calculate_checksum_second(card_number,i);//*10000);
- printf("%i\n", i);
+
   int scred4 = calculate_checksum_second(card_number,i);//*1000000);
 
   int scred5 = calculate_checksum_second(card_number,i);//*100000000);
@@ -161,10 +161,7 @@ if ( checksum % 10 == 0){
 }
  int calculate_checksum_second(long card_number,long i)
 {
-
         return ((card_number % i) / (i/10));
-
-
 }
 
 
