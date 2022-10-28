@@ -108,19 +108,19 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
 
   int scred1 = calculate_checksum_second(card_number,i);
 
-  int scred2 = calculate_checksum_second(card_number,i*100);
+  int scred2 = calculate_checksum_second(card_number,i);//*100);
 
-  int scred3 = calculate_checksum_second(card_number,i*10000);
+  int scred3 = calculate_checksum_second(card_number,i);//*10000);
 
-  int scred4 = calculate_checksum_second(card_number,i*1000000);
+  int scred4 = calculate_checksum_second(card_number,i);//*1000000);
 
-  int scred5 = calculate_checksum_second(card_number,i*100000000);
+  int scred5 = calculate_checksum_second(card_number,i);//*100000000);
 
-  int scred6 = calculate_checksum_second(card_number,i*10000000000);
+  int scred6 = calculate_checksum_second(card_number,i);//*10000000000);
 
-  int scred7 = calculate_checksum_second(card_number,i*1000000000000);
+  int scred7 = calculate_checksum_second(card_number,i);//*1000000000000);
 
-  int scred8 = calculate_checksum_second(card_number,i*100000000000000);
+  int scred8 = calculate_checksum_second(card_number,i);//*100000000000000);
 
 checksum_2 =scred1 + scred2 + scred3 + scred4 + scred5 + scred6 + scred7 + scred8 ;
 
@@ -161,7 +161,8 @@ if ( checksum % 10 == 0){
  int calculate_checksum_second(long card_number,long i)
 {
         return ((card_number % i) / (i/10));
-        
+        i = i * 100;
+
 }
 
 
