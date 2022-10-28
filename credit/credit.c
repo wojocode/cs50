@@ -110,7 +110,6 @@ checksum_1 = cred1 + cred2 + cred3 + cred4 + cred5 + cred6 + cred7 + cred8 ;
 
   int scred2 = calculate_checksum_second(card_number,i*100);
 
-
   int scred3 = calculate_checksum_second(card_number,i*10000);
 
   int scred4 = calculate_checksum_second(card_number,i*1000000);
