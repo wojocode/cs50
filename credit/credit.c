@@ -153,7 +153,7 @@ if ( checksum % 10 == 0){
 
 }
 
-//checksum function
+//checksum functions
     int calculate_checksum(long card_number,long i)
 {
         return ((card_number % (10 * i)) / i)*2;
@@ -161,6 +161,7 @@ if ( checksum % 10 == 0){
  int calculate_checksum_second(long card_number,long i)
 {
         return ((card_number % i) / (i/10));
+        
 }
 
 
