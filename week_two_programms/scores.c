@@ -10,5 +10,5 @@ int scores[n];
 for(int i = 0; i < n; i++){
     scores[i] = get_int("score: ");
 }
-printf("Your average is: %i\n", (scores[0] + scores[1]) / n);
+printf("Your average is: %i\n", (scores[0] + scores[1] + scores[2]) / n);
 }
