@@ -3,7 +3,7 @@
 
 int main(void){
 
-int n = get_int("How many scores: ");
+int n = get_int("How many scores? ");
 
 int scores[n];
 
