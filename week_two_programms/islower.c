@@ -5,7 +5,12 @@
 
 int main(void)
 {
-    
+    string word = get_string("enter word: ");
 
+    for(int i = 0 , n = strlen(word); i < n; i++)
+    {
+        
+
+    }
 
 }
