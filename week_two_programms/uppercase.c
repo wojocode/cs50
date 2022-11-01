@@ -8,7 +8,7 @@ int main(void)
 
     string word = get_string("type sth here: ");
 
-
+    
 
 
 
