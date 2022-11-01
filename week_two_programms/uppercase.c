@@ -10,7 +10,7 @@ int main(void)
 
     for(int i = 0, n = strlen(word); i < n; i++)
     {
-        if(word[i] >= 'a' && word[i] <= 'z')
+        if(word[i] >= 97 && word[i] <= 122)
         {
             printf("%c", word[i] - 32);
         }
