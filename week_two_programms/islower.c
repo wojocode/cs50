@@ -11,9 +11,9 @@ int main(void)
     {
         if(islower(word[i]))
         {
-            
+            printf("%c", word[i] - 32);
         }
 
     }
-
+    printf("\n");
 }
