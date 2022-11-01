@@ -11,9 +11,9 @@ int main(void){
     printf("%i\n", lenght);
 }
 
-int string_lenght(string s){
+int string_lenght(string name){
     int i = 0;
-    while(s[i] !='\0')
+    while(name[i] !='\0')
     {
         i++;
     }
