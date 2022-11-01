@@ -7,8 +7,8 @@ int main(void)
 
     string s = get_string("input: ");
 
-    int l = strlen(s);
-    for(int i = 0; i < l; i++)
+
+    for(int i = 0, n = strlen(s); i < n; i++)
     {
         printf("%c", s[i]);
     }
