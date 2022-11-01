@@ -13,7 +13,9 @@ int main(void)
         {
             printf("%c", word[i] - 32);
         }
-
+        else{
+            printf("%c", word[i]);
+        }
     }
     printf("\n");
 }
