@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int string_lenght(string s);
+
 int main(void){
 
     string name = get_string("Name: ");
@@ -9,6 +11,6 @@ int main(void){
     printf("%i\n", lenght);
 }
 
-int string_lenght(string name){
-
+int string_lenght(string s){
+    
 }
