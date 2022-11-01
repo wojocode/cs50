@@ -11,7 +11,8 @@ int main(void)
     {
         if(islower(word[i]))
         {
-            printf("%c", word[i] - 32);
+           int upper = toupper(word[i]);
+           printf("%c", upper);
         }
         else{
             printf("%c", word[i]);
