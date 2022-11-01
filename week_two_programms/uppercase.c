@@ -8,7 +8,11 @@ int main(void)
 
     string word = get_string("type sth here: ");
 
-    
+    for(int i = 0, n = strlen(word); i < n; i++)
+    {
+        
+
+    }
 
 
 
