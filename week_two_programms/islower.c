@@ -9,7 +9,10 @@ int main(void)
 
     for(int i = 0 , n = strlen(word); i < n; i++)
     {
-        
+        if(islower(word[i]))
+        {
+            
+        }
 
     }
 
