@@ -23,9 +23,9 @@ int main(void)
 
 //Coleman-Liau index variables PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     float L = (letters/words) * 100;
-    printf("L: %f", L);
+    printf("L: %.3f", L);
     float S = (sentenses/words) * 100;
-    printf("S: %f", S);
+    printf("S: %.3f", S);
 // Coleman-Liau algorithm
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
     printf("index: %f\n", index);
