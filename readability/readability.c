@@ -48,15 +48,16 @@ int count_words(string text){
             {
             word++;
             }
-            else if(text[i] == 32 && text[i-1])
-            {
-                word = word - 1;
-            }
         }
         return word + 1;
+    }
+    else if(text[0] == 32)
+    {
+        word--;
     }
     else
     {
     return 0;
     }
-}
+
+
