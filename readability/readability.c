@@ -50,11 +50,11 @@ int count_words(string text){
     }
         if (text[n+1] == 32)
         {
-        return word;
+        return word - 1;
         }
         else
         {
-            return word + 1;
+        return word + 1;
         }
 
 }
