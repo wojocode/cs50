@@ -4,6 +4,7 @@
 #include <string.h>
 
 int count_letters(string text);
+int count_words(string text);
 
 int main(void)
 {
@@ -17,7 +18,7 @@ int main(void)
 
 
 }
-//letter counter funkction
+//letter counter
 int count_letters(string text){
 
     int letter = 0;
@@ -30,5 +31,13 @@ int count_letters(string text){
         }
     }
     return letter;
+
+}
+// word counter
+int count_words(string text){
+    int words = 0;
+
+    for()
+
 
 }
