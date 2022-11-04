@@ -6,7 +6,7 @@ int main(void)
 {
 
     string s = get_string("input: ");
-
+    string g = 'elo;
 
     for(int i = 0, n = strlen(s); i < n; i++)
     {
