@@ -19,10 +19,14 @@ int main(void)
 //letter counter funkction
 int count_letters(string text){
 
-    if(isalpha(text[i])){
+    int i = 0;
+    int letters = 0;
 
+    
+    if (isalpha(text[i])){
+        letters++;
     }
 
-
+    return letters;
 
 }
