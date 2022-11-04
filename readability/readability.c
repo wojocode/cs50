@@ -20,16 +20,16 @@ int main(void)
 //letter counter funkction
 int count_letters(string text){
 
-    int letters = strlen(text);
-    i
 
-    for (int i = 0, n = strlen(s); i <= letters; i++)
+    int letter = 0;
+
+    for (int i = 0, n = strlen(text); i <= n; i++)
     {
 
         if (isalpha(text[i])){
-        letter_count++;
+            letter++;
         }
     }
-    return letter_count;
+    return letter;
 
 }
