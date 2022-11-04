@@ -50,7 +50,7 @@ int count_words(string text){
             }
 
         }
-    if( text[n-1] == )
+    if( text[n] == '\0')
     {
         return word;
     }
