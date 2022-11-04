@@ -7,6 +7,7 @@ int count_letters(string text);
 int main(void)
 {
     string text = get_string("type in text: ");
+
     printf("%s\n" ,text);
 
      int letters = count_letters(text);
@@ -18,6 +19,5 @@ int main(void)
 
 int count_letters(string text){
 
-    char znak isalpha(text);
-    return znak;
+    
 }
