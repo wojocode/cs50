@@ -28,7 +28,6 @@ int count_letters(string text){
 
     for (int i = 0, n = strlen(text); i <= n; i++)
     {
-
         if (isalpha(text[i]))
         {
             letter++;
@@ -72,6 +71,6 @@ int count_sentences(string text){
          {
             sentens++;
          }
-         return sentens;
     }
+     return sentens;
 }
