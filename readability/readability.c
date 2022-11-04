@@ -10,8 +10,6 @@ int main(void)
 {
     string text = get_string("type in text: ");
 
-    printf("%s\n" ,text);
-
      int letters = count_letters(text);
      printf("letters: %i\n", letters);
 
@@ -52,8 +50,14 @@ int count_words(string text){
             }
 
         }
-    if
+    if( text[n] == 32)
+    {
+        return word - 1;
+    }
+    else
+    {
         return word + 1;
+    }
     }
 
     else
