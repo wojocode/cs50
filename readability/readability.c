@@ -49,6 +49,7 @@ int count_words(string text){
             {
             word++;
             }
+            
         }
 
         return word + 1;
