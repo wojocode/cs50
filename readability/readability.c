@@ -22,13 +22,17 @@ int main(void)
     printf("sentenses: %f\n", sentenses);
 
 //Coleman-Liau index variables PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     float L = (letters/words) * 100;
     printf("L: %.3f", L);
     float S = (sentenses/words) * 100;
     printf("S: %.3f", S);
+
 // Coleman-Liau algorithm
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
-    printf("index: %f\n", index);
+    int grade = round(index);
+    printf("Grade %i\n", grade);
+
 }
 //letters counter
 int count_letters(string text){
