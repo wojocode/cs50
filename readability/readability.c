@@ -35,9 +35,14 @@ int count_letters(string text){
 }
 // word counter
 int count_words(string text){
+
     int words = 0;
 
-    for()
+    for (int i = 0; , n = strlen(text); i <n n; i ++)
+    {
+        
+
+    }
 
 
 }
