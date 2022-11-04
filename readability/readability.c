@@ -39,22 +39,20 @@ int count_letters(string text){
 int count_words(string text){
 
     int word = 0;
-    int n = strlen(text);
 
-    for (int i = 0; i <= n; i ++)
-    {
-        if (text[i] == 32)
+
+
+
+
+        for (int i = 0 , n = strlen(text); i <= n; i ++)
         {
+            if (text[i] == 32)
+            {
             word++;
+            }
         }
-    }
-        if (text[n+1] == 32)
-        {
-        return word - 1;
-        }
-        else
-        {
-        return word + 1;
-        }
+
+            return word + 1;
+
 
 }
