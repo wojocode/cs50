@@ -40,7 +40,8 @@ int count_words(string text){
 
     int word = 0;
 
-
+ if(text[0] != '\0' %% text[0])
+ {
 
 
 
@@ -54,5 +55,9 @@ int count_words(string text){
 
             return word + 1;
 
-
+ }
+ else
+ {
+    return 0;
+ }
 }
