@@ -16,11 +16,11 @@ int main(void)
 
 
 }
-
+//letter counter funkction
 int count_letters(string text){
 
     if(isalpha(text[i])){
-        
+
     }
 
 
