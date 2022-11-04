@@ -50,9 +50,9 @@ int count_words(string text){
             }
 
         }
-    if( text[n] == 00)
+    if( text[n-1] == )
     {
-        return word - 1;
+        return word;
     }
     else
     {
