@@ -26,7 +26,7 @@ int main(void)
     float S =(sentenses/words)*100;
 // Coleman-Liau algorithm
     double index = (0.0588 * L - 0.296 * S) - 15.8;
-    printf("index: %d\n", index);
+    printf("index: %f\n", index);
 }
 //letters counter
 int count_letters(string text){
