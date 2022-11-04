@@ -39,7 +39,7 @@ int count_words(string text){
     int word = 0;
     int n = strlen(text);
 // word assume
-    if(text[0] != '\0' && text[0] != 32)
+    if(text[0] != '\0' && text[0] != 32 && text[n+1] != 32)
 
     {
         for (int i = 0; i <= n; i ++)
@@ -50,16 +50,10 @@ int count_words(string text){
             }
 
         }
-    if( text[n+1] == 32)
-    {
-        return word;
-    }
-    else
-    {
-        return word + 1;
-    }
-    }
 
+        return word + 1;
+
+    }
     else
     {
     return 0;
