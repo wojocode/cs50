@@ -5,6 +5,7 @@
 
 int count_letters(string text);
 int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
@@ -16,8 +17,11 @@ int main(void)
     int words = count_words(text);
     printf("words: %i\n", words);
 
+    int sentenses = count_sentences(text);
+    printf("sentenses: %i\n", sentenses);
+
 }
-//letter counter
+//letters counter
 int count_letters(string text){
 
     int letter = 0;
@@ -33,16 +37,16 @@ int count_letters(string text){
     return letter;
 
 }
-// word counter
+// words counter
 int count_words(string text){
 
     int word = 0;
-    int n = strlen(text);
+
 // word assume
     if(text[0] != '\0' && text[0] != 32)
 
     {
-        for (int i = 0; i <= n; i ++)
+        for (int i = 0 , n = strlen(text); i <= n; i++)
         {
             if (text[i] == 32)
             {
@@ -57,3 +61,17 @@ int count_words(string text){
     }
 }
 
+// sentences counter
+int count_sentences(string text){
+
+    int sentens = 0;
+
+    for (int i = 0 , n = strlen(text); i <= n; i++)
+    {
+         if (text[i] == 46 || text[i] == 63 || text[i] == 33)
+         {
+            sentens++;
+         }
+         return sentens;
+    }
+}
