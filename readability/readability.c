@@ -20,6 +20,12 @@ int main(void)
     int sentenses = count_sentences(text);
     printf("sentenses: %i\n", sentenses);
 
+//Coleman-Liau index variables
+    float L = (letters/words)*100;
+    float S =(sentenses/words)*100;
+// Coleman-Liau algorithm
+    float index = (0.0588 * L - 0.296 * S) - 15.8;
+    
 }
 //letters counter
 int count_letters(string text){
