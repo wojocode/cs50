@@ -13,20 +13,18 @@ int main(void)
     string text = get_string("type in text: ");
 
      float letters = count_letters(text);
-     printf("letters: %f\n", letters);
 
     float words = count_words(text);
-    printf("words: %f\n", words);
 
     float sentenses = count_sentences(text);
-    printf("sentenses: %f\n", sentenses);
 
-//Coleman-Liau index variables PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//Coleman-Liau index variables
 
     float L = (letters/words) * 100;
-    printf("L: %.3f", L);
+
     float S = (sentenses/words) * 100;
-    printf("S: %.3f", S);
+
 
 // Coleman-Liau algorithm
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
