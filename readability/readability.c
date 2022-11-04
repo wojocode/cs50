@@ -21,10 +21,10 @@ int main(void)
     int sentenses = count_sentences(text);
     printf("sentenses: %i\n", sentenses);
 
-//Coleman-Liau index variables
-    double L = (letters/words) *100;
+//Coleman-Liau index variables PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    float L = (letters/words) * 100;
     printf("L: %f", L);
-    double S = (sentenses/words) *100;
+    float S = (sentenses/words) * 100;
     printf("S: %f", S);
 // Coleman-Liau algorithm
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
