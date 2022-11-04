@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <math.h>
 
 int count_letters(string text);
 int count_words(string text);
@@ -25,7 +26,7 @@ int main(void)
     float S =(sentenses/words)*100;
 // Coleman-Liau algorithm
     float index = (0.0588 * L - 0.296 * S) - 15.8;
-    
+
 }
 //letters counter
 int count_letters(string text){
