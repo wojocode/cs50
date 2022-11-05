@@ -23,11 +23,22 @@ int main(void)
     float S = (sentenses/words) * 100;
 
 
-// Coleman-Liau algorithm.  DODAĆ WARUNEK JEŚLI GRADE < 1 TO PISZ GRADE 1 I JEŚLI WIĘKSZY OD 16 TO PISZ MAX 16 
+// Coleman-Liau algorithm.
 
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
     int grade = round(index);
-    printf("Grade %i\n", grade);
+    if (grade < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (grade > 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade %i\n", grade);
+    }
 
 }
 //letters counter
