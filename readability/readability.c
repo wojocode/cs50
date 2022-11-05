@@ -12,13 +12,17 @@ int main(void)
 {
 
 
-    do{
+
      string text = get_string("type in text: ");
      int n = strlen(text);
      printf("n: %i",n);
-    }
-    while (text[n] == '!' || text[n] == '.' || text[n] == '?' );
 
+    if (!(text[n] == '!' || text[n] == '.' || text[n] == '?' )){
+        return 1;
+    }
+    else{
+        return 0;
+    }
     float letters = count_letters(text);
     float words = count_words(text);
     float sentenses = count_sentences(text);
