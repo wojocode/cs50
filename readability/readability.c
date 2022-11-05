@@ -17,7 +17,7 @@ int main(void)
      n = strlen(text);
      printf("n: %i",n);
     }
-    while (!(text[n] == '!' || text[n] == '.' || text[n] == '?' ));
+    while (text[n] == '!' || text[n] == '.' || text[n] == '?' );
 
     float letters = count_letters(text);
     float words = count_words(text);
