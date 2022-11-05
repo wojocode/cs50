@@ -12,9 +12,9 @@ int main(void)
 {
     do{
     string text = get_string("type in text: ");
-    int n =strlen(text);
+    int n = strlen(text);
     }
-    while(text[n] == 46 || text[n] == 63 || text[n] == 33)
+    while (text[n] == 46 || text[n] == 63 || text[n] == 33)
 
     float letters = count_letters(text);
     float words = count_words(text);
