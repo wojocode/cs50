@@ -10,9 +10,11 @@ int count_sentences(string text);
 
 int main(void)
 {
+    string text;
+    int n;
     do{
-    string text = get_string("type in text: ");
-    int n = strlen(text);
+    text = get_string("type in text: ");
+     n = strlen(text);
     }
     while (text[n] == 46 || text[n] == 63 || text[n] == 33);
 
