@@ -8,27 +8,25 @@ int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
 
-int main(void)
-{
+int main(void){
 
-     string text = get_string("type in text: ");
-     int n = strlen(text);
+    string text;
+    int n;
 
-    if (!(text[n-1] == '!' || text[n-1] == '?' || text[n-1] == '.')){
-       int b = text[n-1];
-       return 1;
+    do{
+        text = get_string("type in text: ");
+        n = strlen(text);
     }
+    while (!(text[n-1] == '!' || text[n-1] == '?' || text[n-1] == '.'));
 
     float letters = count_letters(text);
     float words = count_words(text);
     float sentenses = count_sentences(text);
 
-
 //Coleman-Liau index variables
 
     float L = (letters/words) * 100;
     float S = (sentenses/words) * 100;
-
 
 // Coleman-Liau algorithm.
 
