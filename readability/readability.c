@@ -17,8 +17,8 @@ int main(void)
      int n = strlen(text);
      printf("n: %i",n);
 
-    if (text[n] != '!'){
-       int b = text[n];
+    if (text[n-1] != '!'){
+       int b = text[n-1];
        printf("b: %i",b);
        return 1;
     }
