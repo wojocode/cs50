@@ -10,12 +10,11 @@ int count_sentences(string text);
 
 int main(void)
 {
-    int n;
-    string text;
+
 
     do{
-     text = get_string("type in text: ");
-     n = strlen(text);
+     string text = get_string("type in text: ");
+     int n = strlen(text);
      printf("n: %i",n);
     }
     while (text[n] == '!' || text[n] == '.' || text[n] == '?' );
