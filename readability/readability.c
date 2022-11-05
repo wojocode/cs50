@@ -12,21 +12,19 @@ int main(void)
 {
     string text = get_string("type in text: ");
 
-     float letters = count_letters(text);
-
+    float letters = count_letters(text);
     float words = count_words(text);
-
     float sentenses = count_sentences(text);
 
 
 //Coleman-Liau index variables
 
     float L = (letters/words) * 100;
-
     float S = (sentenses/words) * 100;
 
 
-// Coleman-Liau algorithm
+// Coleman-Liau algorithm.  DODAĆ WARUNEK JEŚLI GRADE < 1 TO PISZ GRADE 1 I JEŚLI WIĘKSZY OD 16 TO PISZ MAX 16 
+
     double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
     int grade = round(index);
     printf("Grade %i\n", grade);
