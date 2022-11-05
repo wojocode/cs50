@@ -20,10 +20,10 @@ int main(void)
     if (text[n] == '!' || text[n] == '.' || text[n] == '?' ){
        int b = text[n];
        printf("b: %i",b);
-       return 0;
+       return 1;
     }
 
-        return 1;
+        return 0;
 
     float letters = count_letters(text);
     float words = count_words(text);
