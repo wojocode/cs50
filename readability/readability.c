@@ -11,19 +11,14 @@ int count_sentences(string text);
 int main(void)
 {
 
-
-
      string text = get_string("type in text: ");
      int n = strlen(text);
-     printf("n: %i",n);
 
-    if (text[n-1] != '!'){
+
+    if (!(text[n-1] == '!' || text[n-1] == '?' || text[n-1] == '.')){
        int b = text[n-1];
-       printf("b: %i",b);
        return 1;
     }
-
-
 
     float letters = count_letters(text);
     float words = count_words(text);
@@ -48,7 +43,7 @@ int main(void)
    else if (grade >= 16){
         printf("Grade 16+\n");
    }
-   else{
+   else {
     printf("Grade %i\n", grade);
    }
 
@@ -60,8 +55,7 @@ int count_letters(string text){
 
     for (int i = 0, n = strlen(text); i <= n; i++)
     {
-        if (isalpha(text[i]))
-        {
+        if (isalpha(text[i])){
             letter++;
         }
     }
@@ -74,20 +68,16 @@ int count_words(string text){
     int word = 0;
 
 // word assume
-    if(text[0] != '\0' && text[0] != 32)
+    if (text[0] != '\0' && text[0] != 32){
 
-    {
-        for (int i = 0 , n = strlen(text); i <= n; i++)
-        {
-            if (text[i] == 32)
-            {
+        for (int i = 0 , n = strlen(text); i <= n; i++){
+            if (text[i] == 32){
             word++;
             }
         }
         return word + 1;
     }
-    else
-    {
+    else {
     return 0;
     }
 }
@@ -97,10 +87,9 @@ int count_sentences(string text){
 
     int sentens = 0;
 
-    for (int i = 0 , n = strlen(text); i <= n; i++)
-    {
-         if (text[i] == 46 || text[i] == 63 || text[i] == 33)
-         {
+    for (int i = 0 , n = strlen(text); i <= n; i++){
+
+         if (text[i] == 46 || text[i] == 63 || text[i] == 33){
             sentens++;
          }
     }
