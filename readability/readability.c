@@ -10,14 +10,15 @@ int count_sentences(string text);
 
 int main(void)
 {
-    string text;
     int n;
+    string text[n];
+
     do{
-    text = get_string("type in text: ");
+    text[n] = get_string("type in text: ");
      n = strlen(text);
      printf("n: %i",n);
     }
-    while (text[n] = '!' || text[n] = '.' || text[n] = '?' );
+    while (text[n] == '!' || text[n] == '.' || text[n] == '?' );
 
     float letters = count_letters(text);
     float words = count_words(text);
