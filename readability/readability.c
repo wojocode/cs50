@@ -17,13 +17,13 @@ int main(void)
      int n = strlen(text);
      printf("n: %i",n);
 
-    if (text[n] == '!' || text[n] == '.' || text[n] == '?' ){
+    if (!(text[n] == '!' || text[n] == '.' || text[n] == '?')){
        int b = text[n];
        printf("b: %i",b);
        return 1;
     }
 
-        return 0;
+
 
     float letters = count_letters(text);
     float words = count_words(text);
