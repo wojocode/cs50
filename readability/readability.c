@@ -14,7 +14,6 @@ int main(void)
      string text = get_string("type in text: ");
      int n = strlen(text);
 
-
     if (!(text[n-1] == '!' || text[n-1] == '?' || text[n-1] == '.')){
        int b = text[n-1];
        return 1;
