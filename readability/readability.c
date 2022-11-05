@@ -21,24 +21,15 @@ int main(void)
 
     float L = (letters/words) * 100;
     float S = (sentenses/words) * 100;
-
+    printf("L: %f\n" , L);
+     printf("S: %f\n" , S);
 
 // Coleman-Liau algorithm.
 
-    double index = ((0.0588 * L) - (0.296 * S)) - 15.8;
+    double index = 0.0588 * L - 0.296 * S - 15.8;
+
     int grade = round(index);
-    if (grade < 1)
-    {
-        printf("Before Grade 1\n");
-    }
-    else if (grade > 16)
-    {
-        printf("Grade 16+\n");
-    }
-    else
-    {
-        printf("Grade %i\n", grade);
-    }
+
 
 }
 //letters counter
