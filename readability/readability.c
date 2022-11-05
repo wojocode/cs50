@@ -12,12 +12,12 @@ int main(void)
 {
     string text;
     int n;
-    //do{
+    do{
     text = get_string("type in text: ");
      n = strlen(text);
      printf("n: %i",n);
-    //}
-    //while (!(text[n+1] == '!' || text[n+1] == 63 || text[n+1] == 33));
+    }
+    while (!(text[n] == '!' || text[n] == '.' || text[n] == '?' ));
 
     float letters = count_letters(text);
     float words = count_words(text);
