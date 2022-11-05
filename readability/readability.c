@@ -20,9 +20,9 @@ int main(void)
     if (!(text[n] == '!' || text[n] == '.' || text[n] == '?' )){
         return 1;
     }
-    else{
+
         return 0;
-    }
+    
     float letters = count_letters(text);
     float words = count_words(text);
     float sentenses = count_sentences(text);
