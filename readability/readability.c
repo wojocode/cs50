@@ -50,8 +50,8 @@ int count_letters(string text){
 
     int letter = 0;
 
-    for (int i = 0, n = strlen(text); i <= n; i++)
-    {
+    for (int i = 0, n = strlen(text); i <= n; i++){
+
         if (isalpha(text[i])){
             letter++;
         }
