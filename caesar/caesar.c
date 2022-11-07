@@ -9,19 +9,19 @@ bool only_digits(string argv);
 int main(int argc, string argv[]){
 
 
-    while (argc == 2 || only_digits(argv[1]))
+    if (argc == 2 || only_digits(argv[1]))
     {
+        
+    }
+    else{
+    printf("usage: ./caesar key\n");
+    return 1;
+    }
 
     // convert string command line argv to int
     int key = atoi(argv[1]);
     // ask for string
     string plaintext = get_string("plaintext: ");
-
-
-
-    }
-    printf("usage: ./caesar key\n");
-    return 1;
 }
 
 
