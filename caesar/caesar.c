@@ -16,12 +16,12 @@ int main(int argc, string argv[]){
             printf("Usage: ./caesar key\n");
             return 1;
         }
-    }
+
     else{
         printf("Usage: ./caesar key\n");
         return 1;
     }
-
+    }
     //convert string command line argv to int
     int key = atoi(argv[1]);
     //ask for string
