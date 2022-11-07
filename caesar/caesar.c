@@ -9,8 +9,8 @@ bool only_digits(string argv);
 int main(int argc, string argv[])
 {
 
-    while (argc == 2)
-    {
+    while (argc == 2){
+
         if (only_digits(argv[1]))
         {
             return 0;
@@ -31,7 +31,7 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
     // ask for string
     string plaintext = get_string("plaintext: ");
-    
+
 }
 
 // checking wheather argv contains digits
