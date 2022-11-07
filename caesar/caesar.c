@@ -8,7 +8,7 @@ bool only_digits(string argv);
 
 int main(int argc, string argv[]){
 
-    if(argc == 2){
+    while(argc == 2){
         if (only_digits(argv[1])){
             return 0;
         }
@@ -17,10 +17,9 @@ int main(int argc, string argv[]){
             return 1;
         }
         }
-    else{
         printf("Usage: ./caesar key\n");
         return 1;
-    }
+
 
     //convert string command line argv to int
     int key = atoi(argv[1]);
