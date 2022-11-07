@@ -9,14 +9,14 @@ bool only_digits(string argv);
 int main(int argc, string argv[]){
 
 
-    while (only_digits(argv[1]) || argc == 2)
+    while (argc == 2 || only_digits(argv[1]))
     {
 
     // convert string command line argv to int
     int key = atoi(argv[1]);
     // ask for string
     string plaintext = get_string("plaintext: ");
-   
+
 
 
     }
