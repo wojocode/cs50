@@ -25,7 +25,6 @@ int main(int argc, string argv[]){
     //ask for string
     string plaintext = get_string("plaintext: \n");
 
-
 }
 
 
