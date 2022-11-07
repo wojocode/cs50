@@ -7,7 +7,9 @@
 bool only_digits(string argv);
 int main(int argc, string argv[]){
 
-    while(argc == 2){
+
+    while (only_digits(argv[1]) || argc == 2)
+    {
     if (only_digits(argv[1])){
         return 0;
     }
