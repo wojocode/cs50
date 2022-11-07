@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-bool only_digits(string argv);
+bool only_digits(string argv[]);
 
 int main(int argc, string argv[]){
     while(argc == 2){
