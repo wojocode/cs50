@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-stdlib.h
+#include <stdlib.h>
 
 bool only_digits(string argv);
 int main(int argc, string argv[]){
