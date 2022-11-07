@@ -12,8 +12,8 @@ int main(int argc, string argv[]){
          //convert string command line argv to int
         int key = atoi(argv[1]);
         //ask for string
-        string plaintext = get_string("plaintext: \n");
-
+        string plaintext = get_string("plaintext: ");
+        printf("wojtas");
     }
     else {
         printf("Usage: ./caesar key\n");
