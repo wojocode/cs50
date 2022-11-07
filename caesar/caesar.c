@@ -5,21 +5,12 @@
 #include <stdlib.h>
 
 bool only_digits(string argv);
+
 int main(int argc, string argv[]){
 
 
     while (only_digits(argv[1]) || argc == 2)
     {
-    if (only_digits(argv[1])){
-        return 0;
-    }
-    else {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
-    }
-    printf("Usage: ./caesar key\n");
-    return 1;
 
     // convert string command line argv to int
     int key = atoi(argv[1]);
@@ -28,6 +19,9 @@ int main(int argc, string argv[]){
     printf("%i\n", key);
 
 
+    }
+    printf("usage: ./caesar key\n");
+    return 1;
 }
 
 
