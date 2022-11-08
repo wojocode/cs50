@@ -25,7 +25,8 @@ int main(int argc, string argv[]){
 
 // loop for getting char by char from plaintext
     for (int i = 0, n = strlen(plaintext); i < n; i++){
-        
+        char c = plaintext[i];
+        //tutaj wywołujemy funcje rotate 
     }
 
 
