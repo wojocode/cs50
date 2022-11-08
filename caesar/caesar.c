@@ -9,7 +9,7 @@ char rotate(char c, int key);
 
 int main(int argc, string argv[]){
 
-    //only digits one cl arg
+//only digits one cl arg
     while (argc == 1 || argc > 2){
         printf("Usage: ./caesar key\n");
         return 1;
@@ -18,12 +18,15 @@ int main(int argc, string argv[]){
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    //convert string command line argv to int
+//convert string command line argv to int
     int key = atoi(argv[1]);
-    //prompt the user for plaintext
+//prompt the user for plaintext
     string plaintext = get_string("plaintext: ");
 
-
+// loop for getting char by char from plaintext
+    for (int i = 0, n < strlen(plaintext)){
+        
+    }
 
 
 }
@@ -39,6 +42,7 @@ bool only_digits(string argv){
         }
     }
     return 1;
+
 }
 char rotate(char c, int key){
 
