@@ -13,9 +13,9 @@ int main(int argc, string argv[]){
     }
     while (!(only_digits(argv[1]))){
         printf("Usage: ./caesar key\n");
-        return 0;
+        return 1;
     }
-    
+
 
 
 
