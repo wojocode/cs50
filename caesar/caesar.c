@@ -27,12 +27,7 @@ int main(int argc, string argv[]){
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char c = plaintext[i];
         //tutaj wywołujemy funcje rotate
-        if (isalpha(c) && isupper(c)){
-
-        }
-
-
-
+        
 
 
     }
@@ -55,12 +50,15 @@ bool only_digits(string argv){
 
 }
 char rotate(char c, int key){
+    char uppercipher;
+    char lowercipher;
     while ((isalpha(c) && isupper(c))){
-         return + 65 ==  (c - 65 + key) % 26;
+          uppercipher =  (c - 65 + key) % 26;
     }
-
+    return uppercipher + 26;
 
     while ((isalpha(c) && islower(c))){
-        return + 97 == (c - 97 + key) % 26;
+        lowercipher = (c - 97 + key) % 26;
     }
+    return lowercipher + 96;
 }
