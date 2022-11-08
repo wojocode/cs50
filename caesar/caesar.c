@@ -27,8 +27,16 @@ int main(int argc, string argv[]){
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char c = plaintext[i];
         //tutaj wywołujemy funcje rotate
+        if (isalpha(c) && isupper(c)){
+            
+        }
+
+
+
+
 
     }
+
 
 
 }
@@ -47,10 +55,10 @@ bool only_digits(string argv){
 
 }
 char rotate(char c, int key){
-    if (isalpha(c) && isupper(c)){
+
         return (c - 65 + key) % 26;
-    }
-    else if (isalpha(c) && islower(c)){
+
+
         return (c - 97 + key) % 26;
-    }
+
 }
