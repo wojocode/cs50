@@ -24,8 +24,8 @@ int main(int argc, string argv[]){
     string plaintext = get_string("plaintext: ");
 
 // loop for getting char by char from plaintext
-    for (int i = 0, n < strlen(plaintext)){
-        
+    for (int i = 0, n < strlen(plaintext);){
+
     }
 
 
