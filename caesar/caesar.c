@@ -7,7 +7,8 @@
 bool only_digits(string argv);
 
 int main(int argc, string argv[]){
-    
+
+    //only digits one cl arg
     while (argc == 1 || argc > 2){
         printf("Usage: ./caesar key\n");
         return 1;
@@ -16,13 +17,10 @@ int main(int argc, string argv[]){
         printf("Usage: ./caesar key\n");
         return 1;
     }
-
-
-
-
-    //if (only_digits(argv[1])){
-         //convert string command line argv to int
-
+    //convert string command line argv to int
+    int key = atoi(argv[1]);
+    //prompt the user for plaintext
+    string plaintext = get_string("plaintext: ");
 
 
 
