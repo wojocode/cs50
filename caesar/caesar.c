@@ -27,7 +27,7 @@ int main(int argc, string argv[]){
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char c = plaintext[i];
         //tutaj wywołujemy funcje rotate
-        
+
     }
 
 
@@ -47,6 +47,6 @@ bool only_digits(string argv){
 
 }
 char rotate(char c, int key){
-
+    if ( )
 
 }
