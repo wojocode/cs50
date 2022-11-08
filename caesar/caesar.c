@@ -11,8 +11,7 @@ int main(int argc, string argv[]){
         printf("Usage: ./caesar key\n");
         return 1;
     }
-
-
+    while (only_digits(argv[1]))
 
 
 
