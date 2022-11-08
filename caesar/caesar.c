@@ -26,7 +26,7 @@ int main(int argc, string argv[]){
 // loop for getting char by char from plaintext
 
 
-    char cipher = rotate(plaintext[0], key);
+    char cipher = rotate(plaintext[1], key);
     printf("%c\n" ,cipher);
 
 
