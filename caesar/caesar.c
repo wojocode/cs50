@@ -56,8 +56,10 @@ bool only_digits(string argv){
 }
 char rotate(char c, int key){
     while ((isalpha(c) && isupper(c))){
-        return (c - 65 + key) % 26;
+         = (c - 65 + key) % 26;
     }
+
+
     while ((isalpha(c) && islower(c))){
         return (c - 97 + key) % 26;
     }
