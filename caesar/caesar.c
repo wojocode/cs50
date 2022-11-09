@@ -29,7 +29,7 @@ int main(int argc, string argv[]){
     char cipher = rotate(plaintext[0], key);
     printf("%i\n" ,cipher);
 
-
+    printf("%i\n/", plaintext[0]);
 
     //for (int i = 0, n = strlen(plaintext); i < n; i++){
         //char c = plaintext[i];
