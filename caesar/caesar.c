@@ -55,7 +55,6 @@ char rotate(char c, int key){
     char lowercipher = 0;
     while (isalpha(c) && isupper(c)){
 
-
     uppercipher = ((c - 65) + key) % 26;
     uppercipher = uppercipher + 65;
     }
