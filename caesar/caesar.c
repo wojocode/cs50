@@ -21,10 +21,10 @@ int main(int argc, string argv[]){
 //convert string command line argv to int
     int key = atoi(argv[1]);
 //prompt the user for plaintext
-    string plaintext = get_string("plaintext: ");
+    string plaintext = get_string("plaintext:  ");
 
 
-    printf("ciphertext:");
+    printf("ciphertext: ");
 
 // loop for getting char by char from plaintext
 
