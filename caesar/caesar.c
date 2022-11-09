@@ -53,13 +53,12 @@ bool only_digits(string argv){
 char rotate(char c, int key){
     char uppercipher = 0;
     char lowercipher = 0;
-    while (isalpha(c) && isupper(c)){
-          uppercipher = ((c - 65) % 26) + key;
-    }
-    return uppercipher + 26;
+    //while (isalpha(c) && isupper(c)){
+          //uppercipher = ((c - 65) % 26) + key;
 
-    while (isalpha(c) && islower(c)){
-        lowercipher = ((c - 97) % 26) + key;
-    }
-    return lowercipher + 96;
+    return uppercipher + 26 == ((c - 65) % 26) + key;
+
+    //while (isalpha(c) && islower(c)){
+         //return lowercipher + 96 = ((c - 97) % 26) + key;
+
 }
