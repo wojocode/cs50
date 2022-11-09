@@ -38,7 +38,6 @@ int main(int argc, string argv[]){
 
 }
 
-
 // checking wheather argv contains digits
 bool only_digits(string argv){
     for (int i = 0, n = strlen(argv); i < n; i++){
