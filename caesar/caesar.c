@@ -34,8 +34,6 @@ int main(int argc, string argv[]){
         //tutaj wywołujemy funcje rotate
     //}
 
-
-
 }
 
 // checking wheather argv contains digits
@@ -65,5 +63,4 @@ char rotate(char c, int key){
     else {
         return c;
     }
-    
 }
