@@ -27,7 +27,7 @@ int main(int argc, string argv[]){
 
 
     char cipher = rotate(plaintext[0], key);
-    printf("%i\n" ,cipher);
+    printf("%c\n" ,cipher);
 
     //for (int i = 0, n = strlen(plaintext); i < n; i++){
         //char c = plaintext[i];
@@ -54,7 +54,7 @@ char rotate(char c, int key){
     char uppercipher = 0;
     char lowercipher = 0;
     //while (isalpha(c) && isupper(c)){
-          //uppercipher = ((c - 65) % 26) + key;
+          
 
     uppercipher = ((c - 65) + key) % 26;
     return uppercipher + 65;
