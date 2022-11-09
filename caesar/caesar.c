@@ -25,15 +25,10 @@ int main(int argc, string argv[]){
 
 // loop for getting char by char from plaintext
 
-
-    char cipher = rotate(plaintext[0], key);
-    printf("%c\n" ,cipher);
-
-    //for (int i = 0, n = strlen(plaintext); i < n; i++){
-        //char c = plaintext[i];
-        //tutaj wywołujemy funcje rotate
-    //}
-
+    printf("ciphertext: ");
+    for (int i = 0, n = strlen(plaintext); i < n; i++){
+        char cipher = rotate(plaintext[i], key);
+        printf("%c",cipher);
 }
 
 // checking wheather argv contains digits
