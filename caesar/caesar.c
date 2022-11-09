@@ -24,15 +24,16 @@ int main(int argc, string argv[]){
     string plaintext = get_string("plaintext: ");
 
 
-    printf("ciphertext: ");
-    
+    printf("ciphertext:");
+
 // loop for getting char by char from plaintext
 
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char cipher = rotate(plaintext[i], key);
         printf("%c",cipher);
 }
-
+        printf("\n");
+}
 // checking wheather argv contains digits
 bool only_digits(string argv){
 
