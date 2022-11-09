@@ -23,9 +23,11 @@ int main(int argc, string argv[]){
 //prompt the user for plaintext
     string plaintext = get_string("plaintext: ");
 
-// loop for getting char by char from plaintext
 
     printf("ciphertext: ");
+    
+// loop for getting char by char from plaintext
+
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char cipher = rotate(plaintext[i], key);
         printf("%c",cipher);
