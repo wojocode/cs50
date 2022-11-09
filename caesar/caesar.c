@@ -56,6 +56,7 @@ bool only_digits(string argv){
     return 1;
 
 }
+// rotate plain character
 char rotate(char c, int key){
     char uppercipher;
     char lowercipher;
