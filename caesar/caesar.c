@@ -32,7 +32,8 @@ int main(int argc, string argv[]){
 }
 
 // checking wheather argv contains digits
-bool only_digits(string argv){{}
+bool only_digits(string argv){
+
     for (int i = 0, n = strlen(argv); i < n; i++){
         if (isdigit(argv[i])){
         }
@@ -41,7 +42,7 @@ bool only_digits(string argv){{}
         }
     }
     return 1;
-}
+
 }
 // rotate plain character
 char rotate(char c, int key){
