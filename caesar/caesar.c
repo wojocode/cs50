@@ -54,14 +54,13 @@ bool only_digits(string argv){
         }
     }
     return 1;
-
 }
 // rotate plain character
 char rotate(char c, int key){
     char uppercipher;
     char lowercipher;
     while ((isalpha(c) && isupper(c))){
-          uppercipher = (c - 65 + key) % 26;
+          uppercipher = ((c - 65) % 26) + key;
     }
     return uppercipher + 26;
 
