@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 bool only_characters(string key);
 int main(int argc, string argv[])
@@ -25,7 +26,8 @@ int main(int argc, string argv[])
     string plaintext = get_string("plaintext: ");
     for (int i = 0 , n = strlen(plaintext); i < n; i++){
         char k = plaintext[i];
-        k = argv[i];
+        k = atoi(argv[i]);
+        printf("%c",k);
     }
 }
 
