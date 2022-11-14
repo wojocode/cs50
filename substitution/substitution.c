@@ -16,7 +16,8 @@ int main(int argc, string argv[])
         return 1;
     }
     while (isalpha(argv[1])){
-    
+        printf("only aplhabetical key");
+        return 1;
     }
 
 }
