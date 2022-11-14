@@ -17,7 +17,9 @@ int main(int argc, string argv[])
         return 1;
     }
 // checking if key is alphabetical
-    while()
+    while (only_characters(argv[1])){
+        
+    }
 
 }
 
