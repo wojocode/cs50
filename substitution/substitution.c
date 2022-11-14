@@ -21,7 +21,7 @@ int main(int argc, string argv[])
         printf("incorect key\n");
         return 1;
     }
-    
+
     string plaintext = get_string("plaintext: ");
 
 }
