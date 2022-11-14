@@ -33,7 +33,8 @@ bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i < n; i++){
         if(isalpha(key[i])){
         }
-        else if ((key[i] != key[i+1]) && (key[i] != key[i-1])){
+        else if ((key[i] = key[i+1]) && (key[i] = key[i-1])){
+            return 0;
         }
         else{
             return 0;
