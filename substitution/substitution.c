@@ -17,7 +17,6 @@ int main(int argc, string argv[])
         return 1;
     }
 // checking if key is alphabetical
-
     if (only_characters(argv[1])){
         printf("good\n");
     }
@@ -25,14 +24,12 @@ int main(int argc, string argv[])
     }
 }
 
-
-
-
 // checking if key is alphabetical
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i < n; i++){
         if(isalpha(key[i])){
         }
+// unique characters check
         else if ((key[i] = key[i+1]) && (key[i] = key[i-1])){
             return 0;
         }
