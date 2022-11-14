@@ -9,7 +9,7 @@ char rotate(char c, int key);
 
 int main(int argc, string argv[]){
 
-//only digits one cl arg
+//only digits one command line arg
     while (argc == 1 || argc > 2){
         printf("Usage: ./caesar key\n");
         return 1;
