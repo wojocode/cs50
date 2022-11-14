@@ -11,6 +11,8 @@ int main(int argc, string argv[])
         return 1;
     }
     // checking cipher lenght
-    while (argv)
+    while (strlen(argv[2]) != 26){
+        
+    }
 
 }
