@@ -31,9 +31,11 @@ int main(int argc, string argv[]){
     for (int i = 0, n = strlen(plaintext); i < n; i++){
         char cipher = rotate(plaintext[i], key);
         printf("%c",cipher);
-}
+    }
         printf("\n");
 }
+
+
 // checking wheather argv contains digits
 bool only_digits(string argv){
 
@@ -45,7 +47,6 @@ bool only_digits(string argv){
         }
     }
     return 1;
-
 }
 // rotate plain character
 char rotate(char c, int key){
