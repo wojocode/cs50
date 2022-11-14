@@ -31,7 +31,7 @@ bool only_characters(string key){
         }
 // unique characters check
         else if ((key[i] = key[i+1]) && (key[i] = key[i-1])){
-            return 0;
+            
         }
         else{
             return 0;
