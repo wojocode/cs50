@@ -27,11 +27,8 @@ int main(int argc, string argv[])
 // checking if key is alphabetical
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i < n; i++){
-        if(isalpha(key[i])){
-        }
-// unique characters check
-        else if ((key[i] == key[i+1]) && (key[i] == key[i-1])){
-            return 0;
+// only unique characters check
+        if(isalpha(key[i]) && ((key[i] != key[i+1]) && (key[i] != key[i-1]))){
         }
         else{
             return 0;
