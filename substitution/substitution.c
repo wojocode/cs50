@@ -12,7 +12,7 @@ int main(int argc, string argv[])
         return 1;
     }
 // checking cipher lenght
-    while (strlen(argv[1]) != 26){
+    while (strlen(argv[1]) != 3){
         printf("Key must contain 26 characters.\n");
         return 1;
     }
@@ -27,7 +27,7 @@ int main(int argc, string argv[])
 // checking if key is alphabetical
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i <= n; i++){
-        if(isalpha(key[i]) && (key[i] != key[i+1])){
+        if(isalpha(key[i])){
         }
         else{
             return 0;
