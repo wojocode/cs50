@@ -18,10 +18,13 @@ int main(int argc, string argv[])
     }
 // checking if key is alphabetical
     if (only_characters(argv[1])){
-        printf("good\n");
     }
-    else {printf("trouble");
+    else {
+        printf("incorect key\n");
+        return 1;
     }
+    string plaintext = get_string("plaintext: ");
+    
 }
 
 // checking if key is alphabetical
