@@ -27,7 +27,7 @@ int main(int argc, string argv[])
 // checking if key is alphabetical
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i <= n; i++){
-        if(isalpha(key[i]) && ){
+        if(isalpha(key[i]) && (key[i] != key[i+1])){
         }
         else{
             return 0;
