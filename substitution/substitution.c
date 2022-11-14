@@ -29,7 +29,7 @@ int main(int argc, string argv[])
             printf("%c", plaintext[i]);
         }
         else{
-            printf("%c" , argv[i]);
+            printf("%s" , argv[i]);
         }
     }
 }
