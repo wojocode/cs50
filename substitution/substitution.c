@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
+bool only_characters(string key);
 int main(int argc, string argv[])
 {
     //only 2 command line arg
@@ -15,9 +16,16 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    while (isalpha(argv[1])){
-        printf("only aplhabetical key");
-        return 1;
-    }
 
+
+}
+bool only_characters(string key){
+    for (int i = 0 , n = strlen(key); i <= n; i++){
+        if(isalpha(key[i])){
+        }
+        else{
+            return 0;
+        }
+    }
+    return 1;
 }
