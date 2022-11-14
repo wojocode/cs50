@@ -21,7 +21,7 @@ int main(int argc, string argv[])
     while (only_characters(key)){
         printf("good\n");
     }
-
+    printf("trouble");
 }
 
 
