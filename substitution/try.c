@@ -23,9 +23,9 @@ bool unique_chars(string key){
 
         for (int d = strlen(key); (i + 1) < d;i++){
             if (strcasecmp(key[fixed] ,key[i+1])){
+                return 0;
             }
             else {
-                
             }
         }
 
