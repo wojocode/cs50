@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <strings.h>
+#include <string.h>
 #include <stdlib.h>
 
 bool only_characters(string key);
