@@ -28,7 +28,7 @@ bool unique_chars(string key){
             while (isupper(key[i])) {
                 key[i] = tolower(key[i]);
             }
-             if (key[fixed] != key[i]){
+            if (key[fixed] != key[i]){
             }
             else {
                 return 0;
