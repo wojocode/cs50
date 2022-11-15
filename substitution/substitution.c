@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     }
 
 // unique char
-    if (!(unique_chars(argv[1]))){
+    if (unique_chars(argv[1])){
         printf("key must contains every chair unique\n");
         return 1;
     }
@@ -59,7 +59,9 @@ bool unique_chars(string key){
     for (int fixed = 0; fixed < strlen(key); fixed++){
 
         for(i = 0; i < strlen(key);i++){
-            if (!(key[fixed] != key[i+1])){
+            if (key[fixed] != key[i+1]){
+            }
+            else{
                 return 0;
             }
         }
