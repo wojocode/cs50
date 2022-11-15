@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <strings.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 bool unique_chars(string key);
 int main(void){
@@ -22,7 +22,7 @@ bool unique_chars(string key){
     for (int fixed = 0 , i = 0; fixed < strlen(key); fixed++){
 
         for (int d = strlen(key) ; (i + 1) < d;i++){
-            if (key[fixed] != key[i+1]){
+            if (strcasecmp(key[fixed], key[i+1])){
             }
             else {
                 return 0;
