@@ -55,17 +55,17 @@ bool only_characters(string key){
 }
 // only unic character check
 bool unique_chars(string key){
-    int i = 0;
-    for (int fixed = 0; fixed < strlen(key); fixed++){
 
-        for(i = 0; i < strlen(key);i++){
+    for (int fixed = 0 , i = 0; fixed < strlen(key); fixed++, i--){
+
+        for (int d = strlen(key) ; i < d; i++){
             if (key[fixed] != key[i+1]){
             }
             else {
                 return 0;
             }
         }
-       
+
     }
     return 1;
 }
