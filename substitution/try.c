@@ -6,7 +6,7 @@
 
 bool unique_chars(string key);
 int main(void){
-    string text = get_string("string: \n");
+    string text = get_string("string: ");
     if (unique_chars(text)){
         printf("cool\n");
     }
