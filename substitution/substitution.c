@@ -21,7 +21,7 @@ int main(int argc, string argv[])
     }
 // checking if key is alphabetical
     if (!(only_characters(argv[1]))){
-        printf("incorect key\n");
+        printf("Key must contain alphabetic characters \n");
         return 1;
     }
 
@@ -30,6 +30,7 @@ int main(int argc, string argv[])
         printf("cool\n");
     }
     else {
+        
         return 1;
     }
 
