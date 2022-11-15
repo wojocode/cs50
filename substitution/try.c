@@ -5,10 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-bool unique_chars(string argv[]);
+bool unique_chars(string key);
 int main(void){
     string text = get_string("string: ");
-    if (unique_chars(text[])){
+    if (unique_chars(text)){
         printf("cool\n");
     }
     else {
@@ -17,12 +17,12 @@ int main(void){
 }
 
 
-bool unique_chars(string argv[]){
+bool unique_chars(string key){
+    
+    for (int fixed = 0 , i = 0; fixed < strlen(key); fixed++){
 
-    for (int fixed = 0 , i = 0; fixed < strlen(argv[]); fixed++){
-
-        for (int d = strlen(argv[]); (i + 1) < d;i++){
-            if (strcasecmp(argv[fixed], argv[i])){
+        for (int d = strlen(key); (i + 1) < d;i++){
+            if (){
                 return 0;
             }
             else {
