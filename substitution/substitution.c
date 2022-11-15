@@ -34,11 +34,12 @@ int main(int argc, string argv[])
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i < n; i++){
 // only unique characters check
-        if(isalpha(key[i]) && ()){
+        if(isalpha(key[i])){
         }
         else{
             return 0;
         }
     }
+    if ()
     return 1;
 }
