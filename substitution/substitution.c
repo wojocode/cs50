@@ -11,7 +11,7 @@ int main(int argc, string argv[])
 {
 //only 2 command line arg
     while (argc == 1 || argc > 2){
-        printf("./substitution key\n");
+        printf("./substitution KEY\n");
         return 1;
     }
 // checking cipher lenght
