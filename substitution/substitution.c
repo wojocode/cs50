@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
-#include <string.h>
+#include <strings.h>
 #include <stdlib.h>
 
 bool only_characters(string key);
