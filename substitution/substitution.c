@@ -26,12 +26,11 @@ int main(int argc, string argv[])
 
 // unique char
     if (unique_chars(argv[1])){
-        printf("key must contains every chair unique\n");
+        printf("cool\n");
+    }
+    else {
         return 1;
     }
-    printf("cool\n");
-
-
 
 
     //string plaintext = get_string("plaintext: ");
