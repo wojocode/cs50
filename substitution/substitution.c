@@ -46,6 +46,8 @@ bool only_characters(string key){
 // only unic character check
 bool unique_chars(string key){
     int i = 0;
-    while (key[i] )
+    while (key[i] != key[i+1]){
+        i++;
+    }
 }
 
