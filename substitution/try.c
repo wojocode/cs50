@@ -20,7 +20,7 @@ bool unique_chars(string key){
 
     for (int fixed = 0; fixed < strlen(key); fixed++){
 
-        for(int i = 1; i <= strlen(key);i++){
+        for(int i = 1 , d = strlen(key) ; i < d;i++){
             if (key[fixed] != key[i]){
             }
             else {
