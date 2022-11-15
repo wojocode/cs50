@@ -19,7 +19,7 @@ int main(void){
 
 bool unique_chars(string key){
 
-    for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i--){
+    for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = i - 2){
 
         for (int d = strlen(key); i < d;i++){
             if (key[fixed] != key[i]){
