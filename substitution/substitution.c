@@ -24,8 +24,7 @@ int main(int argc, string argv[])
         printf("Key must contain alphabetic characters \n");
         return 1;
     }
-
-// unique char
+// unique chars check
     if (unique_chars(argv[1])){
         printf("cool\n");
     }
@@ -33,12 +32,12 @@ int main(int argc, string argv[])
         printf("Key must not contain repeated characters.\n");
         return 1;
     }
-
-    //string plaintext = get_string("plaintext: ");
-    //for (int i = 0 , n = strlen(plaintext); i < n; i++){
-        //char k = plaintext[i];
-        //printf("%c",k);
-    //}
+// get plaintext
+    string plaintext = get_string("plaintext: ");
+    for (int i = 0 , n = strlen(plaintext); i < n; i++){
+        char k = plaintext[i];
+        printf("%c",k);
+    }
 }
 
 // checking if key is alphabetical
@@ -53,18 +52,20 @@ bool only_characters(string key){
     }
     return 1;
 }
-// only unic character check
+// only unique character check
 bool unique_chars(string key){
 
     for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
 
         for (int d = strlen(key); i < d;i++){
+// if char is upper convert it to lower
             while (isupper(key[fixed])){
                 key[fixed] = tolower(key[fixed]);
             }
             while (isupper(key[i])) {
                 key[i] = tolower(key[i]);
             }
+// checking unique characters
             if (key[fixed] != key[i]){
             }
             else {
