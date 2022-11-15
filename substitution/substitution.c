@@ -57,11 +57,13 @@ bool only_characters(string key){
 bool unique_chars(string key){
     int i = 0;
     for (int fixed = 0; fixed < strlen(key); fixed++){
-        if (key[fixed] != key[i+1]){
-            i++;
-        }
-        else {
-            return 0;
+
+        for(i = 0; i < strlen(key);i++){
+            if (key[fixed] != key[i+1]){
+            }
+            else {
+                return 0;
+            }
         }
     }
     return 1;
