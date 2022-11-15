@@ -61,7 +61,7 @@ bool unique_chars(string key){
         for(i = 0; i < strlen(key);i++){
             if (key[fixed] != key[i+1]){
             }
-            else{
+            else {
                 return 0;
             }
         }
