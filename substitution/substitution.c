@@ -30,7 +30,7 @@ int main(int argc, string argv[])
         printf("cool\n");
     }
     else {
-        
+        printf("Key must not contain repeated characters.\n");
         return 1;
     }
 
