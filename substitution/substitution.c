@@ -58,13 +58,13 @@ bool unique_chars(string key){
     for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
 
         for (int d = strlen(key); i < d;i++){
-            if (islower(key[fixed])){
+            while (islower(key[fixed])){
                 key[fixed] = tolower(key[fixed]);
             }
-            else if (islower(key[i])) {
+            while (islower(key[i])) {
                 key[i] = tolower(key[i]);
             }
-            else if (key[fixed] != key[i]){
+            if (key[fixed] != key[i]){
             }
             else {
                 return 0;
