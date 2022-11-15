@@ -17,10 +17,10 @@ int main(void){
 
 
 bool unique_chars(string key){
-    int i = 0;
+
     for (int fixed = 0; fixed < strlen(key); fixed++){
 
-        for(i = 1; i < strlen(key);i++){
+        for(int i = 1; i < strlen(key);i++){
             if (key[fixed] != key[i]){
             }
             else {
