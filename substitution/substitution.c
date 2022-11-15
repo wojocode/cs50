@@ -50,7 +50,7 @@ bool unique_chars(string key){
         while (key[i] != key[i+1]){
             i++;
         }
-
+        
     }
 }
 
