@@ -22,7 +22,7 @@ bool unique_chars(string key){
     for (int fixed = 0 , i = 0; fixed < strlen(key); fixed++){
 
         for (int d = strlen(key); (i + 1) < d;i++){
-            if (strcasecmp(key[fixed] ,key[i+1])){
+            if (){
                 return 0;
             }
             else {
