@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 bool only_characters(string key);
+bool unique_chars(string key);
 int main(int argc, string argv[])
 {
 //only 2 command line arg
@@ -33,13 +34,17 @@ int main(int argc, string argv[])
 // checking if key is alphabetical
 bool only_characters(string key){
     for (int i = 0 , n = strlen(key); i < n; i++){
-// only unique characters check
+
         if(isalpha(key[i])){
         }
         else{
             return 0;
         }
     }
-    if ()
     return 1;
 }
+// only unic character check
+bool unique_chars(string key){
+    
+}
+
