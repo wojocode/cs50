@@ -28,7 +28,6 @@ bool unique_chars(string key){
                 return 0;
             }
         }
-
     }
     return 1;
 }
