@@ -33,7 +33,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-
     //string plaintext = get_string("plaintext: ");
     //for (int i = 0 , n = strlen(plaintext); i < n; i++){
         //char k = plaintext[i];
