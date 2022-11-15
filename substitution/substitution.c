@@ -24,11 +24,21 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string plaintext = get_string("plaintext: ");
-    for (int i = 0 , n = strlen(plaintext); i < n; i++){
-        char k = plaintext[i];
-        printf("%c",k);
+// unique char
+    if (!(unique_chars(argv[1]))){
+        printf("key must contains every chair unique\n");
+        return 1;
     }
+    printf("cool\n");
+
+
+
+
+    //string plaintext = get_string("plaintext: ");
+    //for (int i = 0 , n = strlen(plaintext); i < n; i++){
+        //char k = plaintext[i];
+        //printf("%c",k);
+    //}
 }
 
 // checking if key is alphabetical
