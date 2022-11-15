@@ -58,14 +58,14 @@ bool unique_chars(string key){
     int i = 0;
     for (int fixed = 0; fixed < strlen(key); fixed++){
 
-        for(i < strlen(key);i++){
+        for(i = 0; i < strlen(key);i++){
             if (key[fixed] != key[i+1]){
             }
             else {
                 return 0;
             }
         }
-        i++;
+       
     }
     return 1;
 }
