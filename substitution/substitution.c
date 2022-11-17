@@ -77,9 +77,9 @@ bool only_characters(string key){
 }
 // only unique character check
 bool unique_chars(string key){
-// 
+// first loop represent fixed char which is compared to all next chars
         for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
-
+// second loop choose 1 char up from fixed char and goes to the and
             for (int d = strlen(key); i < d;i++){
 // if char is upper convert it to lower
                 while (isupper(key[fixed])){
