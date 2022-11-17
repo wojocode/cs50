@@ -39,7 +39,7 @@ int main(int argc, string argv[])
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
             string substitution = argv[1];
-            printf("%c", substitution[asciiupper]);
+            printf("%c", toupper(substitution[asciiupper]));
         }
         else {
             int asciiupper = plaintext[i] - 97;
