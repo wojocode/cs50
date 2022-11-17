@@ -33,7 +33,10 @@ int main(int argc, string argv[])
     }
 // get plaintext
     string plaintext = get_string("plaintext: ");
-    
+    for (int i = 0; i > strlen(plaintext); i++){
+        if(plaintext[i])
+
+    }
 
 
 
