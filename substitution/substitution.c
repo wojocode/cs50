@@ -37,9 +37,12 @@ int main(int argc, string argv[])
     for (int i = 0; i < strlen(plaintext); i++){
 
         if (isupper(plaintext[i])){
+// matching asciiupper value to array of argv[1]
             int asciiupper = plaintext[i] - 65;
+// encript only alphabetical chars
                 if (asciiupper >= 0 && asciiupper <= 26){
                     string substitution = argv[1];
+// printing char and covert it to uppercase
                     printf("%c", toupper(substitution[asciiupper]));
                 }
                 else {
@@ -74,6 +77,7 @@ bool only_characters(string key){
 }
 // only unique character check
 bool unique_chars(string key){
+// 
         for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
 
             for (int d = strlen(key); i < d;i++){
