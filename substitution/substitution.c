@@ -37,11 +37,13 @@ int main(int argc, string argv[])
 
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
-            printf("%c", argv[asciiupper]);
+            
+            printf("%s", argv[asciiupper]);
 
         }
         else {
             char ciphertext = plaintext[i] - 97;
+            printf("%s", argv[asciiupper]);
         }
     }
 
