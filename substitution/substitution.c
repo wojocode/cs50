@@ -32,7 +32,8 @@ int main(int argc, string argv[])
         return 1;
     }
 // get plaintext
-    string plaintext = get_string("plaintext: ");
+    string plaintext = get_string("plaintext:  ");
+    printf("ciphertext: ");
     for (int i = 0; i < strlen(plaintext); i++){
 
         if (isupper(plaintext[i])){
