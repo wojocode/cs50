@@ -38,18 +38,23 @@ int main(int argc, string argv[])
 
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
-                if (asciiupper >= 0 && <= 26){
+                if (asciiupper >= 0 && asciiupper <= 26){
                     string substitution = argv[1];
                     printf("%c", toupper(substitution[asciiupper]));
                 }
-                else{
-                    printf("c", plaintext[i]);
+                else {
+                    printf("%c", plaintext[i]);
                 }
         }
         else {
             int asciiupper = plaintext[i] - 97;
-            string substitution = argv[1];
-            printf("%c", substitution[asciiupper]);
+            if (asciiupper >= 0 && asciiupper <= 26){
+                    string substitution = argv[1];
+                    printf("%c", substitution[asciiupper]);
+                }
+                else{
+                    printf("%c", plaintext[i]);
+                }
         }
     }
     printf("\n");
@@ -69,24 +74,23 @@ bool only_characters(string key){
 }
 // only unique character check
 bool unique_chars(string key){
+        for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
 
-    for (int fixed = 0 , i = 1; fixed <= (strlen(key) - 2); fixed++, i = fixed + 1){
-
-        for (int d = strlen(key); i < d;i++){
+            for (int d = strlen(key); i < d;i++){
 // if char is upper convert it to lower
-            while (isupper(key[fixed])){
-                key[fixed] = tolower(key[fixed]);
-            }
-            while (isupper(key[i])) {
-                key[i] = tolower(key[i]);
-            }
+                while (isupper(key[fixed])){
+                    key[fixed] = tolower(key[fixed]);
+                }
+                while (isupper(key[i])) {
+                    key[i] = tolower(key[i]);
+                }
 // checking unique characters
-            if (key[fixed] != key[i]){
-            }
-            else {
-                return 0;
+                if (key[fixed] != key[i]){
+                }
+                else {
+                    return 0;
+                }
             }
         }
-    }
     return 1;
 }
