@@ -37,15 +37,16 @@ int main(int argc, string argv[])
 
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
-
-            printf("%s", argv[asciiupper]);
-
+            string substitution = argv[1];
+            printf("%c", substitution[asciiupper]);
         }
         else {
             int asciiupper = plaintext[i] - 97;
-            printf("%s", argv[asciiupper]);
+            string substitution = argv[1];
+            printf("%c", substitution[asciiupper]);
         }
     }
+    printf("\n");
 }
 
 // checking if key is alphabetical
