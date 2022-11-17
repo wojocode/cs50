@@ -15,7 +15,7 @@ int main(int argc, string argv[])
         return 1;
     }
 // checking cipher lenght
-    while (strlen(argv[1]) != 4){
+    while (strlen(argv[1]) != 26){
         printf("Key must contain 26 characters.\n");
         return 1;
     }
