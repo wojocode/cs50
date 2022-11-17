@@ -35,11 +35,14 @@ int main(int argc, string argv[])
     string plaintext = get_string("plaintext: ");
     for (int i = 0; i > strlen(plaintext); i++){
 
-        if(isupper(plaintext[i])){
-            char ciphertext = plaintext[i] - 65;
+        if (isupper(plaintext[i])){
+            int asciiupper = plaintext[i] - 65;
+            printf("%c", argv[asciiupper]);
 
         }
-
+        else {
+            char ciphertext = plaintext[i] - 97;
+        }
     }
 
 
