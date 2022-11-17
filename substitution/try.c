@@ -17,7 +17,7 @@ int main(void){
 
   string plaintext = get_string("plaintext: ");
     for (int i = 0; i < strlen(plaintext); i++){
-
+        string argv[strlen(plaintext)];
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
 
