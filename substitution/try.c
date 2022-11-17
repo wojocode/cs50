@@ -14,6 +14,24 @@ int main(void){
     else {
         return 1;
     }
+
+  string plaintext = get_string("plaintext: ");
+    for (int i = 0; i < strlen(plaintext); i++){
+
+        if (isupper(plaintext[i])){
+            int asciiupper = plaintext[i] - 65;
+
+            printf("%s", argv[asciiupper]);
+
+        }
+        else {
+            int asciiupper = plaintext[i] - 97;
+            printf("%s", argv[asciiupper]);
+        }
+    }
+
+
+
 }
 
 
