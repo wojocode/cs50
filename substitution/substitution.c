@@ -33,7 +33,7 @@ int main(int argc, string argv[])
     }
 // get plaintext
     string plaintext = get_string("plaintext: ");
-    for (int i = 0; i > strlen(plaintext); i++){
+    for (int i = 0; i < strlen(plaintext); i++){
 
         if (isupper(plaintext[i])){
             int asciiupper = plaintext[i] - 65;
@@ -46,9 +46,6 @@ int main(int argc, string argv[])
             printf("%s", argv[asciiupper]);
         }
     }
-
-
-
 }
 
 // checking if key is alphabetical
