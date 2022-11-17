@@ -33,8 +33,8 @@ int main(int argc, string argv[])
     }
 // get plaintext
     string plaintext = get_string("plaintext: ");
-
     
+
 
 
 }
