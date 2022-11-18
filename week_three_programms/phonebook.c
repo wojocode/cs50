@@ -5,5 +5,6 @@
 int main(void){
 
     string names[] = {"Carter","David"};
-    string numbers[] = {}
+    string numbers[] = {"+48-660-511-677", "+48-660-511-678"};
+    
 }
