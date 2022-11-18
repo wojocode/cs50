@@ -7,7 +7,7 @@ int main(void){
 
     for (int i = 0; i < 7; i++){
         if (!(strcmp(names[i], "Ron"))){
-            printf("Found\n");
+            printf("Found\n"); 
             return 0;
         }
     }
