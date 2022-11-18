@@ -6,7 +6,7 @@ int main(void){
     string names[] = {"Bill","Ron","Harry","Percy","Tom","Fred","George"};
 
     for (int i = 0; i < 7; i++){
-        if (names[i] == "Ron"){
+        if (strcmp(names[i], "YRo")){
             printf("Found\n");
             return 0;
         }
