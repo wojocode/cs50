@@ -3,7 +3,14 @@
 #include <string.h>
 
 int main(void){
+    string names[] = {"Bill","Ron","Harry","Percy","Tom","Fred","George"};
 
-
-
+    for (int i = 0; i < 7; i++){
+        if (names[i] == "Ron"){
+            printf("Found\n");
+            return 0;
+        }
+    }
+    printf("Not found\n");
+    return 1;
 }
