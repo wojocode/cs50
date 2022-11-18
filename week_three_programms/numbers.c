@@ -8,7 +8,9 @@ int main(void){
     for (int i = 0; i < 7; i++){
         if ( numbers[i] == 0){
             printf("Found\n");
+            return 0;
         }
     }
     printf("not found\n");
+    return 1;
 }
