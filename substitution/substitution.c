@@ -40,7 +40,7 @@ int main(int argc, string argv[])
 // matching asciiupper value to array of argv[1]
             int asciiupper = plaintext[i] - 65;
 // encript only alphabetical chars
-                if (asciiupper >= 0 && asciiupper <= 26){
+                if (asciiupper >= 0 && asciiupper <= 26){k
                     string substitution = argv[1];
 // printing char and covert it to uppercase
                     printf("%c", toupper(substitution[asciiupper]));
