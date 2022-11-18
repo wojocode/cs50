@@ -11,6 +11,6 @@ int main(void){
             return 0;
         }
     }
-    printf("not found\n");
+    printf("Not found\n");
     return 1;
 }
