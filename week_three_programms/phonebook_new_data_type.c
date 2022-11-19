@@ -12,12 +12,15 @@ int main(void){
 
     person people[2];
 
-    person people[0].name = {"David"};
-    person people[1].number = {"+48-660-511-677"};
+    people[0].name = "David";
+    people[0].number = "+48-660-511-677";
+    people[1].name = "Wojtek";
+    people[1].number = "+48-550-331-330";
 
-    for (int i = 0; i < 2; i++){
-        if (strcmp(person[i].name, "David") == 0){
-            printf("David %s\n", person[i].number);
+    for (int i = 0; i < 2; i++)
+    {
+        if (strcmp(people[i].name, "David") == 0){
+            printf("%s %s\n", people[i].name , people[i].number);
             return 0;
         }
     }
