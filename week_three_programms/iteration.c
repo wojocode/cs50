@@ -11,7 +11,7 @@ int main(void){
 
 void draw(int height){
  for (int j = 0; j < height; j++){
-        for (int i = 0; i <= j; i++){
+        for (int i = 0; i < j + 1; i++){
             printf("*");
         }
         printf("\n");
