@@ -6,14 +6,16 @@ int factorial(int n);
 int main(void)
 {
 
-
+int fac = get_int("Enter factorial: ");
+int wynik = factorial(fac);
+printf("score: %i\n", wynik);
 
 }
 int factorial(int n)
 {
-    if ( n == 0 || n ==1)
+    if ( n == 0 || n == 1)
     {
         return 1;
     }
-    return factorial(n-1)*factorial(n);
+    return factorial(n-2)*factorial(n-1);
 }
