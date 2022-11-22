@@ -17,5 +17,5 @@ int fac(int n)
     {
         return 1;
     }
-    return fac(n-1)*(fac(n-1)+1);
+    return fac(n-1)*(fac(n-1));
 }
