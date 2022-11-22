@@ -12,6 +12,6 @@ int potega(int p, int w)
 {
     while(w > 0)
     {
-        
+        int wynik = wynik*w
     }
 }
