@@ -5,7 +5,7 @@ int fib(int n);
 
 int main(void)
 {
-    int f = 3;
+    int f = 4;
     int wynik = fib(f);
     printf("%i\n", wynik);
 
@@ -17,6 +17,6 @@ int fib(int n)
     {
         return 1;
     }
-    return fib(n-1) + fib(n);
+    return fib((n-1)+n);
 
 }
