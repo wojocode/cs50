@@ -11,13 +11,13 @@ int main(void){
 
 void draw(int n)
 {
-// make this funktion finite 
+// make this funktion finite
     if (n <= 0){
         return;
     }
     draw(n-1);
 // after calling draw function itself this funkction make last time for loops
-    for (int i = 0; i < n; i++){
+   for (int i = 0; i < n; i++){
         printf("#");
     }
     printf("\n");
