@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int fib(int n);
+
 int main(void)
 {
     int f = 3;
