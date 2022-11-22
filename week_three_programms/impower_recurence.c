@@ -7,14 +7,14 @@ int main(void)
 {
 
 int p = 3;
-int w = 4;
+int w = 3;
 
 int equal= potega(p,w);
 printf("%i\n", equal);
 }
 long potega(int p, int w)
 {
-    if (p == 0)
+    if (w == 0)
     {
         return 1;
     }
