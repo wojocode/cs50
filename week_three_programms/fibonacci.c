@@ -5,9 +5,9 @@ int fib(int n);
 
 int main(void)
 {
-    int f = 4;
-    int wynik = fib(f);
-    printf("%i\n", wynik);
+    int index = get_int("Enter fibonacci number index: ");
+    int score = fib(index);
+    printf("%i\n", score);
 
 
 }
@@ -17,6 +17,6 @@ int fib(int n)
     {
         return 1;
     }
-    return fib((n-1)+n);
+    return fib(n-2)+ fib(n-1);
 
 }
