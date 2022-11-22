@@ -6,8 +6,8 @@ long potega(int p, int w);
 int main(void)
 {
 
-int p = 3;
-int w = 3;
+int p = 1282;
+int w = 2;
 
 int equal= potega(p,w);
 printf("%i\n", equal);
