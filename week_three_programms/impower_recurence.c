@@ -18,5 +18,5 @@ long potega(int p, int w)
     {
         return 1;
     }
-    return p*potega(w,p-1);
+    return p*potega(p,w-1);
 }
