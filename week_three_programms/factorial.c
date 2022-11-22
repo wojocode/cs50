@@ -15,5 +15,5 @@ int factorial(int n)
     {
         return 1;
     }
-    return 
+    return factorial(n-1)*factorial(n);
 }
