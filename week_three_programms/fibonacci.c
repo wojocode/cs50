@@ -15,6 +15,6 @@ int fib(int n)
     {
         return 1;
     }
-    return fib(n) + fib(n+1);
+    return fib(n) + fib(n-1);
 
 }
