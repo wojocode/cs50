@@ -90,7 +90,7 @@ for (int i = 0; i < candidate_count; i++)
        {
             candidates[i+1] = candidates[i];
        }
-       // printf("%i\n",candidates[i].votes);
+        printf("%s\n",candidates[candidate_count].name);
    // }
    // printf("%s\n",candidates[candidate_count].name);
 
