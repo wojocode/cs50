@@ -60,10 +60,11 @@ int main(int argc, string argv[])
         }
 
     }
-    printf("%i\n",candidates[candidate_count].votes);
+
 
     // Display winner of election
     print_winner();
+       printf("%s\n",candidates[candidate_count].name);
 }
 
 // Update vote totals given a new vote
