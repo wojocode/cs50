@@ -58,9 +58,8 @@ int main(int argc, string argv[])
         {
             printf("Invalid vote.\n");
         }
-        else {
             vote(name);
-        }
+
 
     }
     printf("%i\n",candidates[0].votes);
