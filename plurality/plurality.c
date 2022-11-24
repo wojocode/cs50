@@ -92,6 +92,8 @@ void print_winner(void)
         {
             
         }
+
+        printf("%i\n",candidates[candidate_count].votes);
     }
 
 
