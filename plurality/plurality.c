@@ -90,10 +90,10 @@ void print_winner(void)
     {
         if (candidates[i].votes > candidates[i+1].votes)
         {
-            
+
         }
 
-        printf("%i\n",candidates[candidate_count].votes);
+        printf("%s\n",candidates[candidate_count].name);
     }
 
 
