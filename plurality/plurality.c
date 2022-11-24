@@ -83,7 +83,7 @@ bool vote(string name)
 }
 
 // Print the winner (or winners) of the election
-void print_winner(void)
+void print_winner(int candidate_count)
 {
 //basic condition
     if (candidate_count == 0)
@@ -91,6 +91,6 @@ void print_winner(void)
         return;
     }
     print_winner(candidate_count - 1)
-    
+
 
 }
