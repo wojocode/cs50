@@ -63,7 +63,7 @@ int main(int argc, string argv[])
             vote(name);
         }
     }
-
+    printf("$i\n", candidates[candidate_count].votes);
     // Display winner of election
     print_winner();
 }
@@ -86,22 +86,22 @@ bool vote(string name)
 void print_winner(void)
 {
 
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if (candidates[i].votes > candidates[i+1].votes)
-        {
-            candidates[i+1] = candidates[i];
-        }
-        printf("%i\n",candidates[i].votes);
-    }
-    printf("%s\n",candidates[candidate_count].name);
+    //for (int i = 0; i < candidate_count; i++)
+    //{
+      //  if (candidates[i].votes > candidates[i+1].votes)
+        //{
+          //  candidates[i+1] = candidates[i];
+       // }
+       // printf("%i\n",candidates[i].votes);
+   // }
+   // printf("%s\n",candidates[candidate_count].name);
 
-    for (int j = 0; j == candidate_count; j++)
-    {
-        if (candidates[candidate_count].votes == candidates[j].votes)
-        {
-            printf("%s\n",candidates[j].name);
-        }
-    }   
+//    for (int j = 0; j == candidate_count; j++)
+  //  {
+    //    if (candidates[candidate_count].votes == candidates[j].votes)
+      //  {
+        //    printf("%s\n",candidates[j].name);
+       // }
+    //}
 
 }
