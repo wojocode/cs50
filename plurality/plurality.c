@@ -59,7 +59,7 @@ int main(int argc, string argv[])
             printf("Invalid vote.\n");
         }
           else{
-            candidates[i].votes++;
+
           }
 
     }
@@ -76,7 +76,7 @@ bool vote(string name)
     {
         if (!strcmp(name, candidates[j].name))
         {
-
+            candidates[j].votes++;
             return true;
         }
     }
