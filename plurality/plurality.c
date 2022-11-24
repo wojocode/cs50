@@ -63,7 +63,7 @@ int main(int argc, string argv[])
         }
 
     }
-    printf("%i\n",candidates[2].votes);
+    printf("%i\n",candidates[0].votes);
 
     // Display winner of election
     print_winner();
