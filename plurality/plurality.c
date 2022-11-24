@@ -69,9 +69,12 @@ bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp(name,))
-    return false;
+        if (strcmp(name,candidates[i].name))
+        {
+            
+        }
     }
+    return false;
 }
 
 // Print the winner (or winners) of the election
