@@ -37,7 +37,7 @@ int main(int argc, string argv[])
     if (candidate_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
-        return 2;
+        return 1;
     }
 // assigned names to array (candidate) and reset votes counter
     for (int i = 0; i < candidate_count; i++)
