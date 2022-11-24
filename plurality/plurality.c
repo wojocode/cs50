@@ -93,7 +93,7 @@ void print_winner(void)
             candidates[i+1] = candidates[i];
         }
     }
-    for (int i = 0; candidate_count > 0; candidate_count--)
+    for (int i = 0; i = candidate_count; i++)
     {
         
     }
