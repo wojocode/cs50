@@ -93,6 +93,7 @@ void print_winner(void)
             candidates[i+1] = candidates[i];
         }
     }
+    printf("%s\n",candidates[candidate_count].name);
 
     for (int i = 0; i == candidate_count; i++)
     {
@@ -101,7 +102,5 @@ void print_winner(void)
             printf("%s\n",candidates[i].name);
         }
     }
-
-    printf("%s\n",candidates[candidate_count].name);
 
 }
