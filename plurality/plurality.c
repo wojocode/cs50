@@ -62,7 +62,7 @@ int main(int argc, string argv[])
     }
 // Display winner of election
        print_winner();
-       printf("%s\n",candidates[candidate_count].name);
+
 }
 
 // Update vote totals given a new vote
@@ -90,6 +90,14 @@ for (int i = 0; i < candidate_count; i++)
             candidates[i+1] = candidates[i];
        }
   }
-for (int i = 0; )
+  printf("%s\n",candidates[candidate_count].name);
+
+for (int i = 0; candidate_count <= 0; candidate_count--)
+{
+    if (candidates[i].votes == candidates[candidate_count].votes)
+    {
+        printf("%s\n", candidates[i].name);
+    }
+}
 
 }
