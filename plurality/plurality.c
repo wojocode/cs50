@@ -92,7 +92,7 @@ for (int i = 0; i < candidate_count; i++)
   }
   printf("%s\n",candidates[candidate_count].name);
 
-for (int i = 1; candidate_count > 0; candidate_count--)
+for (int i = 1; i < candidate_count; i++)
 {
     if (candidates[i].votes == candidates[candidate_count].votes)
     {
