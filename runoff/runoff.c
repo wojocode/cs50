@@ -144,10 +144,7 @@ void tabulate(void)
 {
     for ( int i = 0; i < voter_count; i++)
     {
-        for ()
-        {
             candidates[preferences[i][0]].votes++;
-        }
     }
     return;
 }
