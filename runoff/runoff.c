@@ -82,6 +82,13 @@ int main(int argc, string argv[])
 
         printf("\n");
     }
+    for (int a = 0; a < voter_count; a++)
+    {
+        for (int b = 0; b < candidate_count; b++)
+        {
+            printf("%i\n", preferences[a][b]);
+        }
+    }
 
     // Keep holding runoffs until winner exists
     while (true)
@@ -130,9 +137,9 @@ bool vote(int voter, int rank, string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp(name,candidates[i].name))
+        if (!strcmp(name,candidates[i].name))
         {
-            preferences[voter][rank] = 
+            preferences[voter][rank] = candidates[i].votes;
             return true;
         }
     }
