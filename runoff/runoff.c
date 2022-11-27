@@ -83,8 +83,6 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-
-}
     // Keep holding runoffs until winner exists
     while (true)
     {
@@ -125,12 +123,12 @@ int main(int argc, string argv[])
         }
     }
     return 0;
-
+}
 
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    for (int i = 0; i < candidate_count; i++)
+       for (int i = 0; i < candidate_count; i++)
     {
         if (!strcmp(name,candidates[i].name))
         {
@@ -139,6 +137,7 @@ bool vote(int voter, int rank, string name)
         }
     }
     return false;
+
 }
 
 // Tabulate votes for non-eliminated candidates
