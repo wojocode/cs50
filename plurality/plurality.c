@@ -58,13 +58,9 @@ int main(int argc, string argv[])
         {
             printf("Invalid vote.\n");
         }
-
     }
-
-
 // Display winner of election
        print_winner();
-
 }
 
 // Update vote totals given a new vote
@@ -101,5 +97,4 @@ for (int i = 0; i < candidate_count; i++)
         printf("%s\n", candidates[i].name);
     }
 }
-
 }
