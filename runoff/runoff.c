@@ -53,7 +53,7 @@ int main(int argc, string argv[])
         candidates[i].name = argv[i + 1];
         candidates[i].votes = 0;
         candidates[i].eliminated = false;
-    } 
+    }
 
     voter_count = get_int("Number of voters: ");
     if (voter_count > MAX_VOTERS)
@@ -127,7 +127,7 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    // TODO
+    
     return false;
 }
 
