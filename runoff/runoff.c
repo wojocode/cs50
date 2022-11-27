@@ -83,12 +83,7 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-//for ( int a = 0; a < voter_count; a++)
-//{
-  //  for (int b = 0; b < candidate_count; b++)
-    //{
-      //  printf("%i\n",preferences[a][b]);
-    //}
+
 }
     // Keep holding runoffs until winner exists
     while (true)
@@ -130,7 +125,7 @@ int main(int argc, string argv[])
         }
     }
     return 0;
-}
+
 
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
