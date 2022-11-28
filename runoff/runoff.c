@@ -137,7 +137,6 @@ bool vote(int voter, int rank, string name)
         }
     }
     return false;
-
 }
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
@@ -145,6 +144,7 @@ void tabulate(void)
 // assign scores to candidates
     for ( int i = 0; i < voter_count; i++)
     {
+// if candidate is eliminated update votes from preferences[i][next index ]
             if (!candidates[preferences[i][0]].eliminated)
             {
             candidates[preferences[i][0]].votes++;
@@ -154,7 +154,6 @@ void tabulate(void)
                 candidates[preferences[i][0 + 1]].votes++;
             }
     }
-
 }
 
 // Print the winner of the election, if there is one
