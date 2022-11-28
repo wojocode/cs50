@@ -149,6 +149,10 @@ void tabulate(void)
             {
             candidates[preferences[i][0]].votes++;
             }
+            else
+            {
+                candidates[preferences[i][0 + 1]].votes++;
+            }
     }
 // comparing scores
     //for ( int i = 0; i < voter_count; i++)
