@@ -145,18 +145,21 @@ void tabulate(void)
 // assign scores to candidates
     for ( int i = 0; i < voter_count; i++)
     {
+            if (!candidates[preferences[i][0]].eliminated)
+            {
             candidates[preferences[i][0]].votes++;
+            }
     }
 // comparing scores
-    for ( int i = 0; i < voter_count; i++)
-    {
-        if(candidates[i].votes < candidates[i + 1].votes)
-        {
-            candidates[i + 1].votes = candidates[i].votes;
-        }
-    }
+    //for ( int i = 0; i < voter_count; i++)
+    //{
+      //  if(candidates[i].votes < candidates[i + 1].votes)
+        //{
+          //  candidates[i + 1].votes = candidates[i].votes;
+        //}
+    //}
 // switch boolean value for the lowest score
-candidates[voter_count - 1].eliminated = false;
+//candidates[voter_count - 1].eliminated = false;
 
 }
 
