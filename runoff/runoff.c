@@ -191,6 +191,9 @@ int find_min(void)
                 candidates[i + 1].votes = candidates[i].votes;
                 }
                 if(candidates[voter_count].eliminated)
+                {
+                    return candidates[voter_count - 1].votes;
+                }
 
             }
     }
