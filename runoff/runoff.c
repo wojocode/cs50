@@ -192,6 +192,7 @@ int find_min(void)
                     fixed = candidates[i].votes;
                 }
             }
+            return fixed;
     }
 
 
