@@ -156,7 +156,7 @@ void tabulate(void)
         }
     }
 // switch boolean value for the lowest score
-candidates[voter_count]
+candidates[voter_count - 1].eliminated = false;
 
 }
 
