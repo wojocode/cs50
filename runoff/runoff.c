@@ -228,4 +228,4 @@ void eliminate(int min)
         }
     }
 
-}
+}   
