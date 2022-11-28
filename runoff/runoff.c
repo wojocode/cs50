@@ -187,7 +187,7 @@ int find_min(void)
     int fixed = candidates[0].votes;
     for (int i = 0; i < candidate_count; i++)
             {
-                if (fixed <= candidates[i].votes && candidates[i].eliminated != 1)
+                if (fixed >= candidates[i].votes && candidates[i].eliminated != 1)
                 {
                     fixed = candidates[i].votes;
                 }
