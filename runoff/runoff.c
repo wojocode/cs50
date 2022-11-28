@@ -154,16 +154,6 @@ void tabulate(void)
                 candidates[preferences[i][0 + 1]].votes++;
             }
     }
-// comparing scores
-    //for ( int i = 0; i < voter_count; i++)
-    //{
-      //  if(candidates[i].votes < candidates[i + 1].votes)
-        //{
-          //  candidates[i + 1].votes = candidates[i].votes;
-        //}
-    //}
-// switch boolean value for the lowest score
-//candidates[voter_count - 1].eliminated = false;
 
 }
 
