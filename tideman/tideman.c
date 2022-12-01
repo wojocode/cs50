@@ -100,11 +100,12 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
+// query name for every candidate name
     for (int i = 0; i < candidate_count; i++)
     {
         if (!strcmp(name, candidates[i]))
         {
-            
+            ranks[rank] = i;
             return true;
         }
     }
