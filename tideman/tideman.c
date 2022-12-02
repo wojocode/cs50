@@ -128,7 +128,7 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     pair_count = 0;
-    
+
     for (int i = 0; i < candidate_count; i++)
     {
          for (int j = 1; j < candidate_count; j++)
@@ -154,8 +154,10 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    // TODO
-    return;
+    for (int i = 0; i <= pair_count; i++)
+    {
+        pair[i].winner - pair[i].loser
+    }
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
