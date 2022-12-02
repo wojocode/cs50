@@ -159,7 +159,7 @@ void sort_pairs(void)
     {
          advantage[i] = pairs[i].winner - pairs[i].loser;
     }
-
+    
 
 
 }
