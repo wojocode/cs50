@@ -159,7 +159,13 @@ void sort_pairs(void)
     {
          advantage[i] = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
     }
-    for (int )
+    for (int j = 0; i<= pair_count; j++)
+    {
+        for (int i = 0; i < pair_count - 1; i++)
+        {
+            
+        }
+    }
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
