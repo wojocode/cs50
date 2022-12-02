@@ -157,9 +157,9 @@ void sort_pairs(void)
     int advantage[pair_count];
     for (int i = 0; i <= pair_count; i++)
     {
-         advantage[i] = pairs[i].winner - pairs[i].loser;
+         advantage[i] = 
     }
-    
+
 
 
 }
