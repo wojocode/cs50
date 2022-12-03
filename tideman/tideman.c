@@ -157,7 +157,7 @@ void sort_pairs(void)
     int fixed = preferences[pairs[0].winner][pairs[0].loser] - preferences[pairs[0].loser][pairs[0].winner];
     for (int i = 0; i < pair_count; i++)
     {
-
+        if (fixed )
     }
 }
 
