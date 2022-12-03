@@ -155,9 +155,12 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     int fixed = preferences[pairs[0].winner][pairs[0].loser] - preferences[pairs[0].loser][pairs[0].winner];
-    for (int i = 0; i < pair_count; i++)
+    for (int i = 0; i <= pair_count; i++)
     {
-        if (fixed )
+        if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
+        {
+            fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
+        }
     }
 }
 
