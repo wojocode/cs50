@@ -160,9 +160,10 @@ void sort_pairs(void)
         if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
         {
             fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
+            pairs[i] = pairs[0];
         }
     }
-    
+
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
