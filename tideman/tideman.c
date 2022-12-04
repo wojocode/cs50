@@ -162,8 +162,9 @@ void sort_pairs(void)
                 if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
                 {
                     fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
+                    pairs[j] = pairs[i];
                 }
-                pairs[j] = pairs[i];
+
             }
     }
 }
