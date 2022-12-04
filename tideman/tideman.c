@@ -166,7 +166,6 @@ void sort_pairs(void)
                 pairs[i] = pairs[j];
             }
     }
-
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
