@@ -164,7 +164,7 @@ void sort_pairs(void)
     }
 
 }
-
+int advantage()
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
