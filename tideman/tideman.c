@@ -164,7 +164,6 @@ void sort_pairs(void)
                     fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
                     pairs[j] = pairs[i];
                 }
-
             }
     }
 }
