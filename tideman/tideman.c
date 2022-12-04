@@ -164,7 +164,7 @@ void sort_pairs(void)
     }
 
 }
-int advantage(pair pairs[])
+int advantage()
 {
 
 }
