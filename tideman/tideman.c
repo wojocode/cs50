@@ -177,7 +177,7 @@ void lock_pairs(void)
         locked[pairs[i].winner][pairs[i].loser] = true;
     }
 // conditions not make a cirle
-    if (
+    if (locked[pairs[pair_count].]
 }
 
 // Print the winner of the election
