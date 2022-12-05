@@ -179,6 +179,9 @@ void lock_pairs(void)
 for (ini i = 0; i <=pair_count; i++)
 {
     if (locked[pairs[pair_count].]
+    {
+        
+    }
 }
 }
 
