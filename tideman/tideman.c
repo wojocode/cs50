@@ -90,6 +90,7 @@ int main(int argc, string argv[])
     }
 
     add_pairs();
+    printf("%i\n",pair_count);
     sort_pairs();
     lock_pairs();
     print_winner();
@@ -110,16 +111,15 @@ bool vote(int rank, string name, int ranks[])
     }
     return false;
 }
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! coś tu nie gra
 // Update preferences given one voter's ranks
 void record_preferences(int ranks[])
 {
     for (int i = 0; i < (candidate_count - 1);i++)
     {
-            for (int j = 1; j < (candidate_count - 1); j++)
-            {
+        for (int j = 1; j < (candidate_count - 1); j++)
+        {
             preferences[ranks[i]][ranks[j + i]]++;
-            }
+        }
     }
 }
 
