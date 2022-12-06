@@ -166,8 +166,9 @@ int advantage(pair para[],int i)
 void sort_pairs(void)
 {
 // with custom function
-    int a = 0;
-    int fixed = advantage(pairs,a);
+    for (int j = 0; j < pair_count; j++){
+
+        int fixed = advantage(pairs,j);
 
     for (int i = 1; i < pair_count; i++)
     {
@@ -176,7 +177,7 @@ void sort_pairs(void)
             fixed = advantage(pairs,i);
         }
     }
-
+    }
 
     //for (int j = 0; j < pair_count; j++)
    // {
