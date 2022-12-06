@@ -89,6 +89,9 @@ int main(int argc, string argv[])
     }
 
     add_pairs();
+    printf("%i\n",pairs[0].winner);
+    printf("%i\n",pairs[1].winner);
+    printf("%i\n",pairs[2].winner);
     sort_pairs();
     lock_pairs();
     print_winner();
