@@ -175,7 +175,7 @@ void sort_pairs(void)
             if (fixed < advantage(pairs,i))
             {
                 fixed = advantage(pairs,i);
-                pairs[0] = pairs[i];
+                pairs[i] = pairs[j];
             }
         }
 
