@@ -91,13 +91,7 @@ int main(int argc, string argv[])
     }
 
     add_pairs();
-    printf("%i\n",pair_count);
-    printf("%i , %i\n",pairs[0].winner,pairs[0].loser);
-    printf("%i , %i\n",pairs[1].winner,pairs[1].loser);
-    printf("%i , %i\n",pairs[2].winner,pairs[2].loser);
     sort_pairs();
-
-
     lock_pairs();
     print_winner();
     return 0;
@@ -142,11 +136,9 @@ void add_pairs(void)
             {
                 pairs[pair_count].winner = i;
                 pairs[pair_count].loser = j + i;
-
             }
             else if (preferences[i][j + i] == preferences [j + i][i])
             {
-
             }
             else {
                 pairs[pair_count].winner = j + i;
@@ -167,32 +159,17 @@ void sort_pairs(void)
 {
 // with custom function
     for (int j = 0; j < pair_count; j++){
-
         int fixed = advantage(pairs,j);
-
         for (int i = 1; i < pair_count; i++)
         {
             if (fixed < advantage(pairs,i))
             {
                 fixed = advantage(pairs,i);
-                 pairs[i - 1] = pairs[i];
+                pairs[i - 1] = pairs[i];
             }
         }
-
     }
 
-    //for (int j = 0; j < pair_count; j++)
-   // {
-        //int fixed = preferences[pairs[j].winner][pairs[j].loser] - preferences[pairs[j].loser][pairs[j].winner];
-         //  for (int i = 0; i <= pair_count; i++)
-          //  {
-            //    if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
-            //    {
-             //       fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
-             //       pairs[j] = pairs[i];
-             //   }
-          //  }
-    //}
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
