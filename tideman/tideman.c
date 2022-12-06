@@ -175,7 +175,14 @@ void lock_pairs(void)
     {
         locked[pairs[i].winner][pairs[i].loser] = true;
     }
-    for (int j = 0; j )
+//checking last arrow in the graph 
+    for (int j = 0; j < pair_count; j++)
+    {
+        for (int a = 0; a < pair_count; a++)
+        {
+
+        }
+    }
 }
 
 // Print the winner of the election
