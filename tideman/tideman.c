@@ -182,7 +182,7 @@ void lock_pairs(void)
         {
             if (locked[j][a] == true)
             {
-                
+                locked[pairs[pair_count - 1].winner][pairs[pair_count - 1].loser] = true;
             }
         }
     }
@@ -191,6 +191,5 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
-    // TODO
-    return;
+   
 }
