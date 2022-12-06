@@ -175,7 +175,7 @@ void lock_pairs(void)
     {
         locked[pairs[i].winner][pairs[i].loser] = true;
     }
-    if ()
+    for (int j = 0; j )
 }
 
 // Print the winner of the election
