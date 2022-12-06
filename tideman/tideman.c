@@ -147,7 +147,6 @@ void add_pairs(void)
          }
     }
 }
-
 // adventage funkction
 int advantage(pair para[],int i)
 {
