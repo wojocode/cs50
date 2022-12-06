@@ -170,13 +170,14 @@ void sort_pairs(void)
 
         int fixed = advantage(pairs,j);
 
-    for (int i = 1; i < pair_count; i++)
-    {
-        if (fixed < advantage(pairs,i))
+        for (int i = 1; i < pair_count; i++)
         {
-            fixed = advantage(pairs,i);
+            if (fixed < advantage(pairs,i))
+            {
+                fixed = advantage(pairs,i);
+            }
         }
-    }
+    
     }
 
     //for (int j = 0; j < pair_count; j++)
