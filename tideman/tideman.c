@@ -143,7 +143,6 @@ void add_pairs(void)
             else {
                 pairs[pair_count].winner = j + i;
                 pairs[pair_count].loser = i;
-
             }
          }
     }
