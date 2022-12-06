@@ -33,6 +33,8 @@ void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
+//
+int advantage(pair pairs);
 
 int main(int argc, string argv[])
 {
@@ -155,6 +157,11 @@ void add_pairs(void)
     }
 }
 
+// adventage funkction
+int advantage(pair pairs)
+{
+
+}
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
