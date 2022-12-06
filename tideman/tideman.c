@@ -141,6 +141,7 @@ void add_pairs(void)
             }
             else if (preferences[i][j + i] == preferences [j + i][i])
             {
+                pair_count++;
             }
             else {
                 pairs[pair_count].winner = j;
