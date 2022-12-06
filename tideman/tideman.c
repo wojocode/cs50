@@ -175,12 +175,15 @@ void lock_pairs(void)
     {
         locked[pairs[i].winner][pairs[i].loser] = true;
     }
-//checking last arrow in the graph 
+//checking last arrow in the graph
     for (int j = 0; j < pair_count; j++)
     {
         for (int a = 0; a < pair_count; a++)
         {
-
+            if (locked[j][a] == true)
+            {
+                
+            }
         }
     }
 }
