@@ -177,7 +177,7 @@ void sort_pairs(void)
                 fixed = advantage(pairs,i);
             }
         }
-    
+        
     }
 
     //for (int j = 0; j < pair_count; j++)
