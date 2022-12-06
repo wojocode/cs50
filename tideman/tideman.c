@@ -34,7 +34,7 @@ void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
 //
-int advantage(pair pairs);
+int advantage(pair pairs[], int i);
 
 int main(int argc, string argv[])
 {
@@ -158,25 +158,32 @@ void add_pairs(void)
 }
 
 // adventage funkction
-int advantage(pair pairs)
+int advantage(pair para[],int i)
 {
-
+    return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
 }
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    for (int j = 0; j < pair_count; j++)
+// with custom function
+    for (int i = 0; i < pair_count; i++)
     {
-        int fixed = preferences[pairs[j].winner][pairs[j].loser] - preferences[pairs[j].loser][pairs[j].winner];
-            for (int i = 0; i <= pair_count; i++)
-            {
-                if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
-                {
-                    fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
-                    pairs[j] = pairs[i];
-                }
-            }
+        
     }
+
+
+    //for (int j = 0; j < pair_count; j++)
+   // {
+        //int fixed = preferences[pairs[j].winner][pairs[j].loser] - preferences[pairs[j].loser][pairs[j].winner];
+         //  for (int i = 0; i <= pair_count; i++)
+          //  {
+            //    if (fixed < preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner])
+            //    {
+             //       fixed = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
+             //       pairs[j] = pairs[i];
+             //   }
+          //  }
+    //}
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
