@@ -110,7 +110,7 @@ bool vote(int rank, string name, int ranks[])
     }
     return false;
 }
-
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! coś tu nie gra
 // Update preferences given one voter's ranks
 void record_preferences(int ranks[])
 {
