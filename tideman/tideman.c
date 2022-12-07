@@ -205,5 +205,8 @@ void print_winner(void)
             }
        }
    }
-
+for (int a = 0; a < pair_count; a++)
+{
+    
+}
 }
