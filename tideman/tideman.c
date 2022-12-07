@@ -212,5 +212,5 @@ for (int a = 0; a < pair_count; a++)
             false_count[a+1] = false_count[a];
        }
 }
-printf("%s\n",candidates[pair_count]);
+printf("%s\n",candidates[pair_count-1]);
 }
