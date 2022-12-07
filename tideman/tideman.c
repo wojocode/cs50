@@ -98,7 +98,7 @@ int main(int argc, string argv[])
     {
         for (int j = 0; j < pair_count; j++)
         {
-            printf("%B ",locked[i][j]);
+            printf("%d ",locked[i][j]);
         }
     }
     print_winner();
