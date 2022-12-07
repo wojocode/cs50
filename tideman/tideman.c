@@ -93,14 +93,6 @@ int main(int argc, string argv[])
     add_pairs();
     sort_pairs();
     lock_pairs();
-
-    for (int i = 0; i < pair_count; i++)
-    {
-        for (int j = 0; j < pair_count; j++)
-        {
-            printf("%d ",locked[i][j]);
-        }
-    }
     print_winner();
     return 0;
 }
@@ -195,7 +187,6 @@ void lock_pairs(void)
         }
     }
 }
-
 // Print the winner of the election
 void print_winner(void)
 {
@@ -208,6 +199,6 @@ void print_winner(void)
                 break;
             }
        }
-       printf("%s\n",candidates[i]);
+    
    }
 }
