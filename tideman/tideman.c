@@ -201,8 +201,6 @@ void print_winner(void)
             {
                 break;
             }
-
-            printf("%s\n",candidates[i]);
        }
 
    }
