@@ -199,9 +199,9 @@ void print_winner(void)
 
             }
             else
-            {
+
                 break;
-            }
+           
             printf("%s\n",candidates[i]);
        }
 
