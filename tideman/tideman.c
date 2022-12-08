@@ -112,7 +112,7 @@ bool vote(int rank, string name, int ranks[])
     }
     return false;
 }
-// Update preferences given one voter's ranks
+// Update preferences array given one voter's ranks
 // update ranks array candidates over others.
 void record_preferences(int ranks[])
 {
@@ -150,7 +150,7 @@ void add_pairs(void)
          }
     }
 }
-// calculate 
+// return strength of victory - (winner - loser)
 int advantage(pair para[],int i)
 {
     return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
