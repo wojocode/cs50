@@ -150,7 +150,7 @@ void add_pairs(void)
          }
     }
 }
-// adventage funkction 
+// calculate 
 int advantage(pair para[],int i)
 {
     return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
