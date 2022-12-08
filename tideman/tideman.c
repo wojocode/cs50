@@ -160,6 +160,7 @@ void sort_pairs(void)
 // with custom function
     for (int j = 0; j < pair_count; j++){
         int fixed = advantage(pairs,j);
+// compare swap sort algorithm (seting highest number to last index)
         for (int i = 1; i < pair_count; i++)
         {
             if (fixed < advantage(pairs,i))
