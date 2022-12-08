@@ -38,14 +38,14 @@ int advantage(pair pairs[], int i);
 
 int main(int argc, string argv[])
 {
-    // Check for invalid usage
+// Check for invalid usage
     if (argc < 2)
     {
         printf("Usage: tideman [candidate ...]\n");
         return 1;
     }
 
-    // Populate array of candidates
+// Populate array of candidates
     candidate_count = argc - 1;
     if (candidate_count > MAX)
     {
@@ -57,7 +57,7 @@ int main(int argc, string argv[])
         candidates[i] = argv[i + 1];
     }
 
-    // Clear graph of locked in pairs
+// Clear graph of locked in pairs
     for (int i = 0; i < candidate_count; i++)
     {
         for (int j = 0; j < candidate_count; j++)
@@ -65,17 +65,16 @@ int main(int argc, string argv[])
             locked[i][j] = false;
         }
     }
-
     pair_count = 0;
     int voter_count = get_int("Number of voters: ");
 
-    // Query for votes
+// Query for votes
     for (int i = 0; i < voter_count; i++)
     {
-        // ranks[i] is voter's ith preference
+// ranks[i] is voter's ith preference
         int ranks[candidate_count];
 
-        // Query for each rank
+// Query for each rank
         for (int j = 0; j < candidate_count; j++)
         {
             string name = get_string("Rank %i: ", j + 1);
@@ -152,9 +151,9 @@ void add_pairs(void)
 }
 // additional function - return strength of victory - (winner - loser)
 int advantage(pair para[],int i)
-{
+    {
     return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
-}
+    }
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
