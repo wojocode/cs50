@@ -193,8 +193,7 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
-// create variable stored false_count
-// all false locked[j][i] every j over i is the winner
+// create variable stored false_count number
 // if locked[j][i] is false than update false_count
     int false_count[pair_count];
     for (int i = 0; i < pair_count; i++)
@@ -211,6 +210,7 @@ void print_winner(void)
             }
        }
    }
+// checking false_count[a] number
 // the highest false_count[a] wins
     for (int a = 0; a < pair_count; a++)
     {
