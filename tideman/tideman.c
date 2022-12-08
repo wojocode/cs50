@@ -126,7 +126,7 @@ void record_preferences(int ranks[])
 }
 
 // Record pairs of candidates where one is preferred over the other
-// adding pairs and assigning it winner and loser 
+// adding pairs and assigning it winner and loser
 void add_pairs(void)
 {
     pair_count = 0;
@@ -150,7 +150,7 @@ void add_pairs(void)
          }
     }
 }
-// adventage funkction
+// adventage funkction 
 int advantage(pair para[],int i)
 {
     return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
