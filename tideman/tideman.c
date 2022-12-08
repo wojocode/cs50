@@ -150,7 +150,7 @@ void add_pairs(void)
          }
     }
 }
-// return strength of victory - (winner - loser)
+// additional function - return strength of victory - (winner - loser)
 int advantage(pair para[],int i)
 {
     return preferences[para[i].winner][para[i].loser] - preferences[para[i].loser][para[i].winner];
@@ -193,8 +193,11 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
+// create variable stored false_count
+// all false locked[j][i] every j over i is the winner
+// if locked[j][i] is false than update false_count
     int false_count[pair_count];
-   for (int i = 0; i < pair_count; i++)
+    for (int i = 0; i < pair_count; i++)
    {
        for (int j = 0; j < pair_count; j++)
        {
@@ -208,12 +211,13 @@ void print_winner(void)
             }
        }
    }
-for (int a = 0; a < pair_count; a++)
-{
-    if (false_count[a] > false_count[a+1])
+// the highest false_count[a] wins
+    for (int a = 0; a < pair_count; a++)
+    {
+        if (false_count[a] > false_count[a+1])
        {
             false_count[a+1] = false_count[a];
        }
-}
+    }
 printf("%s\n",candidates[pair_count-1]);
 }
