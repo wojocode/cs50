@@ -100,7 +100,8 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-// query name for every candidate name
+// checking looped input name with all candidates
+// assigment candidates index to ranks[rank index]
     for (int i = 0; i < candidate_count; i++)
     {
         if (!strcmp(name, candidates[i]))
@@ -112,9 +113,10 @@ bool vote(int rank, string name, int ranks[])
     return false;
 }
 // Update preferences given one voter's ranks
+// record preferences from ranks array candidates
 void record_preferences(int ranks[])
 {
-    for (int i = 0; i < candidate_count - 1;i++)
+    for (int i = 0; i < candidate_count - 1 ;i++)
     {
         for (int j = 1; j < candidate_count - i; j++)
         {
