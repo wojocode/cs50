@@ -5,7 +5,7 @@ int main(void)
 {
 
  int a = 50;
-    
- printf("%i\n",p);
+int *p = &a;
+ printf("%i\n",*p);
 
 }
