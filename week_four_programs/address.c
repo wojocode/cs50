@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void)
 {
-    int n = 50;
-    int *p = &n;
-    printf("%p\n", p);
-    printf("%i\n", *p);
 
-    char *s = "Hi!";
-    printf("%s\n", s);
+    string s = "Wojtek";
+    char *p = &s[0];
+    printf("%p\n", p);
+    printf("%p\n", s);
+
 }
