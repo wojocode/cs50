@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <cs50.h>
-#include <string.h>
 
 int main(void)
 {
@@ -8,6 +6,6 @@ int main(void)
     int *p = &n;
     printf("%p\n", p);
     printf("%i\n", *p);
-
+    
     char *s = "Hi!";
 }
