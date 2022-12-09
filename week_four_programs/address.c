@@ -4,7 +4,8 @@
 int main(void)
 {
 
-char *s = "Wojtek";
+string s = "Wojtek";
+char 
  printf("%p\n",*s);
 
 }
