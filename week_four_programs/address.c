@@ -5,7 +5,7 @@ int main(void)
 {
 
 string s = "Wojtek";
-char 
- printf("%p\n",*s);
+char a = s[0];
+printf(")
 
 }
