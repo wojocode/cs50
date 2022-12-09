@@ -4,8 +4,7 @@
 int main(void)
 {
 
- int a = 50;
-int *p = &a;
- printf("%i\n",*p);
+char *s = "Wojtek";
+ printf("%p\n",*s);
 
 }
