@@ -9,5 +9,7 @@ int main(void)
     char *s = "hi!";
     char *t = malloc(strlen(s+1));
     strcpy(t,s);
+    t[0] = toupper(t[0]);
+    printf("%s\n",s);
     printf("%s\n",t);
 }
