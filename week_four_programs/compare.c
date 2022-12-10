@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main(void)
 {
@@ -7,5 +8,12 @@ int main(void)
     string t = get_string("t: ");
 
 
-    if ()
+    if (strcmp(s,t)==0)
+    {
+        printf("Same\n");
+    }
+    else
+    {
+        printf("Different\n");
+    }
 }
