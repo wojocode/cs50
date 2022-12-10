@@ -4,9 +4,9 @@
 int main(void)
 {
 
-string s ="Wojtek";
-char *a = &s[0];
-printf("%p\n",s);
-printf("%p\n",a);
+char *s ="Wojtek";
+
+printf("%c\n",*s);
+printf("%c\n",*(s + 1));
 
 }
