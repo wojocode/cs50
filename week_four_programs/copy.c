@@ -4,5 +4,6 @@
 
 int main(void)
 {
-    
+    char *s = "hi!";
+    char *t = malloc(strlen)
 }
