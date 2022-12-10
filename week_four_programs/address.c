@@ -4,9 +4,11 @@
 int main(void)
 {
 
-char *s ="Wojtek";
+int numbers[] = {4,6,8,2,7,5,0};
 
-printf("%c\n",*s);
-printf("%c\n",*(s + 1));
+int *n = &numbers[0];
+printf("%i\n",*n);
+printf("%i\n",*(n+1));
+printf("%i\n",*(n+2);
 
 }
