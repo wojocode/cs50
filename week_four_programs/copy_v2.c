@@ -8,5 +8,6 @@ int main(void)
 {
     char *s = "hi!";
     char *t = malloc(strlen(s+1));
-    strcpy()
+    strcpy(t,s);
+    printf("%s\n",t);
 }
