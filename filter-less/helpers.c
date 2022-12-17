@@ -23,17 +23,42 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     const int RANGE = 255;
+    
     for (int i = 0; i <= height - 1; i++)
     {
         for (int j = 0; j <= width - 1; j++)
         {
             int sepiaRed = round(.393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue);
+                if (sepiaRed > RANGE)
+                {
+                    image[i][j].rgbtRed = RANGE;
+                }
+                else
+                {
+                    sepiaRed = image[i][j].rgbtRed;
+                }
+
             int sepiaGreen = round(.349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue);
+                if (sepiaGreen > RANGE)
+                {
+                    image[i][j].rgbtGreen = RANGE;
+                }
+                else
+                {
+                    sepiaGreen = image[i][j].rgbtGreen;
+                }
+
             int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
-            
+                if (sepiaBlue > RANGE)
+                {
+                    image[i][j].rgbtBlue = RANGE;
+                }
+                else
+                {
+                    sepiaBlue = image[i][j].rgbtBlue;
+                }
         }
     }
-
 }
 
 // Reflect image horizontally
