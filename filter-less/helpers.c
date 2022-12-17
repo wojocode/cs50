@@ -22,7 +22,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
-    int RANGE = 255;
+    const int RANGE = 255;
 
     for (int i = 0; i <= height - 1; i++)
     {
