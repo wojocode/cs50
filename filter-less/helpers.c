@@ -29,6 +29,20 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j <= width - 1; j++)
         {
             int sepiaRed = round(.393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue);
+
+            int sepiaGreen = round(.349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue);
+
+            int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
+
+                if (sepiaBlue > RANGE)
+                {
+                    image[i][j].rgbtBlue = RANGE;
+                }
+                else
+                {
+                    image[i][j].rgbtBlue = sepiaBlue;
+                }
+
                 if (sepiaRed > RANGE)
                 {
                     image[i][j].rgbtRed = RANGE;
@@ -38,7 +52,6 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                     image[i][j].rgbtRed = sepiaRed;
                 }
 
-            int sepiaGreen = round(.349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue);
                 if (sepiaGreen > RANGE)
                 {
                     image[i][j].rgbtGreen = RANGE;
@@ -46,16 +59,6 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 else
                 {
                     image[i][j].rgbtGreen = sepiaGreen;
-                }
-
-            int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
-                if (sepiaBlue > RANGE)
-                {
-                    image[i][j].rgbtBlue = RANGE;
-                }
-                else
-                {
-                    image[i][j].rgbtBlue = sepiaBlue;
                 }
         }
     }
