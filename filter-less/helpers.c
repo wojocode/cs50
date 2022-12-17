@@ -78,7 +78,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 }
-
+void swap(RGBTRIPLE *a)
+{
+    RGBTRIPLE tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
 
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
