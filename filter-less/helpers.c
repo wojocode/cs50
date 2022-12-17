@@ -71,14 +71,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j <= width - 1; j++)
         {
-            RGBTRIPLE tmp;
-            tmp = image[i][j];
-            image[i][j] = image[i][(width - 1) - j];
-            image[i][(width - 1) - j] = tmp;
+            swap(&image[i][j], &image[i][(width - 1) -j]);
         }
     }
 }
-void swap(RGBTRIPLE *a)
+void swap(RGBTRIPLE *a,RGBTRIPLE *b)
 {
     RGBTRIPLE tmp = *a;
     *a = *b;
