@@ -23,7 +23,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     const int RANGE = 255;
-    
+
     for (int i = 0; i <= height - 1; i++)
     {
         for (int j = 0; j <= width - 1; j++)
@@ -35,7 +35,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 }
                 else
                 {
-                    sepiaRed = image[i][j].rgbtRed;
+                    image[i][j].rgbtRed = sepiaRed;
                 }
 
             int sepiaGreen = round(.349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue);
@@ -45,7 +45,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 }
                 else
                 {
-                    sepiaGreen = image[i][j].rgbtGreen;
+                    image[i][j].rgbtGreen = sepiaGreen;
                 }
 
             int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
@@ -55,7 +55,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                 }
                 else
                 {
-                    sepiaBlue = image[i][j].rgbtBlue;
+                    image[i][j].rgbtBlue = sepiaBlue;
                 }
         }
     }
