@@ -4,7 +4,7 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-// grayscale converter use orginal pixel average of three values and set that average value to all of color type in the pixel 
+// grayscale converter use orginal pixel average of three values and set that average value to all of color type in the pixel (below named new_pixel)
     int new_pixel;
 
     for (int i = 0; i <= height - 1; i++)
