@@ -63,6 +63,12 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 }
+void swap(RGBTRIPLE *a,RGBTRIPLE *b)
+{
+    RGBTRIPLE tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
 
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
@@ -71,16 +77,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j <= width - 1; j++)
         {
-            swap(&image[i][j], &image[i][(width - 1) -j]);
+            swap(image[i]&[j], image[i]&[(width - 1) -j]);
         }
     }
 }
-void swap(RGBTRIPLE *a,RGBTRIPLE *b)
-{
-    RGBTRIPLE tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
+
 
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
