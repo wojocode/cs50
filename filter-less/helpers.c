@@ -71,7 +71,7 @@ void swap(int a, int b)
 }
 
 // Reflect image horizontally
-void reflect(int height,int width, RGBTRIPLE image[height][width])
+void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i <= height - 1; i++)
     {
