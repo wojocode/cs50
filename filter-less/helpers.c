@@ -77,7 +77,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         RGBTRIPLE tmp = *a;
         *a = *b;
         *b = tmp;
-
         }
     }
 }
