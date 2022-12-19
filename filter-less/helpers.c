@@ -64,12 +64,12 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     }
 }
 
-void swap(int i, int j ,int width , RGBTRIPLE *image[i][j])
+void swap(int i, int j ,int width , RGBTRIPLE image[i][j])
 {
 
-        RGBTRIPLE tmp = RGBTRIPLE *image[i][j];
-        RGBTRIPLE *image[i][j] = RGBTRIPLE *image[i][(width - 1) - j];
-        RGBTRIPLE *image[i][(width - 1) - j] = tmp;
+        RGBTRIPLE tmp =  *image[i][j];
+         *image[i][j] =  *image[i][(width - 1) - j];
+        *image[i][(width - 1) - j] = tmp;
 }
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
