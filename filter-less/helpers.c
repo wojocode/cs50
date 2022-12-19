@@ -64,7 +64,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     }
 }
 
-void swap(RGBTRIPLE *image[int i][int j], RGBTRIPLE *image[i][int width - j])
+void swap(RGBTRIPLE *image[int i][int j])
 {
         RGBTRIPLE *a = &image[i][(width - 1) - j];
         RGBTRIPLE *b = &image[i][j];
