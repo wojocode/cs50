@@ -1,5 +1,7 @@
+#include <stdlib.h>
 #include "helpers.h"
 #include <math.h>
+
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -82,7 +84,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
 // copy every pixel to copy array
-RGBTRIPLE copy[height][width] = malloc(RGBTRIPLE image[height][width]);
+RGBTRIPLE copy[height][width] = malloc(sizeof(RGBTRIPLE) *image[height][width]);
 
 
 }
