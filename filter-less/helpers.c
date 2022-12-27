@@ -86,6 +86,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // copy every pixel to copy array
 RGBTRIPLE copy[height][width];
 
+int Blue_avr, Green_avr, Red_avr;
+
     for (int i = 0; i <= height - 1; i++)
     {
         for (int j = 0; j <= width - 1; j++)
@@ -100,7 +102,7 @@ RGBTRIPLE copy[height][width];
         {
             if (a == 0 && b == 0)
             {
-                
+            
             }
 
         copy[a][b].rgbtBlue = Blue_avr;
