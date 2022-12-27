@@ -25,10 +25,10 @@ else if (index == 1)
 else {
 for (int i = 0; i <= index; i++)
     {
-        
-        printf("%i,",next_numb);
+
+        printf("%i,",sum);
         next_numb = numb_1 + numb_2;
-        sum = next_number +
+        sum = next_numb + sum;
 
     }
     printf("\n");
