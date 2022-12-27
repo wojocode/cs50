@@ -86,4 +86,5 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // copy every pixel to copy array
 RGBTRIPLE copy[height][width];
 
+
 }
