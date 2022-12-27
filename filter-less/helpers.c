@@ -174,14 +174,15 @@ Red_avr = round((image[a][b].rgbtRed + image[a][b-1].rgbtRed + image[a][b+1].rgb
         copy[a][b].rgbtBlue = Blue_avr;
         copy[a][b].rgbtGreen = Green_avr;
         copy[a][b].rgbtRed = Red_avr;
+
+
+        image[a][b].rgbtBlue = Blue_avr;
+        image[a][b].rgbtGreen = Green_avr;
+        image[a][b].rgbtRed = Red_avr;
         }
     }
 
 
 
 
-
-        image[a][b].rgbtBlue = Blue_avr;
-        image[a][b].rgbtGreen = Green_avr;
-        image[a][b].rgbtRed = Red_avr;
 }
