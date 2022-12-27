@@ -117,9 +117,9 @@ int Blue_avr, Green_avr, Red_avr;
             //3
             else if (a == height - 1 && b == width - 1)
             {
-                Blue_avr = round((image[a][b].rgbtBlue + image[a][b - 1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b - 1].rgbtBlue) / 4);
-                Green_avr = round((image[a][b].rgbtGreen + image[a][b - 1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b - 1].rgbtGreen) / 4);
-                Red_avr = round((image[a][b].rgbtRed + image[a][b - 1].rgbtRed + image[a+1][b].rgbtRed + image[a+1][b - 1].rgbtRed) / 4);
+                Blue_avr = round((image[a][b].rgbtBlue + image[a][b - 1].rgbtBlue + image[a - 1][b].rgbtBlue + image[a -1][b - 1].rgbtBlue) / 4);
+                Green_avr = round((image[a][b].rgbtGreen + image[a][b - 1].rgbtGreen + image[a - 1][b].rgbtGreen + image[a -1][b - 1].rgbtGreen) / 4);
+                Red_avr = round((image[a][b].rgbtRed + image[a][b - 1].rgbtRed + image[a - 1][b].rgbtRed + image[a - 1][b - 1].rgbtRed) / 4);
             }
 
         copy[a][b].rgbtBlue = Blue_avr;
