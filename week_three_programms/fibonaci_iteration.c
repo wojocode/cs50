@@ -22,12 +22,14 @@ else if (index == 1)
 {
     printf("%i, %i\n", numb_1,numb_2);
 }
+else {
 for (int i = 0; i <= index; i++)
     {
         printf("%i,",next_numb);
         next_numb = numb_1 + numb_2;
-        
 
+    
     }
     printf("\n");
+}
 }
