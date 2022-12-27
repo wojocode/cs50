@@ -3,7 +3,7 @@
 
 int numb_1 = 0;
 int numb_2 = 1;
-int next_numb;
+int next_numb = 1;
 int index;
 int sum;
 
@@ -28,7 +28,7 @@ for (int i = 0; i <= index; i++)
 
         printf("%i,",sum);
         sum = numb_1 + numb_2;
-        next_number = sum
+        next_numb = sum + next_numb;
 
 
     }
