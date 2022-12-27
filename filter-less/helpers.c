@@ -167,6 +167,8 @@ Red_avr = round((image[a][b].rgbtRed + image[a][b-1].rgbtRed + image[a-1][b].rgb
 else
 {
 Blue_avr = round((image[a][b].rgbtBlue + image[a][b-1].rgbtBlue + image[a][b+1].rgbtBlue + image[a - 1][b].rgbtBlue + image[a -1][b-1].rgbtBlue + image[a -1][b+1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b-1].rgbtBlue + image[a+1][b+1].rgbtBlue)/9);
+Green_avr = round((image[a][b].rgbtGreen + image[a][b-1].rgbtGreen + image[a][b+1].rgbtGreen + image[a - 1][b].rgbtGreen + image[a -1][b-1].rgbtGreen + image[a -1][b+1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b-1].rgbtGreen + image[a+1][b+1].rgbtGreen)/9);
+Red_avr = round((image[a][b].rgbtRed + image[a][b-1].rgbtRed + image[a][b+1].rgbtRed + image[a - 1][b].rgbtRed + image[a -1][b-1].rgbtRed + image[a -1][b+1].rgbtRed + image[a+1][b].rgbtRed + image[a+1][b-1].rgbtRed + image[a+1][b+1].rgbtRed)/9);
 }
 
         copy[a][b].rgbtBlue = Blue_avr;
