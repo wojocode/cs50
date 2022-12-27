@@ -93,9 +93,11 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
-    
 
 
 
+copy[a][b].rgbtBlue = image[a][b].rgbtBlue_avr;
+copy[a][b].rgbtGreen = image[a][b].rgbtGreen_avr;
+copy[a][b].rgbtRed = image[a][b].rgbtRed_avr;
 
 }
