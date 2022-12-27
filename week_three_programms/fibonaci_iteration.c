@@ -5,6 +5,7 @@ int numb_1 = 0;
 int numb_2 = 1;
 int next_numb;
 int index;
+int sum;
 
 int main(void)
 {
@@ -24,7 +25,8 @@ else if (index == 1)
 for (int i = 0; i <= index; i++)
     {
         printf("%i,",next_numb);
-        next_numb = numb_2 + next_numb;
+        sum = next_numb + 
+        next_numb = numb_2 + sum;
 
     }
     printf("\n");
