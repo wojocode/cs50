@@ -130,7 +130,6 @@ int Blue_avr, Green_avr, Red_avr;
                 Red_avr = round((image[a][b].rgbtRed + image[a][b + 1].rgbtRed + image[a - 1][b].rgbtRed + image[a - 1][b + 1].rgbtRed) / 4);
             }
 
-
             // dividing by 6 expeptions
             //1
             else if (a == 0 && (b > 0 && b < width - 1))
@@ -152,22 +151,35 @@ int Blue_avr, Green_avr, Red_avr;
             else if (b == 0 && (a > 0 && a < height - 1))
             {
 Blue_avr = round((image[a][b].rgbtBlue + image[a][b+1].rgbtBlue + image[a-1][b].rgbtBlue + image[a-1][b+1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b + 1].rgbtBlue )/6);
-Green_avr = round((image[a][b].rgbtGreen + image[a][b+1].rgbtGreen + image[a-][b].rgbtGreen + image[a-1][b+1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b + 1].rgbtGreen)/6);
+Green_avr = round((image[a][b].rgbtGreen + image[a][b+1].rgbtGreen + image[a-1][b].rgbtGreen + image[a-1][b+1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b + 1].rgbtGreen)/6);
 Red_avr = round((image[a][b].rgbtRed + image[a][b +1].rgbtRed + image[a-1][b].rgbtRed + image[a-1][b+1].rgbtRed + image[a+1][b].rgbtRed + image[a+1][b+1].rgbtRed)/6);
             }
             // dividing by 6 expeptions
             //4
-Blue_avr = round((image[a][b].rgbtBlue + image[a][b+1].rgbtBlue + image[a-1][b].rgbtBlue + image[a-1][b+1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b + 1].rgbtBlue )/6);
-Green_avr = round((image[a][b].rgbtGreen + image[a][b+1].rgbtGreen + image[a-][b].rgbtGreen + image[a-1][b+1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b + 1].rgbtGreen)/6);
-Red_avr = round((image[a][b].rgbtRed + image[a][b +1].rgbtRed + image[a-1][b].rgbtRed + image[a-1][b+1].rgbtRed + image[a+1][b].rgbtRed + image[a+1][b+1].rgbtRed)/6);
+            else if (b == width - 1 && (a > 0 && a < height - 1))
+            {
+Blue_avr = round((image[a][b].rgbtBlue + image[a][b-1].rgbtBlue + image[a-1][b].rgbtBlue + image[a-1][b-1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b-1].rgbtBlue )/6);
+Green_avr = round((image[a][b].rgbtGreen + image[a][b-1].rgbtGreen + image[a-1][b].rgbtGreen + image[a-1][b-1].rgbtGreen + image[a+1][b].rgbtGreen + image[a+1][b-1].rgbtGreen)/6);
+Red_avr = round((image[a][b].rgbtRed + image[a][b-1].rgbtRed + image[a-1][b].rgbtRed + image[a-1][b-1].rgbtRed + image[a+1][b].rgbtRed + image[a+1][b-1].rgbtRed)/6);
+            }
 
-
-
+//dividing by 9
+else
+{
+Blue_avr = round((image[a][b].rgbtBlue + image[a][b-1].rgbtBlue + image[a][b+1].rgbtBlue + image[a - 1][b].rgbtBlue + image[a -1][b-1].rgbtBlue + image[a -1][b+1].rgbtBlue + image[a+1][b].rgbtBlue + image[a+1][b-1].rgbtBlue + image[a+1][b+1].rgbtBlue)/9);
+}
 
         copy[a][b].rgbtBlue = Blue_avr;
         copy[a][b].rgbtGreen = Green_avr;
         copy[a][b].rgbtRed = Red_avr;
-
         }
     }
+
+
+
+
+
+        image[a][b].rgbtBlue = copy[a][b].rgbtBlue;
+        image[a][b].rgbtGreen = copy[a][b].rgbtGreen;
+        image[a][b].rgbtRed = copy[a][b].rgbtRed;
 }
