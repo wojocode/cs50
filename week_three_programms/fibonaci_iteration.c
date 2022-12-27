@@ -4,8 +4,9 @@ int numb_1;
 int numb_2;
 int next_numb;
 
-int index = get_int("enter index: ");
+do {int index = get_int("enter index: ")
 
+while (index >=0);
 for (int i = 0; i <= index; i++)
 {
 
