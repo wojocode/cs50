@@ -141,6 +141,9 @@ int Blue_avr, Green_avr, Red_avr;
             // dividing by 6 expeptions
             //2
             else if (a == height - 1 && (b > 0 && b < width - 1))
+            {
+                
+            }
 
 
 
