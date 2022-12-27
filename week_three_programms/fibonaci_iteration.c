@@ -5,6 +5,7 @@ int numb_1;
 int numb_2;
 int next_numb;
 int index;
+
 int main(void)
 {
 do {
@@ -14,7 +15,7 @@ while(index <= 0);
 
 for (int i = 0; i <= index; i++)
     {
-        
+
     }
 
 }
