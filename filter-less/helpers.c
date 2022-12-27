@@ -100,7 +100,7 @@ int Blue_avr, Green_avr, Red_avr;
     {
         for (int b = 0; b <= width - 1; b++)
         {
-            // corners exceptions
+            // corners exceptions dividing by 4
             //1
             if (a == 0 && b == 0)
             {
@@ -130,7 +130,14 @@ int Blue_avr, Green_avr, Red_avr;
                 Red_avr = round((image[a][b].rgbtRed + image[a][b + 1].rgbtRed + image[a - 1][b].rgbtRed + image[a - 1][b + 1].rgbtRed) / 4);
             }
 
+            // dividing by 6 expeptions
+            else if (a == 0 && (b > 0 && < width - 1)
+            {
+                Blue_avr = round((image[a][b].rgbtBlue + image[a][b + 1].rgbtBlue + image[a - 1][b].rgbtBlue + image[a -1][b + 1].rgbtBlue) / 6);
+                Green_avr = round((image[a][b].rgbtGreen + image[a][b + 1].rgbtGreen + image[a - 1][b].rgbtGreen + image[a -1][b + 1].rgbtGreen) / 6);
+                Red_avr = round((image[a][b].rgbtRed + image[a][b + 1].rgbtRed + image[a - 1][b].rgbtRed + image[a - 1][b + 1].rgbtRed) / 6);
 
+            }
 
 
 
