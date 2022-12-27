@@ -130,6 +130,7 @@ int Blue_avr, Green_avr, Red_avr;
                 Red_avr = round((image[a][b].rgbtRed + image[a][b + 1].rgbtRed + image[a - 1][b].rgbtRed + image[a - 1][b + 1].rgbtRed) / 4);
             }
 
+
             // dividing by 6 expeptions
             //1
             else if (a == 0 && (b > 0 && b < width - 1))
@@ -146,7 +147,12 @@ int Blue_avr, Green_avr, Red_avr;
             Green_avr = round((image[a][b].rgbtGreen + image[a][b - 1].rgbtGreen + image[a][b + 1].rgbtGreen + image[a-1][b].rgbtGreen + image[a-1][b - 1].rgbtGreen + image[a-1][b + 1].rgbtGreen)/6);
             Red_avr = round((image[a][b].rgbtRed + image[a][b - 1].rgbtRed + image[a][b + 1].rgbtRed + image[a-1][b].rgbtRed + image[a-1][b - 1].rgbtRed + image[a-1][b + 1].rgbtRed)/6);
             }
-
+            // dividing by 6 expeptions
+            //3
+            else if (b == 0 && (a > 0 && a < height - 1))
+            {
+                
+            }
 
 
 
