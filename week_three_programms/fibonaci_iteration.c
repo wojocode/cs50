@@ -25,8 +25,7 @@ else if (index == 1)
 for (int i = 0; i <= index; i++)
     {
         printf("%i,",next_numb);
-        sum = next_numb + 
-        next_numb = numb_2 + sum;
+        
 
     }
     printf("\n");
