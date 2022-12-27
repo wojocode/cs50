@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int numb_1;
-int numb_2;
+int numb_1 = 0;
+int numb_2 = 1;
 int next_numb;
 int index;
 
@@ -13,9 +13,17 @@ do {
 }
 while(index <= 0);
 
+if (index == 0)
+{
+    printf("%i,",numb_1);
+}
+else if (index == 1)
+{
+    printf("%i,", numb_2);
+}
 for (int i = 0; i <= index; i++)
     {
-        next_number = numb_1 + numb_2;
+
     }
 
 }
