@@ -93,4 +93,9 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
+    
+
+
+
+
 }
