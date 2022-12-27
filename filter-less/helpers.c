@@ -93,11 +93,19 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
+// creating avr pixel
+for ( int a = 0; a <= height - 1; a++)
+{
+    for (int b = 0; b <= width - 1; b++)
+    {
+        int avr_Blue = round();
+        int avr_Green = round();
+        int avr_Red = round();
+        copy[a][b].rgbtBlue = Blue_avr;
+        copy[a][b].rgbtGreen = Green_avr;
+        copy[a][b].rgbtRed = Red_avr;
+    }
+}
 
-
-
-copy[a][b].rgbtBlue = image[a][b].rgbtBlue_avr;
-copy[a][b].rgbtGreen = image[a][b].rgbtGreen_avr;
-copy[a][b].rgbtRed = image[a][b].rgbtRed_avr;
 
 }
