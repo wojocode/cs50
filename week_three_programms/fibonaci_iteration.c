@@ -15,7 +15,7 @@ while(index <= 0);
 
 for (int i = 0; i <= index; i++)
     {
-
+        next_number = numb_1 + numb_2;
     }
 
 }
