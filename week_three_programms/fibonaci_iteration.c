@@ -27,8 +27,8 @@ for (int i = 0; i <= index; i++)
     {
 
         printf("%i,",sum);
-        sum = numb_2 + next_numb;
-        
+        sum = numb_1 + next_numb;
+        next_numb = numb_1 + sum;
 
     }
     printf("\n");
