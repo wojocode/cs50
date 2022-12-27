@@ -10,7 +10,11 @@ int main(void)
 do {
     index = get_int("enter index: ");
 }
-while(index >= 0);
+while(index <= 0);
 
-//for (int i = 0; i <= index; i++)
+for (int i = 0; i <= index; i++)
+    {
+        
+    }
+
 }
