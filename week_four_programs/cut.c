@@ -5,7 +5,7 @@ int main(void)
 {
     FILE *fl = fopen("filter-less/images/yard.bmp" ,"r");
     char ch;
-    while (ch = fgetc("filter-less/images/yard.bmp") != EOF)
+    while ((ch = fgetc("filter-less/images/yard.bmp") != EOF)
     {
         printf("%c",ch);
     }
