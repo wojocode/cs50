@@ -1,5 +1,6 @@
 #include "helpers.h"
 #include <math.h>
+#include <stdlib.h>
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -39,7 +40,9 @@ for (int i = 0; i <= height - 1 ; i++)
 //setting value 0 to pixel out of image
 for (int a = -1; a <= width; a++)
 {
+    image[-1][a].rgbtBlue = malloc(sizeof(BYTE));
     image[-1][a].rgbtBlue = 0;
+
     image[-1][a].rgbtRed = 0;
     image[-1][a].rgbtGreen = 0;
     image[height][a].rgbtBlue = 0;
