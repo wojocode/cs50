@@ -37,7 +37,10 @@ for (int i = 0; i <= height - 1 ; i++)
         for (int j = 0; j <= width - 1; j++)
         {
 //assigning value 0 to pixel out of image
-for (int a = )
+for (int a = -1; a <= width; a++)
+{
+    
+}
 
 
             //int GX_red =
