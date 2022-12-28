@@ -58,7 +58,7 @@ for (int a = -1; a <= width; a++)
 
 int GX_red = round(-1*(copy[i-1][j-1].rgbtRed) + 0*(copy[i-1][j].rgbtRed) + 1*(copy[i-1][j+1].rgbtRed) + -2*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 2*(copy[i][j+1].rgbtRed) + -1*(copy[i+1][j-1].rgbtRed) + 0*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
 int GX_green = round(-1*(copy[i-1][j-1].rgbtGreen) + 0*(copy[i-1][j].rgbtGreen) + 1*(copy[i-1][j+1].rgbtGreen) + -2*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 2*(copy[i][j+1].rgbtGreen) + -1*(copy[i+1][j-1].rgbtGreen) + 0*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
-int Gx_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + 0*(copy[i-1][j].rgbtBlue) + 1*(copy[i-1][j+1].rgbtBlue) + -2*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 2*(copy[i][j+1].rgbtBlue) + -1*(copy[i+1][j-1].rgbtBlue) + 0*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
+int GX_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + 0*(copy[i-1][j].rgbtBlue) + 1*(copy[i-1][j+1].rgbtBlue) + -2*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 2*(copy[i][j+1].rgbtBlue) + -1*(copy[i+1][j-1].rgbtBlue) + 0*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
 
 int GY_red = round(-1*(copy[i-1][j-1].rgbtRed) + -2*(copy[i-1][j].rgbtRed) + -1*(copy[i-1][j+1].rgbtRed) + 0*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 0*(copy[i][j+1].rgbtRed) + 1*(copy[i+1][j-1].rgbtRed) + 2*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
 int GY_green = round(-1*(copy[i-1][j-1].rgbtGreen) + -2*(copy[i-1][j].rgbtGreen) + -1*(copy[i-1][j+1].rgbtGreen) + 0*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 0*(copy[i][j+1].rgbtGreen) + 1*(copy[i+1][j-1].rgbtGreen) + 2*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
@@ -66,9 +66,37 @@ int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + 
 
 // assign GX's value to copy[][]
 // also round it and capped at 255
-copy[i][j].rgbtRed = round(GX_red);
-copy[i][j].rgbtGreen =
-copy[i][j].rgbtBlue =
+copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
+copy[i][j].rgbtGreen = round(GX_green^2 + GY_green^2);
+copy[i][j].rgbtBlue = round(GX_blue^2 + GY_blue^2);
+
+if (copy[i][j].rgbtRed <= 0)
+{
+copy[i][j].rgbtRed = 0;
+}
+if (copy[i][j].rgbtRed > 255)
+{
+    copy[i][j].rgbtRed = 255;
+}
+
+if (copy[i][j].rgbtGreen <= 0)
+{
+copy[i][j].rgbtGreen = 0;
+}
+if (copy[i][j].rgbtGreen > 255)
+{
+    copy[i][j].rgbtGreen = 255;
+}
+
+if (copy[i][j].rgbtBlue <= 0)
+{
+copy[i][j].rgbtBlue = 0;
+}
+if (copy[i][j].rgbtBlue > 255)
+{
+    copy[i][j].rgbtBlue = 255;
+}
+
 
         }
     }
