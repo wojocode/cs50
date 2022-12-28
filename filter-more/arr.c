@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -21,6 +22,5 @@ int main(void)
     arr[a-1][b]= -3;
 
 
-    int pixel = arr[a-1][b] + arr[0][0];
-printf("%i ",pixel);
+    printf("%f\n",pow(2,2));
 }
