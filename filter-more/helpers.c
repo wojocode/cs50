@@ -36,9 +36,15 @@ for (int i = 0; i <= height - 1 ; i++)
     {
         for (int j = 0; j <= width - 1; j++)
         {
-            int GX.red = 
-            int GX.green =
-            int Gx.blue =
+// condicions for pixels in the corners
+if (i )
+            int GX_red =
+            int GX_green =
+            int Gx_blue =
+
+            int GY_red =
+            int GY_green =
+            int GY_bliue =
         }
     }
 }
