@@ -68,8 +68,7 @@ int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + 
 
 
 
-
-assign GX's value to copy[][]
+//assign GX's value to copy[][]
  //also round it, capped at 255, and allow only positive results
 copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
 copy[i][j].rgbtGreen = round(GX_green^2 + GY_green^2);
