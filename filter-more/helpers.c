@@ -111,4 +111,5 @@ if (copy[i][j].rgbtBlue > 255)
             image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
         }
     }
+
 }
