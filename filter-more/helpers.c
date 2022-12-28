@@ -55,13 +55,13 @@ for (int a = -1; a <= width; a++)
     image[a][width].rgbtGreen = 0;
 }
 
-            int GX_red =
-            int GX_green =
-            int Gx_blue =
+            int GX_red = round();
+            int GX_green = round();
+            int Gx_blue = round()
 
-            int GY_red =
-            int GY_green =
-            int GY_bliue =
+            int GY_red = round();
+            int GY_green = round();
+            int GY_bliue = round();
         }
     }
 }
