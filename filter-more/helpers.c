@@ -37,14 +37,18 @@ for (int i = 0; i <= height - 1 ; i++)
         for (int j = 0; j <= width - 1; j++)
         {
 //for pixels in the corners
-image[i-1][]
-            int GX_red =
-            int GX_green =
-            int Gx_blue =
+image[i-1][0].rgbtBlue = 0;
+image[i-1][0].rgbtRed = 0;
+image[i-1][0].rgbtGreen = 0;
 
-            int GY_red =
-            int GY_green =
-            int GY_bliue =
+
+            //int GX_red =
+            //int GX_green =
+            //int Gx_blue =
+
+            //int GY_red =
+            //int GY_green =
+            //int GY_bliue =
         }
     }
 }
