@@ -41,6 +41,10 @@ image[i-1][0].rgbtBlue = 0;
 image[i-1][0].rgbtRed = 0;
 image[i-1][0].rgbtGreen = 0;
 
+image[i-1][1].rgbtBlue = 0;
+image[i-1][1].rgbtRed = 0;
+image[i-1][1].rgbtGreen = 0;
+
 
             //int GX_red =
             //int GX_green =
