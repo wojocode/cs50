@@ -92,9 +92,6 @@ if (GX_blue > 255)
 }
 
 
-
-
-
 // assign GX's value to copy[][]
 // also round it, capped at 255, and allow only positive results
 copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
