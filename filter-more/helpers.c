@@ -86,9 +86,9 @@ int GY_blue = round(-1*(copy[a-1][b-1].rgbtBlue) + (-2*(copy[a-1][b].rgbtBlue)) 
 
 //assign GX's value to copy[][]
  //also round it, capped at 255, and allow only positive results
-copy[a][b].rgbtRed = round(GX_red^2 + GY_red^2);
-copy[a][b].rgbtGreen = round(GX_green^2 + GY_green^2);
-copy[a][b].rgbtBlue = round(GX_blue^2 + GY_blue^2);
+copy[a][b].rgbtRed = round(pow(GX_red,2) + pow(GY_red,2));
+copy[a][b].rgbtGreen = round(pow(GX_green,2) + pow(GY_green,2));
+copy[a][b].rgbtBlue = round(pow(GX_blue,2) + pow(GY_blue,2));
 
 if (copy[a][b].rgbtRed <= 0)
 {
