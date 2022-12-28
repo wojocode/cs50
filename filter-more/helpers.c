@@ -21,5 +21,14 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
-    return;
+RGBTRIPLE copy[height][width];
+// 1. make copy for each pixel
+    for (int i = 0; i <= height; i++)
+    {
+        for (int j = 0; j <= width; j++)
+        {
+            copy[i][j] = image[i][j];
+        }
+    }
+// assigning Gx value for each color 
 }
