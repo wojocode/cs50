@@ -39,24 +39,24 @@ for (int a = 0; a <= height - 1 ; a++)
         for (int b = 0; b <= width - 1; b++)
         {
 //setting value 0 to pixel out of image
-//for (int a = -1; a <= width; a++)
-//{
-  //   image[OUT][a].rgbtBlue = 0;
-    // image[OUT][a].rgbtRed = 0;
-     //image[OUT][a].rgbtGreen = 0;
-     //image[height][a].rgbtBlue = 0;
-     //image[height][a].rgbtRed = 0;
-     //image[height][a].rgbtGreen = 0;
-//}
-//for (int a = -1; a <= width; a++)
-//{
-  //    image[a][OUT].rgbtBlue = 0;
-    // image[a][OUT].rgbtRed = 0;
-     //image[a][OUT].rgbtGreen = 0;
-    //image[a][width].rgbtBlue = 0;
-     // image[a][width].rgbtRed = 0;
-     //image[a][width].rgbtGreen = 0;
-//}
+for (int c = -1; c <= width; c++)
+{
+     image[OUT][c].rgbtBlue = 0;
+     image[OUT][c].rgbtRed = 0;
+     image[OUT][c].rgbtGreen = 0;
+     image[height][c].rgbtBlue = 0;
+     image[height][c].rgbtRed = 0;
+     image[height][c].rgbtGreen = 0;
+}
+for (int d = -1; d <= width; d++)
+{
+     image[d][OUT].rgbtBlue = 0;
+    image[d][OUT].rgbtRed = 0;
+     image[d][OUT].rgbtGreen = 0;
+    image[d][width].rgbtBlue = 0;
+     image[d][width].rgbtRed = 0;
+     image[d][width].rgbtGreen = 0;
+}
 
 int GX_red = round(-1*(copy[a-1][b-1].rgbtRed) + 0*(copy[a-1][b].rgbtRed) + 1*(copy[a-1][b+1].rgbtRed)
 + (-2*(copy[a][b-1].rgbtRed)) + 0*(copy[a][b].rgbtRed) + 2*(copy[a][b+1].rgbtRed)
