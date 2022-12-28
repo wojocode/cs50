@@ -56,12 +56,15 @@ for (int a = -1; a <= width; a++)
 }
 
 int GX_red = round(-1(copy[i-1][j-1].rgbtRed) + 0(copy[i-1][j].rgbtRed) + 1(copy[i-1][j+1].rgbtRed) + -2(copy[i][j-1].rgbtRed) + 0(copy[i][j].rgbtRed) + 2(copy[i][j+1].rgbtRed) + -1(copy[i+1][j-1].rgbtRed) + 0(copy[i+1][j].rgbtRed) + 1(copy[i+1][j+1].rgbtRed));
-int GX_green = round();
-int Gx_blue = round();
+int GX_green = round(-1(copy[i-1][j-1].rgbtGreen) + 0(copy[i-1][j].rgbtGreen) + 1(copy[i-1][j+1].rgbtGreen) + -2(copy[i][j-1].rgbtGreen) + 0(copy[i][j].rgbtGreen) + 2(copy[i][j+1].rgbtGreen) + -1(copy[i+1][j-1].rgbtGreen) + 0(copy[i+1][j].rgbtGreen) + 1(copy[i+1][j+1].rgbtGreen));
+int Gx_blue = round(-1(copy[i-1][j-1].rgbtBlue) + 0(copy[i-1][j].rgbtBlue) + 1(copy[i-1][j+1].rgbtBlue) + -2(copy[i][j-1].rgbtBlue) + 0(copy[i][j].rgbtBlue) + 2(copy[i][j+1].rgbtBlue) + -1(copy[i+1][j-1].rgbtBlue) + 0(copy[i+1][j].rgbtBlue) + 1(copy[i+1][j+1].rgbtBlue));
 
-int GY_red = round();
-int GY_green = round();
-int GY_bliue = round();
+
+int GY_red = round(-1(copy[i-1][j-1].rgbtRed) + -2(copy[i-1][j].rgbtRed) + -1(copy[i-1][j+1].rgbtRed) + 0(copy[i][j-1].rgbtRed) + 0(copy[i][j].rgbtRed) + 0(copy[i][j+1].rgbtRed) + 1(copy[i+1][j-1].rgbtRed) + 2(copy[i+1][j].rgbtRed) + 1(copy[i+1][j+1].rgbtRed));
+int GY_green = round(-1(copy[i-1][j-1].rgbtGreen) + 0(copy[i-1][j].rgbtGreen) + 1(copy[i-1][j+1].rgbtGreen) + -2(copy[i][j-1].rgbtGreen) + 0(copy[i][j].rgbtGreen) + 2(copy[i][j+1].rgbtGreen) + -1(copy[i+1][j-1].rgbtGreen) + 0(copy[i+1][j].rgbtGreen) + 1(copy[i+1][j+1].rgbtGreen));
+int GY_blue = round(-1(copy[i-1][j-1].rgbtBlue) + 0(copy[i-1][j].rgbtBlue) + 1(copy[i-1][j+1].rgbtBlue) + -2(copy[i][j-1].rgbtBlue) + 0(copy[i][j].rgbtBlue) + 2(copy[i][j+1].rgbtBlue) + -1(copy[i+1][j-1].rgbtBlue) + 0(copy[i+1][j].rgbtBlue) + 1(copy[i+1][j+1].rgbtBlue));
+
+
         }
     }
 }
