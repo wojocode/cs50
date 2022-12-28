@@ -46,7 +46,15 @@ for (int a = -1; a <= width; a++)
     image[height][a].rgbtRed = 0;
     image[height][a].rgbtGreen = 0;
 }
-
+for (int a = -1; a <= width; a++)
+{
+    image[i-1][a].rgbtBlue = 0;
+    image[i-1][a].rgbtRed = 0;
+    image[i-1][a].rgbtGreen = 0;
+    image[height][a].rgbtBlue = 0;
+    image[height][a].rgbtRed = 0;
+    image[height][a].rgbtGreen = 0;
+}
 
             //int GX_red =
             //int GX_green =
