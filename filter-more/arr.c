@@ -22,5 +22,6 @@ int main(void)
     arr[a-1][b]= -3;
 
 
-    printf("%f\n",pow(2,2));
+   int x = round(pow(2,4));
+   printf("%i\n",x);
 }
