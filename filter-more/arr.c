@@ -15,6 +15,12 @@ int main(void)
         }
 
     }
-    arr[0][-1] = 0;
-printf("%i ",arr[0][0]);
+    int a = 0;
+    int b = 0;
+
+    arr[a-1][b]= -3;
+
+
+    int pixel = arr[a-1][b] + arr[0][0];
+printf("%i ",pixel);
 }
