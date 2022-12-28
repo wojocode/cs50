@@ -3,7 +3,7 @@
 int main(void)
 {
     int arr[3][3];
-    int q = 0;
+    int q = 1;
 
     for (int i = 0; i < 3;i++)
     {
@@ -15,12 +15,6 @@ int main(void)
         }
 
     }
-
-for (int a = 0; a < 3;a++)
-{
-    for (int b = 0; b < 3; b++)
-    {
-        printf("%i\n",arr[a][b]);
-    }
-}
+    arr[0][-1] = 0;
+printf("%i ",arr[0][0]);
 }
