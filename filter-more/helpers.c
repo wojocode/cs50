@@ -38,9 +38,9 @@ for (int i = 0; i <= height - 1 ; i++)
         {
 // condicions for pixels in the corners
 //1
-if (i = 0)
+if (i == 0 && j == 0)
 {
-image[]
+image[i-1]
 }
             int GX_red =
             int GX_green =
