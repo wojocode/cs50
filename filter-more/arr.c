@@ -2,10 +2,7 @@
 
 int main(void)
 {
-    int arr[3];
+    int arr[3] = {1,2,3};
+    printf("%i\n", arr[-1]);
 
-    for (int i = 0; i <= 3; i++)
-    {
-    printf("%i\n",arr[-2*i]);
-    }
 }
