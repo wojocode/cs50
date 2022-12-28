@@ -64,8 +64,9 @@ int GY_red = round(-1*(copy[i-1][j-1].rgbtRed) + -2*(copy[i-1][j].rgbtRed) + -1*
 int GY_green = round(-1*(copy[i-1][j-1].rgbtGreen) + -2*(copy[i-1][j].rgbtGreen) + -1*(copy[i-1][j+1].rgbtGreen) + 0*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 0*(copy[i][j+1].rgbtGreen) + 1*(copy[i+1][j-1].rgbtGreen) + 2*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
 int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + -1*(copy[i-1][j+1].rgbtBlue) + 0*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 0*(copy[i][j+1].rgbtBlue) + 1*(copy[i+1][j-1].rgbtBlue) + 2*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
 
-// assign GX's value to copy[][];
-copy[i][j].rgbtRed = GX_red
+// assign GX's value to copy[][]
+// also round it and capped at 255
+copy[i][j].rgbtRed = round(GX_red);
 copy[i][j].rgbtGreen =
 copy[i][j].rgbtBlue =
 
