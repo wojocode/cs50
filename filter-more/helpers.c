@@ -30,6 +30,13 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
-// assigning Gx value for each color for each pixel
 
+// 2. assigning Gx value for each color for each pixel
+for (int i = 0; i <= height; i++)
+    {
+        for (int j = 0; j <= width; j++)
+        {
+
+        }
+    }
 }
