@@ -23,7 +23,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
-int out = -1;
+const int OUT = -1;
 RGBTRIPLE copy[height][width];
 // 1. make copy for each pixel
     for (int i = 0; i <= height - 1; i++)
@@ -41,90 +41,66 @@ for (int i = 0; i <= height - 1 ; i++)
 //setting value 0 to pixel out of image
 for (int a = -1; a <= width; a++)
 {
-
-     image[-1][a].rgbtBlue = 0;
-     image[-1][a].rgbtRed = 0;
-    image[-1][a].rgbtGreen = 0;
-      image[height][a].rgbtBlue = 0;
-      image[height][a].rgbtRed = 0;
-      image[height][a].rgbtGreen = 0;
+     image[OUT][a].rgbtBlue = 0;
+     image[OUT][a].rgbtRed = 0;
+     image[OUT][a].rgbtGreen = 0;
+     image[height][a].rgbtBlue = 0;
+     image[height][a].rgbtRed = 0;
+     image[height][a].rgbtGreen = 0;
 }
 for (int a = -1; a <= width; a++)
 {
-      image[a][-1].rgbtBlue = 0;
-     image[a][-1].rgbtRed = 0;
-     image[a][-1].rgbtGreen = 0;
+      image[a][OUT].rgbtBlue = 0;
+     image[a][OUT].rgbtRed = 0;
+     image[a][OUT].rgbtGreen = 0;
     image[a][width].rgbtBlue = 0;
       image[a][width].rgbtRed = 0;
      image[a][width].rgbtGreen = 0;
 }
 
-int GX_red = round(-1*(copy[i-1][j-1].rgbtRed) + 0*(copy[i-1][j].rgbtRed) + 1*(copy[i-1][j+1].rgbtRed) + -2*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 2*(copy[i][j+1].rgbtRed) + -1*(copy[i+1][j-1].rgbtRed) + 0*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
-int GX_green = round(-1*(copy[i-1][j-1].rgbtGreen) + 0*(copy[i-1][j].rgbtGreen) + 1*(copy[i-1][j+1].rgbtGreen) + -2*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 2*(copy[i][j+1].rgbtGreen) + -1*(copy[i+1][j-1].rgbtGreen) + 0*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
-int GX_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + 0*(copy[i-1][j].rgbtBlue) + 1*(copy[i-1][j+1].rgbtBlue) + -2*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 2*(copy[i][j+1].rgbtBlue) + -1*(copy[i+1][j-1].rgbtBlue) + 0*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
+//int GX_red = round(-1*(copy[i-1][j-1].rgbtRed) + 0*(copy[i-1][j].rgbtRed) + 1*(copy[i-1][j+1].rgbtRed) + -2*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 2*(copy[i][j+1].rgbtRed) + -1*(copy[i+1][j-1].rgbtRed) + 0*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
+//int GX_green = round(-1*(copy[i-1][j-1].rgbtGreen) + 0*(copy[i-1][j].rgbtGreen) + 1*(copy[i-1][j+1].rgbtGreen) + -2*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 2*(copy[i][j+1].rgbtGreen) + -1*(copy[i+1][j-1].rgbtGreen) + 0*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
+//int GX_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + 0*(copy[i-1][j].rgbtBlue) + 1*(copy[i-1][j+1].rgbtBlue) + -2*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 2*(copy[i][j+1].rgbtBlue) + -1*(copy[i+1][j-1].rgbtBlue) + 0*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
 
-int GY_red = round(-1*(copy[i-1][j-1].rgbtRed) + -2*(copy[i-1][j].rgbtRed) + -1*(copy[i-1][j+1].rgbtRed) + 0*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 0*(copy[i][j+1].rgbtRed) + 1*(copy[i+1][j-1].rgbtRed) + 2*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
-int GY_green = round(-1*(copy[i-1][j-1].rgbtGreen) + -2*(copy[i-1][j].rgbtGreen) + -1*(copy[i-1][j+1].rgbtGreen) + 0*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 0*(copy[i][j+1].rgbtGreen) + 1*(copy[i+1][j-1].rgbtGreen) + 2*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
-int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + -1*(copy[i-1][j+1].rgbtBlue) + 0*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 0*(copy[i][j+1].rgbtBlue) + 1*(copy[i+1][j-1].rgbtBlue) + 2*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
+//int GY_red = round(-1*(copy[i-1][j-1].rgbtRed) + -2*(copy[i-1][j].rgbtRed) + -1*(copy[i-1][j+1].rgbtRed) + 0*(copy[i][j-1].rgbtRed) + 0*(copy[i][j].rgbtRed) + 0*(copy[i][j+1].rgbtRed) + 1*(copy[i+1][j-1].rgbtRed) + 2*(copy[i+1][j].rgbtRed) + 1*(copy[i+1][j+1].rgbtRed));
+//int GY_green = round(-1*(copy[i-1][j-1].rgbtGreen) + -2*(copy[i-1][j].rgbtGreen) + -1*(copy[i-1][j+1].rgbtGreen) + 0*(copy[i][j-1].rgbtGreen) + 0*(copy[i][j].rgbtGreen) + 0*(copy[i][j+1].rgbtGreen) + 1*(copy[i+1][j-1].rgbtGreen) + 2*(copy[i+1][j].rgbtGreen) + 1*(copy[i+1][j+1].rgbtGreen));
+//int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + -1*(copy[i-1][j+1].rgbtBlue) + 0*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 0*(copy[i][j+1].rgbtBlue) + 1*(copy[i+1][j-1].rgbtBlue) + 2*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
 
-if (GX_red <= 0)
-{
-    GX_red = 0;
-}
-if (GX_red > 255)
-{
-    GX_red = 255;
-}
-if (GX_green <= 0)
-{
-    GX_green = 0;
-}
-if (GX_green > 255)
-{
-    GX_green = 255;
-}
-if (GX_blue <= 0)
-{
-    GX_blue = 0;
-}
-if (GX_blue > 255)
-{
-    GX_blue = 255;
-}
+
 
 
 // assign GX's value to copy[][]
 // also round it, capped at 255, and allow only positive results
-copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
-copy[i][j].rgbtGreen = round(GX_green^2 + GY_green^2);
-copy[i][j].rgbtBlue = round(GX_blue^2 + GY_blue^2);
+//copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
+//copy[i][j].rgbtGreen = round(GX_green^2 + GY_green^2);
+//copy[i][j].rgbtBlue = round(GX_blue^2 + GY_blue^2);
 
-if (copy[i][j].rgbtRed <= 0)
-{
-copy[i][j].rgbtRed = 0;
-}
-if (copy[i][j].rgbtRed > 255)
-{
-    copy[i][j].rgbtRed = 255;
-}
+//if (copy[i][j].rgbtRed <= 0)
+//{
+//copy[i][j].rgbtRed = 0;
+//}
+//if (copy[i][j].rgbtRed > 255)
+//{
+  //  copy[i][j].rgbtRed = 255;
+//}
 
-if (copy[i][j].rgbtGreen <= 0)
-{
-copy[i][j].rgbtGreen = 0;
-}
-if (copy[i][j].rgbtGreen > 255)
-{
-    copy[i][j].rgbtGreen = 255;
-}
+//if (copy[i][j].rgbtGreen <= 0)
+//{
+//copy[i][j].rgbtGreen = 0;
+//}
+//if (copy[i][j].rgbtGreen > 255)
+//{
+  //  copy[i][j].rgbtGreen = 255;
+//}
 
-if (copy[i][j].rgbtBlue <= 0)
-{
-copy[i][j].rgbtBlue = 0;
-}
-if (copy[i][j].rgbtBlue > 255)
-{
-    copy[i][j].rgbtBlue = 255;
-}
+//if (copy[i][j].rgbtBlue <= 0)
+//{
+//copy[i][j].rgbtBlue = 0;
+//}
+//if (copy[i][j].rgbtBlue > 255)
+//{
+ //   copy[i][j].rgbtBlue = 255;
+//}
 
 
         }
