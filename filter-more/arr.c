@@ -8,8 +8,16 @@ int main(void)
     {
         for (int j = 0; j < 3; j++)
         {
-            arr[i][j]= j+1;
+            arr[i][j] = j;
         }
+        
     }
-    
+
+for (int a = 0; a < 3;a++)
+{
+    for (int b = 0; b < 3; b++)
+    {
+        printf("%i\n",arr[a][b]);
+    }
+}
 }
