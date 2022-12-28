@@ -36,12 +36,8 @@ for (int i = 0; i <= height - 1 ; i++)
     {
         for (int j = 0; j <= width - 1; j++)
         {
-// condicions for pixels in the corners
-//1
-if (i == 0 && j == 0)
-{
-image[i-1]
-}
+//for pixels in the corners
+image[i-1][]
             int GX_red =
             int GX_green =
             int Gx_blue =
