@@ -39,7 +39,7 @@ for (int a = 0; a <= height - 1 ; a++)
         for (int b = 0; b <= width - 1; b++)
         {
 //setting value 0 to pixel out of image
-for (int c = -1; c <= width; c++)
+for (int c = 1; c <= width-2; c++)
 {
      image[OUT][c].rgbtBlue = 0;
      image[OUT][c].rgbtRed = 0;
@@ -48,7 +48,7 @@ for (int c = -1; c <= width; c++)
      image[height][c].rgbtRed = 0;
      image[height][c].rgbtGreen = 0;
 }
-for (int d = -1; d <= width; d++)
+for (int d = 1; d <= width-2; d++)
 {
      image[d][OUT].rgbtBlue = 0;
     image[d][OUT].rgbtRed = 0;
