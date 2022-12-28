@@ -55,7 +55,7 @@ for (int a = -1; a <= width; a++)
     image[a][width].rgbtGreen = 0;
 }
 
-int GX_red = round( -1(copy[i-1][j-1].rgbtRed) + 0(copy[i-1][j-1].rgbtRed) );
+int GX_red = round(-1(copy[i-1][j-1].rgbtRed) + 0(copy[i-1][j].rgbtRed) + 1(copy[i-1][j+1].rgbtRed) + -2(copy[i][j-1].rgbtRed) + 0(copy[i][j].rgbtRed) + 2(copy[i][j+1].rgbtRed) + -1(copy[i+1][j-1].rgbtRed) + 0(copy[i+1][j].rgbtRed) + 1(copy[i+1][j+1].rgbtRed));
 int GX_green = round();
 int Gx_blue = round();
 
