@@ -34,9 +34,9 @@ RGBTRIPLE copy[height][width];
         }
     }
 // 2. assigning Gx value for each color for each pixel
-for (int a = 0; i <= height - 1 ; a++)
+for (int a = 0; a <= height - 1 ; a++)
     {
-        for (int b = 0; j <= width - 1; b++)
+        for (int b = 0; b <= width - 1; b++)
         {
 //setting value 0 to pixel out of image
 //for (int a = -1; a <= width; a++)
