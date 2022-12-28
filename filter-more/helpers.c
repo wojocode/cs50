@@ -36,10 +36,15 @@ for (int i = 0; i <= height - 1 ; i++)
     {
         for (int j = 0; j <= width - 1; j++)
         {
-//assigning value 0 to pixel out of image
+//setting value 0 to pixel out of image
 for (int a = -1; a <= width; a++)
 {
-    
+    image[i-1][a].rgbtBlue = 0;
+    image[i-1][a].rgbtRed = 0;
+    image[i-1][a].rgbtGreen = 0;
+    image[height][a].rgbtBlue = 0;
+    image[height][a].rgbtRed = 0;
+    image[height][a].rgbtGreen = 0;
 }
 
 
