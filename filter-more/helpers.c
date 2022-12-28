@@ -39,21 +39,21 @@ for (int i = 0; i <= height - 1 ; i++)
 //setting value 0 to pixel out of image
 for (int a = -1; a <= width; a++)
 {
-    image[i-1][a].rgbtBlue = 0;
-    image[i-1][a].rgbtRed = 0;
-    image[i-1][a].rgbtGreen = 0;
+    image[-1][a].rgbtBlue = 0;
+    image[-1][a].rgbtRed = 0;
+    image[-1][a].rgbtGreen = 0;
     image[height][a].rgbtBlue = 0;
     image[height][a].rgbtRed = 0;
     image[height][a].rgbtGreen = 0;
 }
 for (int a = -1; a <= width; a++)
 {
-    image[i-1][a].rgbtBlue = 0;
-    image[i-1][a].rgbtRed = 0;
-    image[i-1][a].rgbtGreen = 0;
-    image[height][a].rgbtBlue = 0;
-    image[height][a].rgbtRed = 0;
-    image[height][a].rgbtGreen = 0;
+    image[a][-1].rgbtBlue = 0;
+    image[a][-1].rgbtRed = 0;
+    image[a][-1].rgbtGreen = 0;
+    image[a][width].rgbtBlue = 0;
+    image[a][width].rgbtRed = 0;
+    image[a][width].rgbtGreen = 0;
 }
 
             //int GX_red =
