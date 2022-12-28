@@ -30,5 +30,6 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
-// assigning Gx value for each color 
+// assigning Gx value for each color for each pixel
+
 }
