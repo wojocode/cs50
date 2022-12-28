@@ -65,7 +65,7 @@ int GY_green = round(-1*(copy[i-1][j-1].rgbtGreen) + -2*(copy[i-1][j].rgbtGreen)
 int GY_blue = round(-1*(copy[i-1][j-1].rgbtBlue) + -2*(copy[i-1][j].rgbtBlue) + -1*(copy[i-1][j+1].rgbtBlue) + 0*(copy[i][j-1].rgbtBlue) + 0*(copy[i][j].rgbtBlue) + 0*(copy[i][j+1].rgbtBlue) + 1*(copy[i+1][j-1].rgbtBlue) + 2*(copy[i+1][j].rgbtBlue) + 1*(copy[i+1][j+1].rgbtBlue));
 
 // assign GX's value to copy[][]
-// also round it and capped at 255
+// also round it, capped at 255, and allow only positive results
 copy[i][j].rgbtRed = round(GX_red^2 + GY_red^2);
 copy[i][j].rgbtGreen = round(GX_green^2 + GY_green^2);
 copy[i][j].rgbtBlue = round(GX_blue^2 + GY_blue^2);
@@ -98,6 +98,17 @@ if (copy[i][j].rgbtBlue > 255)
 }
 
 
+        }
+    }
+
+// assigning new pixels to output
+    for (int x = 0; x <=height - 1; x++)
+    {
+        for (int y = 0; y <= width - 1; y++)
+        {
+            image[x][y].rgbtRed = copy[x][y].rgbtRed;
+            image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
+            image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
         }
     }
 }
