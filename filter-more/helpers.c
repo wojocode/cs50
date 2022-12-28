@@ -36,14 +36,8 @@ for (int i = 0; i <= height - 1 ; i++)
     {
         for (int j = 0; j <= width - 1; j++)
         {
-//for pixels in the corners
-image[i-1][0].rgbtBlue = 0;
-image[i-1][0].rgbtRed = 0;
-image[i-1][0].rgbtGreen = 0;
-
-image[i-1][1].rgbtBlue = 0;
-image[i-1][1].rgbtRed = 0;
-image[i-1][1].rgbtGreen = 0;
+//assigning value 0 to pixel out of image
+for (int a = )
 
 
             //int GX_red =
