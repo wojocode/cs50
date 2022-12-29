@@ -76,25 +76,25 @@ if (kernel_Red<= 0)
 {
  kernel_Red = 0;
 }
-if ( kernel_Red > 255)
+else if ( kernel_Red > 255)
 {
  kernel_Red = 255;
 }
 
-if (kernel_Green <= 0)
+else if (kernel_Green <= 0)
 {
 kernel_Green = 0;
 }
-if (kernel_Green > 255)
+else if (kernel_Green > 255)
 {
 kernel_Green = 255;
 }
 
-if ( kernel_Blue <= 0)
+else if ( kernel_Blue <= 0)
 {
 kernel_Blue = 0;
 }
-if (kernel_Blue > 255)
+else if (kernel_Blue > 255)
 {
     kernel_Blue = 255;
 }
