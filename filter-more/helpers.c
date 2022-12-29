@@ -73,6 +73,7 @@ int GY_blue = round(-1*(image[a-1][b-1].rgbtBlue) + (-2*(image[a-1][b].rgbtBlue)
 {
  kernel_Red = 0;
 }
+
 else if ( kernel_Red > 255)
 {
  kernel_Red = 255;
