@@ -12,22 +12,12 @@ int main(void)
             copy[j] = arr[j];
         }
 
-
         for (int i = 0;i<3;i++)
         {
-          printf("%i\n",copy[i]);
+          printf("%i\n%i\n",copy[i],arr[i]);
         }
 
-        arr[0] = 6;
 
-for (int i = 0;i<3;i++)
-        {
-          printf("%i\n",copy[i]);
-        }
 
-  for (int i = 0;i<3;i++)
-        {
-          printf("%i",arr[i]);
-        }
 
 }
