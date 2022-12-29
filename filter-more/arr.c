@@ -12,7 +12,7 @@ int main(void)
 printf("%p\n",copy[0]);
 printf("%p\n",&arr[0]);
 
-printf("%p\n",copy[0]);
-printf("%p\n",&arr[0]);
+printf("%i\n",*copy[0]);
+printf("%i\n",arr[0]);
 
 }
