@@ -4,9 +4,9 @@
 int main(void)
 {
     int arr[3] = {5,6,7};
-    int copy[3];
+  
 
-  copy[0] = arr[0];
+  int *copy[0] = &arr[0];
 
 printf("%i\n%i\n",copy[0],arr[0]);
 printf("%p\n",&copy[0]);
