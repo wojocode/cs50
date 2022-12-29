@@ -3,25 +3,22 @@
 
 int main(void)
 {
-    int arr[3][3];
-    int q = 1;
+    int arr[3] = {1,2,3};
+    int copy[3];
 
-    for (int i = 0; i < 3;i++)
-    {
+
         for (int j = 0; j < 3; j++)
         {
-
-            arr[i][j] = q;
-            q++;
+            copy[j] = arr[j];
         }
 
-    }
-    int a = 0;
-    int b = 0;
+        for (int i = 0;i<3;i++)
+        {
+          printf("%i\n",copy[i]);
+        }
+  for (int i = 0;i<3;i++)
+        {
+          printf("%i",arr[i]);
+        }
 
-    arr[a-1][b]= -3;
-
-
-   int x = round(pow(2,4));
-   printf("%i\n",x);
 }
