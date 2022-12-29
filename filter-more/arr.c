@@ -9,8 +9,10 @@ int main(void)
 
         for (int j = 0; j < 3; j++)
         {
-            copy[j] = arr[j];
+            int *p = &arr[j];
+            copy[j] = *p;
         }
+        printf("%p\n %p",&copy[0],&arr[0]);
 
         for (int i = 0;i<3;i++)
         {
