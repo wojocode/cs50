@@ -14,7 +14,7 @@ int main(void)
         }
         printf("%p\n %p",&copy[0],&arr[0]);
 
-        for (int i = 0;i<3;i++)
+        for (int i = 0;i < 3;i++)
         {
           printf("%i\n%i\n",copy[i],arr[i]);
         }
