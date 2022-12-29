@@ -69,10 +69,7 @@ int GY_blue = round(-1*(image[a-1][b-1].rgbtBlue) + (-2*(image[a-1][b].rgbtBlue)
 
  //also round it, capped at 255, and allow only positive results
  long int kernel_Red = round(pow(GX_red,2) + pow(GY_red,2));
- long int kernel_Green= round(pow(GX_green,2) + pow(GY_green,2));
- long int kernel_Blue= round(pow(GX_blue,2) + pow(GY_blue,2));
-
-if (kernel_Red<= 0)
+ if (kernel_Red <= 0)
 {
  kernel_Red = 0;
 }
@@ -81,7 +78,9 @@ else if ( kernel_Red > 255)
  kernel_Red = 255;
 }
 
-else if (kernel_Green <= 0)
+ long int kernel_Green= round(pow(GX_green,2) + pow(GY_green,2));
+
+if (kernel_Green <= 0)
 {
 kernel_Green = 0;
 }
@@ -90,7 +89,8 @@ else if (kernel_Green > 255)
 kernel_Green = 255;
 }
 
-else if ( kernel_Blue <= 0)
+ long int kernel_Blue= round(pow(GX_blue,2) + pow(GY_blue,2));
+if ( kernel_Blue <= 0)
 {
 kernel_Blue = 0;
 }
@@ -98,6 +98,10 @@ else if (kernel_Blue > 255)
 {
     kernel_Blue = 255;
 }
+
+
+
+
 
 copy[a][b].rgbtRed = kernel_Red;
 copy[a][b].rgbtGreen = kernel_Green;
