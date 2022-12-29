@@ -26,7 +26,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
 RGBTRIPLE copy[height][width];
 
-copy= malloc((width*height) * sizeof(RGBTRIPLE));
+RGBTRIPLE *copy 
 // 1. make copy for each pixel
     for (int i = 0; i <= height - 1; i++)
     {
