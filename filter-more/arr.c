@@ -15,4 +15,5 @@ printf("%p\n",&arr[0]);
 printf("%i\n",*copy[0]);
 printf("%i\n",arr[0]);
 
+
 }
