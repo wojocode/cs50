@@ -107,6 +107,8 @@ else if (kernel_Blue > 255)
         }
     }
 
+
+
 // assigning new pixels to output
     for (int x = 0; x <=height - 1; x++)
     {
