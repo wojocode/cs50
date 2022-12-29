@@ -67,7 +67,6 @@ int GY_blue = round(-1*(image[a-1][b-1].rgbtBlue) + (-2*(image[a-1][b].rgbtBlue)
 
 
 
-
  //also round it, capped at 255, and allow only positive results
 copy[a][b].rgbtRed = round(pow(GX_red,2) + pow(GY_red,2));
 copy[a][b].rgbtGreen = round(pow(GX_green,2) + pow(GY_green,2));
