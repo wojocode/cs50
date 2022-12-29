@@ -23,7 +23,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
-const int OUT = -1;
+
 RGBTRIPLE copy[height][width];
 
 copy= malloc((width*height) * sizeof(RGBTRIPLE));
@@ -43,18 +43,18 @@ for (int a = 0; a <= height - 1 ; a++)
 //setting value 0 to pixel out of image
 for (int c = 0; c <= width-1; c++)
 {
-     image[OUT][c].rgbtBlue = 0;
-     image[OUT][c].rgbtRed = 0;
-     image[OUT][c].rgbtGreen = 0;
+     image[-1][c].rgbtBlue = 0;
+     image[-1][c].rgbtRed = 0;
+     image[-1][c].rgbtGreen = 0;
      image[height][c].rgbtBlue = 0;
      image[height][c].rgbtRed = 0;
      image[height][c].rgbtGreen = 0;
 }
 for (int d = 0; d <= width-1; d++)
 {
-     image[d][OUT].rgbtBlue = 0;
-    image[d][OUT].rgbtRed = 0;
-     image[d][OUT].rgbtGreen = 0;
+     image[d][-1].rgbtBlue = 0;
+    image[d][-1].rgbtRed = 0;
+     image[d][-1].rgbtGreen = 0;
     image[d][width].rgbtBlue = 0;
      image[d][width].rgbtRed = 0;
      image[d][width].rgbtGreen = 0;
