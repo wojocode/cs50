@@ -36,9 +36,9 @@ RGBTRIPLE copy[height][width];
         }
     }
 // 2. assigning Gx and Gy value for each color for each pixel
-for (int a = 1; a <= height -2 ; a++)
+for (int a = 1; a <= height - 1; a++)
     {
-        for (int b = 1; b <= width -2; b++)
+        for (int b = 1; b <= width - 1 ; b++)
         {
 
 int GX_red = round(-1*(image[a-1][b-1].rgbtRed) + 0*(image[a-1][b].rgbtRed) + 1*(image[a-1][b+1].rgbtRed)
