@@ -24,7 +24,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
 const int OUT = -1;
-RGBTRIPLE copy[height][width] = malloc(sizeof(RGBTRIPLE)*(height*width));
+RGBTRIPLE copy[height][width] = malloc(sizeof(RGBTRIPLE) * (height * width));
 // 1. make copy for each pixel
     for (int i = 0; i <= height - 1; i++)
     {
