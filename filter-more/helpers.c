@@ -79,8 +79,7 @@ else if ( kernel_Red > 255)
  kernel_Red = 255;
 }
 
-            copy[a][b].rgbtRed = kernel_Red;
-
+copy[a][b].rgbtRed = kernel_Red;
 
  long int kernel_Green= round(pow(GX_green,2) + pow(GY_green,2));
 if (kernel_Green <= 0)
