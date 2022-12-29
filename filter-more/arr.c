@@ -15,5 +15,9 @@ printf("%p\n",&arr[0]);
 printf("%i\n",*copy[0]);
 printf("%i\n",arr[0]);
 
+int x = 802;
+int y = 802;
 
+long int z = pow(x,2) + pow(y,2);
+printf("%ld\n",z);
 }
