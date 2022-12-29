@@ -35,7 +35,7 @@ RGBTRIPLE copy[height][width];
             copy[i][j] = image[i][j];
         }
     }
-// 2. assigning Gx value for each color for each pixel
+// 2. assigning Gx and Gy value for each color for each pixel
 for (int a = 0; a <= height - 1 ; a++)
     {
         for (int b = 0; b <= width - 1; b++)
@@ -67,7 +67,7 @@ int GY_blue = round(-1*(copy[a-1][b-1].rgbtBlue) + (-2*(copy[a-1][b].rgbtBlue)) 
 
 
 
-//assign GX's value to copy[][]
+
  //also round it, capped at 255, and allow only positive results
 copy[a][b].rgbtRed = round(pow(GX_red,2) + pow(GY_red,2));
 copy[a][b].rgbtGreen = round(pow(GX_green,2) + pow(GY_green,2));
