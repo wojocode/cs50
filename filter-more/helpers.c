@@ -40,25 +40,6 @@ for (int a = 0; a <= height - 1 ; a++)
     {
         for (int b = 0; b <= width - 1; b++)
         {
-//setting value 0 to pixel out of image
-for (int c = 0; c <= width-1; c++)
-{
-     image[-1][c].rgbtBlue = 0;
-     image[-1][c].rgbtRed = 0;
-     image[-1][c].rgbtGreen = 0;
-     image[height][c].rgbtBlue = 0;
-     image[height][c].rgbtRed = 0;
-     image[height][c].rgbtGreen = 0;
-}
-for (int d = 0; d <= width-1; d++)
-{
-     image[d][-1].rgbtBlue = 0;
-    image[d][-1].rgbtRed = 0;
-     image[d][-1].rgbtGreen = 0;
-    image[d][width].rgbtBlue = 0;
-     image[d][width].rgbtRed = 0;
-     image[d][width].rgbtGreen = 0;
-}
 
 int GX_red = round(-1*(copy[a-1][b-1].rgbtRed) + 0*(copy[a-1][b].rgbtRed) + 1*(copy[a-1][b+1].rgbtRed)
 + (-2*(copy[a][b-1].rgbtRed)) + 0*(copy[a][b].rgbtRed) + 2*(copy[a][b+1].rgbtRed)
