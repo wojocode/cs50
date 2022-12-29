@@ -18,6 +18,6 @@ printf("%i\n",arr[0]);
 int x = 802;
 int y = 802;
 
-long int z = x^2 + pow(;
+long int z = pow(y,2) + pow(x,2);
 printf("%ld\n",z);
 }
