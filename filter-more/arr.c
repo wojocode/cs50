@@ -11,4 +11,8 @@ int main(void)
 
 printf("%p\n",copy[0]);
 printf("%p\n",&arr[0]);
+
+printf("%p\n",copy[0]);
+printf("%p\n",&arr[0]);
+
 }
