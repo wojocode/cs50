@@ -16,7 +16,10 @@ int main(void)
         {
           printf("%i\n%i\n",copy[i],arr[i]);
         }
-    printf("%p\n",&arr[0]);
-    printf("%p\n",&copy[0]);
+        arr[0] = 8;
 
+         for (int i = 0;i<3;i++)
+        {
+          printf("\n%i\n%i\n",copy[i],arr[i]);
+        }
 }
