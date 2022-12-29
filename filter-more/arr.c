@@ -11,6 +11,7 @@ int main(void)
         {
             copy[j] = arr[j];
         }
+        arr[0] = 6;
 
         for (int i = 0;i<3;i++)
         {
