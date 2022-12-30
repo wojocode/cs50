@@ -131,6 +131,7 @@ else if ( kernel_Red > 255)
  kernel_Red = 255;
 }
     copy[a][b].rgbtRed = kernel_Red;
+ 
 
 long int kernel_Green= round(pow(GX_green,2) + pow(GY_green,2));
 if (kernel_Green <= 0)
@@ -142,6 +143,7 @@ else if (kernel_Green > 255)
 kernel_Green = 255;
 }
     copy[a][b].rgbtGreen = kernel_Green;
+
 
 long int kernel_Blue= round(pow(GX_blue,2) + pow(GY_blue,2));
 if ( kernel_Blue <= 0)
@@ -161,14 +163,14 @@ else if (kernel_Blue > 255)
 
 
 // assigning new pixels to output
-    for (int x = 0; x <=height - 1; x++)
-    {
-        for (int y = 0; y <= width - 1; y++)
-     {
-            image[x][y].rgbtRed = copy[x][y].rgbtRed;
-            image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
-            image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
-        }
-    }
+    //for (int x = 0; x <=height - 1; x++)
+    //{
+      //  for (int y = 0; y <= width - 1; y++)
+     //{
+       //     image[x][y].rgbtRed = copy[x][y].rgbtRed;
+         //   image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
+           // image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
+        //}
+    //}
 
 }
