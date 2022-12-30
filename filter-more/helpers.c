@@ -166,9 +166,9 @@ else if (kernel_Blue > 255)
     {
         for (int y = 0; y <= width - 1; y++)
      {
-            image[x][y].rgbtRed = copy[x][y].rgbtRed;
-            image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
-            image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
+            image[x][y] = copy[x][y];
+            image[x][y] = copy[x][y];
+            image[x][y] = copy[x][y];
         }
     }
 
