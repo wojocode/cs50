@@ -3,13 +3,17 @@
 
 int main(void)
 {
-     typedef struct {
+     typedef struct{
       int color;
       int width;
       int height;
     }
     pixel;
- 
+
+    pixel arr[3];
+
+    arr[1] = 4;
+
 
 
 }
