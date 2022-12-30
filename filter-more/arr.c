@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <math.h>
+#include <cs50.h>
 
 int main(void)
 {
-     typedef struct{
-      int color;
-      int width;
-      int height;
-    }
-    pixel;
+     typedef struct
+{
+    int name;
+    int votes;
+}candidate;
 
-    pixel arr[3];
-
-    arr[1] = 4;
+candidate cad[3];
+candidate copy[3];
 
 
+cad[0].votes = 2;
 
+
+copy[0] = cad[0];
+
+
+printf("%i\n",copy[0].votes);
 }
