@@ -10,15 +10,5 @@ int main(void)
     int votes;
 }candidate;
 
-candidate cad[3];
-candidate copy[3];
 
-
-cad[0].votes = 2;
-
-
-copy[0] = cad[0];
-
-
-printf("%i\n",copy[0].votes);
 }
