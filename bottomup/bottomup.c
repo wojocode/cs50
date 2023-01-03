@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
     // Write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
 
+    // if biHeight in our input file is positive than we see image upside down so here we change value negative
     LONG tmp = -1*(bi.biHeight);
     bi.biHeight = tmp;
 
@@ -67,7 +68,6 @@ int main(int argc, char *argv[])
 
     // Iterate over infile's scanlines
     for (int i = 0, biHeight = abs(bi.biHeight); i < biHeight; i++)
-
 
     {
         // Iterate over pixels in scanline
