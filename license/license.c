@@ -38,5 +38,5 @@ int main(int argc, char *argv[])
     {
         printf("%s\n", plates[i]);
     }
-    fclose(argv[1]);
+    fclose(infile);
 }
