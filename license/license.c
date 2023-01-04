@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char *argv[])
 {
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
     char buffer[7];
 
     // Create array to store plate numbers
-    char *plates[8] = malloc(strlen);
+    char *plates[8] = malloc(strlen(plates)*8);
 
     FILE *infile = fopen(argv[1], "r");
 
