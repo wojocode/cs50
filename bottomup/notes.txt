@@ -1,0 +1,13 @@
+IMAGE 
+-digital image is a sequence of bits arranged in some fathion.
+-almost every 24 bits represent some pixel's color. 
+- bmp contains also meta data. 
+- metadata is stored at the beginnig of the file in two forms of two structures 
+
+how bottomup.c works 
+- assign commend line argument argv[1] to pointer infile and argv[2] to outfile
+	char *infile = argv[1]; 
+- create pointer to infile FILE *inptr = fopen(infile,"r"); r means read from it 
+- create outfile pointer FILE *outptr = fopen(outfile,"w"); w means write to it 
+- Read infile's BITMAPFILEHEADER 
+- create a vartiable to store information from inptr - BITMAPFILEHEADER bi;
