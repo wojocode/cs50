@@ -38,5 +38,5 @@ int main(int argc, char *argv[])
         printf("%s\n", plates[i]);
     }
     fclose(infile);
-    free(&plates[0]);
+    free(plates[0]);
 }
