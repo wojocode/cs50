@@ -46,8 +46,10 @@ int main(int argc, char *argv[])
 
     // TODO: Read samples from input file and write updated data to output file
     SAMPLESIZE buffer;
-    //size_t fread(&buffer,sizeof(SAMPLESIZE),size_t,input);
-
+    while(fread(&buffer,sizeof(SAMPLESIZE),1,input))
+    {
+        
+    }
 
     // Close files
     fclose(input);
