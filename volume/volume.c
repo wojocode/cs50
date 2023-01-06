@@ -49,8 +49,7 @@ int main(int argc, char *argv[])
     SAMPLESIZE buffer;
     while(fread(&buffer,sizeof(SAMPLESIZE),1,input))
     {
-        SAMPLESIZE tmp = round(buffer * factor);
-        buffer = tmp;
+        buffer = buffer * factor;
         fwrite(&buffer,sizeof(SAMPLESIZE),1,output);
     }
 
