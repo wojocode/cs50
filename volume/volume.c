@@ -40,8 +40,7 @@ int main(int argc, char *argv[])
 
     // add array to store a header from infile
     ONEBYTE header[HEADER_SIZE];
-
-    fread
+    fread(header)
 
 
 
