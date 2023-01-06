@@ -121,7 +121,7 @@ for (int a = 1; a <= height - 2; a++)
 
 
  //also round it, capped at 255, and allow only positive results
- kernel[a][b].rgbtBlue = round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
+ kernel[a][b].rgbtBlue = (column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2);
                 if (kernel[a][b].rgbtBlue <= 0)
                 {
                 kernel[a][b].rgbtBlue = 0;
