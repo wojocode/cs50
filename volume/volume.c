@@ -41,14 +41,8 @@ int main(int argc, char *argv[])
     // add array to store a header from infile
     ONEBYTE header[HEADER_SIZE];
 
-    //for (int i = 0; i < HEADER_SIZE; i++)
-    //{
-      //  fread(&header[i],sizeof(ONEBYTE),1,input);
-    //}
-    //fwrite(header,sizeof(ONEBYTE),HEADER_SIZE,output);
-    fread(header,sizeof(ONEBYTE),HEADER_SIZE,input);
-    fwrite(header,sizeof(ONEBYTE),HEADER_SIZE,output)
-
+    fread(header,HEADER_SIZE, 1 ,input);
+    fwrite(header,HEADER_SIZE, 1 ,input);
 
     // TODO: Read samples from input file and write updated data to output file
     SAMPLESIZE buffer;
