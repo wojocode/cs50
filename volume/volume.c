@@ -34,7 +34,8 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
-    typedef uint8_t  BYTE;
+    typedef uint8_t ONEBYTE;
+    ONEBYTE header[n];
     typedef uint32_t DWORD;
 
 
