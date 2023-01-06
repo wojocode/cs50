@@ -26,6 +26,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 RGBTRIPLE copy[height][width];
 RGBTRIPLE column[height][width];
 RGBTRIPLE row[height][width];
+RGBTRIPLE kernel[height][width];
+
 
 // 1. make copy for each pixel
     for (int i = 0; i < height ; i++)
@@ -119,42 +121,42 @@ for (int a = 1; a <= height - 2; a++)
 
 
  //also round it, capped at 255, and allow only positive results
- long int kernel_Red = round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
-                if (kernel_Red <= 0)
+ kernel[a][b].rgbtBlue = round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
+                if (kernel[a][b].rgbtBlue <= 0)
                 {
-                kernel_Red = 0;
+                kernel[a][b].rgbtBlue = 0;
                 }
 
-                else if ( kernel_Red > 255)
+                else if ( kernel[a][b].rgbtBlue > 255)
                 {
-                kernel_Red = 255;
+                kernel[a][b].rgbtBlue = 255;
                 }
-                    copy[a][b].rgbtRed = kernel_Red;
+                    copy[a][b].rgbtRed = kernel[a][b].rgbtBlue;
 
 
-                long int kernel_Green= round((column[a][b].rgbtGreen,2) + (row[a][b].rgbtGreen,2));
-                if (kernel_Green <= 0)
+                kernel[a][b].rgbtGreen= round((column[a][b].rgbtGreen,2) + (row[a][b].rgbtGreen,2));
+                if (kernel[a][b].rgbtGreen <= 0)
                 {
-                kernel_Green = 0;
+                kernel[a][b].rgbtGreen = 0;
                 }
-                else if (kernel_Green > 255)
+                else if (kernel[a][b].rgbtGreen > 255)
                 {
-                kernel_Green = 255;
+                kernel[a][b].rgbtGreen = 255;
                 }
-                    copy[a][b].rgbtGreen = kernel_Green;
+                    copy[a][b].rgbtGreen = kernel[a][b].rgbtGreen;
 
 
-                long int kernel_Blue= round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
-                if ( kernel_Blue <= 0)
+                kernel[a][b].rgbtBlue= round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
+                if ( kernel[a][b].rgbtBlue <= 0)
                 {
-                kernel_Blue = 0;
+                kernel[a][b].rgbtBlue = 0;
                 }
-                else if (kernel_Blue > 255)
+                else if (kernel[a][b].rgbtBlue > 255)
                 {
-                    kernel_Blue = 255;
+                    kernel[a][b].rgbtBlue = 255;
                 }
 
-    copy[a][b].rgbtBlue = kernel_Blue;
+                copy[a][b].rgbtBlue = kernel[a][b].rgbtBlue;
 
         }
     }
