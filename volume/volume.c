@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     SAMPLESIZE buffer;
     while(fread(&buffer,sizeof(SAMPLESIZE),1,input))
     {
-        buffer = buffer * factor;
+        buffer *= factor;
         fwrite(&buffer,sizeof(SAMPLESIZE),1,output);
     }
 
