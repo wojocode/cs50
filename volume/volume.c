@@ -40,8 +40,11 @@ int main(int argc, char *argv[])
 
     // add array to store a header from infile
     ONEBYTE header[HEADER_SIZE];
-    fread(header)
 
+    for (int i = 0; i < HEADER_SIZE; i++)
+    {
+        fread(header[i],sizeof(ONEBYTE),1,input);
+    }
 
 
     // TODO: Read samples from input file and write updated data to output file
