@@ -160,15 +160,15 @@ else if (kernel_Blue > 255)
     }
 
 
-// assigning new pixels to output
-    //for (int x = 0; x <=height - 1; x++)
-    //{
-      //  for (int y = 0; y <= width - 1; y++)
-     //{
-       //     image[x][y].rgbtRed = copy[x][y].rgbtRed;
-         //   image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
-           // image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
-        //}
-    //}
+ // assigning new pixels to output
+    for (int x = 1; x <=height - 2; x++)
+    {
+        for (int y = 1; y <= width - 2; y++)
+     {
+            image[x][y].rgbtRed = copy[x][y].rgbtRed;
+            image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
+            image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
+        }
+    }
 
 }
