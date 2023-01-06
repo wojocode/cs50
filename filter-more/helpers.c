@@ -154,12 +154,9 @@ else if (kernel_Blue > 255)
 }
     copy[a][b].rgbtBlue = kernel_Blue;
 
-
-
-        }
+   }
     }
-
-
+    
  // assigning new pixels to output
     for (int x = 1; x <=height - 2; x++)
     {
