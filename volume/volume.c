@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     //typedef int16_t SAMPLESIZE;
 
     // add array to store a header from infile
-    ONEBYTE header [HEADER_SIZE];
+    ONEBYTE header[HEADER_SIZE];
 
     for (int i = 0; i < HEADER_SIZE; i++)
     {
