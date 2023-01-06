@@ -121,7 +121,7 @@ for (int a = 1; a <= height - 2; a++)
 
 
  //also round it, capped at 255, and allow only positive results
- kernel[a][b].rgbtBlue = (column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2);
+                kernel[a][b].rgbtBlue = pow(column[a][b].rgbtBlue,2) + pow(row[a][b].rgbtBlue,2);
                 if (kernel[a][b].rgbtBlue <= 0)
                 {
                 kernel[a][b].rgbtBlue = 0;
@@ -134,7 +134,7 @@ for (int a = 1; a <= height - 2; a++)
                     copy[a][b].rgbtRed = kernel[a][b].rgbtBlue;
 
 
-                kernel[a][b].rgbtGreen= round((column[a][b].rgbtGreen,2) + (row[a][b].rgbtGreen,2));
+                kernel[a][b].rgbtGreen= pow(column[a][b].rgbtGreen,2) + pow(row[a][b].rgbtGreen,2);
                 if (kernel[a][b].rgbtGreen <= 0)
                 {
                 kernel[a][b].rgbtGreen = 0;
@@ -146,7 +146,7 @@ for (int a = 1; a <= height - 2; a++)
                     copy[a][b].rgbtGreen = kernel[a][b].rgbtGreen;
 
 
-                kernel[a][b].rgbtBlue= round((column[a][b].rgbtBlue,2) + (row[a][b].rgbtBlue,2));
+                kernel[a][b].rgbtBlue= pow(column[a][b].rgbtBlue,2) + pow(row[a][b].rgbtBlue,2);
                 if ( kernel[a][b].rgbtBlue <= 0)
                 {
                 kernel[a][b].rgbtBlue = 0;
