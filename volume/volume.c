@@ -45,9 +45,11 @@ int main(int argc, char *argv[])
     {
         fread(&header[i],sizeof(ONEBYTE),1,input);
     }
-    fwrite(header,sizeof(ONEBYTE),HEADER_SIZE,)
+    fwrite(header,sizeof(ONEBYTE),HEADER_SIZE,output);
 
     // TODO: Read samples from input file and write updated data to output file
+    
+
 
     // Close files
     fclose(input);
