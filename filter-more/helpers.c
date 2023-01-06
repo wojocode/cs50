@@ -119,7 +119,7 @@ for (int a = 1; a <= height - 2; a++)
 
 
  //also round it, capped at 255, and allow only positive results
- long int kernel_Red = round(pow(GX_red,2) + pow(GY_red,2));
+ long int kernel_Red = round(row(column[a][b].rgbtBlue,2) + row(row[a][b].rgbtBlue,2));
                 if (kernel_Red <= 0)
                 {
                 kernel_Red = 0;
@@ -132,7 +132,7 @@ for (int a = 1; a <= height - 2; a++)
                     copy[a][b].rgbtRed = kernel_Red;
 
 
-                long int kernel_Green= round(pow(GX_green,2) + pow(GY_green,2));
+                long int kernel_Green= round(row(column[a][b].rgbtGreen,2) + row(column[a][b].rgbtGreen,2));
                 if (kernel_Green <= 0)
                 {
                 kernel_Green = 0;
@@ -144,7 +144,7 @@ for (int a = 1; a <= height - 2; a++)
                     copy[a][b].rgbtGreen = kernel_Green;
 
 
-                long int kernel_Blue= round(pow(GX_blue,2) + pow(GY_blue,2));
+                long int kernel_Blue= round(row(column[a][b].rgbtBlue,2) + row(column[a][b].rgbtBlue,2));
                 if ( kernel_Blue <= 0)
                 {
                 kernel_Blue = 0;
