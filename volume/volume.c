@@ -34,10 +34,13 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
+    //rename types
     typedef uint8_t ONEBYTE;
-    ONEBYTE header[n];
-    typedef uint32_t DWORD;
+    typedef int16_t SAMPLESIZE;
 
+    // add array to store a header from infile
+    ONEBYTE header[HEADER_SIZE];
+    
 
 
 
