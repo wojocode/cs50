@@ -36,16 +36,16 @@ int main(int argc, char *argv[])
     // TODO: Copy header from input file to output file
     //rename types
     typedef uint8_t ONEBYTE;
-    typedef int16_t SAMPLESIZE;
+    //typedef int16_t SAMPLESIZE;
 
     // add array to store a header from infile
-    ONEBYTE header[HEADER_SIZE];
+    ONEBYTE header [HEADER_SIZE];
 
     for (int i = 0; i < HEADER_SIZE; i++)
     {
-        fread(header[i],sizeof(ONEBYTE),1,input);
+        fread(&header[i],sizeof(ONEBYTE),1,input);
     }
-
+    
 
     // TODO: Read samples from input file and write updated data to output file
 
