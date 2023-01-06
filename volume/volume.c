@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     {
         SAMPLESIZE tmp = buffer * factor;
         buffer = tmp;
-        fwrite(&buffer,sizeof(SAMPLESIZE),1,output);
+        fwrite(buffer,sizeof(SAMPLESIZE),1,output);
     }
 
 
