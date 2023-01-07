@@ -150,42 +150,42 @@ for (int a = 1; a < height - 1; a++)
 
 
  //also round it, capped at 255, and allow only positive results
-                kernel[a][b].rgbtBlue = round(pow(GX_blue,2) + pow(GY_blue,2));
-                if (kernel[a][b].rgbtBlue <= 0)
+                int kernel_blue = round(pow(GX_blue,2) + pow(GY_blue,2));
+                if (kernel_blue <= 0)
                 {
-                kernel[a][b].rgbtBlue = 0;
+               kernel_blue = 0;
                 }
 
-                else if ( kernel[a][b].rgbtBlue > 255)
+                else if ( kernel_blue > 255)
                 {
-                kernel[a][b].rgbtBlue = 255;
+                kernel_blue = 255;
                 }
-                    copy[a][b].rgbtRed = kernel[a][b].rgbtBlue;
+                    copy[a][b].rgbtRed = kernel_blue;
 
 
-                kernel[a][b].rgbtGreen= round(pow(GX_green,2) + pow(GY_green,2));
-                if (kernel[a][b].rgbtGreen <= 0)
+                int kernel_green = round(pow(GX_green,2) + pow(GY_green,2));
+                if ( kernel_green <= 0)
                 {
-                kernel[a][b].rgbtGreen = 0;
+                 kernel_green = 0;
                 }
-                else if (kernel[a][b].rgbtGreen > 255)
+                else if ( kernel_green > 255)
                 {
-                kernel[a][b].rgbtGreen = 255;
+                kernel_green = 255;
                 }
-                    copy[a][b].rgbtGreen = kernel[a][b].rgbtGreen;
+                    copy[a][b].rgbtGreen = kernel_green;
 
 
-                kernel[a][b].rgbtRed= round(pow(GX_red,2) + pow(GY_red,2));
-                if ( kernel[a][b].rgbtRed <= 0)
+                int kernel_red= round(pow(GX_red,2) + pow(GY_red,2));
+                if ( kernel_red <= 0)
                 {
-                kernel[a][b].rgbtRed = 0;
+                kernel_red = 0;
                 }
-                else if (kernel[a][b].rgbtRed > 255)
+                else if (kernel_red > 255)
                 {
-                    kernel[a][b].rgbtRed = 255;
+                    kernel_red = 255;
                 }
 
-                copy[a][b].rgbtRed = kernel[a][b].rgbtRed;
+                copy[a][b].rgbtRed = kernel_red;
 
         }
     }
