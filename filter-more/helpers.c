@@ -152,7 +152,7 @@ for (int a = 1; a < height - 1; a++)
 
 
  //also round it, capped at 255, and allow only positive results
-                kernel[a][b].rgbtBlue = round(pow(column[a][b].rgbtBlue,2) + pow(row[a][b].rgbtBlue,2));
+                kernel[a][b].rgbtBlue = round(pow(GX_blue,2) + pow(GY_blue,2));
                 if (kernel[a][b].rgbtBlue <= 0)
                 {
                 kernel[a][b].rgbtBlue = 0;
@@ -162,10 +162,10 @@ for (int a = 1; a < height - 1; a++)
                 {
                 kernel[a][b].rgbtBlue = 255;
                 }
-                    copy[a][b].rgbtRed = kernel[a][b].rgbtBlue;
+                    image[a][b].rgbtRed = kernel[a][b].rgbtBlue;
 
 
-                kernel[a][b].rgbtGreen= round(pow(column[a][b].rgbtGreen,2) + pow(row[a][b].rgbtGreen,2));
+                kernel[a][b].rgbtGreen= round(pow(GX_green,2) + pow(GY_green,2));
                 if (kernel[a][b].rgbtGreen <= 0)
                 {
                 kernel[a][b].rgbtGreen = 0;
@@ -177,17 +177,17 @@ for (int a = 1; a < height - 1; a++)
                     copy[a][b].rgbtGreen = kernel[a][b].rgbtGreen;
 
 
-                kernel[a][b].rgbtBlue= round(pow(column[a][b].rgbtBlue,2) + pow(row[a][b].rgbtBlue,2));
-                if ( kernel[a][b].rgbtBlue <= 0)
+                kernel[a][b].rgbtRed= round(pow(GX_red,2) + pow(GY_red,2));
+                if ( kernel[a][b].rgbtRed <= 0)
                 {
-                kernel[a][b].rgbtBlue = 0;
+                kernel[a][b].rgbtRed = 0;
                 }
-                else if (kernel[a][b].rgbtBlue > 255)
+                else if (kernel[a][b].rgbtRed > 255)
                 {
-                    kernel[a][b].rgbtBlue = 255;
+                    kernel[a][b].rgbtRed = 255;
                 }
 
-                copy[a][b].rgbtBlue = kernel[a][b].rgbtBlue;
+                image[a][b].rgbtRed = kernel[a][b].rgbtRed;
 
         }
     }
