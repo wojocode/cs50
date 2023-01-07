@@ -180,7 +180,7 @@ for (int a = 1; a < height - 1; a++)
                    copy[a][b].rgbtGreen = kernel_green;
 
 
-                int kernel_red = GX_red*GX_red + GY_red*GY_red;
+                int kernel_red = pow(GX_green,2) + pow(GY_green,2);
                if ( kernel_red <= 0)
                {
                kernel_red = 0;
