@@ -147,11 +147,7 @@ for (int a = 1; a < height - 1; a++)
                 GY_blue = 255;
                 }
 
-int q = GX_red;
-int z = GX_blue;
-int e = GX_green;
-RGBTRIPLE g = copy[2][2];
- RGBTRIPLE o =image[2][2];
+
 
  //also round it, capped at 255, and allow only positive results
                 kernel[a][b].rgbtBlue = round(pow(GX_blue,2) + pow(GY_blue,2));
