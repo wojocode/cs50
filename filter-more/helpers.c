@@ -24,8 +24,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
 RGBTRIPLE copy[height][width];
-RGBTRIPLE column[height][width];
-RGBTRIPLE row[height][width];
+//RGBTRIPLE column[height][width];
+//RGBTRIPLE row[height][width];
 RGBTRIPLE kernel[height][width];
 
 //seting up first edge
@@ -100,7 +100,7 @@ for (int a = 1; a < height - 1; a++)
 
                 if ( GX_red >= 255)
                 {
-                row[a][b].rgbtRed = 255;
+                    GX_red = 255;
                 }
                 else if (GX_red < -255)
                 {
