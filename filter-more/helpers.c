@@ -101,7 +101,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GX_red = 0;
                 }
-                else if ( GX_red > 255)
+                else if ( GX_red >= 255)
                 {
                 row[a][b].rgbtRed = 255;
                 }
@@ -109,7 +109,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GY_red = 0;
                 }
-                else if (GY_red > 255)
+                else if (GY_red >= 255)
                {
                GY_red = 255;
                }
@@ -117,7 +117,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                  GX_green= 0;
                 }
-                else if (GX_green > 255)
+                else if (GX_green >= 255)
                 {
                 GX_green = 255;
                 }
@@ -125,7 +125,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GY_green = 0;
                 }
-                else if (GY_green > 255)
+                else if (GY_green >= 255)
                 {
                 GY_green = 255;
                 }
@@ -134,7 +134,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GX_blue = 0;
                 }
-                else if (GX_blue > 255)
+                else if (GX_blue >= 255)
                 {
                 GX_blue = 255;
                 }
@@ -142,7 +142,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GY_blue = 0;
                 }
-                else if (GY_blue > 255)
+                else if (GY_blue >= 255)
                 {
                 GY_blue = 255;
                 }
@@ -154,7 +154,7 @@ for (int a = 1; a < height - 1; a++)
                {
                 kernel_blue = 0;
                 }
-                else if ( kernel_blue > 255)
+                else if ( kernel_blue >= 255)
                 {
                 kernel_blue = 255;
                }
@@ -167,7 +167,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                  kernel_green = 0;
                 }
-                else if ( kernel_green > 255)
+                else if ( kernel_green >= 255)
                 {
                 kernel_green = 255;
                 }
@@ -180,7 +180,7 @@ for (int a = 1; a < height - 1; a++)
                {
                kernel_red = 0;
               }
-              else if (kernel_red > 255)
+              else if (kernel_red >= 255)
                {
                    kernel_red = 255;
                }
