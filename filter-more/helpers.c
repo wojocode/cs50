@@ -28,6 +28,7 @@ RGBTRIPLE column[height][width];
 RGBTRIPLE row[height][width];
 RGBTRIPLE kernel[height][width];
 
+
 // 1. make copy for each pixel
     for (int i = 0; i < height ; i++)
     {
