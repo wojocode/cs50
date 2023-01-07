@@ -148,7 +148,6 @@ for (int a = 1; a < height - 1; a++)
                 }
 
 
-
  //also round it, capped at 255, and allow only positive results
                 int kernel_blue = pow(GX_blue,2) + pow(GY_blue,2);
                 if (kernel_blue <= 0)
