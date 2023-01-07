@@ -157,7 +157,7 @@ for (int a = 1; a < height - 1; a++)
                 int kernel_blue = pow(GX_blue,2) + pow(GY_blue,2);
                 if (kernel_blue <= 0)
                {
-                kernel_blue = 0;
+                kernel_blue = -1 *kernel_blue;
                 }
                 else if ( kernel_blue >= 255)
                 {
@@ -170,7 +170,7 @@ for (int a = 1; a < height - 1; a++)
                 int kernel_green = pow(GX_green,2) + pow(GY_green,2);
                 if ( kernel_green <= 0)
                 {
-                 kernel_green = 0;
+                 kernel_green = -1 *kernel_green;
                 }
                 else if ( kernel_green >= 255)
                 {
@@ -183,7 +183,7 @@ for (int a = 1; a < height - 1; a++)
                 int kernel_red = pow(GX_green,2) + pow(GY_green,2);
                if ( kernel_red <= 0)
                {
-               kernel_red = 0;
+               kernel_red = -1 *kernel_red;
               }
               else if (kernel_red >= 255)
                {
