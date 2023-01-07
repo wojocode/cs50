@@ -97,22 +97,22 @@ for (int a = 1; a < height - 1; a++)
             + 0*(copy[a][b-1].rgbtBlue) + 0*(copy[a][b].rgbtBlue) + 0*(copy[a][b+1].rgbtBlue)
             + 1*(copy[a+1][b-1].rgbtBlue) + 2*(copy[a+1][b].rgbtBlue) + 1*(copy[a+1][b+1].rgbtBlue);
 
-                if (row[a][b].rgbtRed <= 0)
-                {
-                row[a][b].rgbtRed = 0;
-                }
-                else if ( row[a][b].rgbtRed > 255)
-                {
-                row[a][b].rgbtRed = 255;
-                }
-                if (column[a][b].rgbtRed <= 0)
-                {
-                column[a][b].rgbtRed = 0;
-                }
-                else if (column[a][b].rgbtRed > 255)
-                {
-                column[a][b].rgbtRed = 255;
-                }
+                //if (row[a][b].rgbtRed <= 0)
+                //{
+               // row[a][b].rgbtRed = 0;
+                //}
+                //else if ( row[a][b].rgbtRed > 255)
+               // {
+                //row[a][b].rgbtRed = 255;
+                //}
+                //if (column[a][b].rgbtRed <= 0)
+                //{
+                //column[a][b].rgbtRed = 0;
+                //}
+               // else if (column[a][b].rgbtRed > 255)
+               // {
+               // column[a][b].rgbtRed = 255;
+              //  }
 
 
                 if (row[a][b].rgbtGreen <= 0)
