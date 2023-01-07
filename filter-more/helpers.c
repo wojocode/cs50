@@ -43,7 +43,7 @@ RGBTRIPLE kernel[height][width];
         image[w][width-1].rgbtBlue = 0;
     }
 //third edge
-for (int e = 0; e < height;e++)
+for (int e = 0; e < width;e++)
     {
         image[height-1][e].rgbtRed = 0;
         image[height-1][e].rgbtGreen = 0;
@@ -56,7 +56,6 @@ for (int r = 0; r < height;r++)
         image[r][0].rgbtGreen = 0;
         image[r][0].rgbtBlue = 0;
     }
-
 
 
 
