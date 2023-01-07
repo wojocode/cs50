@@ -67,6 +67,7 @@ for (int r = 0; r < height;r++)
             copy[i][j] = image[i][j];
         }
     }
+    RGBTRIPLE i = copy[1][1];
 // 2. assigning Gx and Gy value for each color for each pixel
 for (int a = 1; a <= height - 2; a++)
     {
