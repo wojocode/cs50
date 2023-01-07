@@ -195,7 +195,7 @@ for (int a = 1; a < height - 1; a++)
     {
         for (int y = 1; y < width - 1; y++)
     {
-            image[x][y] = copy[x][y];
+            image[height][width] = copy[height][width];
 
         }
     }
