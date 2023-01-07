@@ -73,29 +73,29 @@ for (int a = 1; a < height - 1; a++)
     {
         for (int b = 1; b < width - 1 ; b++)
         {
-            BYTE GX_red = -1*(copy[a-1][b-1].rgbtRed) + 0*(copy[a-1][b].rgbtRed) + 1*(copy[a-1][b+1].rgbtRed)
-            + (-2*(copy[a][b-1].rgbtRed)) + 0*(copy[a][b].rgbtRed) + 2*(copy[a][b+1].rgbtRed)
-            + (-1*(copy[a+1][b-1].rgbtRed)) + 0*(copy[a+1][b].rgbtRed) + 1*(copy[a+1][b+1].rgbtRed);
+            BYTE GX_red = -1*(image[a-1][b-1].rgbtRed) + 0*(image[a-1][b].rgbtRed) + 1*(image[a-1][b+1].rgbtRed)
+            + (-2*(image[a][b-1].rgbtRed)) + 0*(image[a][b].rgbtRed) + 2*(image[a][b+1].rgbtRed)
+            + (-1*(image[a+1][b-1].rgbtRed)) + 0*(image[a+1][b].rgbtRed) + 1*(image[a+1][b+1].rgbtRed);
 
-            BYTE GX_green = -1*(copy[a-1][b-1].rgbtGreen) + 0*(copy[a-1][b].rgbtGreen) + 1*(copy[a-1][b+1].rgbtGreen)
-            + (-2*(copy[a][b-1].rgbtGreen)) + 0*(copy[a][b].rgbtGreen) + 2*(copy[a][b+1].rgbtGreen)
-            + (-1*(copy[a+1][b-1].rgbtGreen)) + 0*(copy[a+1][b].rgbtGreen) + 1*(copy[a+1][b+1].rgbtGreen);
+            BYTE GX_green = -1*(image[a-1][b-1].rgbtGreen) + 0*(image[a-1][b].rgbtGreen) + 1*(image[a-1][b+1].rgbtGreen)
+            + (-2*(image[a][b-1].rgbtGreen)) + 0*(image[a][b].rgbtGreen) + 2*(image[a][b+1].rgbtGreen)
+            + (-1*(image[a+1][b-1].rgbtGreen)) + 0*(image[a+1][b].rgbtGreen) + 1*(image[a+1][b+1].rgbtGreen);
 
-           BYTE GX_blue = -1*(copy[a-1][b-1].rgbtBlue) + 0*(copy[a-1][b].rgbtBlue) + 1*(copy[a-1][b+1].rgbtBlue)
-            + (-2*(copy[a][b-1].rgbtBlue)) + 0*(copy[a][b].rgbtBlue) + 2*(copy[a][b+1].rgbtBlue)
-            + (-1*(copy[a+1][b-1].rgbtBlue)) + 0*(copy[a+1][b].rgbtBlue) + 1*(copy[a+1][b+1].rgbtBlue);
+           BYTE GX_blue = -1*(image[a-1][b-1].rgbtBlue) + 0*(image[a-1][b].rgbtBlue) + 1*(image[a-1][b+1].rgbtBlue)
+            + (-2*(image[a][b-1].rgbtBlue)) + 0*(image[a][b].rgbtBlue) + 2*(image[a][b+1].rgbtBlue)
+            + (-1*(image[a+1][b-1].rgbtBlue)) + 0*(image[a+1][b].rgbtBlue) + 1*(image[a+1][b+1].rgbtBlue);
 
-            BYTE GY_red = -1*(copy[a-1][b-1].rgbtRed) + (-2*(copy[a-1][b].rgbtRed)) + (-1*(copy[a-1][b+1].rgbtRed))
-            + 0*(copy[a][b-1].rgbtRed) + 0*(copy[a][b].rgbtRed) + 0*(copy[a][b+1].rgbtRed)
-            + 1*(copy[a+1][b-1].rgbtRed) + 2*(copy[a+1][b].rgbtRed) + 1*(copy[a+1][b+1].rgbtRed);
+            BYTE GY_red = -1*(image[a-1][b-1].rgbtRed) + (-2*(image[a-1][b].rgbtRed)) + (-1*(image[a-1][b+1].rgbtRed))
+            + 0*(image[a][b-1].rgbtRed) + 0*(image[a][b].rgbtRed) + 0*(image[a][b+1].rgbtRed)
+            + 1*(image[a+1][b-1].rgbtRed) + 2*(image[a+1][b].rgbtRed) + 1*(image[a+1][b+1].rgbtRed);
 
-            BYTE GY_green = -1*(copy[a-1][b-1].rgbtGreen) + (-2*(copy[a-1][b].rgbtGreen)) + (-1*(copy[a-1][b+1].rgbtGreen))
-            + 0*(copy[a][b-1].rgbtGreen) + 0*(copy[a][b].rgbtGreen) + 0*(copy[a][b+1].rgbtGreen)
-            + 1*(copy[a+1][b-1].rgbtGreen) + 2*(copy[a+1][b].rgbtGreen) + 1*(copy[a+1][b+1].rgbtGreen);
+            BYTE GY_green = -1*(image[a-1][b-1].rgbtGreen) + (-2*(image[a-1][b].rgbtGreen)) + (-1*(image[a-1][b+1].rgbtGreen))
+            + 0*(image[a][b-1].rgbtGreen) + 0*(image[a][b].rgbtGreen) + 0*(image[a][b+1].rgbtGreen)
+            + 1*(image[a+1][b-1].rgbtGreen) + 2*(image[a+1][b].rgbtGreen) + 1*(image[a+1][b+1].rgbtGreen);
 
-            BYTE GY_blue = -1*(copy[a-1][b-1].rgbtBlue) + (-2*(copy[a-1][b].rgbtBlue)) + (-1*(copy[a-1][b+1].rgbtBlue))
-            + 0*(copy[a][b-1].rgbtBlue) + 0*(copy[a][b].rgbtBlue) + 0*(copy[a][b+1].rgbtBlue)
-            + 1*(copy[a+1][b-1].rgbtBlue) + 2*(copy[a+1][b].rgbtBlue) + 1*(copy[a+1][b+1].rgbtBlue);
+            BYTE GY_blue = -1*(image[a-1][b-1].rgbtBlue) + (-2*(image[a-1][b].rgbtBlue)) + (-1*(image[a-1][b+1].rgbtBlue))
+            + 0*(image[a][b-1].rgbtBlue) + 0*(image[a][b].rgbtBlue) + 0*(image[a][b+1].rgbtBlue)
+            + 1*(image[a+1][b-1].rgbtBlue) + 2*(image[a+1][b].rgbtBlue) + 1*(image[a+1][b+1].rgbtBlue);
 
                 //if (row[a][b].rgbtRed <= 0)
                 //{
@@ -162,7 +162,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 kernel[a][b].rgbtBlue = 255;
                 }
-                    image[a][b].rgbtRed = kernel[a][b].rgbtBlue;
+                    copy[a][b].rgbtRed = kernel[a][b].rgbtBlue;
 
 
                 kernel[a][b].rgbtGreen= round(pow(GX_green,2) + pow(GY_green,2));
@@ -187,19 +187,20 @@ for (int a = 1; a < height - 1; a++)
                     kernel[a][b].rgbtRed = 255;
                 }
 
-                image[a][b].rgbtRed = kernel[a][b].rgbtRed;
+                copy[a][b].rgbtRed = kernel[a][b].rgbtRed;
 
         }
     }
 
  // assigning new pixels to output
-    //for (int x = 1; x <=height - 2; x++)
-    //{
-    //    for (int y = 1; y <= width - 2; y++)
-   //  {
-    //        image[x][y].rgbtRed = copy[x][y].rgbtRed;
-    //        image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
-      //      image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
-       // }
+    for (int x = 1; x <=height - 2; x++)
+    {
+        for (int y = 1; y <= width - 2; y++)
+    {
+            image[x][y].rgbtRed = copy[x][y].rgbtRed;
+            image[x][y].rgbtBlue = copy[x][y].rgbtBlue;
+             image[x][y].rgbtGreen = copy[x][y].rgbtGreen;
+        }
     }
 
+}
