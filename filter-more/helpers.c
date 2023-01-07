@@ -153,14 +153,14 @@ for (int a = 1; a < height - 1; a++)
                 int kernel_blue = pow(GX_blue,2) + pow(GY_blue,2);
                 if (kernel_blue <= 0)
                {
-              kernel_blue = 0;
+                kernel_blue = 0;
                 }
 
                 else if ( kernel_blue > 255)
                 {
                 kernel_blue = 255;
                }
-                    copy[a][b].rgbtRed = kernel_blue;
+                    copy[a][b].rgbtBlue = kernel_blue;
 
 
                 int kernel_green = pow(GX_green,2) + pow(GY_green,2);
