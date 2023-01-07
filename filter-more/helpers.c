@@ -191,7 +191,7 @@ for (int a = 1; a < height - 1; a++)
     }
 
  // assigning new pixels to output
-    for (int x = 1; x <height - 1; x++)
+    for (int x = 1; x < height - 1; x++)
     {
         for (int y = 1; y < width - 1; y++)
     {
@@ -199,5 +199,7 @@ for (int a = 1; a < height - 1; a++)
 
         }
     }
+RGBTRIPLE r = image[1][1];
+RGBTRIPLE s = copy[1][1];
 
 }
