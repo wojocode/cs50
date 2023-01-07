@@ -155,11 +155,11 @@ for (int a = 1; a < height - 1; a++)
                {
                 kernel_blue = 0;
                 }
-
                 else if ( kernel_blue > 255)
                 {
                 kernel_blue = 255;
                }
+
                     copy[a][b].rgbtBlue = kernel_blue;
 
 
@@ -171,7 +171,8 @@ for (int a = 1; a < height - 1; a++)
                 else if ( kernel_green > 255)
                 {
                 kernel_green = 255;
-              }
+                }
+
                     copy[a][b].rgbtGreen = kernel_green;
 
 
@@ -184,7 +185,7 @@ for (int a = 1; a < height - 1; a++)
                {
                    kernel_red = 255;
                }
-
+            
                 copy[a][b].rgbtRed = kernel_red;
 
         }
