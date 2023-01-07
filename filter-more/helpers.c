@@ -135,7 +135,6 @@ for (int a = 1; a < height - 1; a++)
                     GY_green = -255;
                 }
 
-
                  if (GX_blue >= 255)
                 {
                 GX_blue = 255;
