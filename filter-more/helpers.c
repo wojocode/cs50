@@ -190,15 +190,14 @@ for (int a = 1; a < height - 1; a++)
         }
     }
 
- // assigning new pixels to output
+  //assigning new pixels to output
     for (int x = 1; x < height - 1; x++)
     {
         for (int y = 1; y < width - 1; y++)
-    {
-            image[x][y] = copy[x][y];
+   {
+         image[x][y] = copy[x][y];
 
         }
     }
-
-
 }
+
