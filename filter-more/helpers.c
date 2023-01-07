@@ -173,7 +173,7 @@ for (int a = 1; a < height - 1; a++)
                 kernel_green = 255;
                 }
 
-                    copy[a][b].rgbtGreen = kernel_green;
+                   copy[a][b].rgbtGreen = kernel_green;
 
 
                 int kernel_red= pow(GX_red,2) + pow(GY_red,2);
@@ -185,7 +185,7 @@ for (int a = 1; a < height - 1; a++)
                {
                    kernel_red = 255;
                }
-            
+
                 copy[a][b].rgbtRed = kernel_red;
 
         }
