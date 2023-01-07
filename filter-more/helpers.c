@@ -195,13 +195,11 @@ for (int a = 1; a < height - 1; a++)
     {
         for (int y = 1; y < width - 1; y++)
     {
-            copy[x][y] = RGBTRIPLE tmp;
             image[x][y] = copy[x][y];
-            RGBTRIPLE tmp = image[x][y];
 
         }
     }
-RGBTRIPLE r = image[1][1];
-RGBTRIPLE s = copy[1][1];
+RGBTRIPLE r = image[2][1];
+RGBTRIPLE s = copy[2][1];
 
 }
