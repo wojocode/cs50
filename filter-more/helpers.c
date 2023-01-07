@@ -97,54 +97,60 @@ for (int a = 1; a < height - 1; a++)
             + 0*(image[a][b-1].rgbtBlue) + 0*(image[a][b].rgbtBlue) + 0*(image[a][b+1].rgbtBlue)
             + 1*(image[a+1][b-1].rgbtBlue) + 2*(image[a+1][b].rgbtBlue) + 1*(image[a+1][b+1].rgbtBlue);
 
-                if (GX_red <= 0)
-                {
-                GX_red = 0;
-                }
-                else if ( GX_red >= 255)
+
+                if ( GX_red >= 255)
                 {
                 row[a][b].rgbtRed = 255;
                 }
-                if (GY_red <= 0)
+                else if (GX_red < -255)
                 {
-                GY_red = 0;
+                    GX_red = -255;
                 }
-                else if (GY_red >= 255)
+
+                if (GY_red >= 255)
                {
                GY_red = 255;
                }
-                if (GX_green <= 0)
+               else if (GY_red < -255)
                 {
-                 GX_green= 0;
+                    GY_red = -255;
+                }
+
+
+               if (GX_green < -255)
+                {
+                    GX_green = -255;
                 }
                 else if (GX_green >= 255)
                 {
                 GX_green = 255;
                 }
-                if (GY_green <= 0)
-                {
-                GY_green = 0;
-                }
-                else if (GY_green >= 255)
+
+                 if (GY_green >= 255)
                 {
                 GY_green = 255;
                 }
-
-                if (GX_blue <= 0)
+                else if (GY_green < -255)
                 {
-                GX_blue = 0;
+                    GY_green = -255;
                 }
-                else if (GX_blue >= 255)
+
+
+                 if (GX_blue >= 255)
                 {
                 GX_blue = 255;
                 }
-                if (GY_blue <= 0)
+                else if (GX_blue < -255)
                 {
-                GY_blue = 0;
+                    GX_blue = -255;
                 }
-                else if (GY_blue >= 255)
+                if (GY_blue >= 255)
                 {
                 GY_blue = 255;
+                }
+                else if (GY_blue < -255)
+                {
+                    GY_blue = -255;
                 }
 
 
