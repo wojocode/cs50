@@ -1,7 +1,7 @@
 #include "helpers.h"
 #include <math.h>
 #include <stdlib.h>
-
+#include <stdint.h>
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -73,7 +73,7 @@ for (int a = 1; a < height - 1; a++)
     {
         for (int b = 1; b < width - 1 ; b++)
         {
-            
+
            int GX_red = -1*(image[a-1][b-1].rgbtRed) + 0*(image[a-1][b].rgbtRed) + 1*(image[a-1][b+1].rgbtRed)
             + (-2*(image[a][b-1].rgbtRed)) + 0*(image[a][b].rgbtRed) + 2*(image[a][b+1].rgbtRed)
             + (-1*(image[a+1][b-1].rgbtRed)) + 0*(image[a+1][b].rgbtRed) + 1*(image[a+1][b+1].rgbtRed);
