@@ -69,9 +69,9 @@ for (int r = 0; r < height;r++)
     }
 
 // 2. assigning Gx and Gy value for each color for each pixel
-for (int a = 1; a < height - 1; a++)
+for (int a = 2; a < height - 2; a++)
     {
-        for (int b = 1; b < width - 1 ; b++)
+        for (int b = 2; b < width - 2 ; b++)
         {
            int GX_red = -1*(image[a-1][b-1].rgbtRed) + 0*(image[a-1][b].rgbtRed) + 1*(image[a-1][b+1].rgbtRed)
             + (-2*(image[a][b-1].rgbtRed)) + 0*(image[a][b].rgbtRed) + 2*(image[a][b+1].rgbtRed)
