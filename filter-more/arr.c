@@ -4,11 +4,8 @@
 
 int main(void)
 {
-     typedef struct
-{
-    int name;
-    int votes;
-}candidate;
-
+int x = -250;
+int y = pow(x,2);
+printf("%i",y);
 
 }
