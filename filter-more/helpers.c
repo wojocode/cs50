@@ -1,27 +1,29 @@
 #include "helpers.h"
 #include <math.h>
 #include <stdlib.h>
-#include <stdint.h>
+
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
+    //look at filter-less
 }
 
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
+    //look at filter-less
 }
 
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     return;
+    //look at filter-less
 }
 
-// Detect edges
-
+// Detect edges, Sobel effect
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
 RGBTRIPLE copy[height][width];
