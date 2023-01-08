@@ -102,7 +102,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                     GX_red = 255;
                 }
-                else if (GX_red < -255)
+                else if (GX_red <= -255)
                 {
                     GX_red = -255;
                 }
@@ -111,13 +111,13 @@ for (int a = 1; a < height - 1; a++)
                {
                GY_red = 255;
                }
-               else if (GY_red < -255)
+               else if (GY_red <= -255)
                 {
                     GY_red = -255;
                 }
 
 
-               if (GX_green < -255)
+               if (GX_green <= -255)
                 {
                     GX_green = -255;
                 }
@@ -130,7 +130,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GY_green = 255;
                 }
-                else if (GY_green < -255)
+                else if (GY_green <= -255)
                 {
                     GY_green = -255;
                 }
@@ -139,7 +139,7 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GX_blue = 255;
                 }
-                else if (GX_blue < -255)
+                else if (GX_blue <= -255)
                 {
                     GX_blue = -255;
                 }
@@ -147,14 +147,14 @@ for (int a = 1; a < height - 1; a++)
                 {
                 GY_blue = 255;
                 }
-                else if (GY_blue < -255)
+                else if (GY_blue <= -255)
                 {
                     GY_blue = -255;
                 }
 
 
  //also round it, capped at 255, and allow only positive results
-                int kernel_blue = fabs(pow(GX_blue,2) + pow(GY_blue,2));
+                int kernel_blue = pow(GX_blue,2) + pow(GY_blue,2);
 
                  if ( kernel_blue >= 255)
                 {
@@ -164,7 +164,7 @@ for (int a = 1; a < height - 1; a++)
                     copy[a][b].rgbtBlue = kernel_blue;
 
 
-                int kernel_green = fabs(pow(GX_green,2) + pow(GY_green,2));
+                int kernel_green = pow(GX_green,2) + pow(GY_green,2);
 
                if ( kernel_green >= 255)
                 {
@@ -173,7 +173,7 @@ for (int a = 1; a < height - 1; a++)
 
                    copy[a][b].rgbtGreen = kernel_green;
 
-                int kernel_red = fabs(pow(GX_green,2) + pow(GY_green,2));
+                int kernel_red = pow(GX_green,2) + pow(GY_green,2);
 
               if (kernel_red >= 255)
                {
