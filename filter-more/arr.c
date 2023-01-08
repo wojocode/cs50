@@ -38,7 +38,7 @@ image[1][1].rgbtBlue = 255;
 
 for (int i=0; i < 2;i++)
 {
-    for (int j=0; j <2;j++)
+    for (int j = 0; j <2;j++)
     {
         int GX_red = image[i][j].rgbtRed + -1*image[i][j+1].rgbtRed;
     }
