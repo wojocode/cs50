@@ -25,7 +25,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 {
 RGBTRIPLE copy[height][width];
 //RGBTRIPLE column[height][width];
-//RGBTRIPLE row[height][width];
+RGBTRIPLE row[height][width];
 RGBTRIPLE kernel[height][width];
 int GX_red;
 int GX_green;
@@ -189,6 +189,11 @@ for (int a = 1; a < height - 1; a++)
                }
                 copy[a][b].rgbtRed = kernel_red;
 
+
+                row[a][b].rgbtRed= copy[a][b].rgbtRed;
+                row[a][b].rgbtGreen= copy[a][b].rgbtGreen;
+                row[a][b].rgbtBlue= copy[a][b].rgbtBlue;
+
         }
     }
 
@@ -197,7 +202,7 @@ for (int a = 1; a < height - 1; a++)
     {
         for (int y = 1; y < width - 1; y++)
    {
-         image[x][y] = copy[x][y];
+         image[x][y] = row[x][y];
 
         }
     }
