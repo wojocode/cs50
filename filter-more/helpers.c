@@ -60,13 +60,13 @@ for (int r = 0; r < height;r++)
 
 
 // 1. make copy for each pixel
-    for (int i = 0; i < height ; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
-            copy[i][j] = image[i][j];
-        }
-    }
+    //for (int i = 0; i < height ; i++)
+   // {
+   //     for (int j = 0; j < width; j++)
+    //    {
+    //        copy[i][j] = image[i][j];
+    //    }
+   // }
 
 // 2. assigning Gx and Gy value for each color for each pixel
 for (int a = 1; a < height - 1; a++)
