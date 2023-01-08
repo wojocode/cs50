@@ -31,30 +31,30 @@ RGBTRIPLE kernel[height][width];
 //seting up first edge
     for (int q = 0; q < width;q++)
     {
-        image[0][q].rgbtRed = 0;
-        image[0][q].rgbtGreen = 0;
-        image[0][q].rgbtBlue = 0;
+        image[0][q].rgbtRed = 3;
+        image[0][q].rgbtGreen = 57;
+        image[0][q].rgbtBlue = 118;
     }
 // second edge
     for (int w = 0; w < height;w++)
     {
-        image[w][width-1].rgbtRed = 0;
-        image[w][width-1].rgbtGreen = 0;
-        image[w][width-1].rgbtBlue = 0;
+        image[w][width-1].rgbtRed = 3;
+        image[w][width-1].rgbtGreen = 57;
+        image[w][width-1].rgbtBlue = 118;
     }
 //third edge
 for (int e = 0; e < width;e++)
     {
-        image[height-1][e].rgbtRed = 0;
-        image[height-1][e].rgbtGreen = 0;
-        image[height-1][e].rgbtBlue = 0;
+        image[height-1][e].rgbtRed = 3;
+        image[height-1][e].rgbtGreen = 57;
+        image[height-1][e].rgbtBlue = 118;
     }
 //fourth edge
 for (int r = 0; r < height;r++)
     {
-        image[r][0].rgbtRed = 0;
-        image[r][0].rgbtGreen = 0;
-        image[r][0].rgbtBlue = 0;
+        image[r][0].rgbtRed = 3;
+        image[r][0].rgbtGreen = 57;
+        image[r][0].rgbtBlue = 118;
     }
 
 
@@ -69,9 +69,9 @@ for (int r = 0; r < height;r++)
     }
 
 // 2. assigning Gx and Gy value for each color for each pixel
-for (int a = 2; a < height - 2; a++)
+for (int a = 1; a < height - 1; a++)
     {
-        for (int b = 2; b < width - 2 ; b++)
+        for (int b = 1; b < width - 1 ; b++)
         {
            int GX_red = -1*(image[a-1][b-1].rgbtRed) + 0*(image[a-1][b].rgbtRed) + 1*(image[a-1][b+1].rgbtRed)
             + (-2*(image[a][b-1].rgbtRed)) + 0*(image[a][b].rgbtRed) + 2*(image[a][b+1].rgbtRed)
