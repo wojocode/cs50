@@ -5,7 +5,9 @@
 int main(void)
 {
 int x = -250;
+
 int y = pow(x,2);
-printf("%i",y);
+
+printf("%i\n",y);
 
 }
