@@ -3,6 +3,8 @@
 
 int main(int argc, char *argv[])
 {
+const int BLOCK_SIZE = 512;
+
 // ensure proper usage
  if (argc != 2)
  {
