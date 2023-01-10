@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     return 1;
  }
 // remember filename
-    char *card = argv[2];
+    char *card = argv[1];
 
 //open memory card
 FILE *memory_card = fopen(card,"r");
