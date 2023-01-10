@@ -15,8 +15,8 @@ const int BLOCK_SIZE = 512;
     char *card = argv[1];
 
 //open memory card
-FILE *memory_card = fopen(card,"r");
-    if (memory_card == NULL)
+FILE *inptr = fopen(card,"r");
+    if (inptr == NULL)
     {
         printf("Could not open %s.\n",card);
         return 2;
