@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-// ensure proper use
+// ensure proper usage
  if (argc != 2)
  {
     printf("Usage: ./recover IMAGE\n");
@@ -14,8 +14,11 @@ int main(int argc, char *argv[])
 
 //open memory card
 FILE *memory_card = fopen(card,"r");
-
-
+    if (memory_card == NULL)
+    {
+        printf("Could not open %s.\n",card);
+        return 2;
+    }
 
 
 }
