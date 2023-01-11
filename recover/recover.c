@@ -29,4 +29,6 @@ FILE *inptr = fopen(card,"r");
     }
 
 
+
+
 }
