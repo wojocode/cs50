@@ -28,7 +28,10 @@ FILE *inptr = fopen(card,"r");
         return 2;
     }
 // reading from disc image until reach the end of the file
-while ()
+while (fread(inptr,1,BLOCK_SIZE,card))
+{
+    
+}
 
 
 
