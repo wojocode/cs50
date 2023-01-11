@@ -27,7 +27,7 @@ FILE *inptr = fopen(card,"r");
         printf("Could not open %s.\n",card);
         return 2;
     }
-
+// reading from disc image until 
 
 
 
