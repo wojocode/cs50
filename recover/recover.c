@@ -59,8 +59,8 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
     else
     {
         fclose(img);
-        FILE *ne = fopen(filename, "a");
-        fwrite(buffer, 1 , BLOCK_SIZE,img);
+        FILE *next = fopen(filename, "a");
+        fwrite(buffer, 1 , BLOCK_SIZE,next);
     }
 }
 
