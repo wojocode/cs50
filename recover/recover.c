@@ -49,7 +49,6 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             }
             else
             {
-
             fwrite(buffer, 1, BLOCK_SIZE,img);
             i++;
             }
