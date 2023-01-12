@@ -39,6 +39,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             //create a file name
             char *filename = malloc(sizeof(char) * 7 + 1);
             sprintf(filename, "%03i.jpg",i);
+            printf("%s\n",filename);
             FILE *img = fopen(filename,"w");
         // if start of first JPEG
             if (i == 0)
@@ -50,7 +51,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             else
             {
             fwrite(buffer, 1, BLOCK_SIZE,img);
-            i++;
+         
             }
     }
     else
