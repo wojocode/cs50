@@ -43,7 +43,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             fwrite(buffer, 1, BLOCK_SIZE,img);
             i++;
         // if start of first JPEG
-            if (strcmp(filename,"000.jpg"))
+            if (i == 0)
             {
                 fclose(img);
             }
