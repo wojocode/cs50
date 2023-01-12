@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 
 int main(int argc, char *argv[])
 {
@@ -40,10 +41,9 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             sprintf(filename, "%03i.jpg",i);
             FILE *img = fopen(filename,"w");
             fwrite(buffer, 1, BLOCK_SIZE,img);
-
             i++;
         // if start of first JPEG
-            if (i  - 1 == 0)
+            if (strcmp(filename,"000.jpg"))
             {
                 fclose(img);
             }
