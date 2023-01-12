@@ -41,7 +41,10 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
             fwrite(buffer, 1, BLOCK_SIZE,img);
             i++;
         }
-
+        else
+        {
+            
+        }
 //create jpg's file and allocate them memory
 
 
