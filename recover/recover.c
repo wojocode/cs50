@@ -39,10 +39,11 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
     {
             //create a file name
             char *filename = malloc(sizeof(char) * 7 + 1);
-            FILE *img = fopen(filename,"w");
+            
         // if start of first JPEG
             if (i == 0)
             {
+                FILE *img = fopen(filename,"w");
                 sprintf(filename, "%03i.jpg",i);
                 fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
