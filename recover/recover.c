@@ -48,6 +48,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                 fwrite(buffer, 1, BLOCK_SIZE ,new);
                 i++;
                 fclose(new);
+                
                 sprintf(filename, "%03i.jpg",i);
             }
             else
