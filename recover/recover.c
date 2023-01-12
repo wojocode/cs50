@@ -31,6 +31,10 @@ FILE *inptr = fopen(card,"r");
 while (fread(buffer, 1, BLOCK_SIZE, inptr))
 {
 
+
+
+//create jpg's file and allocate them memory
+springf(")
 }
 
 
