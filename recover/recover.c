@@ -31,9 +31,9 @@ FILE *inptr = fopen(card,"r");
 while (fread(buffer, 1, BLOCK_SIZE, inptr))
 {
 // setting buffer 4 th element
-(buffer[3] & Oxf0) == 0xe0;
-// searching for jpg's header
 
+// searching for jpg's header
+    if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
 
 
 //create jpg's file and allocate them memory
