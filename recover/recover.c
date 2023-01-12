@@ -42,7 +42,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             sprintf(filename, "%03i.jpg",i);
             FILE *img = fopen(filename,"w");
         // if start of first JPEG
-            if (i == 0)
+            if (strcmp(filename,"000.jpg"))
             {
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
                 i++;
