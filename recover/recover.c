@@ -10,7 +10,8 @@ const int BLOCK_SIZE = 512;
 typedef uint8_t  BYTE;
 // create buffer as a array to store chunk
 BYTE buffer[512];
-
+// initiazlized index of jpg's file name
+int i = 0;
 // ensure proper usage
  if (argc != 2)
  {
@@ -35,7 +36,9 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         {
             //create a file name
             char *filename = malloc(sizeof(char) * 7 + 1);
+            springf(filename, "%03i.jpg",i);
             FILE *img = fopen(filename,"w");
+
         }
 
 //create jpg's file and allocate them memory
