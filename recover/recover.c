@@ -44,15 +44,13 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         // if start of first JPEG
             if (i == 0)
             {
-                sprintf(filename, "%03i.jpg",i);
-                FILE *img = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
                 i++;
             }
             else
             {
-
-            i++;
+                fclose(img);
+                i++;
             }
     }
     else
