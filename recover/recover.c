@@ -44,11 +44,11 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         }
         if (i - 1 == 0)
         {
-            
+
         }
         else
         {
-
+            
         }
 //create jpg's file and allocate them memory
 
