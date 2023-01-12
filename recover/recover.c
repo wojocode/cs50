@@ -30,11 +30,15 @@ FILE *inptr = fopen(card,"r");
 // reading from disc image until reach the end of the file
 while (fread(buffer, 1, BLOCK_SIZE, inptr))
 {
+// setting buffer 4 th element
+(buffer[3] & Oxf0) == 0xe0;
+// searching for jpg's header
 
 
 
 //create jpg's file and allocate them memory
-springf(")
+
+
 }
 
 
