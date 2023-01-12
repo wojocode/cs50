@@ -44,12 +44,13 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             {
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
                 i++;
+                fclose(img);
+                sprintf(filename, "%03i.jpg",i);
             }
             else
             {
-                fclose(img);
                 
-
+                fwrite(buffer, 1, BLOCK_SIZE ,img);
             }
     }
     else
