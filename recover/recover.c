@@ -34,7 +34,6 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
 
 
 //create jpg's file and allocate them memory
-recover_jpg
 springf(")
 }
 
