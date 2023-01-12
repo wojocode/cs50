@@ -35,7 +35,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         {
             //create a file name
             char *filename = malloc(sizeof(char) * 7 + 1);
-            FILE *img = fopen(filename,)
+            FILE *img = fopen(filename,"w");
         }
 
 //create jpg's file and allocate them memory
