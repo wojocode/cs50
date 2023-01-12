@@ -43,14 +43,13 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         // if start of first JPEG
             if (i == 0)
             {
-
                 fwrite(buffer, 1, BLOCK_SIZE,img);
                 fclose(img);
                 i++;
             }
             else
             {
-           
+
             fwrite(buffer, 1, BLOCK_SIZE,img);
             i++;
             }
