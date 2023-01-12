@@ -29,7 +29,7 @@ FILE *inptr = fopen(card,"r");
         return 2;
     }
 // reading from disc image until reach the end of the file
-while (fread(buffer, 1, BLOCK_SIZE, inptr))
+while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
 {
 // searching for jpg's header
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0 && buffer[3] == 0xe0)
@@ -38,7 +38,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             char *filename = malloc(sizeof(char) * 7 + 1);
             sprintf(filename, "%03i.jpg",i);
             FILE *img = fopen(filename,"w");
-            
+            fwrite(buffer, 1, BLOCK_SIZE,img);
         }
 
 //create jpg's file and allocate them memory
