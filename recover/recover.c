@@ -33,7 +33,8 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
 // searching for jpg's header
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0 && buffer[3] == 0xe0)
         {
-            char filename = malloc
+            char *filename = malloc(sizeof(char) * 7 + 1);
+            
         }
 
 //create jpg's file and allocate them memory
