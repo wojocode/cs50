@@ -35,32 +35,33 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
 {
         char *filename = malloc(sizeof(char) * 7 + 1);
         sprintf(filename, "%03i.jpg",i);
-        FILE *img = fopen(filename,"w");
+        FILE *img = fopen(filename,"a");
 
 // searching for jpg's header
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] == 0xe0 || buffer[3] == 0xe1 || buffer[3] ==0xe2 || buffer[3] ==0xe3 || buffer[3] == 0xe4 || buffer[3] == 0xe5 || buffer[3] == 0xe6 || buffer[3] == 0xe7 || buffer[3] == 0xe8 || buffer[3] == 0xe9 || buffer[3] == 0xea || buffer[3] == 0xeb || buffer[3] == 0xec || buffer[3] == 0xed || buffer[3] == 0xee || buffer[3] == 0xef))
     {
-
+        fclose(img);
+        FILE *new =fopen(filename,"w");
         // if start of first JPEG
             if (i == 0)
             {
-                fwrite(buffer, 1, BLOCK_SIZE ,img);
+                fwrite(buffer, 1, BLOCK_SIZE ,new);
                 i++;
-                fclose(img);
+                fclose(new);
                 sprintf(filename, "%03i.jpg",i);
             }
             else
             {
-                fwrite(buffer, 1, BLOCK_SIZE ,img);
+
+                fwrite(buffer, 1, BLOCK_SIZE ,new);
                 i++;
-                fclose(img);
+
             }
     }
     else
     {
-        fclose(img);
-        FILE *next = fopen(filename, "a");
-        fwrite(buffer, 1 , BLOCK_SIZE,next);
+
+        fwrite(buffer, 1 , BLOCK_SIZE,img);
     }
 }
 
