@@ -53,15 +53,17 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                 sprintf(filename, "%03i.jpg",i);
                 FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
+                fclose(next);
 
             }
     }
     else
     {
         char *filename = malloc(sizeof(char) * 7 + 1);
-         sprintf(filename, "%03i.jpg",i);
-        FILE *wyj = fopen(filename,"w");
+        sprintf(filename, "%03i.jpg",i);
+        FILE *wyj = fopen(filename,"a");
         fwrite(buffer, 1 , BLOCK_SIZE,wyj);
+        fclose(wyj);
     }
 }
 
