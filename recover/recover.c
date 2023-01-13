@@ -60,9 +60,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
     }
     else
     {
-        FILE *e =fopen(filename,"a");
-        fwrite(buffer, 1 , BLOCK_SIZE,e);
-        fclose(e);
+       
     }
 }
 
