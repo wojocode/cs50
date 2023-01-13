@@ -41,11 +41,11 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         char *filename = malloc(sizeof(char) * 7 + 1);
         sprintf(filename, "%03i.jpg",i);
         FILE *img = fopen(filename,"a");
+        i++;
         // if start of first JPEG
-            if (i == 0)
+            if (i != 1)
             {
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
-                i++;
                 fclose(img);
             }
             else
@@ -53,13 +53,15 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                 sprintf(filename, "%03i.jpg",i);
                 FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
-                i++;
+
             }
     }
     else
     {
-        FILE *else = fopen(filename,"w");
-        fwrite(buffer, 1 , BLOCK_SIZE,else);
+        char *filename = malloc(sizeof(char) * 7 + 1);
+         sprintf(filename, "%03i.jpg",i);
+        FILE *wyj = fopen(filename,"w");
+        fwrite(buffer, 1 , BLOCK_SIZE,wyj);
     }
 }
 
