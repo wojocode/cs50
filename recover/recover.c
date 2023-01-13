@@ -55,7 +55,6 @@ char *filename = malloc(8);
                 fclose(next);
                 i++;
             }
-
     }
     else
     {
@@ -64,5 +63,6 @@ char *filename = malloc(8);
         fclose(e);
     }
 }
+
 
 }
