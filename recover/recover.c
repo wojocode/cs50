@@ -31,7 +31,7 @@ FILE *inptr = fopen(card,"r");
     }
 // reading from disc image until reach the end of the file
 
-while (fread(buffer, 1, BLOCK_SIZE, inptr))
+while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
 {
      char *filename = malloc((sizeof(char)) * 7 + 1);
 // searching for jpg's header
@@ -62,7 +62,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         fwrite(buffer, 1 , BLOCK_SIZE,wyj);
         fclose(wyj);
     }
-   
+
 }
 
 }
