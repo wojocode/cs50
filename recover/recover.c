@@ -52,7 +52,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
                 sprintf(filename, "%03i.jpg",i);
                 FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
-                i++;
+
             }
     }
     else
