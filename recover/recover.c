@@ -62,7 +62,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
         fwrite(buffer, 1 , BLOCK_SIZE,wyj);
         fclose(wyj);
     }
-
+free(filename);
 }
 
 }
