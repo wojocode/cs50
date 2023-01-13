@@ -49,10 +49,10 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             }
             else
             {
-                i++;
                 FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
                 fclose(next);
+                i++;
             }
     }
     else
