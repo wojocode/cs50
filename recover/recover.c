@@ -49,6 +49,8 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
             }
             else
             {
+                char *filename = malloc((sizeof(char)) * 7 + 1);
+                 sprintf(filename, "%03i.jpg",i);
                 FILE *next = fopen(filename,"a");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
                 fclose(next);
