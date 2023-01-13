@@ -44,18 +44,18 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
             {
                 i++;
                 sprintf(filename, "%03i.jpg",i);
-                FILE *img = fopen(filename,"w");
-                fwrite(buffer, 1, BLOCK_SIZE ,img);
-                fclose(img);
+                //FILE *img = fopen(filename,"w");
+               // fwrite(buffer, 1, BLOCK_SIZE ,img);
+               // fclose(img);
 
             }
             else
             {
                 i++;
                 sprintf(filename, "%03i.jpg",i);
-                FILE *next = fopen(filename,"w");
-                fwrite(buffer, 1, BLOCK_SIZE ,next);
-                fclose(next);
+               // FILE *next = fopen(filename,"w");
+              //  fwrite(buffer, 1, BLOCK_SIZE ,next);
+              //  fclose(next);
             }
     }
     else
