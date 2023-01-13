@@ -54,7 +54,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                 fclose(next);
                 i++;
             }
-            free(filename);
+
     }
     else
     {
@@ -62,7 +62,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
         fwrite(buffer, 1 , BLOCK_SIZE,wyj);
         fclose(wyj);
     }
-    free(filename);
+   
 }
 
 }
