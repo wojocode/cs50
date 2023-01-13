@@ -49,7 +49,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
             }
             else
             {
-                FILE *next = fopen(filename,"w");
+                FILE *next = fopen(filename,"a");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
                 fclose(next);
                 i++;
@@ -58,8 +58,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
     }
     else
     {
-        FILE *wyj = fopen(filename,"a");
-        fwrite(buffer, 1 , BLOCK_SIZE,wyj);
+        fwrite(buffer, 1 , BLOCK_SIZE,*next);
         fclose(wyj);
     }
 free(filename);
