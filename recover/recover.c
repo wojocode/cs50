@@ -51,9 +51,10 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
             }
             else
             {
+                sprintf(filename, "%03i.jpg",i);
+                FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,new);
                 i++;
-
             }
     }
     else
