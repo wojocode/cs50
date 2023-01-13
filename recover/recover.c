@@ -13,7 +13,7 @@ typedef uint8_t  BYTE;
 BYTE buffer[512];
 
 // initiazlized index of jpg's file name
-int i = 0;
+int i = -1;
 // ensure proper usage
  if (argc != 2)
  {
@@ -40,7 +40,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] == 0xe0 || buffer[3] == 0xe1 || buffer[3] ==0xe2 || buffer[3] ==0xe3 || buffer[3] == 0xe4 || buffer[3] == 0xe5 || buffer[3] == 0xe6 || buffer[3] == 0xe7 || buffer[3] == 0xe8 || buffer[3] == 0xe9 || buffer[3] == 0xea || buffer[3] == 0xeb || buffer[3] == 0xec || buffer[3] == 0xed || buffer[3] == 0xee || buffer[3] == 0xef))
     {
         // if start of first JPEG
-            if (i == 0)
+            if (i == -1)
             {
                 FILE *img = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
