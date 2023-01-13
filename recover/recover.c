@@ -12,7 +12,7 @@ typedef uint8_t  BYTE;
 // create buffer as a array to store chunk
 BYTE buffer[512];
 // initiazlized index of jpg's file name
-int i = -1;
+int i = 0;
 // ensure proper usage
  if (argc != 2)
  {
@@ -33,11 +33,11 @@ FILE *inptr = fopen(card,"r");
 
 while (fread(buffer, 1, BLOCK_SIZE, inptr))
 {
-    i++;
+     char *filename = malloc(sizeof(char) * 7 + 1);
 // searching for jpg's header
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] == 0xe0 || buffer[3] == 0xe1 || buffer[3] ==0xe2 || buffer[3] ==0xe3 || buffer[3] == 0xe4 || buffer[3] == 0xe5 || buffer[3] == 0xe6 || buffer[3] == 0xe7 || buffer[3] == 0xe8 || buffer[3] == 0xe9 || buffer[3] == 0xea || buffer[3] == 0xeb || buffer[3] == 0xec || buffer[3] == 0xed || buffer[3] == 0xee || buffer[3] == 0xef))
     {
-        char *filename = malloc(sizeof(char) * 7 + 1);
+
         sprintf(filename, "%03i.jpg",i);
         // if start of first JPEG
             if (i == 0)
@@ -45,9 +45,11 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                 FILE *img = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,img);
                 fclose(img);
+                i++;
             }
             else
             {
+                i++;
                 FILE *next = fopen(filename,"w");
                 fwrite(buffer, 1, BLOCK_SIZE ,next);
                 fclose(next);
@@ -55,7 +57,7 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
     }
     else
     {
-        FILE *wyj = fopen(*filename,"a");
+        FILE *wyj = fopen(filename,"a");
         fwrite(buffer, 1 , BLOCK_SIZE,wyj);
         fclose(wyj);
     }
