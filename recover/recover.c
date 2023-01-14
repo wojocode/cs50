@@ -33,6 +33,11 @@ FILE *inptr = fopen(infile,"r");
 fread(buffer, sizeof(buffer), 1, inptr);
 
     FILE *img = fopen("1.jpg","w");
+     if (img == NULL)
+    {
+        printf("Could not open %s.\n",infile);
+        return 3;
+    }
     fwrite(buffer,sizeof(buffer),1,img);
 
 
