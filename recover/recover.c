@@ -10,7 +10,7 @@ const int BLOCK_SIZE = 512;
 // initialized BYTE type
 typedef uint8_t  BYTE;
 // create buffer as a array to store chunk
-BYTE buffer[512];
+BYTE *buffer[512];
 
 if (argc != 2)
  {
