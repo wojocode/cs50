@@ -28,10 +28,11 @@ FILE *inptr = fopen(infile,"r");
         return 2;
     }
 
-while(fread(buffer, sizeof(buffer), 1, inptr))
-{
-    FILE *img = fopen("1.jpg","a");
+fread(buffer, sizeof(buffer), 1, inptr);
+
+    FILE *img = fopen("1.jpg","w");
     fwrite(buffer,sizeof(buffer),1,img);
-}
+
+
 
 }
