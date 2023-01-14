@@ -30,7 +30,7 @@ FILE *inptr = fopen(infile,"r");
         return 2;
     }
 
-fread(buffer, sizeof(buffer), 1, inptr);
+fread(buffer, 1, 512, inptr);
 
     FILE *img = fopen("1.jpg","w");
      if (img == NULL)
@@ -38,7 +38,7 @@ fread(buffer, sizeof(buffer), 1, inptr);
         printf("Could not open %s.\n",infile);
         return 3;
     }
-    fwrite(buffer,sizeof(buffer),1,img);
+    fwrite(buffer,1,512,img);
 
 
 
