@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <string.h>
 
-typedef uint8_t  BYTE;
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
@@ -33,7 +33,7 @@ FILE *inptr = fopen(infile,"r");
 fread(buffer, sizeof(buffer), 1, inptr);
 
     FILE *img = fopen("1.jpg","w");
-    fwrite(buffer,sizeof(buffer),2,img);
+    fwrite(buffer,sizeof(buffer),1,img);
 
 
 
