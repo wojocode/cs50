@@ -31,7 +31,7 @@ FILE *inptr = fopen(infile,"r");
 fread(buffer, sizeof(buffer), 1, inptr);
 
     FILE *img = fopen("1.jpg","w");
-    fwrite(buffer,sizeof(buffer),1,img);
+    fwrite(buffer,sizeof(buffer),2,img);
 
 
 
