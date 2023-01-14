@@ -28,7 +28,9 @@ FILE *inptr = fopen(infile,"r");
         return 2;
     }
 
+while(fread(buffer, sizeof(buffer), 1, inptr))
+{
 
-
+}
 
 }
