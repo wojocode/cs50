@@ -30,7 +30,8 @@ FILE *inptr = fopen(infile,"r");
 
 while(fread(buffer, sizeof(buffer), 1, inptr))
 {
-
+    FILE *img = fopen("1.jpg","a");
+    fwrite(buffer,sizeof(buffer),1,img);
 }
 
 }
