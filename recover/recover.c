@@ -18,14 +18,17 @@ if (argc != 2)
     return 1;
  }
 // remember filename
-    char *card = argv[1];
+    char *infile = argv[1];
 
 //open memory card
-FILE *inptr = fopen(card,"r");
+FILE *inptr = fopen(infile,"r");
     if (inptr == NULL)
     {
-        printf("Could not open %s.\n",card);
+        printf("Could not open %s.\n",infile);
         return 2;
     }
-    
+
+
+
+
 }
