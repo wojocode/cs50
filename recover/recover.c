@@ -27,4 +27,5 @@ FILE *inptr = fopen(card,"r");
         printf("Could not open %s.\n",card);
         return 2;
     }
+    fclose(inptr);
 }
