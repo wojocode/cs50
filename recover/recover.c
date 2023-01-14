@@ -3,12 +3,14 @@
 #include <stdint.h>
 #include <string.h>
 
+typedef uint8_t  BYTE;
+
 int main(int argc, char *argv[])
 {
 // initialized chunks of memory card
 const int BLOCK_SIZE = 512;
 // initialized BYTE type
-typedef uint8_t  BYTE;
+
 // create buffer as a array to store chunk
 BYTE buffer[512];
 
