@@ -62,7 +62,8 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
     }
     else
     {
-        FILE *next = fopen(filename,"a");
+       
+        FILE *op = fopen(filename,"a");
         fwrite(buffer, 1, BLOCK_SIZE ,next);
         fclose(next);
     }
