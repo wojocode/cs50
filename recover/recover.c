@@ -40,6 +40,7 @@ while (fread(&buffer, 1, 512, inptr) == BLOCK_SIZE)
         fwrite(buffer,1,512,img);
         fclose(img);
         free(filename);
+        i++;
         }
         else
         {
