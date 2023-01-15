@@ -55,6 +55,11 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr))
                     i++;
                 }
             }
+            else if (i == 0)
+            {
+                
+            }
+
             else
             {
                 char *filename = malloc(sizeof(char) * 7 + 1);
