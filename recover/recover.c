@@ -45,9 +45,9 @@ while (fread(&buffer, 1, 512, inptr) == BLOCK_SIZE)
         else
         {
             printf("not found\n");
-
+        int a = 0;
         int *b = &a;
-        a = 0;
+
         a++;
 
         }
