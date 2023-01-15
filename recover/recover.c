@@ -32,24 +32,24 @@ FILE *inptr = fopen(infile,"r");
 
 while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
     {
-            if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && )
+            if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xe0)== 0xe0 && buffer[3] == 0xe0)
             {
                 if (i == 0)
                 {
-                    char *filename = malloc(8);
-                    sprintf(filename, "%03i.jpg",i);
-                    FILE *img = fopen(filename,"w");
-                    fwrite(buffer,1,BLOCK_SIZE,img);
+                    char *filename = malloc(sizeof(char) * 7 + 1);
+                    sprintf(filename, "%03i.jpg", i);
+                    FILE *img = fopen(filename, "w");
+                    fwrite(buffer, 1, BLOCK_SIZE, img);
                     fclose(img);
                     free(filename);
                     i++;
                 }
                 else
                 {
-                    char *filename = malloc(8);
-                    sprintf(filename, "%03i.jpg",i);
-                    FILE *img = fopen(filename,"w");
-                    fwrite(buffer,1,BLOCK_SIZE,img);
+                    char *filename = malloc(sizeof(char) * 7 + 1);
+                    sprintf(filename, "%03i.jpg", i);
+                    FILE *img = fopen(filename, "w");
+                    fwrite(buffer, 1, BLOCK_SIZE, img);
                     fclose(img);
                     free(filename);
                     i++;
@@ -57,10 +57,10 @@ while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
             }
             else
             {
-                char *filename = malloc(8);
-                sprintf(filename, "%03i.jpg",i-1);
-                FILE *img_loading = fopen(filename,"a");
-                fwrite(buffer,1,512,img_loading);
+                char *filename = malloc(sizeof(char) * 7 + 1);
+                sprintf(filename, "%03i.jpg", i-1);
+                FILE *img_loading = fopen(filename, "a");
+                fwrite(buffer, 1, BLOCK_SIZE, img_loading);
                 fclose(img_loading);
                 free(filename);
             }
