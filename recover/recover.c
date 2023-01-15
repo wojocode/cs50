@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <string.h>
+
 
 typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
-// initialized chunk of memory 
+// initialized unit in of memory chunk
 const int BLOCK_SIZE = 512;
-// jpges counter
+// file counter
 int i = 0;
 // create buffer as a array to store chunk
 BYTE buffer[BLOCK_SIZE];
