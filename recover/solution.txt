@@ -1,0 +1,19 @@
+1. Camera wrtite to card in units of 512B
+	- I define BYTE to store 1 byte of information, and used it later in fread and fwrite function to tell function that I want to read/write 512B once at a time until the end of the card
+2. Read all of data from the card
+	- I used while loop , because every time function fread read 512B return me value of 512, when it's nothing more to read ruturns 0 and loop will end
+	- every loop I store this 512B in array - BYTE buffer[512]
+3. set conditions for JPGE'S :
+	1 if it's start of new JPG - searching for first four specific values
+	2 continuation of previous - use attend argument in fopen function (this allows me to continue wrriting to file without loosing previous values)
+
+another challenge was to create jpges files in specific oreder in format XXX.jpg (001.jpg, 002.jpg ...)
+- I create string filename and allocate them 8 bytes for this format name (includeing /0 character) IMPORTANT ! every time I create a new filename i have to free(pointer)!
+-  I use sprintf function to write my format name to my string filename - sprintf(filename, "%03i.jpg", i);
+- I had to keep track how many jpg's i've created so i created i and set value to 0 and every time i created new jpgs increase i by 1
+- if 512B wasn't start of new jpg i seted sprintf(filename, "%03i.jpg", i-1); last argument is i -1 because i have to target the same filnemane to continue writing
+
+
+
+
+
