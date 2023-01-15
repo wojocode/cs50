@@ -49,7 +49,7 @@ while (fread(&buffer, 1, 512, inptr) == BLOCK_SIZE)
         else
         {
             char *filename = malloc(8);
-            sprintf(filename, "%03i.jpg",i);
+            sprintf(filename, "%03i.jpg",i-1);
             FILE *el = fopen(filename,"a");
             fwrite(buffer,1,512,el);
             fclose(el);
