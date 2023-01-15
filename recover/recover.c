@@ -44,6 +44,16 @@ while (fread(&buffer, 1, 512, inptr) == BLOCK_SIZE)
                 free(filename);
                 i++;
             }
+            else
+            {
+                char *filename = malloc(8);
+                sprintf(filename, "%03i.jpg",i);
+                FILE *img = fopen(filename,"w");
+                fwrite(buffer,1,512,img);
+                fclose(img);
+                free(filename);
+                i++;
+            }
         }
 
         else
