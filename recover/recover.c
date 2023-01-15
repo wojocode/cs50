@@ -53,5 +53,5 @@ while (fread(&buffer, 1, 512, inptr) == BLOCK_SIZE)
 
         }
     }
-    printf("%i\n",);
+    printf("%i\n",b);
 }
