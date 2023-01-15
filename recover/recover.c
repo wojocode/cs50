@@ -30,7 +30,7 @@ FILE *inptr = fopen(infile,"r");
         return 2;
     }
 
-while (fread(buffer, 1, BLOCK_SIZE, inptr) == BLOCK_SIZE)
+while (fread(buffer, 1, BLOCK_SIZE, inptr))
     {
             if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xe0)== 0xe0 && buffer[3] == 0xe0)
             {
