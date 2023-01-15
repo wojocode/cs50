@@ -7,8 +7,8 @@ typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
-// initialized chunks of memory card
-int BLOCK_SIZE = 512;
+// initialized chunk of memory 
+const int BLOCK_SIZE = 512;
 // jpges counter
 int i = 0;
 // create buffer as a array to store chunk
