@@ -21,9 +21,14 @@ int main(int argc, char *argv[])
     char *outfile = argv[2];
 // open input file for reading
     FILE *inptr = fopen(infile, "r");
+    if (inptr == NULL)
+    {
+        printf("Could not open %s\n", infile);
+        return 2;
+    }
 
-    // Read header into an array
-    // TODO #3
+// Read header into an array
+// TODO #3
 
     // Use check_format to ensure WAV format
     // TODO #4
