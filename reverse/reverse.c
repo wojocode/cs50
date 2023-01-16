@@ -10,9 +10,9 @@ int get_block_size(WAVHEADER header);
 int main(int argc, char *argv[])
 {
     // Ensure proper usage
-    if (argc != 2)
+    if (argc != 3)
     {
-        printf("usage: ./reverse input.wav output.wav\n");
+        printf("usage: ./reverse INPUT OUTPUT\n");
         return 1;
     }
 
