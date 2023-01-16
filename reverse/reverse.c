@@ -10,7 +10,9 @@ int get_block_size(WAVHEADER header);
 int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
+// declaring array to store input header
 WAVHEADER wav_header[HEADER_SIZE];
+
 // Ensure proper usage
     if (argc != 3)
     {
@@ -21,6 +23,7 @@ WAVHEADER wav_header[HEADER_SIZE];
 // remember filename
     char *infile = argv[1];
     char *outfile = argv[2];
+
 // open input file for reading
     FILE *inptr = fopen(infile, "r");
     if (inptr == NULL)
@@ -30,7 +33,7 @@ WAVHEADER wav_header[HEADER_SIZE];
     }
 
 // Read header into an array
-// TODO #3
+    fread(wav_header, 1, HEADER_SIZE, inptr);
 
     // Use check_format to ensure WAV format
     // TODO #4
