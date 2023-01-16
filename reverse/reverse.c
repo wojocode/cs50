@@ -9,6 +9,7 @@ int get_block_size(WAVHEADER header);
 
 int main(int argc, char *argv[])
 {
+// 
 // Ensure proper usage
     if (argc != 3)
     {
