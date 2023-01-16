@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
 // declaring array to store input header
-WAVHEADER header[];
+WAVHEADER header[1];
 
 // Ensure proper usage
     if (argc != 3)
@@ -53,8 +53,10 @@ WAVHEADER header[];
 
 int check_format(WAVHEADER header)
 {
-    if (header.)
+    if (header.format[4]==2)
+    {
     return 0;
+    }
 }
 
 int get_block_size(WAVHEADER header)
