@@ -13,7 +13,7 @@ int main(void){
     string text;
     int n;
 
-    do{
+    do {
         text = get_string("type in text: ");
         n = strlen(text);
     }
