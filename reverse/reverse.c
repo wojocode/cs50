@@ -53,7 +53,7 @@ WAVHEADER header[HEADER_SIZE];
 
 int check_format(WAVHEADER header)
 {
-    // TODO #4
+    
     return 0;
 }
 
