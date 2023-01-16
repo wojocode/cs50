@@ -9,7 +9,8 @@ int get_block_size(WAVHEADER header);
 
 int main(int argc, char *argv[])
 {
-// 
+const int HEADER_SIZE = 44;
+WAVHEADER wav_header[HEADER_SIZE];
 // Ensure proper usage
     if (argc != 3)
     {
