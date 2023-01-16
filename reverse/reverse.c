@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
 // declaring array to store input header
-WAVHEADER header[1];
+WAVHEADER header[2];
 
 // Ensure proper usage
     if (argc != 3)
@@ -53,7 +53,7 @@ WAVHEADER header[1];
 
 int check_format(WAVHEADER header)
 {
-    if (header.format[0] == 57 && header.format[1] == 41 && header.format[2] == 56 && header.format[3] == 45)
+    if (header[1].format[0] == 57 && header.format[1] == 41 && header.format[2] == 56 && header.format[3] == 45)
     {
         return 1;
     }
