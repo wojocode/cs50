@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
 // declaring array to store input header
-WAVHEADER header[HEADER_SIZE];
+WAVHEADER header[];
 
 // Ensure proper usage
     if (argc != 3)
