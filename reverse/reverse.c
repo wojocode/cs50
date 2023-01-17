@@ -56,7 +56,7 @@ WAVHEADER header;
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
 
-    fseek(inptr, 0, SEEK_CUR);
+    fseek(inptr, -2, SEEK_END);
 
     printf("position is: %ld\n",ftell(inptr));
 
