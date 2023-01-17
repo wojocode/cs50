@@ -59,7 +59,7 @@ WAVHEADER header;
 
 // Write reversed audio to file
     int audio[header.numChannels];
-    printf("channel: %i\n",header.numChannels);
+    
 }
 
 int check_format(WAVHEADER header)
