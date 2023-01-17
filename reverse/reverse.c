@@ -58,8 +58,8 @@ WAVHEADER header;
 
 
 // Write reversed audio to file
-    int audio[header.numChannels];
-    
+    int sample[header.numChannels];
+
 }
 
 int check_format(WAVHEADER header)
