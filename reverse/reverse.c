@@ -51,8 +51,8 @@ WAVHEADER header;
     }
 
 
-    // Write header to file
-    // TODO #6
+// Write header to file
+    fwrite(&header, WAVHEADER)
 
     // Use get_block_size to calculate size of block
     // TODO #7
