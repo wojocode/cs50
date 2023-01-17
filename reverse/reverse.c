@@ -35,7 +35,7 @@ WAVHEADER header[1];
     fread(header, 1, HEADER_SIZE, inptr);
 
 // Use check_format to ensure WAV format
-    int verification = check_format(header);
+    int verification = check_format(header[0]);
     if (verification != 1)
     {
         printf("incorrect input format\n");
