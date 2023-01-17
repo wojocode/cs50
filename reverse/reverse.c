@@ -1,7 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "wav.h"
 
 int check_format(WAVHEADER header);
