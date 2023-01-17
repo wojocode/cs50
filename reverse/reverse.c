@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
 // declaring array to store input header
-WAVHEADER header[1];
+WAVHEADER header;
 
 // Ensure proper usage
     if (argc != 3)
@@ -33,7 +33,7 @@ WAVHEADER header[1];
     }
 
 // Read header into an array
-    fread(header, 1, HEADER_SIZE, inptr);
+    fread(&header, 1, HEADER_SIZE, inptr);
 
     // Use check_format to ensure WAV format
     // TODO #4
