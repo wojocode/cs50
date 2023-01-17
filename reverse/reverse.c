@@ -38,7 +38,7 @@ WAVHEADER header;
     int verification = check_format(header);
     if (verification != 1)
     {
-        printf("incorrect input format\n");
+        printf("Input is not a WAV file.\n");
         return 3;
     }
 
@@ -57,7 +57,7 @@ WAVHEADER header;
     int block_auditory = get_block_size(header);
 
 // Write reversed audio to file
-    
+
 }
 
 int check_format(WAVHEADER header)
