@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 const int HEADER_SIZE = 44;
 // declaring array to store input header
-WAVHEADER header[1];
+WAVHEADER header;
 
 // Ensure proper usage
     if (argc != 3)
@@ -32,10 +32,10 @@ WAVHEADER header[1];
     }
 
 // Read header into an array
-    fread(header, 1, HEADER_SIZE, inptr);
+    fread(&header, 1, HEADER_SIZE, inptr);
 
 // Use check_format to ensure WAV format
-    int verification = check_format(header[0]);
+    int verification = check_format(header);
     if (verification != 1)
     {
         printf("incorrect input format\n");
@@ -63,7 +63,7 @@ WAVHEADER header[1];
 
 int check_format(WAVHEADER header)
 {
-    if (header.format[0] == 57 && header.format[1] == 41 && header.format[2] == 56 && header.format[3] == 45)
+    if (header.format[0] == 'W' && header.format[1] == 'A' && header.format[2] == 'V' && header.format[3] == 'E')
     {
         return 1;
     }
