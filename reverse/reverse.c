@@ -38,8 +38,13 @@ WAVHEADER header;
     // Use check_format to ensure WAV format
     // TODO #4
 
-    // Open output file for writing
-    // TODO #5
+// Open output file for writing
+    FILE *outptr = fopen(outfile, "r");
+    if (outptr == NULL)
+    {
+        printf("Could not open %s\n",outfile);
+        return 3;
+    }
 
     // Write header to file
     // TODO #6
