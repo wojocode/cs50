@@ -56,10 +56,10 @@ WAVHEADER header;
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
 
-    fseek(inptr,0, SEEK_END);
+    fseek(inptr,0, SEEK_SET);
 
     printf("position is: %ld\n",ftell(inptr));
-    
+
 // Write reversed audio to file
 
 }
