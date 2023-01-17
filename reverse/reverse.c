@@ -54,7 +54,7 @@ WAVHEADER header;
     fwrite(&header, HEADER_SIZE, 1, outptr);
 
 // Use get_block_size to calculate size of block
-    int block_auditory = get_block_size(header);
+    int block_size = get_block_size(header);
 
 // Write reversed audio to file
 
