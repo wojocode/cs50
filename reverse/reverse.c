@@ -52,7 +52,7 @@ WAVHEADER header;
 
 
 // Write header to file
-    fwrite(&header, WAVHEADER, 1, outptr);
+    fwrite(&header, HEADER_SIZE, 1, outptr);
 
     // Use get_block_size to calculate size of block
     // TODO #7
