@@ -34,17 +34,22 @@ WAVHEADER header;
 // Read header into an array
     fread(&header, 1, HEADER_SIZE, inptr);
 
-    // Use check_format to ensure WAV format
-    // TODO #4
+// Use check_format to ensure WAV format
+    int verification = check_format(header);
+    if (verification == 0)
+    {
+        printf("incorrect input format\n");
+        return 3;
+    }
 
 // Open output file for writing
     FILE *outptr = fopen(outfile, "w");
     if (outptr == NULL)
     {
         printf("Could not open %s\n",outfile);
-        return 3;
+        return 4;
     }
-    
+
 
     // Write header to file
     // TODO #6
