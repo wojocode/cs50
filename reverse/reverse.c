@@ -55,10 +55,9 @@ WAVHEADER header;
 
 // Use get_block_size to calculate size of block
     int block_auditory = get_block_size(header);
-    printf("blokw )
 
-    // Write reversed audio to file
-    // TODO #8
+// Write reversed audio to file
+    
 }
 
 int check_format(WAVHEADER header)
