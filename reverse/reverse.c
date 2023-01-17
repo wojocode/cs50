@@ -56,7 +56,6 @@ WAVHEADER header;
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
 
-
 // Write reversed audio to file
     int sample[header.numChannels];
 
