@@ -50,7 +50,6 @@ WAVHEADER header;
         return 4;
     }
 
-
 // Write header to file
     fwrite(&header, HEADER_SIZE, 1, outptr);
 
