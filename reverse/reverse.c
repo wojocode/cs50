@@ -36,7 +36,7 @@ WAVHEADER header;
 
 // Use check_format to ensure WAV format
     int verification = check_format(header);
-    if (verification == 0)
+    if (verification != 1)
     {
         printf("incorrect input format\n");
         return 3;
