@@ -33,8 +33,9 @@ WAVHEADER header;
 
 // Read header into an array
     fread(&header, 1, HEADER_SIZE, inptr);
-    fseek(inptr,0,  )
-    printf("position in: %ld\n",ftell(inptr));
+    fseek(inptr,0, SEEK_END);
+    printf("position end: %ld\n",ftell(inptr));
+
 // Use check_format to ensure WAV format
     int verification = check_format(header);
     if (verification != 1)
@@ -56,6 +57,8 @@ WAVHEADER header;
     printf("position: %ld\n",ftell(outptr));
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
+    fseek(inptr, -block_size, SEEK_END);
+    printf("position end -4 : %ld\n",ftell(inptr));
 
 // Write reversed audio to file
     int sample[header.numChannels];
