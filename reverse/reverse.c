@@ -64,7 +64,7 @@ WAVHEADER header;
     fseek(inptr, 0, SEEK_END);
 
 // Write reversed audio to file
-    while (ftell(inptr) != 44)
+    while ((ftell(inptr)) != 44)
     {
     fseek(inptr, -i, SEEK_END);
     fread(sample, 1, block_size, inptr);
