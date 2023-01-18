@@ -72,9 +72,9 @@ WAVHEADER header;
     fwrite(sample, 1, block_size, outptr);
     printf("o: %ld\n" ,ftell(outptr));
     printf("\n");
-    i = i + block_size;
+    i+= block_size;
     }
-    
+
     fclose(inptr);
     fclose(outptr);
 }
