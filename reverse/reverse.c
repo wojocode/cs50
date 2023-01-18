@@ -52,7 +52,7 @@ WAVHEADER header;
 
 // Write header to file
     fwrite(&header, HEADER_SIZE, 1, outptr);
-    
+
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
     int i = block_size;
@@ -60,14 +60,17 @@ WAVHEADER header;
 // declare array to store each block we read in
     BYTE sample[block_size];
 
+// set inptr to the end
+    fseek(inptr, 0, SEEK_END);
 // Write reversed audio to file
     while (ftell(inptr) != 44)
     {
     fseek(inptr, -i, SEEK_END);
     fread(sample, 1, block_size, inptr);
-    printf(": %ld\n" ,ftell(inptr));
-    fwrite(sample,1, block_size, outptr);
-    printf(": %ld\n" ,ftell(outptr));
+    printf("i: %ld\n" ,ftell(inptr));
+    fwrite(sample, 1, block_size, outptr);
+    printf("o: %ld\n" ,ftell(outptr));
+    printf("\n");
     i = i + block_size;
     }
     fclose(inptr);
