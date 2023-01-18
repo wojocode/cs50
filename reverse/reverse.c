@@ -33,6 +33,7 @@ WAVHEADER header;
 
 // Read header into an array
     fread(&header, 1, HEADER_SIZE, inptr);
+    fseek(inptr,0,  )
     printf("position in: %ld\n",ftell(inptr));
 // Use check_format to ensure WAV format
     int verification = check_format(header);
