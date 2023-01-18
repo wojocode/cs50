@@ -52,7 +52,7 @@ WAVHEADER header;
 
 // Write header to file
     fwrite(&header, HEADER_SIZE, 1, outptr);
-    printf("before output: %ld",ftell(outptr));
+    printf("before output: %ld\n",ftell(outptr));
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
     int i = block_size;
@@ -74,6 +74,7 @@ WAVHEADER header;
     printf("\n");
     i = i + block_size;
     }
+    
     fclose(inptr);
     fclose(outptr);
 }
