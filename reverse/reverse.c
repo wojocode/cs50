@@ -43,7 +43,7 @@ WAVHEADER header;
     }
 
 // Open output file for writing
-    FILE *outptr = fopen(outfile, "w");
+    FILE *outptr = fopen(outfile, "a");
     if (outptr == NULL)
     {
         printf("Could not open %s\n",outfile);
