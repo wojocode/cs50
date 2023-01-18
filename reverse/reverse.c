@@ -60,7 +60,7 @@ WAVHEADER header;
 // declare array to store each block we read in
     BYTE sample[block_size];
 
-// set inptr to the end
+// Set inptr to the end
     fseek(inptr, 0, SEEK_END);
 
 // Write reversed audio to file
