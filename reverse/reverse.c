@@ -57,8 +57,7 @@ WAVHEADER header;
 // Use get_block_size to calculate size of block
     int block_size = get_block_size(header);
     fseek(inptr, -block_size, SEEK_END);
-
-
+    if (fseek(inptr,0,SEEK_CUR))
 
 // declare array to store each block we read in
     BYTE sample[block_size];
