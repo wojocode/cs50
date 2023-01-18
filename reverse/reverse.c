@@ -33,7 +33,7 @@ WAVHEADER header;
 
 // Read header into an array
     fread(&header, 1, HEADER_SIZE, inptr);
-
+printf("before input: %ld\n",ftell(inptr));
 // Use check_format to ensure WAV format
     int verification = check_format(header);
     if (verification != 1)
@@ -69,10 +69,10 @@ WAVHEADER header;
     {
     fseek(inptr, -i, SEEK_END);
     fread(sample, 1, block_size, inptr);
-    printf("i: %ld\n" ,ftell(inptr));
+    //printf("i: %ld\n" ,ftell(inptr));
     fwrite(sample, 1, block_size, outptr);
-    printf("o: %ld\n" ,ftell(outptr));
-    printf("\n");
+    //printf("o: %ld\n" ,ftell(outptr));
+   // printf("\n");
     i+= block_size;
     }
 
