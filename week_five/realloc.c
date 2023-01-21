@@ -8,7 +8,13 @@ int main(void)
     number[1] = 2;
     number[2] = 3;
 
-    int *next = realloc(number, 4);
+    int *next = realloc(number, 4 * sizeof(int));
     next[3] = 4;
-    
+
+    next = number;
+
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%i\n",next[i]);
+    }
 }
