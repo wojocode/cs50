@@ -9,7 +9,7 @@ typedef struct node
 }
 node;
 
-int main(void)
+int main(int argc, char *argv[])
 {
 // pointer represent start of a list
     node *list = NULL;
