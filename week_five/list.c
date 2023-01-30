@@ -13,6 +13,9 @@ int main(int argc, char *argv[])
 {
 // pointer represent start of a list
     node *list = NULL;
-
+    for (int i = 1; i < argc; i++)
+    {
+        
+    }
 
 }
