@@ -17,4 +17,5 @@ int main(void)
     {
         printf("%i\n",next[i]);
     }
+
 }
