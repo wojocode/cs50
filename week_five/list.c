@@ -35,4 +35,12 @@ int main(int argc, char *argv[])
         printf("%i\n",ptr->number);
         ptr = ptr->next;
     }
+
+    ptr = list;
+    while (ptr != NULL)
+    {
+        node *next = ptr->next;
+        free(ptr);
+        ptr = next;
+    }
 }
