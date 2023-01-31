@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
         {
             return 1;
         }
+        n->number = number;
+        m->next = NULL;
         
 
 
