@@ -123,11 +123,11 @@ bool check(char* word)
         cursor = cursor->children[index];
 
     }
-        if (!cursor->is_word == true)
+        if (cursor->is_word == true)
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
 
 }
 
