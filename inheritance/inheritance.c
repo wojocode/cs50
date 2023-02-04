@@ -53,7 +53,7 @@ person *create_family(int generations)
         new_p->parents[1] = parent1;
 
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
-
+        
 
 
         //new_p->alleles[0] =
