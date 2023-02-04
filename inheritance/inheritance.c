@@ -56,8 +56,8 @@ person *create_family(int generations)
 
 
 
-        new_p->alleles[0] =
-        new_p->alleles[1] =
+        //new_p->alleles[0] =
+        //new_p->alleles[1] =
     }
 
     // If there are no generations left to create
@@ -70,7 +70,7 @@ person *create_family(int generations)
     }
 
     // TODO: Return newly created person
-    return NULL;
+    return new_p;
 }
 
 // Free `p` and all ancestors of `p`.
