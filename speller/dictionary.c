@@ -4,8 +4,10 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "dictionary.h"
+#include <strings.h>
 #include <string.h>
 #include <stdlib.h>
+#include <cs50.h>
 
 // Represents a node in a hash table
 typedef struct node
@@ -29,8 +31,12 @@ bool check(const char *word)
     int map_index = hash(word);
     while (table[map_index]->next != NULL)
         {
-            ifstrcasecmp(table[map_index]->word, word);
+            if (!strcasecmp(table[map_index]->word, word))
+                {
+                    return true;
+                }
         }
+        return false;
 }
 
 // Hashes word to a number
