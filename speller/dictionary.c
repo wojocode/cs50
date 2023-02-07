@@ -63,10 +63,10 @@ bool load(const char *dictionary)
     node *list = NULL;
     int index = hash(word);
     table[index] = n;
-    
-
+    n->next = list;
+    list = n;
     }
-
+    return true;
 
 }
 
