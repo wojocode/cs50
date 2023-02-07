@@ -68,7 +68,6 @@ bool load(const char *dictionary)
     table[index] = n;
 
     }
-    printf("&&%i\n", words);
     return true;
 
 }
