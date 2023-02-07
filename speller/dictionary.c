@@ -50,6 +50,7 @@ bool load(const char *dictionary)
 // read string from a file
     while (fscanf(dictionary_ptr, "%s", word) != EOF)
     {
+        printf("!!%s!!\n",word);
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
@@ -63,7 +64,7 @@ bool load(const char *dictionary)
     int index = hash(word);
     n->next = table[index];
     table[index] = n;
-    
+
     }
     return true;
 
