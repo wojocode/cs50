@@ -14,8 +14,9 @@ typedef struct node
     struct node *next;
 }
 node;
-// const to keep tracking number of words in dictionary
+//keep track how many words is in dictionary
 long int words;
+
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 
