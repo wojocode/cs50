@@ -38,7 +38,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    char *word[LENGTH + 1];
+    char word[LENGTH + 1];
 // open a dictionary
    FILE *dictionary_ptr = fopen(dictionary, "r");
     if (dictionary_ptr == NULL)
@@ -48,7 +48,7 @@ bool load(const char *dictionary)
     }
 
 // read string from a file
-    while (fscanf(dictionary_ptr, "%s", word[0]) != EOF)
+    while (fscanf(dictionary_ptr, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
         if (n == NULL)
@@ -57,10 +57,10 @@ bool load(const char *dictionary)
             return 0;
         }
 // copy word into node
-    strcpy(n->word, word[0]);
+    strcpy(n->word, word);
 
 // insert node to hash table
-    int index = hash(word[0]);
+    int index = hash(word);
     table[index] = n;
     }
 
