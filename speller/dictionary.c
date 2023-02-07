@@ -36,8 +36,8 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-   FILE *dicptr = fopen(dictionary, "r");
-    if (dicptr == NULL)
+   FILE *dptr = fopen(dictionary, "r");
+    if (dptr == NULL)
     {
         printf("could not open a dictionary! \n");
         return false;
