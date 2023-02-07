@@ -52,7 +52,6 @@ bool load(const char *dictionary)
     while (fscanf(dictionary_ptr, "%s",word) != EOF)
     {
         words++;
-        printf("!!%s!!\n",word);
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
