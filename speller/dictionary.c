@@ -29,12 +29,14 @@ node *table[N];
 bool check(const char *word)
 {
     int map_index = hash(word);
-    while (table[map_index]->next != NULL)
+    node *cursor = table[map_index];
+    while (cursor != NULL)
         {
             if (!strcasecmp(table[map_index]->word, word))
                 {
                     return true;
                 }
+                cursor = cursor->next;
         }
         return false;
 }
