@@ -1,0 +1,12 @@
+speller.c logic:
+1 load dictionary 
+2 read words by appending every character and put them to word and than check if it is in dictonary:
+	1 open text 
+	2 read in while loop every character that is alphabetical and save it in char word[]
+	3 else if it's the end of a string set nul character with proper index to this word 
+	4 use check function to compare this word with dictionary: 
+	bool misspelled = !check(word); 
+		check function return true if word is in dictonary 
+		we need opossite to find misspelling 
+		so, if word isn't in dictionnery bool misspelled = !check(word) misspelled is now true - !(false) = true;
+
