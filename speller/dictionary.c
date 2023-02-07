@@ -46,10 +46,11 @@ bool load(const char *dictionary)
     }
 
 // read string from a file
-    while (fscanf(dictionary_ptr, "%s", word) != EOF)
+    while (fscanf(dictionary_ptr, "%s", word[0]) != EOF)
     {
-
+        
     }
+
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
