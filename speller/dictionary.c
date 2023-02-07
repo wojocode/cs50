@@ -60,10 +60,11 @@ bool load(const char *dictionary)
     strcpy(n->word, word);
 
 // insert node to hash table
+    node *list = NULL;
     int index = hash(word);
     table[index] = n;
-
     
+
     }
 
 
