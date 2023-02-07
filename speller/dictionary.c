@@ -44,6 +44,8 @@ bool load(const char *dictionary)
         return false;
     }
 
+// read string from a file
+    
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
