@@ -29,7 +29,7 @@ bool check(const char *word)
     int map_index = hash(word);
     while (table[map_index]->next != NULL)
         {
-            strcasecmp(table[map_index]->word, word);
+            ifstrcasecmp(table[map_index]->word, word);
         }
 }
 
