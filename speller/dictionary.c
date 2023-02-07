@@ -14,7 +14,8 @@ typedef struct node
     struct node *next;
 }
 node;
-
+// const to keep tracking number of words in dictionary
+const int words;
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 
@@ -50,6 +51,7 @@ bool load(const char *dictionary)
 // read string from a file
     while (fscanf(dictionary_ptr, "%s",word) != EOF)
     {
+        words++;
         printf("!!%s!!\n",word);
         node *n = malloc(sizeof(node));
         if (n == NULL)
