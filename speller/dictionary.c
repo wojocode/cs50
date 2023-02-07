@@ -36,6 +36,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
+    string word[LENGTH + 1];
 // open a dictionary
    FILE *dictionary_ptr = fopen(dictionary, "r");
     if (dictionary_ptr == NULL)
@@ -45,7 +46,10 @@ bool load(const char *dictionary)
     }
 
 // read string from a file
-    fscanf(dictionary_ptr, "%s", );
+    while (fscanf(dictionary_ptr, "%s", word) != EOF)
+    {
+
+    }
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
