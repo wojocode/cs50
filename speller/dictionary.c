@@ -61,8 +61,8 @@ bool load(const char *dictionary)
 
 // insert node to hash table
     int index = hash(word);
-    n->next = table[index];
-    table[index] = n; // ?
+    
+    table[index] = n;
     }
     return true;
 
