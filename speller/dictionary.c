@@ -15,7 +15,7 @@ typedef struct node
 }
 node;
 // const to keep tracking number of words in dictionary
-const int words;
+int words;
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 
@@ -68,6 +68,7 @@ bool load(const char *dictionary)
     table[index] = n;
 
     }
+    printf("&&%i\n", words);
     return true;
 
 }
