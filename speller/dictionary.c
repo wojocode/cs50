@@ -45,7 +45,7 @@ bool load(const char *dictionary)
     }
 
 // read string from a file
-    
+    fscanf(dictionary_ptr, "%s", );
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
