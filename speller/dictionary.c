@@ -26,8 +26,11 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
-    return false;
+    int map_index = hash(word);
+    while (table[map_index]->next != NULL)
+        {
+            strcasecmp(table[map_index]->word, word);
+        }
 }
 
 // Hashes word to a number
