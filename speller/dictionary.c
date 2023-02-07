@@ -59,7 +59,7 @@ bool load(const char *dictionary)
 // copy word into node
     strcpy(n->word, word[0]);
     }
-    
+// 
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
