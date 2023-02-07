@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "dictionary.h"
+#include <string.h>
+#include <stdlib.h>
 
 // Represents a node in a hash table
 typedef struct node
@@ -48,7 +50,14 @@ bool load(const char *dictionary)
 // read string from a file
     while (fscanf(dictionary_ptr, "%s", word[0]) != EOF)
     {
-        
+        node *n = malloc(sizeof(node));
+        if (n == NULL)
+        {
+            printf("memory problem\n");
+            return 0;
+        }
+// copy word into node
+    strcpy(n->word, word[0]);
     }
 
 }
