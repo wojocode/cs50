@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
 
             // Check word's spelling
             getrusage(RUSAGE_SELF, &before);
-            bool misspelled = !check(word);  /* check returns true if a word is in dictionarry  */
+            bool misspelled = !check(word);  
             getrusage(RUSAGE_SELF, &after);
 
             // Update benchmark
