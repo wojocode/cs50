@@ -100,8 +100,8 @@ bool unload(void)
         {
             cursor = table[i];
             node *tmp = cursor;
-            cursor = cursor->next;
             free(tmp);
+            cursor = cursor->next;
         }
     }
     return true;
