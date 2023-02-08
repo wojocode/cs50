@@ -32,7 +32,7 @@ bool check(const char *word)
     node *cursor = table[map_index];
     while (cursor != NULL)
         {
-            if (!strcasecmp(table[map_index]->word, word))
+            if (!strcasecmp(cursor->word, word))
                 {
                     return true;
                 }
