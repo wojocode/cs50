@@ -45,7 +45,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    return toupper(word[0]) - 'A';
+    return toupper(word[0]) - 'A'; 
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -75,7 +75,7 @@ char word[LENGTH + 1];
 
 // insert node to hash table
     int index = hash(word);
-    n->next = table[index];
+    n->next = table[index]; /* don't lose conection with prevoius node*/
     table[index] = n;
 
     }
