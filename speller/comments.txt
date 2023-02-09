@@ -10,13 +10,19 @@ speller.c logic:
 		we need opossite to find misspelling
 		so, if word isn't in dictionnery bool misspelled = !check(word) misspelled is now true - !(false) = true;
 
-ps5 solution:
+PS5 SOLUTION:
 1. load function
 	- add word variable as a buffer
 	- open a file
 	- call fscanf to read all the words in dictionary while != EOF
 			every time geto on the loop update words counter to keep track how many words are in dictionarie
-	- 
+	- allocate n (node) to store every word in n->word (node)
+	- copy word (string) to node (n->word)
+	- insert node to hash table (head of a list)
+			int index = hash(word);
+    		n->next = table[index]; /* don't lose conection with prevoius node*/
+    		table[index] = n;
+	
 2. check function:
 	- call hash function to return index at the hash map array
 	- create list in hash map - table[index] index is determine by hash function (first letter of a word)
