@@ -32,4 +32,9 @@ PS5 SOLUTION:
 				cursor = cursor->next
 
 3. unload
-	- iterate over 
+	- iterate hash map - table[0 - 25];
+	- create 2 extra variable:
+		-cursor - poining to cursor->next
+		- tmp - pointing to first element of the list
+		the trick is that cursor is poining to next node than we can free(tmp) without loosing connection
+	
