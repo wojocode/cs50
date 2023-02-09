@@ -12,7 +12,11 @@ speller.c logic:
 
 ps5 solution:
 1. load function
-	
+	- add word variable as a buffer
+	- open a file
+	- call fscanf to read all the words in dictionary while != EOF
+			every time geto on the loop update words counter to keep track how many words are in dictionarie
+	- 
 2. check function:
 	- call hash function to return index at the hash map array
 	- create list in hash map - table[index] index is determine by hash function (first letter of a word)
