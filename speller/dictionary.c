@@ -90,7 +90,7 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    node *cursor;
+    node *cursor = NULL;
     node *tmp;
     for (int i = 2; i <= 2; i++)
     {
