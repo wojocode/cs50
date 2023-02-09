@@ -102,7 +102,7 @@ bool unload(void)
         {
             cursor = table[i];
             tmp = cursor;
-            cursor = table[i]->next;
+            cursor = cursor->next;
             free(tmp);
         }
     }
