@@ -99,7 +99,7 @@ bool unload(void)
             cursor = table[i];
             tmp = table[i];
             cursor = table[i]->next;
-            cursor = table[i];
+            
             free(tmp);
             }
     }
