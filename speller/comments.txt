@@ -25,4 +25,4 @@ PS5 SOLUTION:
 
 2. check function:
 	- call hash function to return index at the hash map array
-	- 
+	-  create a cursor to travers 
