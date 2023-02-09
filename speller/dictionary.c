@@ -91,11 +91,12 @@ unsigned int size(void)
 bool unload(void)
 {
     node *cursor;
+    node *tmp;
     for (int i = 0; i <= N; i++)
     {
             while (cursor!= NULL && table[i]->next != NULL)
             cursor = table[i];
-            node *tmp = cursor;
+            tmp = cursor;
             cursor = table[i]->next;
             free(tmp);
     }
