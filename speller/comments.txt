@@ -25,4 +25,11 @@ PS5 SOLUTION:
 
 2. check function:
 	- call hash function to return index at the hash map array
-	-  create a cursor to travers 
+	-  create a cursor to travers elements in a list
+				strcasecmp(cursor->word, word) - compare word from text to word from dictionary
+				if not found (not return 0)
+				update cursor to travers it's next element
+				cursor = cursor->next
+
+3. unload
+	- iterate over 
