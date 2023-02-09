@@ -13,4 +13,5 @@ speller.c logic:
 ps5 solution:
 1. check function:
 	- call hash function to return index at the hash map array
-	-
+	- create list in hash map - table[index]
+	- 
