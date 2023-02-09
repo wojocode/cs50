@@ -79,7 +79,7 @@ char word[LENGTH + 1];
     table[index] = n;
 
     }
-    printf("%li**\n",words);
+    
     return true;
 
 }
