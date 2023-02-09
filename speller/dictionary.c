@@ -98,13 +98,13 @@ bool unload(void)
     for (int i = 0; i <= N; i++)
     {
 
-            while (cursor != NULL)
+          while (cursor != NULL)
         {
             cursor = table[i];
             tmp = cursor;
-            
-            free(tmp);
 
+            free(tmp);
+            cursor = cursor->next;
         }
     }
     return true;
