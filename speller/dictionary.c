@@ -55,6 +55,7 @@ bool load(const char *dictionary)
     {
         table[i]= NULL;
     }
+
 char word[LENGTH + 1];
 // open a dictionary
    FILE *dictionary_ptr = fopen(dictionary, "r");
@@ -96,11 +97,12 @@ bool unload(void)
 {
     node *cursor = NULL;
     node *tmp;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < 26; i++)
     {
-            cursor = table[i];
-            while (cursor!= NULL)
+
+            while (cursor != NULL)
             {
+            cursor = table[i];
             tmp = cursor;
             cursor= cursor->next;
             free(tmp);
