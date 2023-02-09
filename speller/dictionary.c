@@ -77,7 +77,6 @@ char word[LENGTH + 1];
     int index = hash(word);
     n->next = table[index]; /* don't lose conection with prevoius node*/
     table[index] = n;
-    //
     }
     return true;
 }
