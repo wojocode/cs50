@@ -78,10 +78,6 @@ char word[LENGTH + 1];
     n->next = table[index]; /* don't lose conection with prevoius node*/
     table[index] = n;
     //
-    for (int i = 0; i <= N; i++)
-    {
-        printf("pointer: %p\n",table[i]);
-    }
     }
     return true;
 }
