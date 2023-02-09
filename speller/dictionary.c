@@ -99,7 +99,7 @@ bool unload(void)
             while (cursor!= NULL && table[i] != NULL)
             cursor = table[i];
             node *tmp = cursor;
-            cursor = cursor->next;
+        
             free(tmp);
     }
     return true;
