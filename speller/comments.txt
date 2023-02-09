@@ -11,7 +11,9 @@ speller.c logic:
 		so, if word isn't in dictionnery bool misspelled = !check(word) misspelled is now true - !(false) = true;
 
 ps5 solution:
-1. check function:
+1. load function
+	
+2. check function:
 	- call hash function to return index at the hash map array
-	- create list in hash map - table[index]
-	- 
+	- create list in hash map - table[index] index is determine by hash function (first letter of a word)
+	-
