@@ -101,8 +101,7 @@ bool unload(void)
             while (cursor != NULL)
         {
             cursor = table[i];
-            tmp = cursor;
-            
+            tmp = table[i];
             cursor = cursor->next;
             free(tmp);
         }
