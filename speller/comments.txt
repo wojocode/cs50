@@ -20,10 +20,9 @@ PS5 SOLUTION:
 	- copy word (string) to node (n->word)
 	- insert node to hash table (head of a list)
 			int index = hash(word);
-    		n->next = table[index]; /* don't lose conection with prevoius node*/
+    		n->next = table[index]; /* don't lose connection to prevoius node*/
     		table[index] = n;
-	
+
 2. check function:
 	- call hash function to return index at the hash map array
-	- create list in hash map - table[index] index is determine by hash function (first letter of a word)
-	-
+	- 
