@@ -98,8 +98,7 @@ bool unload(void)
             {
             cursor = table[i];
             tmp = table[i];
-            cursor = table[i]->next;
-            free(tmp);
+            free(cursor);
             }
     }
     return true;
