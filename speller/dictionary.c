@@ -25,7 +25,7 @@ long int words;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N]; 
+node *table[N];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -81,8 +81,6 @@ char word[LENGTH + 1];
 
 // insert node to hash table
     int index= hash(word);
-
-
     n->next = table[index]; /* don't lose conection with prevoius node*/
     table[index] = n;
     }
