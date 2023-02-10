@@ -47,7 +47,6 @@ unsigned int hash(const char *word)
 {
 
     return ((strlen(word) - 1) * 25 + (strlen(word) - 1)) + (toupper(word[0]) - 'A');
-
 }
 
 

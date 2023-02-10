@@ -37,4 +37,9 @@ PS5 SOLUTION:
 		-cursor - poining to cursor->next
 		- tmp - pointing to first element of the list
 		the trick is that cursor is poining to next node than we can free(tmp) without loosing connection
-	
+
+4. hash function
+	1 version :
+	simply return index of first lether of a word: return toupper(word[0]) - 'A';
+	2 version :
+	hash map[(LENGTH - 1) * (N - 1)] - 26 
