@@ -25,7 +25,7 @@ long int words;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N * N]; //second version
+node *table[N][N]; //second version
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -47,14 +47,8 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-        if (word[1] == '\0')
-        {
+
             return toupper(word[0]) - 'A';
-        }
-        else
-        {
-            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
-        }
 
 }
 
@@ -85,9 +79,11 @@ char word[LENGTH + 1];
     strcpy(n->word, word);
 
 // insert node to hash table
-    int index = hash(word);
-    n->next = table[index]; /* don't lose conection with prevoius node*/
-    table[index] = n;
+    int index_1 = hash(word[0]);  // version II 
+    int index_2 = hash(word[1]);
+
+    n->next = table[index_1][index_2]; /* don't lose conection with prevoius node*/
+    table[index_1][index_2] = n;
     }
     return true;
 }
@@ -103,16 +99,19 @@ bool unload(void)
 {
     node *cursor = NULL;
     node *tmp;
-    double j = pow(N, 2); // version II
-    for (int i = 0; i < j; i++)
+
+    for (int i = 0; i < N; i++)
     {
+        for (int j = 0; j < N; j++)
+        {
             while (cursor != NULL)
             {
-            cursor = table[i];
+            cursor = table[j]; //version II j insteado of j
             tmp = cursor;
             cursor= cursor->next;
             free(tmp);
             }
+        }
     }
     return true;
 }
