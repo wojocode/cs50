@@ -41,5 +41,12 @@ PS5 SOLUTION:
 4. hash function
 	1 version :
 	simply return index of first lether of a word: return toupper(word[0]) - 'A';
-	2 version :
-	hash map[(LENGTH - 1) * (N - 1)] - 26 
+
+	2 version (my own version) :
+	hash map[(LENGTH - 1) * (N - 1)]     this is 26 buckets multiply by strlen(word)
+	every additional letter contains 26 posibilities
+	think of it as an 2d array:
+		row is letter counter
+		column is first letter in this word (25 possibilities)
+		
+	return ((strlen(word) - 1) * 25 + (strlen(word) - 1)) + (toupper(word[0]) - 'A');
