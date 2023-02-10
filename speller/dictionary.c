@@ -51,7 +51,7 @@ unsigned int hash(const char *word)
     }
     else
     {
-        return ((strlen(word) - 1) * 25 + 1) + (toupper(word[0] - 'A'));
+        return ((strlen(word) - 1) * 25 + (strlen(word) - 1)) + (toupper(word[0] - 'A'));
     }
 }
 
