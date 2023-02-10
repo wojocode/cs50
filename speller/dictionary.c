@@ -8,6 +8,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <cs50.h>
+// second version
+#include <math.h>
 
 // Represents a node in a hash table
 typedef struct node
@@ -23,7 +25,7 @@ long int words;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N * N];
+node *table[N * N]; //second version
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -45,7 +47,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
+    return toupper(word[0]) - 'A' + toupper(word[1]) - 'A'; //second version
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -93,7 +95,7 @@ bool unload(void)
 {
     node *cursor = NULL;
     node *tmp;
-    for (int i = 0; i < 26; i++)
+    for (int i = 0,double n = pow(N, 2); i < n ; i++)
     {
             while (cursor != NULL)
             {
