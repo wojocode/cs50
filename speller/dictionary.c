@@ -46,12 +46,11 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    
     int n = strlen(werd);
     int sum;
     for (int i = 0; i < n; i++)
     {
-        sum = sum + toupper(werd[i]) - 65;
+    sum = sum + toupper(werd[i]) - 65;
     }
     return sum;
 }
