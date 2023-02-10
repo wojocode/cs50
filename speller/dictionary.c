@@ -49,12 +49,11 @@ unsigned int hash(const char *word)
     {
         return toupper(word[0]) - 'A';
     }
-
     else
     {
-    return (strlen(word) * 25) + (toupper(word[0] - 'A'));
+        return (strlen(word) * 25) + (toupper(word[0] - 'A'));
     }
-    }
+}
 
 
 // Loads dictionary into memory, returning true if successful, else false
