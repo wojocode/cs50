@@ -47,6 +47,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
+    if ()
     return toupper(word[0]) - 'A' + toupper(word[1]) - 'A'; //second version
 }
 
@@ -95,7 +96,7 @@ bool unload(void)
 {
     node *cursor = NULL;
     node *tmp;
-    double j = pow(N, 2); // version II 
+    double j = pow(N, 2); // version II
     for (int i = 0; i < j; i++)
     {
             while (cursor != NULL)
