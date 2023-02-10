@@ -8,7 +8,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <cs50.h>
-// second version
 #include <math.h>
 
 // Represents a node in a hash table
