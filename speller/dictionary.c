@@ -24,7 +24,7 @@ long int words;
 const unsigned int N = 26;
 
 // Hash table
-node *table[(LENGTH - 1) * (N - 1) ];
+node *table[(LENGTH - 1) * (N - 1)];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -45,14 +45,9 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    if (strlen(word) == 1)
-    {
-        return toupper(word[0]) - 'A';
-    }
-    else
-    {
-        return ((strlen(word) - 1) * 25 + (strlen(word) - 1)) + (toupper(word[0]) - 'A');
-    }
+
+    return ((strlen(word) - 1) * 25 + (strlen(word) - 1)) + (toupper(word[0]) - 'A');
+
 }
 
 
@@ -102,7 +97,7 @@ bool unload(void)
     node *cursor = NULL;
     node *tmp;
 
-    for (int i = 0; i < (LENGTH * N); i++)
+    for (int i = 0; i < ((LENGTH - 1) * (N - 1)); i++)
     {
             while (cursor != NULL)
             {
