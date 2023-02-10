@@ -30,8 +30,9 @@ node *table[N][N]; //second version
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    int index = hash(word);
-    node *cursor = table[index];
+    int index_1 = hash(word);
+    int index_2 = hash(&word[1]);
+    node *cursor = table[index_1][index_2];
     while (cursor != NULL)
         {
             if (!strcasecmp(cursor->word, word))
@@ -79,8 +80,8 @@ char word[LENGTH + 1];
     strcpy(n->word, word);
 
 // insert node to hash table
-    int index_1 = hash(word[0]);  // version II 
-    int index_2 = hash(word[1]);
+    int index_1 = hash(word);  // version II
+    int index_2 = hash(&word[1]);
 
     n->next = table[index_1][index_2]; /* don't lose conection with prevoius node*/
     table[index_1][index_2] = n;
@@ -106,7 +107,7 @@ bool unload(void)
         {
             while (cursor != NULL)
             {
-            cursor = table[j]; //version II j insteado of j
+            cursor = table[i][j]; //version II j insteado of j
             tmp = cursor;
             cursor= cursor->next;
             free(tmp);
