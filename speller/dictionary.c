@@ -95,7 +95,7 @@ bool unload(void)
 {
     node *cursor = NULL;
     node *tmp;
-    for (int i = 0,double n = pow(N, 2); i < n ; i++)
+    for (int i = 0, double n = pow(N, 2); i < n ; i++)
     {
             while (cursor != NULL)
             {
