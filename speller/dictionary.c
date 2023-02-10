@@ -24,10 +24,9 @@ long int words;
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 
-const unsigned int S = N * LENGTH;
 
 // Hash table
-node *table[S];
+node *table[LENGTH];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -49,12 +48,8 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    int sum = 0;
-    for (int i = 0, n = strlen(word); i < n; i++)
-    {
-        sum = sum + (toupper(word[i]) - 'A');
-    }
-    return sum;
+
+    return  strlen(word);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -103,7 +98,7 @@ bool unload(void)
     node *cursor = NULL;
     node *tmp;
 
-    for (int i = 0; i < S; i++)
+    for (int i = 0; i < LENGTH; i++)
     {
             while (cursor != NULL)
             {
