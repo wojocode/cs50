@@ -31,7 +31,6 @@ node *table[S];
 bool check(const char *word)
 {
     int index = hash(word);
-
     node *cursor = table[index];
     while (cursor != NULL)
         {
@@ -47,12 +46,13 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    int n = strlen(word);
+    char werd [LENGTH + 1];
+    strcpy(werd,word);
+    int n = strlen(werd);
     int sum;
     for (int i = 0; i < n; i++)
     {
-        char z = toupper(word[i]);
-        sum = sum + z - 65;
+        sum = sum + toupper(werd[i]) - 65;
     }
     return sum;
 }
