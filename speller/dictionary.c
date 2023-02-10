@@ -47,9 +47,13 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-        if (word[1] = \0)
+        if (word[1] == '\0')
         {
             return toupper(word[0]) - 'A';
+        }
+        else
+        {
+            return toupper(word[0]) - 'A' + toupper(word[1]) - 'A';
         }
 
 }
