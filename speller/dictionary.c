@@ -22,7 +22,7 @@ long int words;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-const unsigned int S = (N - 1) * LENGTH;
+const unsigned int S = (N - 1) * (LENGTH + 1);
 
 // Hash table
 node *table[S];
