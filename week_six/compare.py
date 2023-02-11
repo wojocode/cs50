@@ -6,4 +6,3 @@ if answer == "Yes" or "y":
     print("Agree")
 elif answer == "No" or "n":
     print("Not agree")
-    
