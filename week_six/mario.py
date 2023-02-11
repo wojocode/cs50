@@ -1,4 +1,4 @@
-from cs50 import get_int
+
 
 def main():
     n = get_height()
@@ -8,7 +8,7 @@ def main():
 
 def get_height():
     while True:
-        n = get_int("Height: ")
+        n = int(input("Height: ")))
         if n > 0:
             return n
 main()
