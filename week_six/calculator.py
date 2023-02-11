@@ -1,4 +1,4 @@
-// get input from user 
+# get input from user
 x = int(input("x: "))
 y = int(input("y: "))
 
