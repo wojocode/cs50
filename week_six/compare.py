@@ -1,8 +1,12 @@
+# Logical operators
+
 from cs50 import get_string
 
-answer = get_string("Do you agree ?")
+# Prompt user to agree
+s = get_string("Do you agree? ")
 
-if answer == "Yes" or "y":
-    print("Agree")
-elif answer == "No" or "n":
-    print("Not agree")
+# Check whether agreed
+if s == "Y" or s == "y":
+    print("Agreed.")
+elif s == "N" or s == "n":
+    print("Not agreed.")
