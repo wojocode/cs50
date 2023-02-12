@@ -18,7 +18,7 @@ if arg == 1:
     print(figlet.renderText(plaintext))
 
 
-if arg == 2 and (sys.argv[1] == "-f" or sys.argv[1] == "--f"):
+if arg == 2:
+    if (sys.argv[1] == "-f" or sys.argv[1] == "--f"):
      plaintext = input("Input: ")
      print(figlet.renderText(plaintext))
-     
