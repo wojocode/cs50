@@ -10,7 +10,7 @@ figlet = Figlet()
 font_list = figlet.getFonts()
 
 length = len(font_list)
-
+random_font = random.randint(0, length)
 
 arg = len(sys.argv)
 if arg == 1:
