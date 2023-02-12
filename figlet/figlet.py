@@ -13,8 +13,8 @@ figlet.getFonts()
 arg = len(sys.argv)
 if arg == 1:
     plaintext = input("Input: ")
-
-    figlet.setFont(font=random.)
+    asciart = random.random()
+    figlet.setFont(font=)
     print(figlet.renderText(plaintext))
 
 
