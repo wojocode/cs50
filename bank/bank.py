@@ -4,7 +4,6 @@ while True:
     if greet.isascii() and greet.isalnum() != True:
         break
 
-
 greet = greet.lower()
 
 if "hello" in greet:
