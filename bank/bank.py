@@ -4,9 +4,11 @@ while True:
     if greet.isalpha():
         break
 
-if greet.lower() != "hello":
-    print("100")
-elif greet[0].lower() == "h":
-    print("20")
+if greet[0].lower() == "h":
+    if greet.lower() != "hello":
+        print("100")
+    else:
+        print("20")
+
 else:
-    print("0")
+    print("100")
