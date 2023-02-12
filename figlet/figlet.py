@@ -8,8 +8,9 @@ figlet = Figlet()
 
 #get a list
 figlet.getFonts()
+length = len(figlet.getFonts())
 
-
+print(f"{length}")
 arg = len(sys.argv)
 if arg == 1:
     plaintext = input("Input: ")
