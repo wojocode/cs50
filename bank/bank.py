@@ -1,7 +1,7 @@
 
 while True:
     greet = input("Greeting: ")
-    if greet.isascii() and greet.isalnum() != True:
+    if greet.isascii() and greet.isalnum():
         break
 
 greet = greet.lower()
