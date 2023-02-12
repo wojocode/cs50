@@ -9,14 +9,14 @@ figlet = Figlet()
 #get a list
 font_list = figlet.getFonts()
 
+#radnomize list 
 length = len(font_list)
 random_font = random.randint(0, length)
 
 arg = len(sys.argv)
 if arg == 1:
     plaintext = input("Input: ")
-    ascii = random.shuffle(figlet)
-    figlet.setFont(font={})
+    figlet.setFont(font=font_list[random_font])
     print(figlet.renderText(plaintext))
 
 if arg == 2:
