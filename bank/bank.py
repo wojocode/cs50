@@ -1,16 +1,15 @@
 
 
-while True:
-    greet = input("Greeting: ")
-    if greet.isalpha() == True:
-        break
+
+greet = input("Greeting: ")
+
 
 greet = greet.lower()
 
 
 if greet[0] == "h" and greet != "hello":
     print("20")
-elif greet == "hello":
+elif "hello" in greet:
     print("0")
 else:
     print("100")
