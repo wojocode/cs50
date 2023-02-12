@@ -1,10 +1,10 @@
 import sys
 
 names = {"Wojtek", "Piotr", "Paweł", "Roman"}
-
 name = input("Enter name: ")
+n = name.capitalize()
 
-if name in names:
+if n in names:
     print("Found")
     sys.exit(0)
 
