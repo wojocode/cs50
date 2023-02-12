@@ -1,11 +1,7 @@
-# Logical operators
-from cs50 import get_string
+x = input("x: ")
+y = input("y: ")
 
-# Prompt user to agree
-s = get_string("Do you agree? ")
-x = s.lower()
-# Check whether agreed
-if x in ["yes" , "y"]:
-    print("Agreed.")
-elif x in ["no","n"]:
-    print("Not agreed.")
+if x == y:
+    print("the same")
+else:
+    print("different")
