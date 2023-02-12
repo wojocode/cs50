@@ -21,3 +21,4 @@ if arg == 1:
 if arg == 2 and (sys.argv[1] == "-f" or sys.argv[1] == "--f"):
      plaintext = input("Input: ")
      print(figlet.renderText(plaintext))
+     
