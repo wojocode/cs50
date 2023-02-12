@@ -2,7 +2,12 @@ import sys
 
 from pyfiglet import Figlet
 
+#open module
 figlet = Figlet()
+
+#get a list
+figlet.getFonts()
+
 
 arg = len(sys.argv)
 if arg != 0 and arg != 2:
