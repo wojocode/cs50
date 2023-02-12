@@ -1,7 +1,7 @@
 
 while True:
     greet = input("Greeting: ")
-    if greet.isalpha():
+    if greet.isspace() != True:
         break
 
 greet = greet.lower()
