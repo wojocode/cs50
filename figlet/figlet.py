@@ -16,7 +16,7 @@ arg = len(sys.argv)
 if arg == 1:
     plaintext = input("Input: ")
     ascii = random.shuffle(figlet)
-    #figlet.setFont(font={random.choices(figlet)})
+    figlet.setFont(font={})
     print(figlet.renderText(plaintext))
 
 if arg == 2:
