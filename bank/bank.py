@@ -5,10 +5,9 @@ while True:
         break
 
 if greet[0].lower() == "h":
-    if greet.lower() != "hello":
-        print("100")
-    else:
-        print("20")
-
+    print("hhh")
 else:
-    print("100")
+    print("20")
+
+#else:
+ #   print("100")
