@@ -12,7 +12,7 @@ if arg != 0 and arg != 2:
 
 
 
-if sys.argv[1] == "-f" or "--font":
+if sys.argv[2] == "-f" or sys.argv[2] == "--font":
         sys.exit(0)
 else:
     print("invalid usage")
