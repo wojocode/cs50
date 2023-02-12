@@ -5,4 +5,5 @@ from pyfiglet import Figlet
 figlet = Figlet()
 
 
-if sys.len(argv)
+if len(sys.argv) == 0:
+    print("no")
