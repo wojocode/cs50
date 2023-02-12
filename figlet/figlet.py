@@ -1,4 +1,5 @@
 import sys
+import random
 
 from pyfiglet import Figlet
 
@@ -13,7 +14,7 @@ arg = len(sys.argv)
 if arg == 1:
     plaintext = input("Input: ")
 
-    figlet.setFont(font="{zmienna z wylosowana nazwą fontu}")
+    figlet.setFont(font=random.)
     print(figlet.renderText(plaintext))
 
 
