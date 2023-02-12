@@ -5,6 +5,10 @@ from pyfiglet import Figlet
 figlet = Figlet()
 
 arg = len(sys.argv)
+if arg != 0 and arg != 2:
+    print("invalid usage")
+    sys.exit(1)
+'''
 if arg == 1:
 
 elif arg == 2:
@@ -13,3 +17,4 @@ elif arg == 2:
     else:
         print("invalid usage")
 
+'''
