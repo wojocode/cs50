@@ -5,4 +5,6 @@ for i in range(3):
     score = get_int("score: ")
     scores.append(score)
 
-print(f"scores: {scores}")
+average = sum(scores) / len(scores)
+
+print(f"average: {average}")
