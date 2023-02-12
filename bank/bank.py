@@ -6,9 +6,7 @@ while True:
         break
 
 greet = greet.lower()
-greetings = []
 
-greet.append(greetings)
 
 if greet[0] == "h" and greet != "hello":
     print("20")
