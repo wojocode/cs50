@@ -12,7 +12,7 @@ figlet.getFonts()
 arg = len(sys.argv)
 if arg == 0:
     plaintext = input("Input: ")
-    figlet.setFont(font=f)
+    figlet.setFont(font=figlet.random())
     print(figlet.renderText(plaintext))
 
 
