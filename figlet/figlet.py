@@ -24,5 +24,7 @@ if arg == 3:
      plaintext = input("Input: ")
      figlet.setFont(font=sys.argv[2])
      print(figlet.renderText(plaintext))
-    else:
-        print("invalid ")
+     else:
+        print("invalid font")
+else:
+    print("invalid ")
