@@ -1,4 +1,6 @@
 
+import sys
+
 menu = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
@@ -10,3 +12,6 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+try:
+    item.title() = input("Item: ")
+    
