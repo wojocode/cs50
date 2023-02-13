@@ -17,7 +17,7 @@ try:
     item = input("Item: ")
     item = item.title()
     if item in menu:
-        bill += menu[item]
+        bill = bill + menu[item]
         print(f"total: {bill}")
 
 
