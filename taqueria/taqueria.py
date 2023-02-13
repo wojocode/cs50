@@ -12,14 +12,16 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+#open the bill
 bill = 0
 
-#prompting user
+#prompting user until press ctrl d
 while True:
     try:
         item = input("Item: ")
         item = item.title()
         if item in menu:
+            #update bill
             bill = bill + menu[item]
             print(f"Total: {bill:.2f}")
     except EOFError:
