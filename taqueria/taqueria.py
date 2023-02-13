@@ -16,6 +16,6 @@ menu = {
 try:
     item = input("Item: ")
 except EOFError:
-    print
+    print()
     sys.exit(1)
 
