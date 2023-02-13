@@ -19,7 +19,7 @@ try:
     if item in menu:
         bill = 0
         bill += menu[item]
-        print(f"total: {bill}")
+        print(f"Total: {bill:.2f}")
 
 
 except EOFError:
