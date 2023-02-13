@@ -9,7 +9,7 @@ figlet = Figlet()
 #get a list
 font_list = figlet.getFonts()
 
-#radnomize list 
+#radnomize list
 length = len(font_list)
 random_font = random.randint(0, length)
 
@@ -23,3 +23,4 @@ if arg == 2:
     if (sys.argv[1] == "-f" or sys.argv[1] == "--f"):
      plaintext = input("Input: ")
      print(figlet.renderText(plaintext))
+     
