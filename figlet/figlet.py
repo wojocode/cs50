@@ -19,8 +19,9 @@ if arg == 1:
     figlet.setFont(font=font_list[random_font])
     print(figlet.renderText(plaintext))
 
-if arg == 2:
-    if (sys.argv[1] == "-f" or sys.argv[1] == "--f"):
+if arg == 3:
+    if (sys.argv[1] == "-f" or sys.argv[1] == "--f") and (sys.argv[2] in font_list):
      plaintext = input("Input: ")
+     figlet.setFont(font=font_list[random_font])
      print(figlet.renderText(plaintext))
-     
+
