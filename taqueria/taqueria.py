@@ -12,6 +12,10 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+#prompting user
 try:
-    item.title() = input("Item: ")
-    
+    item = input("Item: ")
+except EOFError:
+    print
+    sys.exit(1)
+
