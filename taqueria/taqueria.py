@@ -16,12 +16,12 @@ menu = {
 try:
     item = input("Item: ")
     item = item.title()
-    if item in menu:
-        bill = 0
-        bill += menu[item]
-        print(f"Total: {bill:.2f}")
 
 
+if item in menu:
+    bill = 0
+    bill += menu[item]
+    print(f"Total: {bill:.2f}")
 except EOFError:
     print()
     sys.exit(1)
