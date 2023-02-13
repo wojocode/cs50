@@ -15,8 +15,10 @@ menu = {
 #prompting user
 try:
     item = input("Item: ")
+    item = item.title()
     if item in menu:
-        
+        bill = bill + menu[item]
+        print(f"total: {bill}")
 
 
 except EOFError:
