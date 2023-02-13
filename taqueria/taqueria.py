@@ -15,6 +15,10 @@ menu = {
 #prompting user
 try:
     item = input("Item: ")
+    if item in menu:
+        
+
+
 except EOFError:
     print()
     sys.exit(1)
