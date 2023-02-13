@@ -22,6 +22,7 @@ if arg == 1:
 if arg == 3:
     if (sys.argv[1] == "-f" or sys.argv[1] == "--f") and (sys.argv[2] in font_list):
      plaintext = input("Input: ")
-     figlet.setFont(font=font_list[random_font])
+     figlet.setFont(font=sys.argv[2])
      print(figlet.renderText(plaintext))
-
+    else:
+        print("invalid ")
