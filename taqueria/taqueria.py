@@ -12,15 +12,19 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+bill = 0
+
 #prompting user
-try:
-    item = input("Item: ")
-    item = item.title()
-    if item in menu:
-        bill = 0
-        bill += menu[item]
-        print(f"Total: {bill:.2f}")
-except EOFError:
-    print()
-    sys.exit(1)
+while True:
+    try:
+        item = input("Item: ")
+        item = item.title()
+        if item in menu:
+            bill = bill + menu[item]
+            print(f"Total: {bill:.2f}")
+    except EOFError:
+        print()
+        break
+
+
 
