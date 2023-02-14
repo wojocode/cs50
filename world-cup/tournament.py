@@ -19,9 +19,9 @@ def main():
     try:
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
-# convert teams's rating to int
-            
         for row in reader:
+# convert teams's rating to int
+            row[rating].int()
             teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
