@@ -1,4 +1,4 @@
-from cs50 import get_int
+from cs50 import get_int 
 
 def main():
     x = get_int("how much $ do you need ? ")
