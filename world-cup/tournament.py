@@ -20,7 +20,7 @@ def main():
             reader = csv.DictReader(file)
             row = {}
             for row in reader:
-                int(row['rating'])
+                int(row[team])
                 teams.append(row)
 
     except FileNotFoundError:
