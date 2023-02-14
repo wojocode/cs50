@@ -18,10 +18,10 @@ def main():
     teams = []
     try:
         with open(sys.argv[1]) as file:
-            reader = csv.DictReader(file, fieldnames=["team", "ratings"])
+            reader = csv.DictReader(file, fieldnames=["team", "rating"])
         for row in reader:
 # convert teams's rating to int
-            int(reader[ratings])
+            int(row{rating})
             teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
