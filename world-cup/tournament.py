@@ -14,6 +14,7 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
+# appending teams from file
     teams = []
     with open(sys.argv[1]) as file:
       reader = csv.DictReader(file)
