@@ -19,10 +19,12 @@ def main():
         with open(sys.argv[1], "r") as file:
             reader = csv.DictReader(file, fieldnames= ["team", "rating"])
             for row in reader:
-                
+
                 teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
+
+    print(f"lis: {teams[0]}")
 
 
     counts = {}
