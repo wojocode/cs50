@@ -3,7 +3,6 @@
 import csv
 import sys
 import random
-
 # Number of simluations to run
 N = 1000
 
@@ -19,10 +18,9 @@ def main():
     try:
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file,fieldnames=["team", "rating"])
-        for row in reader:
-# convert teams's rating to int
-            int(row[team])
-            teams.append(row)
+            for row in reader:
+                row = int(row[team])
+                teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
 
