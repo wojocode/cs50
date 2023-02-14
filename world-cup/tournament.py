@@ -20,13 +20,13 @@ def main():
             reader = csv.DictReader(file)
             row = {}
             for row in reader:
-                int(row['team'])
+                int(row['rating'])
                 teams.append(row)
 
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-
+    
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
 
