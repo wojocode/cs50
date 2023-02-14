@@ -17,13 +17,14 @@ def main():
     teams = []
     try:
         with open(sys.argv[1]) as file:
-            reader = csv.DictReader(file,fieldnames=["team", "rating"])
+            reader = csv.DictReader(file, fieldnames=["team", "rating"])
             for row in reader:
+                int(row.
                 teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-    print(f"te: {teams}")
+
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
 
