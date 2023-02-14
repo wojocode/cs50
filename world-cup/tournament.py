@@ -17,9 +17,9 @@ def main():
     teams = []
     try:
         with open(sys.argv[1]) as file:
-            reader = csv.DictReader(file, fieldnames=["team", "rating"])
+            reader = csv.DictReader(file, fieldnames="team", "rating")
             for row in reader:
-                int(row[team])
+                row = int(row[team])
                 teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
