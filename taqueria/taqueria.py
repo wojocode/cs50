@@ -12,6 +12,7 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+
 #open the bill
 bill = 0
 
