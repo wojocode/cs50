@@ -17,7 +17,7 @@ def main():
     teams = []
     try:
         with open(sys.argv[1]) as file:
-            reader = csv.DictReader(file, fieldnames="team", "rating")
+            reader = csv.DictReader(file, fieldnames= ["team", "rating"])
             for row in reader:
                 row = int(row[team])
                 teams.append(row)
