@@ -19,6 +19,8 @@ def main():
     try:
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
+# convert teams's rating to int
+            
         for row in reader:
             teams.append(row)
     except FileNotFoundError:
