@@ -16,10 +16,14 @@ def main():
 
 # appending teams from file
     teams = []
-    with open(sys.argv[1]) as file:
-      reader = csv.DictReader(file)
-      for row in reader:
-        teams.append(row)
+    try:
+        with open(sys.argv[1]) as file:
+            reader = csv.DictReader(file)
+        for row in reader:
+            teams.append(row)
+    except FileNotFoundError:
+        print("FILENAME is not correct")
+
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
