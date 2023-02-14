@@ -17,14 +17,15 @@ def main():
     teams = []
     try:
         with open(sys.argv[1], "r") as file:
-            reader = csv.DictReader(file, fieldnames= ["team", "rating"])
+            reader = csv.DictReader(file)
             for row in reader:
-
+                print(f"row: {row}")
                 teams.append(row)
+            int(row[team])
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-    print(f"lis: {teams[0]}")
+    print(f"lis: {teams[1]}")
 
 
     counts = {}
