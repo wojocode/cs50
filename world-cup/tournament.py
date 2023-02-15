@@ -18,9 +18,9 @@ def main():
     try:
         with open(sys.argv[1], "r") as file:
             reader = csv.DictReader(file)
-            row = {}
+
             for row in reader:
-                int(row[team])
+                row[1]
                 teams.append(row)
 
     except FileNotFoundError:
