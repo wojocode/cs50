@@ -22,7 +22,7 @@ def main():
             for row in reader:
                 list(row)
                 k = row.keys()
-                (row[k])
+                row[k]
                 teams.append(row)
 
     except FileNotFoundError:
