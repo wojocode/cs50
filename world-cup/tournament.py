@@ -20,7 +20,7 @@ def main():
             reader = csv.DictReader(file)
 
             for row in reader:
-                box = row["Uruguay"]
+                
                 teams.append(row)
 
     except FileNotFoundError:
