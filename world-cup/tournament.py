@@ -21,7 +21,7 @@ def main():
 
             for row in reader:
                 list(row)
-                int(row[row])
+               
                 teams.append(row)
 
     except FileNotFoundError:
