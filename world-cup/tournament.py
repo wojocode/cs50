@@ -20,9 +20,9 @@ def main():
             reader = csv.DictReader(file)
 
             for row in reader:
-                list(row)
-                k = row.keys()
-                row[k]
+
+                
+
                 teams.append(row)
 
     except FileNotFoundError:
