@@ -21,7 +21,7 @@ def main():
 
             for row in reader:
                 print(f"temam: {row}")
-
+                row['key']
 
                 teams.append(row)
 
