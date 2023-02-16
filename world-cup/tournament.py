@@ -21,15 +21,14 @@ def main():
             for row in reader:
                 row["rating"] = int(row["rating"])
                 teams.append(row)
-                type(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     while True:
-        simulate_round(teams)
-        if len(teams) == 1:
+        winners = simulate_round(teams)
+        if len(winners) == 1:
             break
 
 
