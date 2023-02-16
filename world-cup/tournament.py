@@ -33,8 +33,8 @@ def main():
     final = simulate_round(semi_final)
     winner = {}
     winner = (final[0])
-    winner["team"]
-
+    winner["team","rating"]
+    print(winner)
 
 
     # Print each team's chances of winning, according to simulation
