@@ -19,8 +19,9 @@ def main():
         with open(sys.argv[1], "r") as file:
             reader = csv.DictReader(file, fieldnames=["team","rating"])
             for row in reader:
-                int(row["rating"])
+                row["rating"] = int(row["rating"])
                 teams.append(row)
+                type(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
 
