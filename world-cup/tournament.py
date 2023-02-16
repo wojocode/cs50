@@ -34,8 +34,8 @@ def main():
     winner = {}
     winner = (final[0])
     winner["rating"] = 0
-    print(winner)
-
+    winner["rating"] = winner["rating"] + 1
+    
 
 
     # Print each team's chances of winning, according to simulation
