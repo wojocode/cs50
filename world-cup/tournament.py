@@ -17,10 +17,10 @@ def main():
     teams = []
     try:
         with open(sys.argv[1], "r") as file:
-            reader = csv.DictReader(file, fieldnames= )
+            reader = csv.DictReader(file, fieldnames=["team","rating"])
             for row in reader:
-                list(row.values())
-                print(row)
+                ke = row.keys()
+                print(ke)
                 teams.append(row)
 
     except FileNotFoundError:
