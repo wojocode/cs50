@@ -23,7 +23,7 @@ def main():
                 teams.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-
+    print(teams)
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
 
