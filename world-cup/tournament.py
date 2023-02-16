@@ -30,7 +30,7 @@ def main():
 
         team = simulate_tournament(teams)
         counts = {team: x}
-        #counts["team"] += counts["team"] + 1
+        
 
 
         print(x)
