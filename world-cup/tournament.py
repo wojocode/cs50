@@ -5,7 +5,7 @@ import sys
 import random
 # Number of simluations to run
 N = 1000
-
+x = 0
 
 def main():
 
@@ -30,7 +30,7 @@ def main():
 
         team = simulate_tournament(teams)
         counts = {team: x}
-        
+        print(counts)
 
 
         print(x)
