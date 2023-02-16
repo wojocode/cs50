@@ -17,7 +17,7 @@ def main():
     teams = []
     try:
         with open(sys.argv[1], "r") as file:
-            reader = csv.DictReader(file)
+            reader = csv.DictReader(file, fieldnames= )
             for row in reader:
                 list(row.values())
                 print(row)
