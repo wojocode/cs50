@@ -18,7 +18,6 @@ def main():
     try:
         with open(sys.argv[1], "r") as file:
             reader = csv.DictReader(file)
-
             for row in reader:
                 row.values()
                 teams.append(row)
