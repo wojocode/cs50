@@ -26,10 +26,11 @@ def main():
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
-    while True:
-        winners = simulate_round(teams)
-        if len(winners) == 1:
-            break
+    #while True:
+    winners = simulate_round(teams)
+    print(winners)
+        #if len(winners) == 1:
+           # break
 
 
 
