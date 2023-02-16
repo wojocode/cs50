@@ -24,7 +24,6 @@ def main():
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
 
