@@ -31,8 +31,9 @@ def main():
     one_fourth_cup = simulate_round(one_eight_final)
     semi_final = simulate_round(one_fourth_cup)
     final = simulate_round(semi_final)
-    
-
+    winner = {}
+    winner = (final[0])
+    winner["team"]
 
 
 
