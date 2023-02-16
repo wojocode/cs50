@@ -29,7 +29,7 @@ def main():
     for i in range(0,N):
         team = simulate_tournament(teams)
         counts = {team: 0}
-        counts[team] = counts[team] + 1
+        counts["team"] = counts[team] + 1
 
 
         print(x)
