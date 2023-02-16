@@ -35,7 +35,7 @@ def main():
     winner = (final[0])
     winner["rating"] = 0
     winner["rating"] = winner["rating"] + 1
-    counts = {"team_name": "ee"}
+    
     print(counts)
 
 
