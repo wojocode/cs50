@@ -26,17 +26,8 @@ def main():
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
-
-    one_eight_final = simulate_round(teams)
-    one_fourth_cup = simulate_round(one_eight_final)
-    semi_final = simulate_round(one_fourth_cup)
-    final = simulate_round(semi_final)
-    winner = {}
-    winner = (final[0])
-    winner["rating"] = 0
-    winner["rating"] = winner["rating"] + 1
     
-    print(counts)
+
 
 
     # Print each team's chances of winning, according to simulation
@@ -68,7 +59,14 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
-    # TODO
+    one_eight_final = simulate_round(teams)
+    one_fourth_cup = simulate_round(one_eight_final)
+    semi_final = simulate_round(one_fourth_cup)
+    final = simulate_round(semi_final)
+    winner = {}
+    winner = (final[0])
+
+    return winner["team"]
 
 
 if __name__ == "__main__":
