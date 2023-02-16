@@ -27,12 +27,14 @@ def main():
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     #while True:
-    for i in range(2):
-        winners = simulate_round(teams)
-
+    while True:
+        simulate_round(teams)
+        if len(simulate_round(teams)) == 8:
+            print("koniec")
+            break
         #if len(winners) == 2:
            # break
-    print(len(winners))
+
 
 
     # Print each team's chances of winning, according to simulation
