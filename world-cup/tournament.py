@@ -21,7 +21,6 @@ def main():
             for row in reader:
                 int(row["rating"])
                 teams.append(row)
-
     except FileNotFoundError:
         print("FILENAME is not correct")
 
