@@ -27,9 +27,8 @@ def main():
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     while True:
-       simulate_round(teams[])
+        simulate_round(teams)
         if len(teams) == 1:
-            counts.append(teams)
             break
 
 
