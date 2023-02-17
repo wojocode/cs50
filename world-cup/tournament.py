@@ -27,13 +27,14 @@ def main():
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     x = 1
-    y = x + 1
+
     for i in range(0,N):
         team = simulate_tournament(teams)
         if team in counts:
             counts.update({team:x})
         else:
-            counts.update({team:(y)})
+            x+=1
+            counts.update({team:x})
     print(counts)
 
     # Print each team's chances of winning, according to simulation
