@@ -31,8 +31,8 @@ def main():
     for i in range(0,N):
         team = simulate_tournament(teams)
         if team in counts:
-            x+=1
-            counts.update({team:x})
+
+            counts.update({team:(x+1)})
         else:
             counts.update({team:y})
     print(counts)
