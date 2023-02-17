@@ -27,13 +27,14 @@ def main():
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     x = 1
-    y = 1
+
     for i in range(0,N):
         team = simulate_tournament(teams)
         if team in counts:
-            counts = counts.update({team:(x)}) + counts.update({team:(x)})
+            print(i)
+            counts.update({team:(x+1)})
         else:
-            counts.update({team:y})
+            counts.update({team:x})
     print(counts)
     print("\n")
 
