@@ -1,4 +1,10 @@
+
 try:
     name = input("What is your name ? \n")
+    if name.isalpha:
+        print(f"hello", name)
+
 except name.isalpha != True:
-    print(f"hello", name)
+    print("only string input")
+
+
