@@ -4,4 +4,13 @@
         DictReader function return dictionary for each row
         - then iterate each row
         - convert string value to int
-        - append team to list 
+        - append team to list
+
+simulate tournament
+every round cuts down the group /2
+we need only one team to return so we can use:
+    while len(teams) > 1:
+        teams = simulate_round(teams) # this divided teams /2
+    return teams[0]["team"] - access to first element of a list
+    and value of key - team
+    
