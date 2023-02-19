@@ -1,0 +1,4 @@
+1. read csv file to memory using:
+    with open(nazwa pliku , "r") as file:
+        reader = csv.DictReader(file)
+        
