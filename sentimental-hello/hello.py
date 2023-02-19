@@ -1,6 +1,7 @@
 while True:
     name = input("What is your name ? \n")
-    if name.isdigit == True:
-         print(f"hello", name)
+    if name.isalpha == True:
+         continue
     else:
         break
+ print(f"hello", name)
