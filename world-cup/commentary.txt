@@ -2,4 +2,6 @@
     with open(nazwa pliku , "r") as file:
         reader = csv.DictReader(file)
         DictReader function return dictionary for each row
-        
+        - then iterate each row
+        - convert string value to int
+        - append team to list 
