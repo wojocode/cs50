@@ -6,4 +6,5 @@ while True:
         break
 
 for i in range(height):
-    
+    for a in range(height):
+        print
