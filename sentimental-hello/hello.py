@@ -1,9 +1,7 @@
-while True:
-    name = input("What is your name ? \n")
-    if name.isalpha == True:
-        break
+
+name = input("What is your name ? \n")
 
 print(f"hello", name)
 
 
-def 
+
