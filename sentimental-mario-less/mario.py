@@ -5,4 +5,5 @@ while True:
     if height >= 1 and height <= 8:
         break
 
-
+for i in range(height):
+    
