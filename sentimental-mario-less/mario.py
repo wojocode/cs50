@@ -10,7 +10,7 @@ for row in range(height):
     for space in range(1,height - row):
         print(" ",end="")
 
-    for column in range(row+1):
+    for column in range(row + 1):
         print("%",end="")
 
     print("",end ='\n')
