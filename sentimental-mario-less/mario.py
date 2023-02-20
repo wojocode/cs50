@@ -5,12 +5,12 @@ while True:
     if height >= 1 and height <= 8:
         break
 
-for i in range(height):
+for row in range(height):
 
-    for a in range(1,height - i):
+    for space in range(1,height - row):
         print(" ",end="")
 
-    for b in range(height - a):
+    for column in range(height - space):
         print("%",end="")
 
     print("",end ='\n')
