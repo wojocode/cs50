@@ -10,7 +10,7 @@ for i in range(height):
     for a in range((height-1) - i):
         print(" ",end="")
 
-    for b in range(height - (a+1)):
+    for b in range(height - a):
         print("%",end="")
 
     print("",end ='\n')
