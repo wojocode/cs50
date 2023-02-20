@@ -9,5 +9,5 @@ while True:
 
 
 def quarters(cents):
-    return cents/25
+    return (cents * 100 ) /25
 
