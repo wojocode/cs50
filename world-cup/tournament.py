@@ -4,7 +4,7 @@ import csv
 import sys
 import random
 # Number of simluations to run
-N = 1000000
+N = 100030
 
 
 def main():
