@@ -22,7 +22,6 @@ def pennies(cents):
 
 
 
-
 quarters_ = quarters(cents)
 cents = cents - (quarters_ * 25)
 
