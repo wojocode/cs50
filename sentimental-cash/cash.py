@@ -9,16 +9,16 @@ while True:
         break
 
 def quarters(cents):
-    return int(cents / 25)
+    return (cents * 100) / 25
 
 def dimes(cents):
-    return int(cents / 10)
+    return (cents * 100) / 10
 
 def nickels(cents):
-    return int(cents / 5)
+    return (cents * 100) / 5
 
 def pennies(cents):
-    return int(cents / 1)
+    return (cents * 100) / 1
 
 
 
