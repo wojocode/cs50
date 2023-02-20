@@ -12,5 +12,5 @@ for i in range(height):
 
     for b in range(height - a):
         print("%",end="")
-        
+
     print("",end ='\n')
