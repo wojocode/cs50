@@ -14,7 +14,7 @@ def dimes(cents):
     return int((cents * 100) / 10)
 
 def nickels(cents):
-    return int((cents * 100) / 5)
+    return int((cents * 100) / 5.0)
 
 def pennies(cents):
     return int((cents * 100) / 1)
