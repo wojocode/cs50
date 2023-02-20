@@ -23,20 +23,20 @@ def pennies(cents):
 
 
 quarters_ = quarters(cents)
-cents = cents - (quarters_ * 0.25)
-cents = round(cents, 2)
+cents = round(cents - (quarters_ * 0.25) , 2)
+
 
 dimes_ = dimes(cents)
-cents = cents - (dimes_ * 0.10)
-cents = round(cents, 2)
+cents = round(cents - (dimes_ * 0.10) , 2)
+
 
 nickels_ = nickels(cents)
-cents = cents - (nickels_ * 0.05)
-cents = round(cents, 2)
+cents = round(cents - (nickels_ * 0.05) , 2)
+
 
 pennies_ = pennies(cents)
-cents = cents - (pennies_ * 0.01)
-cents = round(cents, 2)
+cents = round(cents - (pennies_ * 0.01) , 2)
+
 
 sum = quarters_ + dimes_ + nickels_ + pennies_
 
