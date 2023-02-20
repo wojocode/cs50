@@ -8,7 +8,7 @@ while True:
 for i in range(height):
 
     for a in range(height - i):
-        print(" ",end="")
+        print("",end="")
 
     for b in range(height - a):
         print("%",end="")
