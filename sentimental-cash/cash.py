@@ -8,5 +8,6 @@ while True:
 
 
 
-def 
+def quarters(cents):
+    return cents/25
 
