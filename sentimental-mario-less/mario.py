@@ -1,8 +1,8 @@
 from cs50 import get_int
 
 while True:
-    n = get_int("height: ")
-    if n >= 1 and n <= 8:
+    height = get_int("height: ")
+    if height >= 1 and height <= 8:
         break
 
 
