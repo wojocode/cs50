@@ -1,6 +1,13 @@
 from cs50 import get_float
 
 
+
+#prompt user
+while True:
+    cents = get_float("Change owed: ")
+    if cents > 0:
+        break
+
 def quarters(cents):
     return int(cents / 25)
 
@@ -14,11 +21,7 @@ def pennies(cents):
     return int(cents / 1)
 
 
-#prompt user
-while True:
-    cents = get_float("Change owed: ")
-    if cents > 0:
-        break
+
 
 quarters_ = quarters(cents)
 cents = cents - (quarters_ * 25)
