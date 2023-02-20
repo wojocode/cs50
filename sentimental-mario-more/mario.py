@@ -15,4 +15,4 @@ for big_row in range(height):
    #right aligned piramid
     for column in range(big_row + 1):
         print("#", end="")
-print("",end="\n")
+    print("",end="\n")
