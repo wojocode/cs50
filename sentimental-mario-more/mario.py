@@ -10,3 +10,9 @@ for big_row in range(height):
         print(" ",end="")
     for column in range(big_row + 1):
         print("#", end="")
+    #space between piramid
+    print("  ",end="")
+   #right aligned piramid
+    for column in range(big_row + 1):
+        print("#", end="")
+print("",end="\n")
