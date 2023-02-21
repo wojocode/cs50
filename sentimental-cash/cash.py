@@ -6,8 +6,6 @@ while True:
     if cents > 0:
         break
 
-
-
 def quarters(cents):
 
     return int((cents * 100) / 25)
