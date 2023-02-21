@@ -8,13 +8,15 @@ while True:
         break
 
 # retrun true if checksum reminder % 10 equal 0 and false oderwise
+
+
 def checksum(card_number):
 
     length = len(str(card_number))
     multiplier = 10
     sum = 0
     divider = 1
-    for i in range(length, 0 , -2):
+    for i in range(length, 0, -2):
         digit = int((card_number % multiplier) / divider)
         multiplier = multiplier * 100
         sum = sum + digit
@@ -27,12 +29,12 @@ def checksum(card_number):
     divider = 10
     tens = 0
     units = 0
-    for j in range(length - 1, 0 , -2):
+    for j in range(length - 1, 0, -2):
         digit = int((card_number % multiplier) / divider) * 2
         if digit >= 10:
             tens = int(digit / 10)
             units = int(digit % 10)
-            sum = sum  + tens + units
+            sum = sum + tens + units
             multiplier = multiplier * 100
             divider = divider * 100
             tens = 0
@@ -46,7 +48,7 @@ def checksum(card_number):
 # add sums
     result = first_sum + second_sum
 
-#checking sum
+# checking sum
     if result % 10 == 0:
         return True
     else:
@@ -59,19 +61,19 @@ if final != True:
     print("INVALID\n")
     sys.exit(1)
 
-#  convert int to string
+# convert int to string
 number = str(card_number)
 
 # AMERICAN EzXPRESS
 if len(number) == 15 and number[0] == '3' and (number[1] == '7' or number[1] == '4'):
-        print("AMEX\n")
+    print("AMEX\n")
 
 # MASTER CARD
 elif len(number) == 16 and number[0] == '5' and (number[1] == '1' or number[1] == '2' or number[1] == '3' or number[1] == '4' or number[1] == '5'):
-        print("MASTERCARD\n")
+    print("MASTERCARD\n")
 
 # VISA
 elif len(number) == 13 and number[0] == '4' or len(number) == 16 and number[0] == '4':
-        print("VISA\n")
+    print("VISA\n")
 else:
     print("INVALID\n")
