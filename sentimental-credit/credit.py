@@ -20,7 +20,6 @@ def checksum(card_number):
         divider = divider * 100
     last = sum
 
-
     multiplier = 100
     sum = 0
     divider = 10
