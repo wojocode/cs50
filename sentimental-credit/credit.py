@@ -8,8 +8,8 @@ while True:
     card_number = get_int("enter card number: ")
     card_number = str(card_number)
     print(len(card_number))
-    if card_number > 0:
-        break
+    #if card_number > 0:
+        #break
 
 
 
