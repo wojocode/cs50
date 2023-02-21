@@ -1,4 +1,5 @@
 import re
+import sys
 from cs50 import get_int, get_string
 
 while True:
@@ -38,6 +39,16 @@ def checksum(card_number):
     else:
         return False
 
+#checking sum
 
 final = checksum(card_number)
-print(final)
+if final != True:
+    print("INVALID")
+    sys.exit(1)
+
+# AMERICAN EXPRESS check
+
+card_number = str(card_number)
+if len(card_number) == 15:
+    if card_number[0] == 3 and card_number[1] == 4 or card_number[1] == 7:
+        print("AMEX")
