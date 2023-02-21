@@ -8,8 +8,20 @@ while True:
     if card_number > 0:
         break
 
+def checksum(card_number):
+#checking if number length is add or even
+    length = len(str(card_number))
+
+    if length % 2 == 0:
+        for i in range(1,length + 1)
+
+    else:
+
+
+
+
+checksum(card_number)
 # convert int to strin (len(str(card_number)))
-#def checksum(card_number):
-    #checking if number length is add or even
+
 
 
