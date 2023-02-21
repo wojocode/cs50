@@ -53,23 +53,3 @@ def checksum(card_number):
         return False
 
 
-final = checksum(card_number)
-
-if final != True:
-    print("INVALID")
-    sys.exit(1)
-
-#  convert int to string
-number = str(card_number)
-
-# AMERICAN EzXPRESS
-if len(number) == 15 and number[0] == '3' and (number[1] == '7' or number[1] == '4'):
-        print("AMEX")
-
-# MASTER CARD
-if len(number) == 16 and number[0] == '5' and (number[1] == '1' or number[1] == '2' or number[1] == '3' or number[1] == '4' or number[1] == '5'):
-        print("MASTERCARD")
-
-# VISA
-if len(number) == 13 and number[0] == '4' or len(number) == 16 and number[0] == '4':
-        print("VISA")
