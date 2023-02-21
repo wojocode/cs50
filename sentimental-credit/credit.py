@@ -19,7 +19,7 @@ def checksum(card_number):
         sum = sum + digit
         divider = divider * 100
 
-    for j in range(length, 0 , -2):
+    for j in range(length - 1, 0 , -2):
         
 
 
