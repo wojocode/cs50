@@ -13,7 +13,8 @@ def checksum(card_number):
     length = len(str(card_number))
 
     if length % 2 == 0:
-        for i in range(1,length + 1)
+        for i in range(length / 2):
+            
 
     else:
 
