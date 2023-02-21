@@ -1,9 +1,10 @@
 import re
 from cs50 import get_int, get_string
 
-pattern = r"0"
+
 #prompt user
 while True:
+    pattern = r"0"
     card_number = get_int("enter card number: ")
     if  re.match(pattern, str(card_number)) != None:
         continue
