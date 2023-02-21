@@ -5,10 +5,9 @@ from cs50 import get_int, get_string
 #prompt user
 while True:
     card_number = get_string("enter card number: ")
-    if card_number.isdigit:
+    card = card_number.isdigit
+    if card == True:
         break
-
-        
 
 # convert int to strin (len(str(card_number)))
 #def checksum(card_number):
