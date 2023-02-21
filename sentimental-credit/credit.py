@@ -6,8 +6,7 @@ from cs50 import get_int, get_string
 while True:
 
     card_number = get_int("enter card number: ")
-    str(card_number)
-    if re.match("0", card_number) == None:
+    if re.match("0", str(card_number)) == None:
         break
 
 
