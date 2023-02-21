@@ -6,9 +6,9 @@ from cs50 import get_int, get_string
 while True:
 
     card_number = get_string("enter card number: ")
-    print(len(card_number))
-    #if card_number > 0:
-        #break
+
+    if card_number.isalpha:
+        break
 
 
 
