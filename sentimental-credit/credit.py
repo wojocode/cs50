@@ -57,9 +57,17 @@ if final != True:
     print("INVALID")
     sys.exit(1)
 
-# AMERICAN EXPRESS check
-
+#  convert int to string
 num = str(card_number)
 
+# AMERICAN EXPRESS
 if len(num) == 15 and num[0] == '3' and (num[1] == '7' or num[1] == '4'):
         print("AMEX")
+
+# MASTER CARD
+if len(num) == 16 and num[0] == '5' and (num[1] == '1' or num[1] == '2' or num[1] == '3' or num[1] == '4' or num[1] == '5'):
+        print("MASTERCARD")
+
+# VISA
+if len(num) == 13 and num[0] == '4' or len(num) == 16 and num[0] == '4':
+        print("VISA")
