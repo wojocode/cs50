@@ -1,6 +1,6 @@
 from cs50 import get_int
 
 x = 3574
-y = 100
+y = 1000
 
-print((x % y))
+print(round((x % y)/100),1)
