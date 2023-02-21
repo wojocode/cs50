@@ -26,14 +26,14 @@ def checksum(card_number):
     divider = 10
 
 # getting every other digit multiplying by 2
-    a = 0
+    tens = 0
     b = 0
     for j in range(length - 1, 0 , -2):
         digit = int((card_number % multiplier) / divider) * 2
         if digit >= 10:
-            a = int(digit / 10)
+            tens = int(digit / 10)
             b = int(digit % 10)
-            sum = sum  + a + b
+            sum = sum  + tens + b
             multiplier = multiplier * 100
             divider = divider * 100
             a = 0
