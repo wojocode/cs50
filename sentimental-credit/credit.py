@@ -20,13 +20,12 @@ def checksum(card_number):
         multiplier = multiplier * 100
         sum = sum + digit
         divider = divider * 100
-    last = sum
+    first_sum = sum
 
+# getting every other digit multiplying by 2
     multiplier = 100
     sum = 0
     divider = 10
-
-# getting every other digit multiplying by 2
     tens = 0
     units = 0
     for j in range(length - 1, 0 , -2):
@@ -43,14 +42,16 @@ def checksum(card_number):
             sum = sum + digit + tens + units
             multiplier = multiplier * 100
             divider = divider * 100
-    second = sum
+    second_sum = sum
 
-    result = last + second
+    result = first_sum + second_sum
+
+#checking sum
     if result % 10 == 0:
         return True
     else:
         return False
-#checking sum
+
 
 final = checksum(card_number)
 
