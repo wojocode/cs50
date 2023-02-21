@@ -1,7 +1,7 @@
 import re
 from cs50 import get_int, get_string
 
-pattern = "0"
+pattern = r"0"
 #prompt user
 while True:
     card_number = get_int("enter card number: ")
