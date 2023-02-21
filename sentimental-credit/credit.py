@@ -44,13 +44,11 @@ def checksum(card_number):
             divider = divider * 100
     second = sum
 
-    return second + last
-    #result = last + second
-    #if result % 10 == 0:
-      #  return True
-   # else:
-    #    return False
-
+    result = last + second
+    if result % 10 == 0:
+        return True
+    else:
+        return False
 #checking sum
 
 final = checksum(card_number)
