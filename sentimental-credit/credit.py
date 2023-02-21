@@ -28,6 +28,8 @@ def checksum(card_number):
 # getting every other digit multiplying by 2
     for j in range(length - 1, 0 , -2):
         digit = int((card_number % multiplier) / divider) * 2
+        if digit > 9:
+            
         multiplier = multiplier * 100
         sum = sum + digit
         divider = divider * 100
