@@ -7,6 +7,7 @@ while True:
     if card_number > 0:
         break
 
+# retrun true if checksum reminder % 10 equal 0 and false oderwise
 def checksum(card_number):
 
     length = len(str(card_number))
