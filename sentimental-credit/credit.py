@@ -9,6 +9,11 @@ while True:
 def checksum(card_number):
 #checking if number length is add or even
     length = len(str(card_number))
-    
+    last = 10
+    previous = 100
+
+    for i in range(length, 0 ,-2):
+        
+
 
 
