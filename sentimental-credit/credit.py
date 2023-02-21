@@ -5,7 +5,7 @@ pattern = r"0"
 #prompt user
 while True:
     card_number = get_int("enter card number: ")
-    if card_number > 0 and re.search(pattern, str(card_number)) != None:
+    if card_number > 0 and re.search(pattern, str(card_number)):
         break
 
 # convert int to strin (len(str(card_number)))
