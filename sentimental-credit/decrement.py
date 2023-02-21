@@ -1,7 +1,7 @@
 from cs50 import get_int
 
 
-x = 399
-y = 100
+x = 3574
+y = 10
 
-print(truncate((x % y)/10))
+print(int((x % y)/10))

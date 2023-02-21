@@ -12,11 +12,13 @@ def checksum(card_number):
     last = 10
     sum = 0
     previous = 100
+    divider = 1
 
     for i in range(length, 0 , -2):
         digit = card_number % last
-        #last = last * 100
-        sum = sum + digit
+        last = last * 100
+        sum = sum + (digit / divider)
+        divider = divider * 10
 
     return sum
 
