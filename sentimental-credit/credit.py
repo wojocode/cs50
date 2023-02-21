@@ -27,19 +27,19 @@ def checksum(card_number):
 
 # getting every other digit multiplying by 2
     tens = 0
-    b = 0
+    units = 0
     for j in range(length - 1, 0 , -2):
         digit = int((card_number % multiplier) / divider) * 2
         if digit >= 10:
             tens = int(digit / 10)
-            b = int(digit % 10)
-            sum = sum  + tens + b
+            units = int(digit % 10)
+            sum = sum  + tens + units
             multiplier = multiplier * 100
             divider = divider * 100
-            a = 0
-            b = 0
+            tens = 0
+            units = 0
         else:
-            sum = sum + digit + a + b
+            sum = sum + digit + tens + units
             multiplier = multiplier * 100
             divider = divider * 100
     second = sum
