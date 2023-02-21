@@ -12,7 +12,7 @@ def checksum(card_number):
     last = 10
     previous = 100
 
-    for i in range(length, 0 ,-2):
+    for i in range(length, 0 , -2):
         digit = card_number % last
         last = last * 100
         
