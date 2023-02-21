@@ -6,7 +6,5 @@ while True:
     if card_number > 0:
         break
 
-
-
-def checksum(card_number):
-    
+# convert int to strin (len(str(card_number)))
+#def checksum(card_number):
