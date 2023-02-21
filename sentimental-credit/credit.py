@@ -31,7 +31,7 @@ def checksum(card_number):
     for j in range(length - 1, 0 , -2):
         digit = int((card_number % multiplier) / divider) * 2
         if digit >= 10:
-            a = int(digit / 10) 
+            a = int(digit / 10)
             b = int(digit % 10)
             sum = sum  + a + b
             multiplier = multiplier * 100
@@ -59,6 +59,6 @@ if final != True:
 
 # AMERICAN EXPRESS check
 
-
-if len(str(card_number)) == 15:
+num = str(card_number)
+if len(num) == 15 and num[0] == 3 and num[1] == 7:
         print("AMEX")
