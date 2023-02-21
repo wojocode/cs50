@@ -18,11 +18,11 @@ def checksum(card_number):
             m = m * 10
             sum = sum + digit
     else:
-        for i in range((length / 2) - 1):
+        for i in range(round((length / 2)) - 1):
             digit = (card_number & m) * 2
             m = m * 10
             sum = sum + digit
-    
+
 
 
 checksum(card_number)
