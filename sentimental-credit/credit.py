@@ -30,8 +30,8 @@ def checksum(card_number):
     b = 0
     for j in range(length - 1, 0 , -2):
         digit = int((card_number % multiplier) / divider) * 2
-        if digit >= 9:
-            a = int(digit/ 10)
+        if digit >= 10:
+            a = int(digit / 10)
             b = int(digit % 10)
         multiplier = multiplier * 100
         sum = sum + digit + a + b
@@ -40,11 +40,12 @@ def checksum(card_number):
         b = 0
     second = sum
 
-    result = last + second
-    if result % 10 == 0:
-        return True
-    else:
-        return False
+    return second + last
+    #result = last + second
+    #if result % 10 == 0:
+      #  return True
+   # else:
+    #    return False
 
 #checking sum
 
