@@ -20,4 +20,5 @@ def checksum(card_number):
 
     return sum
 
-print(checksum(card_number))
+sum = checksum(card_number)
+print(sum)
