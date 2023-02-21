@@ -42,6 +42,7 @@ def checksum(card_number):
 #checking sum
 
 final = checksum(card_number)
+print(final)
 if final != True:
     print("INVALID")
     sys.exit(1)
@@ -50,5 +51,5 @@ if final != True:
 
 card_number = str(card_number)
 if len(card_number) == 15:
-    if card_number[0] == 3 and card_number[1] == 4 or card_number[1] == 7:
+    if card_number[0] == 3 and card_number[1] == 7:
         print("AMEX")
