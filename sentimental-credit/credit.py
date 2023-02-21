@@ -61,6 +61,5 @@ if final != True:
 
 num = str(card_number)
 
-print(type(num))
-if len(num) == 15 and num[0] == 3 and num[1] == 7:
+if len(num) == 15 and num[0] == '3' and (num[1] == '7' or num[1] == '4'):
         print("AMEX")
