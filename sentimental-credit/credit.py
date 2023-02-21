@@ -33,11 +33,15 @@ def checksum(card_number):
         if digit >= 10:
             a = int(digit / 10)
             b = int(digit % 10)
-        multiplier = multiplier * 100
-        sum = sum + digit + a + b
-        divider = divider * 100
-        a = 0
-        b = 0
+            sum = sum  + a + b
+            multiplier = multiplier * 100
+            divider = divider * 100
+            a = 0
+            b = 0
+        else:
+            sum = sum + digit + a + b
+            multiplier = multiplier * 100
+            divider = divider * 100
     second = sum
 
     return second + last
