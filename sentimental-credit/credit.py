@@ -4,12 +4,12 @@ from cs50 import get_int, get_string
 
 #prompt user
 while True:
-    pattern = r"0"
+
     card_number = get_int("enter card number: ")
-    if  re.match(pattern, str(card_number)) != None:
-        continue
-    else:
+    str(card_number)
+    if re.match("0", card_number) == None:
         break
+
 
 # convert int to strin (len(str(card_number)))
 #def checksum(card_number):
