@@ -1,8 +1,6 @@
 from cs50 import get_int
 
-n = get_int("enter fucking value: ")
+x = 3574
+y = 10
 
-length = len(str(n))
-
-for i in range(length,0,-1):
-    print(i)
+print((x % y))
