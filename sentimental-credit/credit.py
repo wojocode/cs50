@@ -7,7 +7,7 @@ while True:
 
     card_number = get_int("enter card number: ")
 
-    if re.match("00", str(card_number)):
+    if re.match("0", str(card_number)):
         continue
     else:
         break
