@@ -7,7 +7,7 @@ while True:
         break
 
 def checksum(card_number):
-#checking if number length is add or even
+
     length = len(str(card_number))
     multiplier = 10
     sum = 0
@@ -18,9 +18,27 @@ def checksum(card_number):
         multiplier = multiplier * 100
         sum = sum + digit
         divider = divider * 100
+    last = sum
 
+
+    multiplier = 100
+    sum = 0
+    divider = 10
+
+# getting every other digit multiplying by 2
     for j in range(length - 1, 0 , -2):
-        
+        digit = int((card_number % multiplier) / divider) * 2
+        multiplier = multiplier * 100
+        sum = sum + digit
+        divider = divider * 100
+    second = sum
+
+    result = last + second
+    if result % 10 == 0:
+        return True
+    else:
+        return False
 
 
-
+final = checksum(card_number)
+print(final)
