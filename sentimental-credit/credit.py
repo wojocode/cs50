@@ -60,5 +60,7 @@ if final != True:
 # AMERICAN EXPRESS check
 
 num = str(card_number)
+
+print(type(num))
 if len(num) == 15 and num[0] == 3 and num[1] == 7:
         print("AMEX")
