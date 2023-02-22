@@ -1,6 +1,6 @@
 # prompt user for string
 
-text = input("Text: ").ascii_letters
+text = input("Text: ").isalph
 if text == False:
     print("okay")
 else:
