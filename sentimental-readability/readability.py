@@ -7,14 +7,17 @@ while True:
         continue
     else:
         break
+
+
 # letters counter
+def letters_counter(text):
 
-letters = 0
+    letters = 0
 
-for i in range(len(text)):
-    x = text[i].isalpha
-    if x == True:
-        print("no")
-    else:
-        letters = letters + 1
-print(letters)
+    for i in range(len(text)):
+        x = text[i].isalpha()
+        if x:
+            letters = letters + 1
+
+    return letters
+
