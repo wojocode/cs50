@@ -1,4 +1,4 @@
-import string
+
 
 # prompt user for string
 while True:
@@ -11,8 +11,8 @@ while True:
 
 letters = 0
 for i in range(len(text)):
-    
-    if text[i].ascii_letters:
+
+    if text[i].
         letters += 1
 
 print(letters)
