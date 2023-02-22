@@ -1,5 +1,6 @@
-# prompt user for string
+import string
 
+# prompt user for string
 while True:
     text = input("Text: ")
     if len(text) == 0:
@@ -10,7 +11,8 @@ while True:
 
 letters = 0
 for i in range(len(text)):
-    if text[i].isalpha:
+    
+    if text[i].ascii_letters:
         letters += 1
 
 print(letters)
