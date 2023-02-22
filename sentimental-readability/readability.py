@@ -10,8 +10,10 @@ while True:
 # letters counter
 
 letters = 0
+
 for i in range(len(text)):
-    if text[i].isalpha:
+    x = text[i].isalpha
+    if x:
         print("no")
     else:
         letters = letters + 1
