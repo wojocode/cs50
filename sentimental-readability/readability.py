@@ -12,7 +12,7 @@ while True:
 letters = 0
 for i in range(len(text)):
 
-    if text[i].
-        letters += 1
+    if text[i].isalpha:
+        letters = letters + 1
 
 print(letters)
