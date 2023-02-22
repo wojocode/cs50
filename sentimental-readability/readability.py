@@ -12,7 +12,7 @@ while True:
 letters = 0
 
 for i in range(len(text)):
-    x = text[i].isalpha
+    x = isalpha(text[i])
     if x:
         print("no")
     else:
