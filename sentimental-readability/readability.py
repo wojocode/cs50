@@ -9,6 +9,11 @@ while True:
         break
 
 
+
+
+
+
+
 # letters counter
 def letters_counter(text):
 
@@ -21,3 +26,15 @@ def letters_counter(text):
 
     return letters
 
+# word counter
+def word_counter(text):
+    words = 0
+    for i in range(len(text)):
+        x = text[i].isspace()
+        if x:
+            words = words + 1
+    return words + 1
+
+
+
+print(word_counter(text))
