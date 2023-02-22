@@ -33,4 +33,12 @@ def word_counter(text):
     return words + 1
 
 def sentences_counter(text):
-    
+    sentences = 0
+    for i in range(len(text)):
+        if re.search("." "!" "?", text[i]):
+            sentences = sentences + 1
+
+    return sentences
+
+
+print(sentences_counter(text))
