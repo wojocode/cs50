@@ -33,7 +33,10 @@ def word_counter(text):
         x = text[i].isspace()
         if x:
             words = words + 1
-    return words + 1
+        if words == 1:
+            return words
+        else:
+            return words + 1
 
 
 
