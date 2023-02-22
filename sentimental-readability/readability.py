@@ -11,8 +11,7 @@ while True:
 
 letters = 0
 for i in range(len(text)):
-    x = text[i].isalpha
-    if x:
+    if text[i].isalpha:
         print("no")
     else:
         letters = letters + 1
