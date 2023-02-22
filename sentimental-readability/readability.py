@@ -1,4 +1,4 @@
-
+import re
 
 # prompt user for string
 while True:
@@ -12,13 +12,9 @@ while True:
 
 
 
-
-
 # letters counter
 def letters_counter(text):
-
     letters = 0
-
     for i in range(len(text)):
         x = text[i].isalpha()
         if x:
@@ -33,8 +29,8 @@ def word_counter(text):
         x = text[i].isspace()
         if x:
             words = words + 1
-           
 
+    return words + 1
 
-
-print(word_counter(text))
+def sentences_counter(text):
+    
