@@ -1,6 +1,6 @@
 import re
 
-zdanie = "wojtek chce mieć kota"
+zdanie = "ojtek chce mieć kota"
 
-x = re.match("w",zdanie)
+x = re.match("[w]?",zdanie)
 print(x)
