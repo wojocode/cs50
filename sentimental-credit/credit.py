@@ -65,7 +65,7 @@ if final != True:
 number = str(card_number)
 
 # AMERICAN EzXPRESS
-if len(number) == 15 and number[0] == '3' and (number[1] == '7' or number[1] == '4'):
+if re.match("[3][47][0-9]{13}", number):
     print("AMEX\n")
 
 # MASTER CARD
