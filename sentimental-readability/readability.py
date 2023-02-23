@@ -34,7 +34,7 @@ def word_counter(text):
 def sentences_counter(text):
     sentences = 0
     for i in range(len(text)):
-        x = re.match("[/. ? !", text[i])
+        x = re.match("[/.]", text[i])
         print(x)
         if x:
             sentences = sentences + 1
