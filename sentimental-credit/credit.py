@@ -65,11 +65,11 @@ if final != True:
 number = str(card_number)
 
 # AMERICAN EzXPRESS
-if re.match("[3][47][0-9]{13}", number):
+if re.match("[3][47][0-9]{13}", number): # regex : first number 3 , second 4 or 7 and than 13 digit from [0-9]
     print("AMEX\n")
 
 # MASTER CARD
-elif len(number) == 16 and number[0] == '5' and (number[1] == '1' or number[1] == '2' or number[1] == '3' or number[1] == '4' or number[1] == '5'):
+elif re.match("[5][1-5][0-9]{}):
     print("MASTERCARD\n")
 
 # VISA
