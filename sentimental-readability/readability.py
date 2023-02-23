@@ -39,19 +39,20 @@ def sentences_counter(text):
     return sentences
 
 # Coleman-Liau index
-def Coleman_Liau_index(L,S):
+def Coleman_Liau_index(L, S):
     return round(0.0588 * L - 0.296 * S - 15.8)
 
 # set variables for Coleman_Liau_index
 L = (letters_counter(text) / word_counter(text)) * 100
 S = (sentences_counter(text) / word_counter(text)) * 100
 
-result = Coleman_Liau_index(L,S)
+result = Coleman_Liau_index(L, S)
 
-#printing results
+# printing results
 if result < 1:
     print("Before Grade 1")
 elif result >= 16:
     print("Grade 16+")
 else:
-    print("Grade",result)
+    print("Grade", result)
+
