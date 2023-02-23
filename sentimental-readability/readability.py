@@ -42,4 +42,3 @@ def sentences_counter(text):
     return sentences
 
 
-print(sentences_counter(text))
