@@ -1,6 +1,6 @@
 import re
 
-zdanie = "wojtek! chce mieć? kota."
+number = "660511677"
 
-x = re.search("/? /! /.",zdanie)
+x = re.search("[67][0-9]{8}",number)
 print(x)
