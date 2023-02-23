@@ -11,7 +11,6 @@ while True:
 
 
 
-
 # letters counter
 def letters_counter(text):
     letters = 0
@@ -37,7 +36,7 @@ def sentences_counter(text):
     for i in range(len(text)):
         x = re.match('.', text[i])
         print(x)
-        if x != None:
+        if x == ".":
             sentences = sentences + 1
 
     return sentences
