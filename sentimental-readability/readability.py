@@ -33,7 +33,6 @@ def sentences_counter(text):
     sentences = 0
     for i in range(len(text)):
         x = re.match("[/.!?]", text[i])
-        print(x)
         if x:
             sentences = sentences + 1
 
@@ -42,9 +41,14 @@ def sentences_counter(text):
 # Coleman-Liau index
 def Coleman_Liau_index(L,S):
 
-    L = (letters_counter(text) / word_counter(text)) * 100
-    S = (sentences_counter(text) / word_counter(text)) * 100
+
     return round(0.0588 * L - 0.296 * S - 15.8)
 
+# set variables for Coleman_Liau_index
+L = (letters_counter(text) / word_counter(text)) * 100
+S = (sentences_counter(text) / word_counter(text)) * 100
 
 result = Coleman_Liau_index(L,S)
+
+#printing results
+if result < 1
