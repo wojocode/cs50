@@ -73,7 +73,7 @@ elif re.match("[5][1-5][0-9]{14}", number):
     print("MASTERCARD\n")
 
 # VISA
-elif len(number) == 13 and number[0] == '4' or len(number) == 16 and number[0] == '4':
+elif re.match("[4][0-9]{12}", number) or re.match("[4][0-9]{15}", number):
     print("VISA\n")
 else:
     print("INVALID\n")
