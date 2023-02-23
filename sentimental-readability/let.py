@@ -1,4 +1,6 @@
+import re
 
 zdanie = "wojtek chce mieć kota"
-print(len(zdanie))
-print(zdanie[len(zdanie) - 1])
+
+x = re.match("w",zdanie)
+print(x)
