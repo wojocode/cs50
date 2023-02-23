@@ -8,9 +8,6 @@ while True:
     else:
         break
 
-
-
-
 # letters counter
 def letters_counter(text):
     letters = 0
@@ -31,6 +28,7 @@ def word_counter(text):
 
     return words + 1
 
+# sentences counter
 def sentences_counter(text):
     sentences = 0
     for i in range(len(text)):
@@ -40,5 +38,9 @@ def sentences_counter(text):
             sentences = sentences + 1
 
     return sentences
+
+# Coleman-Liau index
+def Coleman_Liau_index(L,S):
+    L = word_counter(text)
 
 
