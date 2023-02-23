@@ -69,7 +69,7 @@ if re.match("[3][47][0-9]{13}", number): # regex : first number 3 , second 4 or 
     print("AMEX\n")
 
 # MASTER CARD
-elif re.match("[5][1-5][0-9]{}):
+elif re.match("[5][1-5][0-9]{14}", number):
     print("MASTERCARD\n")
 
 # VISA
