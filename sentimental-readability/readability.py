@@ -41,6 +41,10 @@ def sentences_counter(text):
 
 # Coleman-Liau index
 def Coleman_Liau_index(L,S):
-    L = word_counter(text)
+
+    L = (letters_counter(text) / word_counter(text)) * 100
+    S = (sentences_counter(text) / word_counter(text)) * 100
+    return round(0.0588 * L - 0.296 * S - 15.8)
 
 
+result = Coleman_Liau_index(L,S)
