@@ -40,6 +40,7 @@ def main():
         STR_list.append(item)
 
     print(len(STR_list))
+    print(STR_list)
     # TODO: Check database for matching profiles
 
     for j in range(1, len(database_list[1])):
