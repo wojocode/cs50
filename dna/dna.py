@@ -41,15 +41,21 @@ def main():
 
     print(STR_list)
     # TODO: Check database for matching profiles
-    print(database_list)
-    for i in range(1, len(database_list[1])):
-        database_list[i][i] = int(database_list[i][i])
+
+    for j in range(1, len(database_list[1])):
+        for i in range(1, len(database_list[1])):
+            database_list[i][j] = int(database_list[i][j])
+
+    for j in range(1,len(database_list[1])):
+        for i in range(1,len(database_list)):
+            if STR_list in database_list[j][i]:
+                print("jest")
+            else:
+                print("nie")
 
 
 
 
-
-   # print("No match")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
