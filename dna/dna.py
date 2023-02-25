@@ -22,6 +22,7 @@ def main():
         print("FILENAME is not correct")
 
 
+
     # TODO: Read DNA sequence file into a variable
 
     dna = sys.argv[2]
