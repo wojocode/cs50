@@ -33,7 +33,7 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
-    AGATC = longest_match(DNA_sequance, database_list[0]['AGATC'])
+    AGATC = longest_match(DNA_sequance, database_list[0].keys[0])
 
     AATG = longest_match(DNA_sequance, database_list[0]['AATG'])
 
