@@ -35,13 +35,13 @@ def main():
 
     # get keys list from databes_list
     key_list = list(database_list[0].keys())
-    print(key_list)
-    print(len(key_list))
-    print(key_list[1])
 
+
+    # set STR_list
+    STR_list = []
     for i in range(1,len(key_list)):
-        longest_match(DNA_sequance, key_list[i])
-
+        item = longest_match(DNA_sequance, key_list[i])
+        STR_list.append(item)
 
 
     # TODO: Check database for matching profiles
