@@ -20,7 +20,7 @@ def main():
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-
+    print(database_list)
 
     # TODO: Read DNA sequence file into a variable
 
@@ -45,8 +45,8 @@ def main():
 
     # TODO: Check database for matching profiles
     for i in range(0,len(database_list)):
-        if STR_list[i] == database_list:
-
+        if STR_list[i] == database_list[0][key_list[i]]:
+            
 
 
            # sys.exit(0)
