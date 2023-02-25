@@ -15,7 +15,7 @@ def main():
     database = sys.argv[1]
     try:
         with open(database, "r") as f:
-            reader = csv.reader(f)
+            reader = csv.DictReader(f)
             for row in reader:
                 database_list.append(row)
     except FileNotFoundError:
@@ -49,13 +49,7 @@ def main():
 
     print(database_list)
 
-    for i in range(1,len(database_list)):
-        for j in range(1,len(database_list[1])):
-            if STR_list[j-1] != database_list[i][j]:
-                break
-        
 
-            print(database_list[i][0])
 
 
 
