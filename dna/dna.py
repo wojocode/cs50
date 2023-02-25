@@ -44,12 +44,13 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    for i in range(0,len(database_list)):
-        if STR_list[i] == database_list[0][key_list[i]]:
-            
+    for j in range(0,len(database_list)):
+        for i in range(0,len(database_list)):
+            if STR_list[i] != database_list[j][key_list[i]]:
+                break
 
-
-           # sys.exit(0)
+            print(database_list[j]["name"])
+           
 
    # print("No match")
 
