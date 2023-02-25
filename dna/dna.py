@@ -46,13 +46,10 @@ def main():
     # TODO: Check database for matching profiles
 
     for i in range(1,len(key_list)):
-        if int(STR_list[i-1]) != int(database_list[i-1][key_list[i]]):
-            break
-        else:
-            print(database_list[j]['name'])
+        if int(STR_list[i-1]) == int(database_list[i-1][key_list[i]]):
             continue
 
-
+        print(database_list[i]['name'])
 
 
 
