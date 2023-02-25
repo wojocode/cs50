@@ -45,11 +45,10 @@ def main():
     for j in range(0,len(database_list)):
         for i in range(1,len(key_list)):
             if int(STR_list[i-1]) == int(database_list[j][key_list[i]]):
-                print(j,i)
                 continue
-            else:
+            elif int(STR_list[i-1]) != int(database_list[j][key_list[i]]):
                 break
-        print(database_list[j]['name'])
+            print(database_list[j]['name'])
 
 
 
