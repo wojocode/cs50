@@ -45,8 +45,8 @@ def main():
 
     # TODO: Check database for matching profiles
     for i in range(0,len(database_list)):
-        if STR_list[i] == key_list[i]:
-            
+        if STR_list[i] == database_list:
+
 
 
            # sys.exit(0)
