@@ -50,9 +50,8 @@ def main():
                 break
 
 
+
             print(database_list[j]['name'])
-
-
 
 
 
