@@ -20,7 +20,7 @@ def main():
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-    
+
 
     # TODO: Read DNA sequence file into a variable
 
@@ -36,11 +36,11 @@ def main():
     # get keys list from databes_list
     #key_list = list(database_list[0].keys())
 
-    # set STR_list
+     set STR_list
    # STR_list = []
-    #for i in range(1,len(key_list)):
-     #   item = longest_match(DNA_sequance, key_list[i])
-     #   STR_list.append(item)
+    for i in range(1,len(key_list)):
+        item = longest_match(DNA_sequance, key_list[i])
+        STR_list.append(item)
 
 
     # TODO: Check database for matching profiles
