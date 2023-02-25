@@ -35,17 +35,14 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
      # set STR_list
     STR_list = []
-    for i in range(1,len(database_list[0])):
-        item = longest_match(DNA_sequance, database_list[0][i])
-        STR_list.append(item)
+   # for i in range(1,len(database_list[0])):
+     #   item = longest_match(DNA_sequance, database_list[0][i])
+     #   STR_list.append(item)
 
     print(len(STR_list))
     print(STR_list)
     # TODO: Check database for matching profiles
 
-    for j in range(1, len(database_list[1])):
-        for i in range(1, len(database_list[1])):
-            database_list[i][j] = int(database_list[i][j])
 
     print(database_list)
 
