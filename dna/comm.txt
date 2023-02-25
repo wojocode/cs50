@@ -15,12 +15,12 @@ def main():
     database = sys.argv[1]
     try:
         with open(database, "r") as f:
-            reader = csv.DictReader(f)
+            reader = csv.DictReader(f, fieldnames=("name","AGATC","TTTTTTCT","AATG","TCTAG","GATA","TATC","GAAA","TCTG"))
             for row in reader:
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-    print(database_list)
+    print(database_list[0][])
 
     # TODO: Read DNA sequence file into a variable
 
