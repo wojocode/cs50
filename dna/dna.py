@@ -46,12 +46,8 @@ def main():
         for i in range(1, len(database_list[1])):
             database_list[i][j] = int(database_list[i][j])
 
-    for j in range(1,len(database_list[1])):
-        for i in range(1,len(database_list)):
-            if STR_list[0] in database_list[j][i]:
-                print("jest")
-            else:
-                print("nie")
+    print(database_list)
+   
 
 
 
