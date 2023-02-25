@@ -21,8 +21,7 @@ def main():
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-    print(database_list)
-   
+
     # TODO: Read DNA sequence file into a variable
 
     dna = sys.argv[2]
@@ -37,12 +36,11 @@ def main():
     STR_list = []
     for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance, database_list[0][i])
-        print(database_list[0][i])
         STR_list.append(item)
 
     print(STR_list)
     # TODO: Check database for matching profiles
-
+    print(database_list)
 
 
 
