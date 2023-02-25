@@ -15,12 +15,12 @@ def main():
     database = sys.argv[1]
     try:
         with open(database, "r") as f:
-            reader = csv.DictReader(f)
+            reader = csv.reader(f)
             for row in reader:
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-
+    
 
     # TODO: Read DNA sequence file into a variable
 
@@ -34,18 +34,18 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
 
     # get keys list from databes_list
-    key_list = list(database_list[0].keys())
+    #key_list = list(database_list[0].keys())
 
     # set STR_list
-    STR_list = []
-    for i in range(1,len(key_list)):
-        item = longest_match(DNA_sequance, key_list[i])
-        STR_list.append(item)
+   # STR_list = []
+    #for i in range(1,len(key_list)):
+     #   item = longest_match(DNA_sequance, key_list[i])
+     #   STR_list.append(item)
 
 
     # TODO: Check database for matching profiles
-    print(key_list)
-    print(int(database_list))
+  #  print(key_list)
+  #  print(int(database_list))
 
 
 
