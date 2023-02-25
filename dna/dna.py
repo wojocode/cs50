@@ -42,10 +42,10 @@ def main():
     print(STR_list)
     # TODO: Check database for matching profiles
     print(database_list)
-    for i in range(1, len(database_list)):
+    for i in range(1, len(database_list[1])):
         database_list[i][i] = int(database_list[i][i])
 
-    
+
 
 
 
