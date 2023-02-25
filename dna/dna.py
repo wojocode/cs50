@@ -31,20 +31,21 @@ def main():
             DNA_sequance = f.read()
         except FileNotFoundError:
             print("FILENAME is not correct")
+    # make a key list
+    key_list = list(database_list[0].keys())
 
     # TODO: Find longest match of each STR in DNA sequence
      # set STR_list
     STR_list = []
-   # for i in range(1,len(database_list[0])):
-     #   item = longest_match(DNA_sequance, database_list[0][i])
-     #   STR_list.append(item)
+    for i in range(1,len(key_list)):
+        item = longest_match(DNA_sequance, key_list[i])
+        STR_list.append(item)
 
-    print(len(STR_list))
-    print(STR_list)
+
     # TODO: Check database for matching profiles
+    
 
 
-    print(database_list)
 
 
 
