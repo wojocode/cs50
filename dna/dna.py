@@ -35,7 +35,9 @@ def main():
 
     # get keys list from databes_list
     key_list = list(database_list[0].keys())
-    
+    print(key_list)
+    print(len(key_list))
+    print(key_list[1])
 
     # TODO: Check database for matching profiles
     #for i in range(1,len(database_list)):
