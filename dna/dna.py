@@ -49,10 +49,8 @@ def main():
 
     print(database_list)
 
-    for i in range (0, len(STR_list)):
-        for j in range(1,len(database_list[1])):
-            if STR_list[i] in database_list[j]:
-                print(database_list[j][0])
+
+
 
 
 
