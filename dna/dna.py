@@ -36,9 +36,9 @@ def main():
     # get keys list from databes_list
     #key_list = list(database_list[0].keys())
 
-     set STR_list
-   # STR_list = []
-    for i in range(1,len(key_list)):
+     # set STR_list
+    STR_list = []
+    for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance, key_list[i])
         STR_list.append(item)
 
