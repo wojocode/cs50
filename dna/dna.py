@@ -48,7 +48,8 @@ def main():
         for i in range(1,len(key_list)):
             if int(STR_list[i-1]) != int(database_list[j][key_list[i]]):
                 break
-
+            else:
+                continue
 
 
             print(database_list[j]['name'])
