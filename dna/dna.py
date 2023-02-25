@@ -33,20 +33,15 @@ def main():
             print("FILENAME is not correct")
 
     # TODO: Find longest match of each STR in DNA sequence
-
-    # get keys list from databes_list
-    #key_list = list(database_list[0].keys())
-
      # set STR_list
     STR_list = []
     for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance, database_list[0][i])
         STR_list.append(item)
 
-    print(STR_list)
+    print(database_list)
     # TODO: Check database for matching profiles
-  #  print(key_list)
-  #  print(int(database_list))
+    data = int(database_list[1][1])
 
 
 
