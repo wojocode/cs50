@@ -22,8 +22,6 @@ def main():
         print("FILENAME is not correct")
 
 
-    print(database_list)
-    print(len(database_list))
     # TODO: Read DNA sequence file into a variable
 
     dna = sys.argv[2]
@@ -44,12 +42,14 @@ def main():
 
 
     # TODO: Check database for matching profiles
-
-    for i in range(1,len(key_list)):
-        if int(STR_list[i-1]) == int(database_list[i-1][key_list[i]]):
-            continue
-
-        print(database_list[i]['name'])
+    for j in range(0,len(database_list)):
+        for i in range(1,len(key_list)):
+            if int(STR_list[i-1]) == int(database_list[j][key_list[i]]):
+                print(j,i)
+                continue
+            else:
+                break
+        print(database_list[j]['name'])
 
 
 
