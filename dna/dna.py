@@ -1,21 +1,53 @@
 import csv
 import sys
 
-
 def main():
 
     # TODO: Check for command-line usage
 
+    if len(sys.argv) != 3:
+        print("Usage: python dna.py data.csv sequence.txt")
+        sys.exit(1)
+
     # TODO: Read database file into a variable
-    
+
+    database_list = []
+    database = sys.argv[1]
+    try:
+        with open(database, "r") as f:
+            reader = csv.DictReader(f, fieldnames=("name","AGATC","TTTTTTCT","AATG","TCTAG","GATA","TATC","GAAA","TCTG"))
+            for row in reader:
+                database_list.append(row)
+    except FileNotFoundError:
+        print("FILENAME is not correct")
+    print(database_list)
+
     # TODO: Read DNA sequence file into a variable
+
+    dna = sys.argv[2]
+    with open(dna, "r") as f:
+        try:
+            DNA_sequance = f.read()
+        except FileNotFoundError:
+            print("FILENAME is not correct")
 
     # TODO: Find longest match of each STR in DNA sequence
 
+    AGATC = longest_match(DNA_sequance, database_list[0]['AGATC'])
+
+    AATG = longest_match(DNA_sequance, database_list[0]['AATG'])
+
+    TATC = longest_match(DNA_sequance, database_list[0]['TATC'])
+
+
     # TODO: Check database for matching profiles
+    for i in range(1,len(database_list)):
 
-    return
+        if int(database_list[i]['AGATC']) == AGATC and int(database_list[i]['AATG']) == AATG and int(database_list[i]['TATC']) == TATC:
+            print(database_list[i]['name'])
+            sys.exit(0)
 
+    print("No match")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
@@ -43,11 +75,11 @@ def longest_match(sequence, subsequence):
             # If there is a match in the substring
             if sequence[start:end] == subsequence:
                 count += 1
-            
+
             # If there is no match in the substring
             else:
                 break
-        
+
         # Update most consecutive matches found
         longest_run = max(longest_run, count)
 
