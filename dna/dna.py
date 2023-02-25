@@ -40,7 +40,7 @@ def main():
      # set STR_list
     STR_list = []
     for i in range(1,len(database_list[0])):
-        item = longest_match(DNA_sequance, database_list[i][i])
+        item = longest_match(DNA_sequance, database_list[0][i])
         STR_list.append(item)
 
     print(STR_list)
