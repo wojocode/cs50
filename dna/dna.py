@@ -35,7 +35,7 @@ def main():
 
     # get keys list from databes_list
     key_list = list(database_list[0].keys())
-
+    print(key_list)
     # set STR_list
     STR_list = []
     for i in range(1,len(key_list)):
@@ -46,9 +46,7 @@ def main():
     # TODO: Check database for matching profiles
     for j in range(0,len(database_list)):
         for i in range(0,len(key_list)):
-            print(database_list[j][key_list[i+1]])
-            print(STR_list[i])
-            print()
+            
             if STR_list[i] == database_list[j][key_list[i+1]]:
                 continue
             else:
