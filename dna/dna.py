@@ -22,7 +22,7 @@ def main():
         print("FILENAME is not correct")
 
     print(database_list)
-    print(len(database_list[0]))
+   
     # TODO: Read DNA sequence file into a variable
 
     dna = sys.argv[2]
@@ -37,11 +37,11 @@ def main():
     STR_list = []
     for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance, database_list[0][i])
+        print(database_list[0][i])
         STR_list.append(item)
 
-    print(database_list)
+    print(STR_list)
     # TODO: Check database for matching profiles
-    data = int(database_list[1][1])
 
 
 
