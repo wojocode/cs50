@@ -20,7 +20,7 @@ def main():
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-    print(database_list)
+    
 
     # TODO: Read DNA sequence file into a variable
 
@@ -50,7 +50,7 @@ def main():
                 break
             else:
                 continue
-            
+
 
 
 
