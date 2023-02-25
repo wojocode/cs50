@@ -33,12 +33,9 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
-    AGATC = longest_match(DNA_sequance, database_list)
-
-    AATG = longest_match(DNA_sequance, database_list[0]['AATG'])
-
-    TATC = longest_match(DNA_sequance, database_list[0]['TATC'])
-
+    # get keys from databes_list
+    keys_list = database_list[0].keys()
+    print(keys_list)
 
     # TODO: Check database for matching profiles
     for i in range(1,len(database_list)):
