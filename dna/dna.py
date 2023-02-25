@@ -39,10 +39,10 @@ def main():
      # set STR_list
     STR_list = []
     for i in range(1,len(database_list[0])):
-        item = longest_match(DNA_sequance, key_list[i])
+        item = longest_match(DNA_sequance, database_list[i-1][i])
         STR_list.append(item)
 
-
+    print(STR_list)
     # TODO: Check database for matching profiles
   #  print(key_list)
   #  print(int(database_list))
