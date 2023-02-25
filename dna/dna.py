@@ -45,7 +45,7 @@ def main():
 
     # TODO: Check database for matching profiles
     print(key_list)
-
+    print(int(database_list))
 
 
 
