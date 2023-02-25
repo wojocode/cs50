@@ -21,7 +21,8 @@ def main():
     except FileNotFoundError:
         print("FILENAME is not correct")
 
-
+    print(database_list)
+    print(len(database_list[0]))
     # TODO: Read DNA sequence file into a variable
 
     dna = sys.argv[2]
