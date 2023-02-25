@@ -20,7 +20,7 @@ def main():
                 database_list.append(row)
     except FileNotFoundError:
         print("FILENAME is not correct")
-    print(database_list[0])
+
 
     # TODO: Read DNA sequence file into a variable
 
@@ -34,17 +34,16 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
 
     # get keys from databes_list
-    keys_list = database_list[0].keys()
-    print(keys_list)
+    k_list = database_list[1].keys()
+    
 
     # TODO: Check database for matching profiles
-    for i in range(1,len(database_list)):
+    #for i in range(1,len(database_list)):
 
-        if int(database_list[i]['AGATC']) == AGATC and int(database_list[i]['AATG']) == AATG and int(database_list[i]['TATC']) == TATC:
-            print(database_list[i]['name'])
-            sys.exit(0)
 
-    print("No match")
+           # sys.exit(0)
+
+   # print("No match")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
