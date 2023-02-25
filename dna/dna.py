@@ -33,8 +33,8 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
-    # get keys from databes_list
-    k_list = database_list[1].keys()
+    # get keys list from databes_list
+    key_list = list(database_list[0].keys())
     
 
     # TODO: Check database for matching profiles
