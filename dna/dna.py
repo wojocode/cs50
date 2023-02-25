@@ -47,10 +47,9 @@ def main():
             if int(STR_list[i-1]) != int(database_list[j][key_list[i]]):
                 break
 
-        result = (database_list[j]['name'])
+            break
+    print(database_list[j]['name'])
 
-
-    print(result)
 
 
 def longest_match(sequence, subsequence):
