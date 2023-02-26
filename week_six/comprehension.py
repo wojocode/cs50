@@ -1,6 +1,6 @@
 nums = ["Wojtek", "Ania", "Marek", "Wojtek"]
 add = ["Zbych","Fred"]
 
-nums.extend(add)
+x = nums.index("Ania")
 print(nums)
-
+print(x)
