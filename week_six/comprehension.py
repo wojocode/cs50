@@ -5,5 +5,5 @@ car = {
 }
 
 
-for spec in car:
-    print(spec)
+for spec, val in car.items():
+    print(val)
