@@ -1,8 +1,7 @@
-d1 = {"name":"Wojtek", "iq":"150"}
-d2 = {"iq":"150"}
+d1 = ["name","w","o","j"]
+d2 = ["w","o","j"]
 
-#dd1 = int(d1["iq"])
-#dd2 = int(d2["iq"])
-
-if d1 in d2:
+if d2[0] == d1[1]:
     print("okay")
+
+
