@@ -45,9 +45,9 @@ def main():
     # convert database_list items to int
     for i in range(1,len(database_list)):
         for j in range(1,len(database_list[1])):
-            database[i][j] = int(database[i][j])
+            database_list[i][j] = int(database_list[i][j])
 
-
+    print(database_list)
     #for i in range(1,len(database_list)):
 
 
