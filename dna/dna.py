@@ -39,7 +39,7 @@ def main():
     for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance,database_list[0][i])
         STR_list.append(item)
-    print(STR_list)
+
 
 
     # convert database_list items to int
@@ -47,13 +47,14 @@ def main():
         for j in range(1,len(database_list[1])):
             database_list[i][j] = int(database_list[i][j])
 
-    print(database_list)
+
     # TODO: Check database for matching profiles
 
     for i in range(1,len(database_list)):
         if STR_list == database_list[i][1:len(database_list[i])]:
             print(database_list[i][0])
-
+            sys.exit(0)
+    print("No match")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
