@@ -1,0 +1,1 @@
+d1 = {name = "Wojtek", iq="150"}
