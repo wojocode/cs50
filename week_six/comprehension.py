@@ -1,7 +1,7 @@
 nums = ["Wojtek", "Ania", "Marek", "Wojtek"]
 add = ["Zbych","Fred"]
 
-nums.insert(2,"Ania")
+nums.pop(2)
 
 print(nums)
 
