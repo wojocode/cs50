@@ -1,6 +1,6 @@
-nums = [x*2 for x in range(1,10,2)]
+nums = ["Wojtek", "Ania", "Marek", "Wojtek"]
 print(nums)
 
-x = nums.count(2)
+x = nums.count("Wojtek")
 print(nums)
 print(x)
