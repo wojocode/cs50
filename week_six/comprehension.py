@@ -1,7 +1,7 @@
-nums = ["Wojtek", "Ania", "Marek", "Wojtek"]
+nums = ["Wojtek", "Ania", "Marek", "Wojtek", 'Marek']
 add = ["Zbych","Fred"]
 
-nums.pop(2)
+nums.remove('Marek')
 
 print(nums)
 
