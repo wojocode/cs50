@@ -1,4 +1,4 @@
-nums = ["Wojtek", "Ania", "Marek", "Wojtek", 'Marek']
+nums = [1, 5, 3, 0, 2]
 add = ["Zbych","Fred"]
 
 nums.sort()
