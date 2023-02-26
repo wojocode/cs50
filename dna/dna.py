@@ -15,7 +15,7 @@ def main():
     database = sys.argv[1]
     try:
         with open(database, "r") as f:
-            reader = csv.DictReader(f)
+            reader = csv.reader(f)
             for row in reader:
                 database_list.append(row)
     except FileNotFoundError:
@@ -30,8 +30,8 @@ def main():
             DNA_sequance = f.read()
         except FileNotFoundError:
             print("FILENAME is not correct")
-    # make a key list
-    key_list = list(database_list[0].keys())
+
+    
 
     # TODO: Find longest match of each STR in DNA sequence
      # set STR_list
