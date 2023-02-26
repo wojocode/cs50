@@ -1,7 +1,7 @@
-nums = [1, 5, 3, 0, 2]
-add = ["Zbych","Fred"]
+nums = [
+    ("Wojtek" , 150), ("Mary" , 140)
+]
 
-nums.sort()
-
-print(nums)
-
+x = nums[1].count("Mary")
+print(nums[1])
+print(x)
