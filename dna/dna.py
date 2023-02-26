@@ -4,13 +4,12 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-
     if len(sys.argv) != 3:
         print("Usage: python dna.py data.csv sequence.txt")
         sys.exit(1)
 
-    # TODO: Read database file into a variable
 
+    # TODO: Read database file into a variable
     database_list = []
     database = sys.argv[1]
     try:
@@ -23,7 +22,6 @@ def main():
 
 
     # TODO: Read DNA sequence file into a variable
-
     dna = sys.argv[2]
     with open(dna, "r") as f:
         try:
@@ -34,7 +32,7 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-     # set STR_list
+    # set STR_list
     STR_list = []
     for i in range(1,len(database_list[0])):
         item = longest_match(DNA_sequance,database_list[0][i])
@@ -49,12 +47,12 @@ def main():
 
 
     # TODO: Check database for matching profiles
-
     for i in range(1,len(database_list)):
         if STR_list == database_list[i][1:len(database_list[i])]:
             print(database_list[i][0])
             sys.exit(0)
     print("No match")
+
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
