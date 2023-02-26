@@ -42,7 +42,7 @@ def main():
     print(STR_list)
 
     # TODO: Check database for matching profiles
-    
+    print(database_list)
 
 
 
