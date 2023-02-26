@@ -3,7 +3,7 @@ car = {
   "model": "Mustang",
   "year": 1964
 }
-car.update({"color": "White"})
 
 
-print(car)
+for spec in car:
+    print(spec)
