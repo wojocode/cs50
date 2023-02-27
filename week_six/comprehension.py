@@ -1,5 +1,5 @@
 text = "Wojtas jest wymiataczem"
 
-word = text.split()
-print(word)
-print(word[2])
+words = text.split()
+for word in words:
+    print(word)
