@@ -1,8 +1,4 @@
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+text = "Wojtas jest wymiataczem"
 
-text= "Wojtas jest super"
-print(text[1:5])
+word = text.split()
+print(word)
