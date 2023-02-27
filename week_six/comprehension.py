@@ -2,4 +2,6 @@ text = "Wojtas jest wymiataczem"
 
 words = text.split()
 for word in words:
-    print(word)
+  for i in word:
+    print(i,end=" # ")
+print()
