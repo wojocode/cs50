@@ -4,6 +4,5 @@ car = {
   "year": 1964
 }
 
-
-for spec, val in car.items():
-    print(val)
+text= "Wojtas jest super"
+print(text[1:5])
