@@ -14,5 +14,5 @@ def get_value(language):
         return counts[language]
 
 
-for row in sorted(get_value(favorits)):
+for row in sorted(counts, key= get_value):
     print(f"{row}: {counts[row]}")
