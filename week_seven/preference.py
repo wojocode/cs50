@@ -5,9 +5,9 @@ with open("preference.csv" , "r") as file:
     counts = dict()
     for row in reader:
         if row["language"] in reader:
-            counts["language"]+= 1
-
+            favorits = row["language"]
+            counts[favorits]+= 1
         else:
-            counts["language"] = 1
+            counts[favorits] = 1
 
 print(counts)
