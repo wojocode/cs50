@@ -10,10 +10,10 @@ with open("preference.csv" , "r") as file:
         else:
             counts[favorits] = 1
 
-#first version - you can pass this function to key atributes but not call it therein because sorted function call it itself 
+#first version - you can pass this function to key atributes but not call it therein because sorted function call it itself
 #def get_value(language):
        # return counts[language]
 
 
-for row in sorted(counts, key= lambda language : counts[language],reverse = True):
+for row in sorted(counts, key= lambda language: counts[language], reverse = True):
     print(f"{row}: {counts[row]}")
