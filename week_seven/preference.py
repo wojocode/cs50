@@ -11,4 +11,4 @@ with open("preference.csv" , "r") as file:
             counts[favorits] = 1
 
 for row in counts:
-    print(row,row[])
+    print(f"{row}: {counts[row]}")
