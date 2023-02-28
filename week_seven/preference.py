@@ -4,8 +4,7 @@ with open("preference.csv" , "r") as file:
     reader = csv.DictReader(file)
     counts = dict()
     for row in reader:
-        favorits = row["problem"]
-
+        favorits = row["problem"].capitalize()
         if favorits in counts:
             counts[favorits]+= 1
         else:
@@ -19,6 +18,10 @@ with open("preference.csv" , "r") as file:
 #for row in sorted(counts, key= lambda problem: counts[problem], reverse = True):
  #   print(f"{row}: {counts[row]}")
 
-
 user = input("problem: ")
-print(counts[user])
+user = user.capitalize()
+if user in counts:
+    print(f"{user}: {counts[user]}")
+else:
+    print("problem not found")
+    
