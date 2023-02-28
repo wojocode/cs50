@@ -3,9 +3,9 @@ import csv
 with open("preference.csv" , "r") as file:
     reader = csv.DictReader(file)
     counts = dict()
-    for row in reader.islower():
-        favorits = row["problem"]
-        favorits = favorits.islower()
+    for row in reader:
+        favorits = row["problem"].islower()
+
         if favorits in counts:
             counts[favorits]+= 1
         else:
