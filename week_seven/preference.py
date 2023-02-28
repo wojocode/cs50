@@ -3,8 +3,9 @@ import csv
 with open("preference.csv" , "r") as file:
     reader = csv.DictReader(file)
     counts = dict()
-    for row in reader:
+    for row in reader.islower():
         favorits = row["problem"]
+        favorits = favorits.islower()
         if favorits in counts:
             counts[favorits]+= 1
         else:
@@ -14,6 +15,10 @@ with open("preference.csv" , "r") as file:
 #def get_value(language):
        # return counts[language]
 
+#second version with lambda functionality (no-name short functions)
+#for row in sorted(counts, key= lambda problem: counts[problem], reverse = True):
+ #   print(f"{row}: {counts[row]}")
 
-for row in sorted(counts, key= lambda problem: counts[problem], reverse = True):
-    print(f"{row}: {counts[row]}")
+
+user = input("problem: ")
+print(counts[user])
