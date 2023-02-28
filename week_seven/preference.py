@@ -19,7 +19,7 @@ with open("preference.csv" , "r") as file:
  #   print(f"{row}: {counts[row]}")
 
 user = input("problem: ")
-user = user.capitalize()
+user = user.capitalize().strip()
 if user in counts:
     print(f"{user}: {counts[user]}")
 else:
