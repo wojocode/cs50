@@ -10,5 +10,9 @@ with open("preference.csv" , "r") as file:
         else:
             counts[favorits] = 1
 
-for row in sorted(counts):
+def get_value(language):
+        return counts(language)
+
+
+for row in sorted(counts, get_value(counts)):
     print(f"{row}: {counts[row]}")
