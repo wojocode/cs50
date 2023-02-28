@@ -11,8 +11,8 @@ with open("preference.csv" , "r") as file:
             counts[favorits] = 1
 
 def get_value(language):
-        return counts(language)
+        return counts[language]
 
 
-for row in sorted(counts, get_value(counts)):
+for row in sorted(get_value(favorits)):
     print(f"{row}: {counts[row]}")
