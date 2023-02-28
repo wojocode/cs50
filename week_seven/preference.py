@@ -4,7 +4,7 @@ with open("preference.csv" , "r") as file:
     reader = csv.DictReader(file)
     counts = dict()
     for row in reader:
-        favorits = row["problem"].islower()
+        favorits = row["problem"]
 
         if favorits in counts:
             counts[favorits]+= 1
