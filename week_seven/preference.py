@@ -1,26 +1,5 @@
-import csv
+# SQL function from cs50 allows me to open a db file in python
+from cs50 import SQL
 
-with open("preference.csv" , "r") as file:
-    reader = csv.DictReader(file)
-    counts = dict()
-    for row in reader:
-        favorits = row["problem"].capitalize().strip()
-        if favorits in counts:
-            counts[favorits]+= 1
-        else:
-            counts[favorits] = 1
+db = SQL("sqlite:///)
 
-#first version - you can pass this function to key atributes but not call it therein because sorted function call it itself
-#def get_value(language):
-       # return counts[language]
-
-#second version with lambda functionality (no-name short functions)
-#for row in sorted(counts, key= lambda problem: counts[problem], reverse = True):
- #   print(f"{row}: {counts[row]}")
-
-user = input("problem: ")
-user = user.capitalize().strip()
-if user in counts:
-    print(f"{user}: {counts[user]}")
-else:
-    print("problem not found")
