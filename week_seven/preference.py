@@ -5,7 +5,7 @@ db = SQL("sqlite:///favorites.db")
 
 favorite = input("problem: ")
 
-rows = db.execute("SELECT * FROM favorites WHERE problem ='Mario'")
+rows = db.execute("SELECT * FROM favorites WHERE problem ='mario'")
 
 for row in rows:
     print(row["language"])
