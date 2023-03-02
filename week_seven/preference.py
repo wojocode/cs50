@@ -8,7 +8,7 @@ favorite = input("problem: ")
 rows = db.execute("SELECT * FROM favorites WHERE problem ='mario'")
 
 for row in rows:
-    print(row["language"])
+    print(row)
 
 
 
