@@ -21,4 +21,4 @@ for row in house_name:
 house_assignment = old_db.execute("SELECT id,house FROM students")
 #insert assignment
 for row in house_assignment:
-    new_db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES(?,houses.house)",row['id'])
+    new_db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES(?,?)",row['id'],)
