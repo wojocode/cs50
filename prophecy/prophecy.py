@@ -8,6 +8,6 @@ try:
         with open("students.csv", "r") as file:
             reader = csv.DictReader(file)
             for team in reader:
-                team['student_name']
+                db.execute("INSERT INTO students (student_name) VALUES (?)",team['student_name'])
 except FileNotFoundError:
-        print("FILENAME is not correct")
+        print("FILENAME is not correct")    
