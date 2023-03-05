@@ -8,7 +8,6 @@ new_db = SQL("sqlite:///ros.db")
 #get student_name from old database
 student_name = old_db.execute("SELECT student_name FROM students")
 #insert student_name to new table
-print(student_name)
-#for row in student_name:
-    #new_db.execute("INSERT INTO students () VALUES(?)",row)
+for row in student_name:
+    new_db.execute("INSERT INTO students (student_name) VALUES(?)",row['student_name'])
 
