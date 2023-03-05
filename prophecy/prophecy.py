@@ -19,6 +19,7 @@ for row in house_name:
 
 #get assignment
 house_assignment = old_db.execute("SELECT id,house FROM students")
+
 #insert assignment
 for row in house_assignment:
     assign = new_db.execute("SELECT id FROM houses WHERE house = ? LIMIT 10",row['house'])
