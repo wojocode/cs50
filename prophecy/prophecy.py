@@ -10,5 +10,6 @@ try:
 
             for team in reader:
                 db.execute("INSERT INTO students (student_name) VALUES (?)",team['student_name'])
+                db.execute("INSERT INTO houses (house) VALUES (?)",team['house'])
 except FileNotFoundError:
         print("FILENAME is not correct")
