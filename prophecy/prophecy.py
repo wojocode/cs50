@@ -7,7 +7,8 @@ db = SQL("sqlite:///ros.db")
 try:
         with open("students.csv", "r") as file:
             reader = csv.DictReader(file)
+
             for team in reader:
                 db.execute("INSERT INTO students (student_name) VALUES (?)",team['student_name'])
 except FileNotFoundError:
-        print("FILENAME is not correct")    
+        print("FILENAME is not correct")
