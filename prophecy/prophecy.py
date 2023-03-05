@@ -12,4 +12,4 @@ for row in student_name:
     new_db.execute("INSERT INTO students (student_name) VALUES(?)",row['student_name'])
 
 #insert house_name to new table
-new_db.execute("INSERT INTO houses (house,house,house,house) VALUES('Gryffindor','Ravenclaw','Hufflepuff','Slytherin')")
+new_db.execute("INSERT INTO houses (house) VALUES(Gryffindor)")
