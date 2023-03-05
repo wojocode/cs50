@@ -5,8 +5,7 @@ CREATE TABLE students (
 );
 CREATE TABLE houses (
     id INTEGER NOT NULL,
-    house TEXT ,
-    head TEXT ,
+    house TEXT NOT NULL ,
     PRIMARY KEY(id)
 );
 CREATE TABLE house_assignment (
