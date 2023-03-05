@@ -12,8 +12,8 @@ for row in student_name:
     new_db.execute("INSERT INTO students (student_name) VALUES(?)",row['student_name'])
 
 #get house_name
-house_name = old_db.execute("SELECT house FROM students")
+house_name = old_db.execute("SELECT house FROM students GROUP BY house")
 #insert house_name to new table
 print(house_name)
-#for row in house_name:
-   # new_db.execute("INSERT INTO houses (house) VALUES(?)",row['house'])
+for row in house_name:
+    new_db.execute("INSERT INTO houses (house) VALUES(?)",row['house'])
