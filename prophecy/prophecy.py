@@ -2,7 +2,7 @@ from cs50 import SQL
 
 import csv
 
-db = SQL("sqlite:///ros.db")
+db = SQL("sqlite:///database.db")
 
 try:
         with open("students.csv", "r") as file:
