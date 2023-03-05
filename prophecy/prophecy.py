@@ -17,4 +17,8 @@ house_name = old_db.execute("SELECT house FROM students GROUP BY house")
 for row in house_name:
     new_db.execute("INSERT INTO houses (house) VALUES(?)",row['house'])
 
+#get assignment
 house_assignment = old_db.execute("SELECT id,house FROM students")
+#insert assignment
+for row in house_assignment:
+    new_db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES(?,?)",row['id'],row['house'])
