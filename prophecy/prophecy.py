@@ -5,5 +5,5 @@ db = SQL("sqlite:///roster.db")
 new_db = SQL("sqlite:///database.db")
 
 rows = db.execute("SELECT student_name from students")
-new_db.execute("INSERT INTO students VALUES (?)",rows['stu])
+new_db.execute("INSERT INTO students VALUES (?)",rows[0]['student_name'])
 
