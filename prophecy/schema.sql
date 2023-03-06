@@ -9,8 +9,8 @@ CREATE TABLE houses (
     PRIMARY KEY(id)
 );
 CREATE TABLE house_assignment (
-    student_id  INT NOT NULL,
-    house_id  INT NOT NULL,
+    student_id  INT ,
+    house_id  INT ,
     FOREIGN KEY(student_id) REFERENCES students(id),
     FOREIGN KEY(house_id) REFERENCES houses(id)
 );

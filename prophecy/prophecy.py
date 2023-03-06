@@ -3,7 +3,7 @@ from cs50 import SQL
 db = SQL("sqlite:///roster.db")
 
 new_db = SQL("sqlite:///database.db")
-'''
+
 #select students_name
 rows = db.execute("SELECT student_name from students")
 #inser student_name
@@ -15,18 +15,16 @@ rows = db.execute("SELECT house FROM students GROUP BY house")
 #insert houses
 for row in rows:
         new_db.execute("INSERT INTO houses (house) VALUES (?)",row['house'])
-'''
+
 
 #select student
 rows = db.execute("SELECT id,house from students")
 #insert student
 for row in rows:
-        print(row)
-        #new_db.execute("INSERT INTO house_assignment (student_id) VALUES (?)",row['id'])
+        new_db.execute("INSERT INTO house_assignment (student_id) VALUES (?)",row['id'])
         hous = new_db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
-        print(hous)
-        #for r in hous:
-           #     new_db.execute("INSERT INTO house_assignment (house_id) VALUES (?)",r['id'])
+        for r in hous:
+                new_db.execute("INSERT INTO house_assignment (house_id) VALUES (?)",r['id'])
 
 
 
