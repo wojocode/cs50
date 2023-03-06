@@ -10,9 +10,9 @@ rows = db.execute("SELECT student_name from students")
 for row in rows:
         new_db.execute("INSERT INTO students (student_name) VALUES (?)",row['student_name'])
 
-#select houses
-rows = db.execute("SELECT house FROM students GROUP BY house")
-#insert houses
+#select houses and head
+rows = db.execute("SELECT house,head FROM students GROUP BY house,head")
+#insert houses, head
 for row in rows:
         new_db.execute("INSERT INTO houses (house) VALUES (?)",row['house'])
 
