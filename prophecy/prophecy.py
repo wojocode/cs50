@@ -18,11 +18,11 @@ for row in rows:
 '''
 
 #select student
-rows = db.execute("SELECT id from students")
+rows = db.execute("SELECT id,house from students")
 #insert student
 for row in rows:
         new_db.execute("INSERT INTO house_assignment (student_id) VALUES (?)",row['id'])
-for row in rows:
         
+
 
 
