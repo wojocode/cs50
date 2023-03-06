@@ -21,7 +21,7 @@ rows = db.execute("SELECT id,house from students")
 #insert student
 for row in rows:
         new_db.execute("INSERT INTO house_assignment (student_id) VALUES (?)",row['id'])
-        hous = new_db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
+hous = new_db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
 for r in hous:
         new_db.execute("INSERT INTO house_assignment (house_id) VALUES (?)",r['id'])
 
