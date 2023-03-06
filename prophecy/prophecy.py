@@ -24,5 +24,3 @@ for row in rows:
         for r in hous:
                 new_db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['id'],r['id'])
 
-
-
