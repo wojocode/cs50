@@ -22,5 +22,7 @@ rows = db.execute("SELECT id from students")
 #insert student
 for row in rows:
         new_db.execute("INSERT INTO house_assignment (student_id) VALUES (?)",row['id'])
-for r in rows:
+for row in rows:
         
+
+
