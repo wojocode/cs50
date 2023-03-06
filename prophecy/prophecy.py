@@ -14,3 +14,5 @@ for row in rows:
 rows = db.execute("SELECT house FROM students GROUP BY house")
 for row in rows:
         new_db.execute("INSERT INTO houses (house) VALUES (?)",row['house'])
+
+
