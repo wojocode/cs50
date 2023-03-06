@@ -4,6 +4,10 @@ db = SQL("sqlite:///roster.db")
 
 new_db = SQL("sqlite:///database.db")
 
+#select students_name
 rows = db.execute("SELECT student_name from students")
-new_db.execute("INSERT INTO students VALUES (?)",rows[0]['student_name'])
+#inser student_name
+for row in rows:
+        new_db.execute("INSERT INTO students (student_name) VALUES (?)",row['student_name'])
+
 
