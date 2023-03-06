@@ -12,7 +12,9 @@ for row in rows:
 
 #select houses
 rows = db.execute("SELECT house FROM students GROUP BY house")
+#insert houses
 for row in rows:
         new_db.execute("INSERT INTO houses (house) VALUES (?)",row['house'])
+
 
 
