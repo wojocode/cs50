@@ -47,3 +47,6 @@ for row in rows:
 
 
 
+query for all of hogwards students:
+SELECT student_name FROM students WHERE id IN
+   ...> (SELECT student_id FROM house_assignment WHERE house_id = 1);

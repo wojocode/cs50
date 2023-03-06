@@ -16,9 +16,9 @@ rows = db.execute("SELECT house,head FROM students GROUP BY house,head")
 for row in rows:
         new_db.execute("INSERT INTO houses (house,head) VALUES (?,?)",row['house'],row['head'])
 
-#select student
+#select student id and house
 rows = db.execute("SELECT id,house from students")
-#insert student
+#insert student_id , house_id 
 for row in rows:
         hous = new_db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
         for r in hous:
