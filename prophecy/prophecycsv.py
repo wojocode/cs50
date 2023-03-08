@@ -45,3 +45,6 @@ db = SQL("sqlite:///roster.db")
 #for row in houses:
    # db.execute("INSERT INTO houses (house,head) VALUES (?,?)",row["house"],row["head"])
 
+#combine
+for row in combine:
+    db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES(?,?)",SELECT)
