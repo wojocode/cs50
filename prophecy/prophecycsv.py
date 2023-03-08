@@ -5,6 +5,13 @@ def get_student(name,students):
     students.append({"student_name":name})
 
 
+def get_house(house,head,houses):
+    
+
+
+
+
+
 #declare lists
 students = []
 houses = []
