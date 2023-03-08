@@ -47,4 +47,4 @@ for row in houses:
 
 #combine
 for row in combine:
-    db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['student_id'],row['house'])
+    db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['student_name'],row['house'])
