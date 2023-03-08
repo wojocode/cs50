@@ -14,7 +14,7 @@ def get_house(house,head,houses):
 
 
 def get_combine(name,house):
-    combine.append({"student_id":name, "house":house})
+    combine.append({"student_name":name, "house":house})
 
 
 #declare lists
@@ -32,7 +32,7 @@ with open('students.csv', "r") as csvfile:
         get_house(house,head,houses)
         get_combine(name,house)
 
-print(combine)
+
 #open database
 db = SQL("sqlite:///roster.db")
 
@@ -47,4 +47,4 @@ for row in houses:
 
 #combine
 for row in combine:
-    db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['student_name'],row['house'])
+    db.execute("INSERT INTO house_assignment (student_name,house) VALUES (?,?)",row['student_name'],row['house'])
