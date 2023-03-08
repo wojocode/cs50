@@ -6,8 +6,6 @@ def get_student(name,students):
 
 
 def get_house(house,head,houses):
-    
-
 
 
 
