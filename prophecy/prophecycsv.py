@@ -47,6 +47,6 @@ for row in houses:
 
 #combine
 for row in rows:
-        hous = db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
-        for r in hous:
+        hou = db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
+        for r in hou:
                 db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['id'],r['id'])
