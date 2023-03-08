@@ -1,2 +1,2 @@
 I would assign color for each song characteristics and create audio aura color spectrum.
-I would use calculation to present hue 
+I would use calculation to present hue audio aura.
