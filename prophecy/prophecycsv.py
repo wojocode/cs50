@@ -2,10 +2,8 @@ from cs50 import SQL
 import csv
 
 def get_student(student,students):
-    students.append(student)
+    students.append({"student_name":student})
 
-def get_house():
-    
 
 
 
@@ -19,3 +17,4 @@ with open('students.csv', "r") as csvfile:
     for row in rows:
         get_student(row["student_name"],students)
 
+print(students)
