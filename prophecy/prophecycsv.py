@@ -32,19 +32,21 @@ with open('students.csv', "r") as csvfile:
         get_house(house,head,houses)
         get_combine(name,house)
 
-print(combine)
+
 #open database
 db = SQL("sqlite:///roster.db")
 
-# insert lists to database
+#insert lists to database
 #student
-#for row in students:
-   # db.execute("INSERT INTO new_student (student_name) VALUES (?)",row["student_name"])
+for row in students:
+   db.execute("INSERT INTO new_student (student_name) VALUES (?)",row["student_name"])
 
 #house,head
-#for row in houses:
-   # db.execute("INSERT INTO houses (house,head) VALUES (?,?)",row["house"],row["head"])
+for row in houses:
+   db.execute("INSERT INTO houses (house,head) VALUES (?,?)",row["house"],row["head"])
 
 #combine
-for row in combine:
-    db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES(?,?)",SELECT)
+for row in rows:
+        hous = db.execute("SELECT id FROM houses WHERE house = ?",row['house'])
+        for r in hous:
+                db.execute("INSERT INTO house_assignment (student_id,house_id) VALUES (?,?)",row['id'],r['id'])
