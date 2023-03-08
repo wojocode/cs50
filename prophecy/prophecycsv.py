@@ -12,6 +12,11 @@ def get_house(house,head,houses):
     if count == 0:
         houses.append({"house":house,"head":head})
 
+
+def get_combine(name,house):
+    combine.append({"student_id":name, "house":house})
+
+
 #declare lists
 students = []
 houses = []
@@ -25,8 +30,9 @@ with open('students.csv', "r") as csvfile:
         head = row["head"]
         get_student(name,students)
         get_house(house,head,houses)
+        get_combine(name,house)
 
-
+print(combine)
 #open database
 db = SQL("sqlite:///roster.db")
 
