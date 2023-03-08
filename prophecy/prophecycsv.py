@@ -14,8 +14,14 @@ with open('students.csv', "r") as csvfile:
     rows = csv.DictReader(csvfile)
     for row in rows:
         name = row["student_name"]
-
+        house = row["house"]
+        head = row["head"]
         get_student(name,students)
+
+
+
+
+
 
 
 # insert lists to database
