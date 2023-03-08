@@ -24,8 +24,11 @@ with open('students.csv', "r") as csvfile:
 
 
 
-# insert lists to database
+#open database
 db = SQL("sqlite:///roster.db")
+
+# insert lists to database
+#student
 for row in students:
     db.execute("INSERT INTO new_student (student_name) VALUES (?)",row["student_name"])
 
