@@ -7,8 +7,7 @@ def get_student(name,students):
 def get_house(house,head,houses):
     count = 0
     for h in houses:
-        if h in houses:
-            count+= 1
+        count+= 1
     if count == 0:
         houses.append({"house":house,"head":head})
 
