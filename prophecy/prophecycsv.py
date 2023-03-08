@@ -17,4 +17,3 @@ with open('students.csv', "r") as csvfile:
     for row in rows:
         get_student(row["student_name"],students)
 
-print(students)
