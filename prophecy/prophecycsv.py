@@ -5,7 +5,6 @@ def get_student(name,students):
     students.append({"student_name":name})
 
 
-
 #declare lists
 students = []
 houses = []
