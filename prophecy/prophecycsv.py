@@ -5,11 +5,12 @@ def get_student(name,students):
     students.append({"student_name":name})
 
 def get_house(house,head,houses):
+    #adding unique values to houses list
     count = 0
-    for h in houses:
-        if h["house"] == house:
-            count = count + 1
-    if count == 0:
+    for h in houses:  # iterate houses
+        if h["house"] == house: # checking values from list with arg
+            count = count + 1 # if the same increment count
+    if count == 0: 
         houses.append({"house":house,"head":head})
 
 def get_combine(name,house):
