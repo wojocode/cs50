@@ -6,8 +6,10 @@ def get_student(name,students):
 
 
 def get_house(house,head,houses):
-
-
+    count = 0
+    for h in houses:
+        
+    houses.append({"house":house,"head":head})
 
 
 #declare lists
