@@ -7,8 +7,10 @@ def get_student(name,students):
 def get_house(house,head,houses):
     count = 0
     for h in houses:
-
-    houses.append({"house":house,"head":head})
+        if h in houses:
+            count+= 1
+    if count == 0:
+        houses.append({"house":house,"head":head})
 
 
 #declare lists
@@ -23,18 +25,18 @@ with open('students.csv', "r") as csvfile:
         house = row["house"]
         head = row["head"]
         get_student(name,students)
+        get_house(house,head,houses)
 
-
-
+print(houses)
 
 
 
 
 #open database
-db = SQL("sqlite:///roster.db")
+#db = SQL("sqlite:///roster.db")
 
 # insert lists to database
 #student
-for row in students:
-    db.execute("INSERT INTO new_student (student_name) VALUES (?)",row["student_name"])
+#for row in students:
+   # db.execute("INSERT INTO new_student (student_name) VALUES (?)",row["student_name"])
 
