@@ -6,3 +6,7 @@ students = []
 houses = []
 combine = []
 
+with open('students.csv', "r") as csvfile:
+    rows = csv.DictReader(csvfile):
+    for row in rows:
+        
