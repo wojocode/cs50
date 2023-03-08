@@ -9,8 +9,8 @@ def get_house(house,head,houses):
     for h in houses:
         if house in houses:
             count+= 1
-    if count == 0:
-        houses.append({"house":house,"head":head})
+        if count == 0:
+            houses.append({"house":house,"head":head})
 
 
 #declare lists
