@@ -12,7 +12,6 @@ def get_house(house,head,houses):
     if count == 0:
         houses.append({"house":house,"head":head})
 
-
 def get_combine(name,house):
     combine.append({"student_name":name, "house":house})
 
