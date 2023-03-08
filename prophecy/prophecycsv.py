@@ -4,11 +4,10 @@ import csv
 def get_student(name,students):
     students.append({"student_name":name})
 
-
 def get_house(house,head,houses):
     count = 0
     for h in houses:
-        
+
     houses.append({"house":house,"head":head})
 
 
