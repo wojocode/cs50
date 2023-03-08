@@ -5,12 +5,12 @@ def get_student(name,students):
     students.append({"student_name":name})
 
 def get_house(house,head,houses):
+    count = 0
     for h in houses:
-        count = 0
-        if house in houses:
+        if h["house"] == house:
             count = count + 1
-           
-            houses.append({"house":house["house"],"head":head})
+    if count == 0:
+        houses.append({"house":house,"head":head})
 
 
 #declare lists
