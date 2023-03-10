@@ -1,1 +1,1 @@
-SELECT title, rating FROM movies, ratings;
+SELECT title FROM movies WHERE year = 2010 LIMIT 10;
