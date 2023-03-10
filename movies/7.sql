@@ -1,1 +1,2 @@
-SELECT title FROM movies WHERE year = 2010 LIMIT 10;
+SELECT movies.title , ratings.rating FROM movies
+    JOIN ratings ON ratings.movie_id = movies.id WHERE year = 2010 LIMIT 10;
