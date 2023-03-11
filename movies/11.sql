@@ -1,2 +1,2 @@
 SELECT title FROM movies
-WHERE id IN (SELECT movie_id FROM ratings ORDER BY rating ASC) LIMIT 10;
+WHERE id IN (SELECT movie_id FROM ratings ORDER BY rating DESC);
