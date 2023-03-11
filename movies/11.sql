@@ -1,4 +1,4 @@
-SELECT title FROM movies
+SELECT title, rating FROM movies , ratings
 WHERE id IN (SELECT movie_id FROM stars
     WHERE person_id IN (SELECT id FROM people
         WHERE name = "Chadwick Boseman" AND id IN (SELECT person_id FROM stars
