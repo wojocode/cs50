@@ -6,7 +6,3 @@ SELECT id FROM movies WHERE id IN
 WHERE person_id IN (SELECT id FROM people WHERE name = "Chadwick Boseman"));
 
 
-
-
-
-
