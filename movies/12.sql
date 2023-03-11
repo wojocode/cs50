@@ -1,5 +1,5 @@
 SELECT title FROM movies
-    
+    JOIN movies.id ON stars.movie_id;
 
 
 
