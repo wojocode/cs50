@@ -11,7 +11,3 @@ WHERE id IN (SELECT movie_id FROM ratings ORDER BY rating DESC) AND id IN (SELEC
         WHERE name = "Chadwick Boseman"));
         '''
 
-SELECT title FROM movies
-JOIN stars
-ON movies.id = stars.movie_id
-WHERE  LIMIT 10;
