@@ -1,1 +1,3 @@
-SELECT title FROM movies 
+SELECT title FROM movies
+WHERE id IN (SELECT movie_id FROM stars
+WHERE movie_id IN )
