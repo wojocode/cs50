@@ -4,5 +4,6 @@ SELECT title FROM movies WHERE id IN
 AND movie_id IN (SELECT movie_id FROM ratings ORDER BY rating DESC)) LIMIT 5;
 
 
+SELECT title FROM movies WHERE id IN (SELECT movie_id FROM ratings ORDER BY rating DESC LIMIT 5) 
 
 
