@@ -1,4 +1,3 @@
-
 SELECT title FROM movies
 WHERE id in
 (SELECT movie_id FROM stars
