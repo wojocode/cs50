@@ -5,7 +5,8 @@ WHERE movies.id IN
 
 
 
-
+SELECT movie id FROM stars
+WHERE person_id FROM stars IN ()
 
 
 
