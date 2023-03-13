@@ -8,3 +8,6 @@ WHERE name = "Chadwick Boseman" AND ratings.movie_id ORDER BY rating DESC LIMIT 
 
 
 SELECT movie_id FROM ratings ORDER BY rating DESC LIMIT 5;
+
+
+"Chadwick Boseman"
