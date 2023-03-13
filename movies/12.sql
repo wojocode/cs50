@@ -1,10 +1,11 @@
 
-SELECT title FROM  
-SELECT movie_id FROM stars
+SELECT title FROM movies
+WHERE id in
+(SELECT movie_id FROM stars
 WHERE stars.person_id IN
 (SELECT id FROM people WHERE name = "Johnny Depp" OR name = "Helena Bonham Carter")
-GROUP BY movie_id;
-HAVING COUNT(movie_id) > 1;
+GROUP BY movie_id
+HAVING COUNT(movie_id) > 1);
 
 
 
