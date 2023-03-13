@@ -2,7 +2,7 @@ SELECT movies.title
 FROM movies,stars,people
 
 
-SELECT movies.id
+SELECT movies.title
 FROM movies,stars,people
 WHERE movies.id IN
 (SELECT movie_id FROM stars
