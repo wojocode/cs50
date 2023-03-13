@@ -1,8 +1,11 @@
 SELECT movies.title
 FROM movies,stars,people
-WHERE people.name = "Johnny Depp" OR people.name = "Helena Bonham Carter"
+WHERE movies.id IN (SELECT movie_id FROM movies WHERE people.name = "Johnny Depp" OR people.name = "Helena Bonham Carter")
 AND movies.id = stars.movie_id
-AND stars.person_id = people.id;
+AND people.id = stars.person_id;
+
+
+
 
 
 
