@@ -13,7 +13,6 @@ WHERE stars.person_id IN (SELECT id FROM people WHERE name = "Johnny Depp");
 
 
 
-
 SELECT movies.title
 FROM movies,stars,people
 WHERE movies.id IN
