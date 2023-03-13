@@ -8,8 +8,7 @@ WHERE movies.id IN
 (SELECT movie_id FROM stars
 WHERE stars.person_id IN
 (SELECT id FROM people WHERE name = "Johnny Depp" OR name = "Helena Bonham Carter"))
-AND movies.id = stars.movie_id;
-AND people.id = stars.person_id;
+
 
 
 
