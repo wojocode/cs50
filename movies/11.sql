@@ -5,4 +5,4 @@ WHERE person_id IN (SELECT id FROM people WHERE name = "Chadwick Boseman")) ORDE
 
 
 
-SELECT rating FROM ratings WHERE movie_id = 453562;
+SELECT rating FROM ratings WHERE movie_id = 10514222;
