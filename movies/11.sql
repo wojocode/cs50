@@ -9,5 +9,5 @@ WHERE person_id IN (SELECT id FROM people WHERE name = "Chadwick Boseman")) ORDE
 
 SELECT title FROM movies
  WHERE id IN (SELECT movie_id FROM ratings WHERE rating = 9.9)
- JOIN id
+ INNER JOIN movies.id
  ON ratings.movie_id = movies.id;
