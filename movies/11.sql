@@ -1,3 +1,14 @@
+SELECT title FROM movies, stars, people , ratings
+WHERE people.name = "Chadwick Boseman"
+AND movies_id = stars.movie_id
+AND stars.
+
+AND movies.id = stars.movies_id
+AND people.id = stars.movie_id
+AND ratings.movie_id stars.movie_id
+ORDER BY rating DESC LIMIT 5;
+
+
 
 
 SELECT title FROM movies WHERE id IN
