@@ -71,5 +71,5 @@ SELECT * FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_se
 
 
 -- person_id based on account
-SELECT name FROM people WHERE id IN (SELECT person_id FROM bank_accounts
-WHERE account_number IN (SELECT id FROM atm_transactions WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 2021 AND transaction_type = "withdraw"));
+SELECT person_id FROM bank_accounts
+WHERE account_number IN (SELECT  FROM atm_transactions WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 2021 AND transaction_type = "withdraw");
