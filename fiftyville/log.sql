@@ -70,4 +70,5 @@ SELECT * FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_se
  took place at 10.15am at bakery
 
 
-
+-- person_id based on account 
+SELECT person_id FROM bank_accounts WHERE bank_accounts IN (SELECT id FROM atm_transactions WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 2021 AND transaction_type = "withdraw")
