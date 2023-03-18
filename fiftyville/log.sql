@@ -128,3 +128,17 @@ SELECT * FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE year =
 | 36        | 8496433585      | 7B
 
 
+SELECT phone_number FROM people
+WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1))
+----------------+
+|  phone_number  |
++----------------+
+| (826) 555-1652 |
+| (130) 555-0289 |
+| (286) 555-6063 |
+| (389) 555-5198 |
+| (499) 555-9472 |
+| (328) 555-1152 |
+| (367) 555-5533 |
+| (066) 555-9701 |
++----------------+
