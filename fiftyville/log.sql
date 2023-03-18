@@ -96,3 +96,12 @@ WHERE account_number IN (SELECT account_number FROM atm_transactions WHERE atm_l
 | 279 | (826) 555-1652 | (066) 555-9701 | 2021 | 7     | 28  | 55       |
 | 281 | (338) 555-6650 | (704) 555-2131 | 2021 | 7     | 28  | 54       |
 | 285 | (367) 555-5533 | (704) 555-5790 | 2021 | 7     | 28  | 75
+
+
+
+
+SELECT * FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1;
++----+-------------------+------------------------+------+-------+-----+------+--------+
+| id | origin_airport_id | destination_airport_id | year | month | day | hour | minute |
++----+-------------------+------------------------+------+-------+-----+------+--------+
+| 36 | 8                 | 4                      | 2021 | 7     | 29  | 8    | 20
