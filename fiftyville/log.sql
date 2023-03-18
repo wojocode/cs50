@@ -30,9 +30,9 @@ SELECT * FROM crime_scene_reports WHERE day = 28 AND month = 7 AND year = 2021 A
  The thief then asked the person on the other end of the phone to purchase the flight ticket.
 
 
--- bakery
-SELECT * FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND HOUR = 10;
+-- BAKERY PARKING POSSIBLE LICENSE_PLATE
 
+SELECT * FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND HOUR = 10 AND minute BETWEEN 14 AND 25;
 
 
 
