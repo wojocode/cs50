@@ -47,7 +47,22 @@ SELECT * FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_se
 | 514354 | Diana   | (770) 555-1861 | 3592750733      | 322W7JE       |
 | 560886 | Kelsey  | (499) 555-9472 | 8294398571      | 0NTHK55       |
 | 686048 | Bruce   | (367) 555-5533 | 5773159633      | 94KL13X       |
-| 745650 | Sophia  | (027) 555-1068 | 3642612721      | 13FNH73  
+| 745650 | Sophia  | (027) 555-1068 | 3642612721      | 13FNH73
+
+
+
+--TRANSACTION
++-----+----------------+------+-------+-----+----------------+------------------+--------+
+| id  | account_number | year | month | day |  atm_location  | transaction_type | amount |
++-----+----------------+------+-------+-----+----------------+------------------+--------+
+| 246 | 28500762       | 2021 | 7     | 28  | Leggett Street | withdraw         | 48     |
+| 264 | 28296815       | 2021 | 7     | 28  | Leggett Street | withdraw         | 20     |
+| 266 | 76054385       | 2021 | 7     | 28  | Leggett Street | withdraw         | 60     |
+| 267 | 49610011       | 2021 | 7     | 28  | Leggett Street | withdraw         | 50     |
+| 269 | 16153065       | 2021 | 7     | 28  | Leggett Street | withdraw         | 80     |
+| 288 | 25506511       | 2021 | 7     | 28  | Leggett Street | withdraw         | 20     |
+| 313 | 81061156       | 2021 | 7     | 28  | Leggett Street | withdraw         | 30     |
+| 336 | 26013199       | 2021 | 7     | 28  | Leggett Street | withdraw         | 35  
 
 
 
