@@ -158,3 +158,11 @@ WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 202
 | (826) 555-1652 |
 | (286) 555-6063 |
 | (367) 555-5533
+
+
+--------+
+|  name  |
++--------+
+| Kenny  |
+| Taylor |
+| Bruce
