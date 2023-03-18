@@ -165,4 +165,4 @@ WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 202
 +--------+
 | Kenny  |
 | Taylor |
-| Bruce
+| Bruce (367) 555-5533 thief
