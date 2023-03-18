@@ -19,7 +19,7 @@ SELECT * FROM crime_scene_reports WHERE day = 28 AND month = 7 AND year = 2021 A
  Interviews were conducted today with three witnesses who were present at the time – each of their interview transcripts mentions the bakery.
  ID 295
 -- bakery
-
+SELECT * FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND HOUR = 10 AND minute = 15;
 
 
 
