@@ -142,3 +142,19 @@ WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id
 | (367) 555-5533 |
 | (066) 555-9701 |
 +----------------+
+
+
+
+-- cut down to 3 people
+SELECT phone_number FROM people
+WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1)) AND phone_number IN (SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND DURATION < 120
+AND caller  IN (SELECT phone_number FROM people
+WHERE id IN(SELECT person_id FROM bank_accounts
+WHERE account_number IN (SELECT account_number FROM atm_transactions
+WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 2021 AND transaction_type = "withdraw"))));
++----------------+
+|  phone_number  |
++----------------+
+| (826) 555-1652 |
+| (286) 555-6063 |
+| (367) 555-5533
