@@ -50,7 +50,6 @@ SELECT * FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_se
 | 745650 | Sophia  | (027) 555-1068 | 3642612721      | 13FNH73
 
 
-
 --TRANSACTION
 +-----+----------------+------+-------+-----+----------------+------------------+--------+
 | id  | account_number | year | month | day |  atm_location  | transaction_type | amount |
@@ -63,7 +62,6 @@ SELECT * FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_se
 | 288 | 25506511       | 2021 | 7     | 28  | Leggett Street | withdraw         | 20     |
 | 313 | 81061156       | 2021 | 7     | 28  | Leggett Street | withdraw         | 30     |
 | 336 | 26013199       | 2021 | 7     | 28  | Leggett Street | withdraw         | 35
-
 
 
 -- CRIME FACTS
@@ -102,7 +100,6 @@ WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 202
 | 285 | (367) 555-5533 | (704) 555-5790 | 2021 | 7     | 28  | 75
 
 
-
 -- THIEF FLIGHT
 SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1;
 +----+-------------------+------------------------+------+-------+-----+------+--------+
@@ -112,7 +109,6 @@ SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hou
 
 
 -- passengers
-
 SELECT * FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1);
 
 +-----------+-----------------+------+
@@ -143,8 +139,6 @@ WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id
 | (066) 555-9701 |
 +----------------+
 
-
-
 -- cut down to 3 people
 SELECT phone_number FROM people
 WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE year = 2021 AND month = 7 AND day = 29 ORDER BY hour LIMIT 1)) AND phone_number IN (SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND DURATION < 120
@@ -159,7 +153,6 @@ WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 202
 | (286) 555-6063 |
 | (367) 555-5533
 
-
 --------+
 |  name  |
 +--------+
@@ -167,4 +160,10 @@ WHERE atm_location = "Leggett Street" AND  day = 28 AND month = 7 AND year = 202
 | Taylor |
 | Bruce    BINGO ! the one who parked at bakery
 
+-- thief's phone call receiver details
 SELECT * FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND DURATION < 120
+   id   | name  |  phone_number  | passport_number | license_plate |
++--------+-------+----------------+-----------------+---------------+
+| 652398 | Carl  | (704) 555-5790 | 7771405611      | 81MZ921       |. -- Carl passport is not on the board of thief's fligh
+| 864400 | Robin | (375) 555-8161 |                 | 4V16VO0          -- This is accomplice
+
